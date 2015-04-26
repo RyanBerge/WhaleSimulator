@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RB_GameResources</name>
+    </assembly>
+    <members>
+        <member name="M:RB_GameResources.Xna.Controls.Button.#ctor(RB_GameResources.Xna.Graphics.Graphic2D,System.Boolean)">
+            <summary>
+            Creates a new Button object.
+            </summary>
+            <param name="graphic">The Graphic2D object to use as the button's visual representation.</param>
+            <param name="mouseSensitive">Whether or not the button should raise MouseEvents.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.Update(Microsoft.Xna.Framework.GameTime,RB_GameResources.Xna.Controls.InputStates,System.Boolean)">
+            <summary>
+            Update the state of the button.
+            </summary>
+            <param name="gameTime">The GameTime to use.</param>
+            <param name="inputStates">The InputStates to use when determining whether any events need to be raised.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Constructs a new Button object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Constructs a new Button object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Button object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Button object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Button object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.Button.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Button object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Button object.</returns>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.Button.MouseEnter">
+            <summary>
+            Raised when the mouse enters the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.Button.MouseLeave">
+            <summary>
+            Raised when the mouse leaves the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.Button.MousePressed">
+            <summary>
+            Raised when the left mouse button is pressed down while within the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.Button.MouseReleased">
+            <summary>
+            Raised when the left mouse button is released while within the bounding box of the button.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.Button.Graphic">
+            <summary>
+            The visual representation of the Button as a Graphic2D object.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.Button.CurrentState">
+            <summary>
+            The current state of the button.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.Button.IsMouseSensitive">
+            <summary>
+            Whether or not the button should raise MouseEvents.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.Button.IsVisible">
+            <summary>
+            Whether or not the button is visible.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.Button.MouseChangesStates">
+            <summary>
+            Whether or not mouse events will automatically change the state of the button.  The default value is true.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.TextField.#ctor(Microsoft.Xna.Framework.Graphics.SpriteFont,Microsoft.Xna.Framework.Rectangle)">
+            <summary>
+            Creates a new TextField object.
+            </summary>
+            <param name="font">The font to use.</param>
+            <param name="bounds">The bounds of the field, used for determining valid mouse clicks and the location of the field.</param>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.MouseEnter">
+            <summary>
+            Raised when the mouse enters the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.MouseLeave">
+            <summary>
+            Raised when the mouse leaves the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.MousePressed">
+            <summary>
+            Raised when the left mouse button is pressed down while within the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.MouseReleased">
+            <summary>
+            Raised when the left mouse button is released while within the bounding box of the button.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.DigitEntered">
+            <summary>
+            Raised when a digit is entered into the text field.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.DigitRemoved">
+            <summary>
+            Raised when a digit is removed from the text field.
+            </summary>
+        </member>
+        <member name="E:RB_GameResources.Xna.Controls.TextField.EnterCommand">
+            <summary>
+            Raised when the Enter/Return button is pressed if the EnterSensitive property is set to true.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.GameTime,System.Boolean)">
+            <summary>
+            Draws the Graphic2D to the SpriteBatch
+            </summary>
+            <param name="spriteBatch">The SpriteBatch to draw to.</param>
+            <param name="gameTime">The GameTime to use for determining the animation frame.</param>
+            <param name="playAnimation">Whether or not to advance the animation for this object.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Draws the Graphic2D to the SpriteBatch
+            </summary>
+            <param name="spriteBatch">The SpriteBatch to draw to.</param>
+            <param name="gameTime">The GameTime to use for determining the animation frame.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.GameTime,System.Single,System.Boolean)">
+            <summary>
+            Draws the Graphic2D to the SpriteBatch
+            </summary>
+            <param name="spriteBatch">The SpriteBatch to draw to.</param>
+            <param name="gameTime">The GameTime to use for determining the animation frame.</param>
+            <param name="layerDepth">The depth of the layer to draw to.  0 represents the front, and 1 represents the back.</param>
+            <param name="playAnimation">Whether or not to advance the animation for this object.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.GameTime,System.Single)">
+            <summary>
+            Draws the Graphic2D to the SpriteBatch
+            </summary>
+            <param name="spriteBatch">The SpriteBatch to draw to.</param>
+            <param name="gameTime">The GameTime to use for determining the animation frame.</param>
+            <param name="layerDepth">The depth of the layer to draw to.  0 represents the front, and 1 represents the back.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.GameTime,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Graphics.SpriteEffects,System.Single,System.Boolean)">
+            <summary>
+            Draws the Graphic2D to the SpriteBatch
+            </summary>
+            <param name="spriteBatch">The SpriteBatch to draw to.</param>
+            <param name="gameTime">The GameTime to use for determining the animation frame.</param>
+            <param name="rotation">The angle, in radians, to rotate the object.</param>
+            <param name="origin">The origin of where to draw the object.</param>
+            <param name="scale">Scale factor.</param>
+            <param name="spriteEffect">The SpriteEffect to use.</param>
+            <param name="layerDepth">The depth of the layer to draw to.  0 represents the front, and 1 represents the back.</param>
+            <param name="playAnimation">Whether or not to advance the animation for this object.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.RestartAnimation">
+            <summary>
+            Restarts the current animation.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.AdvanceFrame(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Checks how much time has passed since the last call to determine whether the current animation's frame must be advanced and if it does, advances it.
+            </summary>
+            <param name="gameTime">The GameTime to use to check how much time has passed.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.OnAnimationEnded">
+            <summary>
+            Event callback for when a non-looping animation ends.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XDocument,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML document.
+            </summary>
+            <param name="xdoc">The XML document to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Graphic2D.FromXML(System.Xml.Linq.XElement,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.Texture2D)">
+            <summary>
+            Constructs a new Graphic2D object from the specified XML subtree.
+            </summary>
+            <param name="rootElement">The root of the XML subtree to read from.</param>
+            <param name="Content">The ContentManager to use.</param>
+            <param name="spritesheet">The Texture2D to use as the new object's spritesheet.</param>
+            <returns>A new Graphic2D object.</returns>
+        </member>
+        <member name="E:RB_GameResources.Xna.Graphics.Graphic2D.AnimationEnded">
+            <summary>
+            This event is raised whenever a non-looping animation ends (at the end of the last frame).
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.AnimationArray">
+            <summary>
+            The array containing all the animations associated with this Graphics2D object.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.PreviousAnimationIndex">
+            <summary>
+            The index of the animation array where the previous animation is located.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.CurrentAnimationIndex">
+            <summary>
+            The index of the animation array where the current animation is located.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.Coordinates">
+            <summary>
+            The coordinates in the window where this Graphics2D object is drawn.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.Center">
+            <summary>
+            The center of this Graphic2D object's bounding box.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Graphic2D.BoundingBox">
+            <summary>
+            A rectangle representing the bounding box of this Graphic2D object.
+            </summary>
+        </member>
+        <member name="T:RB_GameResources.Xna.Graphics.Animation2D">
+            <summary>
+            Defines the structure and attributes for an Animation.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Animation2D.#ctor(System.String,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Int32,System.Double)">
+            <summary>
+            Creates a new Animation.
+            </summary>
+            <param name="location">The location to find the start of the animation on a spritesheet.</param>
+            <param name="dimensions">The dimensions of the frames in the animation.</param>
+            <param name="numFrames">The number of frames in the animation.</param>
+            <param name="speed">The speed of the animation, expressed in frames-per-second.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Graphics.Animation2D.#ctor(System.String,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Int32,System.Double,System.Boolean,System.Boolean,RB_GameResources.Xna.Graphics.Orientation)">
+            <summary>
+            Creates a new Animation.
+            </summary>
+            <param name="location">The location to find the start of the animation on a spritesheet.</param>
+            <param name="dimensions">The dimensions of the frames in the animation.</param>
+            <param name="numFrames">The number of frames in the animation.</param>
+            <param name="speed">The speed of the animation, expressed in frames-per-second.</param>
+            <param name="playing">Whether the animation should be playing.</param>
+            <param name="looping">Whether the animation should be looping.</param>
+            <param name="orientation">The orientation of the animation on the spritesheet.</param>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.NumberOfFrames">
+            <summary>
+            The number of frames in this animation.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.CurrentFrame">
+            <summary>
+            The current frame of this animation.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.AnimationSpeed">
+            <summary>
+            The speed of this animation, expressed in frames-per-second.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.DefaultAnimationSpeed">
+            <summary>
+            The default speed of this animation, expressed in frames-per-second.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.IsPlaying">
+            <summary>
+            Whether or not this animation is currently playing.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.IsLooping">
+            <summary>
+            Whether or not this animation loops.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.Location">
+            <summary>
+            The location of this animation on a spritesheet.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.Dimensions">
+            <summary>
+            The dimensions of this animation's frames.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.AnimationOrientation">
+            <summary>
+            The orientation of this animation's frames on a spritesheet.
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Graphics.Animation2D.SourceFrame">
+            <summary>
+            A rectangle representing the location on a spritesheet to find the current frame of this animation.
+            </summary>
+        </member>
+        <member name="T:RB_GameResources.Xna.Controls.InputStates">
+            <summary>
+            Encapsulates the various XNA input states into a single class.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.#ctor">
+            <summary>
+            Create a new instance of InputStates using the current control states as the initialization.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.#ctor(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.GamePadState,Microsoft.Xna.Framework.Input.GamePadState)">
+            <summary>
+            Create a new instance of Input States
+            </summary>
+            <param name="oldMouseState">The old mouse state to initialize.</param>
+            <param name="newMouseState">The new mouse state to initialize.</param>
+            <param name="oldKeyState">The old keyboard state to initialize.</param>
+            <param name="newKeyState">The new keyboard state to initialize.</param>
+            <param name="oldGPState">The old gamepad state to initialize.</param>
+            <param name="newGPState">The new gamepad state to initialize.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.#ctor(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.GamePadState)">
+            <summary>
+            Create a new instance of Input States
+            </summary>
+            <param name="mouseState">The mouse state to initialize.</param>
+            <param name="keyState">The keyboard state to initialize.</param>
+            <param name="padState">The gamepad state to initialize.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.RefreshNewStates">
+            <summary>
+            Changes the "new" states to be updated with the current state of the controls.
+            </summary>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.SetNewStates(Microsoft.Xna.Framework.Input.MouseState,Microsoft.Xna.Framework.Input.KeyboardState,Microsoft.Xna.Framework.Input.GamePadState)">
+            <summary>
+            Manually set the "new" state for all controls.
+            </summary>
+            <param name="newMouseState">The new mouse state to set.</param>
+            <param name="newKeyboardState">The new keyboard state to set.</param>
+            <param name="newGPState">The new gamepad state to set.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.RotateOldStates(System.Boolean)">
+            <summary>
+            "Rotates" out the old states, causing the old new states to become old states.
+            </summary>
+            <param name="refreshStates">Whether or not to also refresh the new states to update the controls.</param>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonPressed(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Returns true if the key was up and is now down (if they key was just pressed)
+            </summary>
+            <param name="key">The key to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonReleased(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Returns true if the key was down and is now up (if they key was just released)
+            </summary>
+            <param name="key">The key to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonPressed(RB_GameResources.Xna.Controls.MouseButtons)">
+            <summary>
+            Returns true if the button was up and is now down (if they button was just pressed)
+            </summary>
+            <param name="button">The button to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonReleased(RB_GameResources.Xna.Controls.MouseButtons)">
+            <summary>
+            Returns true if the button was down and is now up (if they button was just released)
+            </summary>
+            <param name="button">The button to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonPressed(Microsoft.Xna.Framework.Input.Buttons)">
+            <summary>
+            Returns true if the button was up and is now down (if they button was just pressed)
+            </summary>
+            <param name="button">The button to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:RB_GameResources.Xna.Controls.InputStates.WasButtonReleased(Microsoft.Xna.Framework.Input.Buttons)">
+            <summary>
+            Returns true if the button was down and is now up (if they button was just released)
+            </summary>
+            <param name="button">The button to check</param>
+            <returns></returns>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.OldMouseState">
+            <summary>
+            The current "old" mouse state
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.NewMouseState">
+            <summary>
+            The current "new" mouse state
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.OldKeyState">
+            <summary>
+            The current "old" keyboard state
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.NewKeyState">
+            <summary>
+            The current "new" keyboard state
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.OldGPState">
+            <summary>
+            The current "old" gamepad state
+            </summary>
+        </member>
+        <member name="P:RB_GameResources.Xna.Controls.InputStates.NewGPState">
+            <summary>
+            The current "new" gamepad state
+            </summary>
+        </member>
+    </members>
+</doc>
