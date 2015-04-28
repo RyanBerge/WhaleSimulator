@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MapData>
+  <SizeX>3</SizeX>
+  <SizeY>3</SizeY>
+  <SizeZ>3</SizeZ>
+
+  <ChunkGrid>
+    
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>0</PositionZ>
+    </Chunk>
+    
+
+    
+    
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>1</PositionZ>
+    </Chunk>
+    
+
+    
+    
+    
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>0</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>1</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>0</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>1</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+
+    <Chunk>
+      <PositionX>2</PositionX>
+      <PositionY>2</PositionY>
+      <PositionZ>2</PositionZ>
+    </Chunk>
+    
+  </ChunkGrid>
+  
+</MapData>
