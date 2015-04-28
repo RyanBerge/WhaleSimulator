@@ -10,8 +10,18 @@ using RB_GameResources.Xna.Controls;
 
 namespace WhaleSimulator
 {
+    public enum GameState
+    {
+        Undefined, MainMenu, PauseMenu, Playing
+    }
+
     public class GameManager
     {
+        private GameState gameState = GameState.Undefined;
+        
+        private MainMenu mainMenu;
+        private Map currentMap;
+
         public GameManager()
         {
 
@@ -24,12 +34,32 @@ namespace WhaleSimulator
 
         private void LoadMainMenu()
         {
+            mainMenu = new MainMenu();
+            mainMenu.mapChooseEvent += LoadMap;
+            gameState = GameState.MainMenu;
+        }
+
+        void LoadMap(string name)
+        {
+            //Load map
+            currentMap = new Map(name);
 
         }
 
         public void Update(GameTime gameTime, InputStates inputStates)
         {
-
+            switch (gameState)
+            {
+                case GameState.Undefined:
+                    break;
+                case GameState.MainMenu:
+                    mainMenu.Update(gameTime, inputStates);
+                    break;
+                case GameState.PauseMenu:
+                    break;
+                case GameState.Playing:
+                    break;
+            }
         }
 
         /// <summary>
@@ -50,8 +80,5 @@ namespace WhaleSimulator
         {
 
         }
-
-
-        
     }
 }

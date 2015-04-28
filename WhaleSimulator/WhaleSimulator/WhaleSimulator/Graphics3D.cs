@@ -48,8 +48,8 @@ namespace WhaleSimulator
         /// <summary>
         /// Draws the Graphics3D object
         /// </summary>
-        /// <param name="gameTime">TheGgameTime object to use as reference.</param>
-        public void Draw(GameTime gameTime)
+        /// <param name="gameTime">The GameTime object to use as reference.</param>
+        public virtual void Draw3D(GameTime gameTime)
         {
 
         }
