@@ -24,8 +24,7 @@ namespace WhaleSimulator
 
         public GameManager()
         {
-            ChunkGrid grid = new ChunkGrid("Data/MapData/Tutorial.xml");
-            int x = 5;
+
         }
 
         public void Initialize()

@@ -91,6 +91,12 @@
       <PositionX>1</PositionX>
       <PositionY>1</PositionY>
       <PositionZ>1</PositionZ>
+      <Spawn>
+        <HasSpawn>true</HasSpawn>
+        <PositionX>50</PositionX>
+        <PositionY>50</PositionY>
+        <PositionZ>50</PositionZ>
+      </Spawn>
     </Chunk>
 
     <Chunk>
