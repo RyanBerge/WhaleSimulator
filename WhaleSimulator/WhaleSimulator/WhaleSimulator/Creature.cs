@@ -5,6 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -12,7 +13,15 @@ namespace WhaleSimulator
 {
     public class Creature : Graphics3D
     {
+        
+        public string Species { get; set; }
 
+        public Creature(string species, Vector3 spawnPosition, ContentManager Content)
+        {
+            Species = species;
+            this.Position = spawnPosition;
+            this.BaseModel = Content.Load<Model>("Creatures/" + Species);
+        }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates) 
         {

@@ -5,6 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -16,27 +17,31 @@ namespace WhaleSimulator
         private Player player;
         private ChunkGrid chunkGrid;
 
+        private ContentManager mapContent;
+
         public Map(string name)
         {
             mapName = name;
-            player = new Player(GetPlayerType());
+            mapContent = MasterGame.GetNewContentManager();
+            player = new Player(GetPlayerType(), chunkGrid.PlayerSpawn, mapContent);
             LoadMap();
         }
 
-        public Player.PlayerType GetPlayerType()
+        public string GetPlayerType()
         {
             switch (mapName)
             {
                 case "Tutorial":
-                    return Player.PlayerType.Orca;
+                    return "Orca";
                 default:
-                    return Player.PlayerType.fish;
+                    return "fish";
             }
         }
 
         private void LoadMap()
         {
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml");
+            Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)

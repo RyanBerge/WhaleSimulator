@@ -26,13 +26,14 @@ namespace WhaleSimulator
 
         private static IServiceProvider newServices;
 
+        public static float AspectRatio { get; set; }
 
         public MasterGame()
         {
             Graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            MasterGame.newServices = this.Services;
+            
         }
 
         public static ContentManager GetNewContentManager()
@@ -49,6 +50,8 @@ namespace WhaleSimulator
         protected override void Initialize()
         {
             base.Initialize();
+            MasterGame.newServices = this.Services;
+            MasterGame.AspectRatio = Graphics.PreferredBackBufferWidth / Graphics.PreferredBackBufferHeight;
 
             IsFixedTimeStep = false;
 

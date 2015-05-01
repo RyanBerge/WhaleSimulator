@@ -96,6 +96,9 @@
         <PositionX>50</PositionX>
         <PositionY>50</PositionY>
         <PositionZ>50</PositionZ>
+        <DirectionX>1</DirectionX>
+        <DirectionX>0</DirectionX>
+        <DirectionX>0</DirectionX>
       </Spawn>
     </Chunk>
 

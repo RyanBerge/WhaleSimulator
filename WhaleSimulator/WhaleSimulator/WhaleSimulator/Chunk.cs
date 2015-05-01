@@ -7,6 +7,7 @@ using System.IO;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -48,9 +49,17 @@ namespace WhaleSimulator
         /// </summary>
         public Vector3 SpawnPosition { get; set; }
         /// <summary>
+        /// Gets or sets the direction of the player when spawning.
+        /// </summary>
+        public Vector3 SpawnDirection { get; set; }
+        /// <summary>
         /// Whether or not this Chunk has a spawn point for the player.
         /// </summary>
         public bool HasSpawn { get; set; }
+        /// <summary>
+        /// The ContentManager responsible for this Chunk's assets.
+        /// </summary>
+        public ContentManager Content { get; set; }
 
         /// <summary>
         /// Creates a new Chunk object with a given grid position.  Does not link to other Chunks in the grid.
@@ -75,6 +84,8 @@ namespace WhaleSimulator
                 int z = 0;
                 bool isSpawn = false;
                 Vector3 position;
+                Vector3 spawn = new Vector3();
+                Vector3 direction = new Vector3();
 
                 element = rootElement.Element("PositionX");
                 if (element != null)
@@ -103,13 +114,20 @@ namespace WhaleSimulator
                     x = int.Parse(element.Element("PositionX").Value);
                     y = int.Parse(element.Element("PositionY").Value);
                     z = int.Parse(element.Element("PositionZ").Value);
+                    spawn = new Vector3(x, y, z);
+                    x = int.Parse(element.Element("DirectionX").Value);
+                    y = int.Parse(element.Element("DirectionY").Value);
+                    z = int.Parse(element.Element("DirectionZ").Value);
+                    direction = new Vector3(x, y, z);
                 }
 
                 Chunk temp = new Chunk(position);
                 if (isSpawn)
                 {
                     temp.HasSpawn = true;
-                    temp.SpawnPosition = new Vector3(x, y, z);
+                    if (spawn != null)
+                    temp.SpawnPosition = spawn;
+                    temp.SpawnDirection = direction;
                 }
 
                 return temp;
@@ -141,5 +159,22 @@ namespace WhaleSimulator
         {
             //Draw
         }
+
+        /// <summary>
+        /// Loads the assets associated with this Chunk into memory.
+        /// </summary>
+        public void LoadAssets()
+        {
+            Content = MasterGame.GetNewContentManager();
+        }
+
+        /// <summary>
+        /// Unloads this Chunk's ContentManager,  removing all assets associated with it from memory.
+        /// </summary>
+        public void UnloadAssets()
+        {
+
+        }
+
     }
 }

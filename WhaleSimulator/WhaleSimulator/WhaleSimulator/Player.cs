@@ -5,6 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -12,21 +13,16 @@ namespace WhaleSimulator
 {
     public class Player : Creature
     {
-        public enum PlayerType
+        public Player(string species, Vector3 spawnPosition, ContentManager Content) 
+            : base(species, spawnPosition, Content)
         {
-            fish, Orca, SpermWhale, BlueWhale
-        }
-
-        private PlayerType playerType;
-
-        public Player(PlayerType type)
-        {
-            playerType = type;
+            
         }
 
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             base.Update(gameTime);
+            
         }
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).

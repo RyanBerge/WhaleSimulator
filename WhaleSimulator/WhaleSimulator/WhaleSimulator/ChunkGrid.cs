@@ -27,6 +27,9 @@ namespace WhaleSimulator
 
         private bool initialized = false;
 
+        public Vector3 PlayerSpawn { get; set; }
+        public Vector3 SpawnDirection { get; set; }
+
         /// <summary>
         /// Creates a new ChunkGrid by loading data from the designated filepath.
         /// </summary>
@@ -34,6 +37,11 @@ namespace WhaleSimulator
         public ChunkGrid(string filepath)
         {
             LoadFromXML(filepath);
+            float x = spawnChunk.SpawnPosition.X + (spawnChunk.Position.X * 1000);
+            float y = spawnChunk.SpawnPosition.Y + (spawnChunk.Position.Y * 1000);
+            float z = spawnChunk.SpawnPosition.Z + (spawnChunk.Position.Z * 1000);
+            PlayerSpawn = new Vector3(x, y, z);
+            SpawnDirection = spawnChunk.SpawnDirection;
         }
 
         /// <summary>
