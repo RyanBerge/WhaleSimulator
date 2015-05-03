@@ -43,7 +43,7 @@ namespace WhaleSimulator
         {
             //Load map
             currentMap = new Map(name);
-
+            gameState = GameState.Playing;
         }
 
         public void Update(GameTime gameTime, InputStates inputStates)
@@ -58,6 +58,11 @@ namespace WhaleSimulator
                 case GameState.PauseMenu:
                     break;
                 case GameState.Playing:
+                    if (currentMap != null)
+                    {
+                        currentMap.Update(gameTime, inputStates);
+                        //Camera.Update(gameTime, inputStates, player);
+                    }
                     break;
             }
         }
@@ -68,7 +73,8 @@ namespace WhaleSimulator
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         public void Draw3D(GameTime gameTime)
         {
-
+            if (currentMap != null)
+                currentMap.Draw3D(gameTime);
         }
 
         /// <summary>

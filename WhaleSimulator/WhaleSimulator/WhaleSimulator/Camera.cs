@@ -31,9 +31,9 @@ namespace WhaleSimulator
 
         public static void SetDefaults(Vector3 playerPosition, Vector3 playerDirection)
         {
-            float x = playerPosition.X - (playerDirection.X * 10);
-            float y = playerPosition.Y - (playerDirection.Y * 10);
-            float z = playerPosition.Z - (playerDirection.Z * 10);
+            float x = playerPosition.X - (playerDirection.X * 100);
+            float y = playerPosition.Y - (playerDirection.Y * 100);
+            float z = playerPosition.Z - (playerDirection.Z * 100);
 
             Position = new Vector3(x, y, z);
             LookTarget = playerPosition;
@@ -41,7 +41,7 @@ namespace WhaleSimulator
             FieldOfView = (float)(Math.PI / 4);
             AspectRatio = MasterGame.AspectRatio;
             NearClippingPlane = 0.1f;
-            FarClippingPlane = 100f;
+            FarClippingPlane = 1000f;
 
             IsUnderwater = true;
             FogStart = 75;
@@ -51,14 +51,15 @@ namespace WhaleSimulator
             FogColor = Color.Aqua.ToVector3();
 
             ProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(FieldOfView, AspectRatio, NearClippingPlane, FarClippingPlane);
+            ViewMatrix = Matrix.CreateLookAt(Position, LookTarget, Vector3.Up);
         }
 
 
         public static void Update(GameTime gameTime, InputStates inputStates, Player player)
         {
-            float x = player.Position.X - (player.Direction.X * 10);
-            float y = player.Position.Y - (player.Direction.Y * 10);
-            float z = player.Position.Z - (player.Direction.Z * 10);
+            float x = player.Position.X - (player.Direction.X * 100);
+            float y = player.Position.Y - (player.Direction.Y * 100);
+            float z = player.Position.Z - (player.Direction.Z * 100);
 
             Position = new Vector3(x, y, z);
             LookTarget = player.Position;

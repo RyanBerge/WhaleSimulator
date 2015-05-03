@@ -42,6 +42,11 @@ namespace WhaleSimulator
             float z = spawnChunk.SpawnPosition.Z + (spawnChunk.Position.Z * 1000);
             PlayerSpawn = new Vector3(x, y, z);
             SpawnDirection = spawnChunk.SpawnDirection;
+
+            foreach (Chunk c in this)
+            {
+                c.LoadAssets();
+            }
         }
 
         /// <summary>
@@ -198,6 +203,13 @@ namespace WhaleSimulator
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         public void Draw3D(GameTime gameTime)
         {
+            if (initialized)
+            {
+                foreach (Chunk chunk in this)
+                {
+                    chunk.Draw3D(gameTime);
+                }
+            }
         }
 
         ///// <summary>

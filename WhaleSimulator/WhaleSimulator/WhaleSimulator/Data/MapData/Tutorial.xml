@@ -93,13 +93,21 @@
       <PositionZ>1</PositionZ>
       <Spawn>
         <HasSpawn>true</HasSpawn>
-        <PositionX>50</PositionX>
-        <PositionY>50</PositionY>
-        <PositionZ>50</PositionZ>
+        <PositionX>500</PositionX>
+        <PositionY>500</PositionY>
+        <PositionZ>500</PositionZ>
         <DirectionX>1</DirectionX>
-        <DirectionX>0</DirectionX>
-        <DirectionX>0</DirectionX>
+        <DirectionY>0</DirectionY>
+        <DirectionZ>0</DirectionZ>
       </Spawn>
+      <CreatureList>
+        <Creature>
+          <Species>Wale</Species>
+          <PositionX>500</PositionX>
+          <PositionY>500</PositionY>
+          <PositionZ>500</PositionZ>
+        </Creature>
+      </CreatureList>
     </Chunk>
 
     <Chunk>

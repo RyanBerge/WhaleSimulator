@@ -1,1 +1,2 @@
 Content\Creatures\WhalePod.xnb
+Content\Creatures\Wale.xnb

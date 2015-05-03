@@ -17,6 +17,8 @@ namespace WhaleSimulator
         public Vector3 Position { get; set; }
         public Vector3 Direction { get; set; }
 
+        float rot = 0;
+
         private Matrix worldTransformation;
 
 
@@ -50,7 +52,8 @@ namespace WhaleSimulator
         /// <param name="gameTime">The gameTime object to use as reference.</param>
         public void Update(GameTime gameTime)
         {
-            worldTransformation = Matrix.CreateTranslation(Position);
+            rot += 0.002f;
+            worldTransformation = (Matrix.CreateRotationX(rot) * Matrix.CreateTranslation(Position));
         }
 
         /// <summary>
@@ -66,6 +69,7 @@ namespace WhaleSimulator
                     effect.World = worldTransformation;
                     effect.View = Camera.ViewMatrix;
                     effect.Projection = Camera.ProjectionMatrix;
+                    effect.EnableDefaultLighting();
                 }
 
                 mesh.Draw();

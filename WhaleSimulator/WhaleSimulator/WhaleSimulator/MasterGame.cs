@@ -90,6 +90,8 @@ namespace WhaleSimulator
         {
             inputStates.RefreshNewStates();
 
+            gameManager.Update(gameTime, inputStates);
+
             base.Update(gameTime);
             inputStates.RotateOldStates(false);
         }

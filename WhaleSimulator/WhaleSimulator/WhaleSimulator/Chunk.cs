@@ -61,6 +61,9 @@ namespace WhaleSimulator
         /// </summary>
         public ContentManager Content { get; set; }
 
+        public List<CreatureInfo> CreatureList { get; private set; }
+        public List<Creature> Creatures { get; private set; }
+
         /// <summary>
         /// Creates a new Chunk object with a given grid position.  Does not link to other Chunks in the grid.
         /// </summary>
@@ -121,7 +124,24 @@ namespace WhaleSimulator
                     direction = new Vector3(x, y, z);
                 }
 
+                element = rootElement.Element("CreatureList");
+                List<CreatureInfo> creatureList = new List<CreatureInfo>();
+                if (element != null)
+                {
+                    IEnumerable<XElement> elements = element.Elements("Creature");
+                    foreach(XElement e in elements)
+                    {
+                        string species = e.Element("Species").Value;
+                        x = int.Parse(e.Element("PositionX").Value);
+                        y = int.Parse(e.Element("PositionY").Value);
+                        z = int.Parse(e.Element("PositionZ").Value);
+                        creatureList.Add(new CreatureInfo(species, new Vector3(x + (position.X * 1000), y + (position.Y * 1000), z + (position.Z * 1000)), true));
+                    }
+                }
+
                 Chunk temp = new Chunk(position);
+                temp.CreatureList = creatureList;
+                temp.Creatures = new List<Creature>();
                 if (isSpawn)
                 {
                     temp.HasSpawn = true;
@@ -149,6 +169,11 @@ namespace WhaleSimulator
         public void Update(GameTime gameTime, InputStates inputStates)
         {
             //Update
+            if (Creatures != null)
+            {
+                foreach (Creature c in Creatures)
+                    c.Update(gameTime, inputStates);
+            }
         }
 
         /// <summary>
@@ -158,6 +183,11 @@ namespace WhaleSimulator
         public void Draw3D(GameTime gameTime)
         {
             //Draw
+            if (Creatures != null)
+            {
+                foreach (Creature c in Creatures)
+                    c.Draw3D(gameTime);
+            }
         }
 
         /// <summary>
@@ -166,6 +196,11 @@ namespace WhaleSimulator
         public void LoadAssets()
         {
             Content = MasterGame.GetNewContentManager();
+            foreach (CreatureInfo info in CreatureList)
+            {
+                if (info.IsAlive)
+                    Creatures.Add(new Creature(info, Content));
+            }
         }
 
         /// <summary>
@@ -173,7 +208,22 @@ namespace WhaleSimulator
         /// </summary>
         public void UnloadAssets()
         {
+            if (Content != null)
+            {
+                Content.Unload();
+                Content.Dispose();
+                Content = null;
+            }
 
+            if (Creatures.Count > 0)
+            {
+                foreach (Creature c in Creatures)
+                {
+                    c.Dispose();
+                }
+                Creatures.Clear();
+                Creatures.TrimExcess();
+            }
         }
 
     }

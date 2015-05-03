@@ -16,12 +16,13 @@ namespace WhaleSimulator
 
         public MainMenu()
         {
-            if (mapChooseEvent != null)
-                mapChooseEvent("Tutorial");
+            
         }
 
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
+            if (mapChooseEvent != null)
+                mapChooseEvent("Tutorial");
         }
 
         /// <summary>

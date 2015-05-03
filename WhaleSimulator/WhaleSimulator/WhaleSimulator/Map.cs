@@ -23,8 +23,9 @@ namespace WhaleSimulator
         {
             mapName = name;
             mapContent = MasterGame.GetNewContentManager();
-            player = new Player(GetPlayerType(), chunkGrid.PlayerSpawn, mapContent);
             LoadMap();
+            //player = new Player(GetPlayerType(), chunkGrid.PlayerSpawn, mapContent);
+            
         }
 
         public string GetPlayerType()
