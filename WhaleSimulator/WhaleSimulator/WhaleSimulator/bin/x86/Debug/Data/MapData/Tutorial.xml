@@ -102,7 +102,13 @@
       </Spawn>
       <CreatureList>
         <Creature>
-          <Species>Wale</Species>
+          <Species>boxthingie</Species>
+          <PositionX>500</PositionX>
+          <PositionY>500</PositionY>
+          <PositionZ>500</PositionZ>
+        </Creature>
+        <Creature>
+          <Species>OceanFloor</Species>
           <PositionX>500</PositionX>
           <PositionY>500</PositionY>
           <PositionZ>500</PositionZ>

@@ -31,15 +31,16 @@ namespace WhaleSimulator
 
         public static void SetDefaults(Vector3 playerPosition, Vector3 playerDirection)
         {
-            float x = playerPosition.X - (playerDirection.X * 100);
-            float y = playerPosition.Y - (playerDirection.Y * 100);
-            float z = playerPosition.Z - (playerDirection.Z * 100);
+            float x = playerPosition.X - (playerDirection.X * 75);
+            float y = playerPosition.Y - (playerDirection.Y * 75);
+            float z = playerPosition.Z - (playerDirection.Z * 75);
 
-            Position = new Vector3(x, y, z);
-            LookTarget = playerPosition;
+            Position = new Vector3(x, y + 30, z);
+            LookTarget = new Vector3(playerPosition.X, playerPosition.Y + 15, playerPosition.Z);
 
             FieldOfView = (float)(Math.PI / 4);
             AspectRatio = MasterGame.AspectRatio;
+            //AspectRatio = 1;
             NearClippingPlane = 0.1f;
             FarClippingPlane = 1000f;
 

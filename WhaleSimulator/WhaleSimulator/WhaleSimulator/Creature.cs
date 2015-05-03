@@ -21,6 +21,7 @@ namespace WhaleSimulator
             Properties = new CreatureInfo(species, spawnPosition, true);
             this.Position = spawnPosition;
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
+            //this.BaseModel.Bones["blend_root"].Transform = Matrix.Identity;
         }
 
         public Creature(CreatureInfo info, ContentManager Content)

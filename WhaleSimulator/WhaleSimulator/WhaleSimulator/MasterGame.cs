@@ -51,7 +51,10 @@ namespace WhaleSimulator
         {
             base.Initialize();
             MasterGame.newServices = this.Services;
-            MasterGame.AspectRatio = Graphics.PreferredBackBufferWidth / Graphics.PreferredBackBufferHeight;
+            Graphics.PreferredBackBufferWidth = 1280;
+            Graphics.PreferredBackBufferHeight = 800;
+            Graphics.ApplyChanges();
+            MasterGame.AspectRatio = (float)Graphics.PreferredBackBufferWidth / (float)Graphics.PreferredBackBufferHeight;
 
             IsFixedTimeStep = false;
 
