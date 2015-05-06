@@ -37,15 +37,93 @@ namespace WhaleSimulator
         public ChunkGrid(string filepath)
         {
             LoadFromXML(filepath);
-            float x = spawnChunk.SpawnPosition.X + (spawnChunk.Position.X * 1000);
-            float y = spawnChunk.SpawnPosition.Y + (spawnChunk.Position.Y * 1000);
-            float z = spawnChunk.SpawnPosition.Z + (spawnChunk.Position.Z * 1000);
-            PlayerSpawn = new Vector3(x, y, z);
-            SpawnDirection = spawnChunk.SpawnDirection;
 
-            foreach (Chunk c in this)
+            //foreach (Chunk c in this)
+            //{
+            //    c.LoadAssets();
+            //}
+        }
+
+        public void LoadAssets(Vector3 centerChunk)
+        {
+            LoadAssets(this[(int)centerChunk.X, (int)centerChunk.Y, (int)centerChunk.Z]);
+        }
+
+        public void LoadAssets(Chunk centerChunk)
+        {
+            if (centerChunk != null)
             {
-                c.LoadAssets();
+                centerChunk.LoadAssets();
+                if (centerChunk.North != null)
+                {
+                    centerChunk.North.LoadAssets();
+                    if (centerChunk.North.East != null)
+                        centerChunk.North.East.LoadAssets();
+                    if (centerChunk.North.West != null)
+                        centerChunk.North.West.LoadAssets();
+                }
+                if (centerChunk.South != null)
+                {
+                    centerChunk.South.LoadAssets();
+                    if (centerChunk.South.East != null)
+                        centerChunk.South.East.LoadAssets();
+                    if (centerChunk.South.West != null)
+                        centerChunk.South.West.LoadAssets();
+                }
+                if (centerChunk.East != null)
+                    centerChunk.East.LoadAssets();
+                if (centerChunk.West != null)
+                    centerChunk.West.LoadAssets();
+
+                if (centerChunk.Up != null)
+                {
+                    centerChunk.Up.LoadAssets();
+                    if (centerChunk.Up.North != null)
+                    {
+                        centerChunk.Up.North.LoadAssets();
+                        if (centerChunk.Up.North.East != null)
+                            centerChunk.Up.North.East.LoadAssets();
+                        if (centerChunk.Up.North.West != null)
+                            centerChunk.Up.North.West.LoadAssets();
+                    }
+                    if (centerChunk.Up.South != null)
+                    {
+                        centerChunk.Up.South.LoadAssets();
+                        if (centerChunk.Up.South.East != null)
+                            centerChunk.Up.South.East.LoadAssets();
+                        if (centerChunk.Up.South.West != null)
+                            centerChunk.Up.South.West.LoadAssets();
+                    }
+                    if (centerChunk.Up.East != null)
+                        centerChunk.Up.East.LoadAssets();
+                    if (centerChunk.Up.West != null)
+                        centerChunk.Up.West.LoadAssets();
+                }
+
+                if (centerChunk.Down != null)
+                {
+                    centerChunk.Down.LoadAssets();
+                    if (centerChunk.Down.North != null)
+                    {
+                        centerChunk.Down.North.LoadAssets();
+                        if (centerChunk.Down.North.East != null)
+                            centerChunk.Down.North.East.LoadAssets();
+                        if (centerChunk.Down.North.West != null)
+                            centerChunk.Down.North.West.LoadAssets();
+                    }
+                    if (centerChunk.Down.South != null)
+                    {
+                        centerChunk.Down.South.LoadAssets();
+                        if (centerChunk.Down.South.East != null)
+                            centerChunk.Down.South.East.LoadAssets();
+                        if (centerChunk.Down.South.West != null)
+                            centerChunk.Down.South.West.LoadAssets();
+                    }
+                    if (centerChunk.Down.East != null)
+                        centerChunk.Down.East.LoadAssets();
+                    if (centerChunk.Down.West != null)
+                        centerChunk.Down.West.LoadAssets();
+                }
             }
         }
 
@@ -90,6 +168,23 @@ namespace WhaleSimulator
 
                 mapSize = new Vector3(x, y, z);
 
+                //element = doc.Root.Element("PlayerSpecies");
+                //if (element != null)
+
+                x = int.Parse(doc.Root.Element("PlayerSpawnX").Value);
+                y = int.Parse(doc.Root.Element("PlayerSpawnY").Value);
+                z = int.Parse(doc.Root.Element("PlayerSpawnZ").Value);
+                PlayerSpawn = new Vector3(x, y, z);
+
+                x = int.Parse(doc.Root.Element("SpawnDirectionX").Value);
+                y = int.Parse(doc.Root.Element("SpawnDirectionY").Value);
+                z = int.Parse(doc.Root.Element("SpawnDirectionZ").Value);
+                SpawnDirection = new Vector3(x, y, z);
+
+                x = int.Parse(doc.Root.Element("SpawnChunkX").Value);
+                y = int.Parse(doc.Root.Element("SpawnChunkY").Value);
+                z = int.Parse(doc.Root.Element("SpawnChunkZ").Value);
+
                 IEnumerable<XElement> elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
 
                 List<Chunk> chunkList = new List<Chunk>();
@@ -121,12 +216,13 @@ namespace WhaleSimulator
                         if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z + 1))
                             chunk.Up = c;
                     }
-                    if (chunk.HasSpawn)
-                        spawnChunk = chunk;
                 }
+
+                
 
                 rootChunk = chunkList[0];
                 currentChunk = rootChunk;
+                spawnChunk = this[x, y, z];
 
             }
             catch (Exception e)

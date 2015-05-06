@@ -1,4 +1,4 @@
-Content\Creatures\WhalePod.xnb
 Content\Creatures\Wale.xnb
+Content\Creatures\WhalePod.xnb
 Content\Creatures\boxthingie.xnb
 Content\Creatures\OceanFloor.xnb

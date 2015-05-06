@@ -45,21 +45,13 @@ namespace WhaleSimulator
         /// </summary>
         public Vector3 Position { get; private set; }
         /// <summary>
-        /// Get the spawning position of the player in units, relative to the Chunk position, if the player can spawn in this Chunk.
-        /// </summary>
-        public Vector3 SpawnPosition { get; set; }
-        /// <summary>
-        /// Gets or sets the direction of the player when spawning.
-        /// </summary>
-        public Vector3 SpawnDirection { get; set; }
-        /// <summary>
-        /// Whether or not this Chunk has a spawn point for the player.
-        /// </summary>
-        public bool HasSpawn { get; set; }
-        /// <summary>
         /// The ContentManager responsible for this Chunk's assets.
         /// </summary>
         public ContentManager Content { get; set; }
+        /// <summary>
+        /// Whether or not the assets in this Chunk are loaded in memory.
+        /// </summary>
+        public bool IsLoaded { get; private set; }
 
         public List<CreatureInfo> CreatureList { get; private set; }
         public List<Creature> Creatures { get; private set; }
@@ -71,6 +63,7 @@ namespace WhaleSimulator
         public Chunk(Vector3 position)
         {
             Position = position;
+            IsLoaded = false;
         }
 
         /// <summary>
@@ -85,10 +78,7 @@ namespace WhaleSimulator
                 int x = 0;
                 int y = 0;
                 int z = 0;
-                bool isSpawn = false;
                 Vector3 position;
-                Vector3 spawn = new Vector3();
-                Vector3 direction = new Vector3();
 
                 element = rootElement.Element("PositionX");
                 if (element != null)
@@ -110,20 +100,6 @@ namespace WhaleSimulator
 
                 position = new Vector3(x, y, z);
 
-                element = rootElement.Element("Spawn");
-                if (element != null)
-                {
-                    isSpawn = bool.Parse(element.Element("HasSpawn").Value);
-                    x = int.Parse(element.Element("PositionX").Value);
-                    y = int.Parse(element.Element("PositionY").Value);
-                    z = int.Parse(element.Element("PositionZ").Value);
-                    spawn = new Vector3(x, y, z);
-                    x = int.Parse(element.Element("DirectionX").Value);
-                    y = int.Parse(element.Element("DirectionY").Value);
-                    z = int.Parse(element.Element("DirectionZ").Value);
-                    direction = new Vector3(x, y, z);
-                }
-
                 element = rootElement.Element("CreatureList");
                 List<CreatureInfo> creatureList = new List<CreatureInfo>();
                 if (element != null)
@@ -142,13 +118,6 @@ namespace WhaleSimulator
                 Chunk temp = new Chunk(position);
                 temp.CreatureList = creatureList;
                 temp.Creatures = new List<Creature>();
-                if (isSpawn)
-                {
-                    temp.HasSpawn = true;
-                    if (spawn != null)
-                    temp.SpawnPosition = spawn;
-                    temp.SpawnDirection = direction;
-                }
 
                 return temp;
 
@@ -201,6 +170,7 @@ namespace WhaleSimulator
                 if (info.IsAlive)
                     Creatures.Add(new Creature(info, Content));
             }
+            IsLoaded = true;
         }
 
         /// <summary>
@@ -224,6 +194,7 @@ namespace WhaleSimulator
                 Creatures.Clear();
                 Creatures.TrimExcess();
             }
+            IsLoaded = false;
         }
 
     }
