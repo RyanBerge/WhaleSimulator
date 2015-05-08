@@ -50,10 +50,8 @@ namespace WhaleSimulator
         /// <param name="gameTime">The gameTime object to use as reference.</param>
         public void Update(GameTime gameTime)
         {
-            //rot += 0.002f;
-            worldTransformation = (/*Matrix.CreateRotationX(rot) * */Matrix.CreateTranslation(Position));
-            //worldTransformation = Matrix.CreateWorld(Position, Direction, Vector3.Up);
-            //Matrix.Create
+            //worldTransformation = (Matrix.CreateTranslation(Position));
+            worldTransformation = Matrix.CreateWorld(Position, Direction, Camera.CameraUp);
         }
 
         /// <summary>

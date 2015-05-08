@@ -29,6 +29,7 @@ namespace WhaleSimulator
 
         public Vector3 PlayerSpawn { get; set; }
         public Vector3 SpawnDirection { get; set; }
+        public string PlayerSpecies { get; set; }
 
         /// <summary>
         /// Creates a new ChunkGrid by loading data from the designated filepath.
@@ -147,6 +148,12 @@ namespace WhaleSimulator
                 int x = 0;
                 int y = 0;
                 int z = 0;
+
+                element = doc.Root.Element("PlayerSpecies");
+                if (element != null)
+                    PlayerSpecies = element.Value;
+                else
+                    throw new Exception("Player Species not found in XML Data.");
                 
                 element = doc.Root.Element("SizeX");
                 if (element != null)

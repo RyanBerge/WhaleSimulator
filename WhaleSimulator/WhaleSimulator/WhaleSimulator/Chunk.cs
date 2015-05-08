@@ -111,7 +111,12 @@ namespace WhaleSimulator
                         x = int.Parse(e.Element("PositionX").Value);
                         y = int.Parse(e.Element("PositionY").Value);
                         z = int.Parse(e.Element("PositionZ").Value);
-                        creatureList.Add(new CreatureInfo(species, new Vector3(x + (position.X * 1000), y + (position.Y * 1000), z + (position.Z * 1000)), true));
+                        Vector3 spawn = new Vector3(x + (position.X * 1000), y + (position.Y * 1000), z + (position.Z * 1000));
+                        x = int.Parse(e.Element("DirectionX").Value);
+                        y = int.Parse(e.Element("DirectionY").Value);
+                        z = int.Parse(e.Element("DirectionZ").Value);
+                        Vector3 direction = new Vector3(x, y, z);
+                        creatureList.Add(new CreatureInfo(species, spawn, direction, true));
                     }
                 }
 

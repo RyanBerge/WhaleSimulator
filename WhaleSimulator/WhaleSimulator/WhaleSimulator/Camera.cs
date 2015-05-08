@@ -13,6 +13,7 @@ namespace WhaleSimulator
     {
         public static Vector3 Position { get; set; }
         public static Vector3 LookTarget { get; set; }
+        public static Vector3 CameraUp { get; set; }
         public static Matrix ViewMatrix { get; set; }
         public static Matrix ProjectionMatrix { get; set; }
 
@@ -37,6 +38,8 @@ namespace WhaleSimulator
 
             Position = new Vector3(x, y + 30, z);
             LookTarget = new Vector3(playerPosition.X, playerPosition.Y + 15, playerPosition.Z);
+            //CameraUp = new Vector3(playerDirection.Y, playerDirection.X, playerDirection.Z);
+            CameraUp = Vector3.Up;
 
             FieldOfView = (float)(Math.PI / 4);
             AspectRatio = MasterGame.AspectRatio;
@@ -58,12 +61,12 @@ namespace WhaleSimulator
 
         public static void Update(GameTime gameTime, InputStates inputStates, Player player)
         {
-            float x = player.Position.X - (player.Direction.X * 100);
-            float y = player.Position.Y - (player.Direction.Y * 100);
-            float z = player.Position.Z - (player.Direction.Z * 100);
+            float x = player.Position.X - (player.Direction.X * 75);
+            float y = player.Position.Y - (player.Direction.Y * 75);
+            float z = player.Position.Z - (player.Direction.Z * 75);
 
-            Position = new Vector3(x, y, z);
-            LookTarget = player.Position;
+            Position = new Vector3(x, y + 30, z);
+            LookTarget = new Vector3(player.Position.X, player.Position.Y + 15, player.Position.Z);
 
             ViewMatrix = Matrix.CreateLookAt(Position, LookTarget, Vector3.Up);
         }

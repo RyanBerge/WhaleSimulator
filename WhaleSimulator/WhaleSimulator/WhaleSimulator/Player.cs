@@ -13,8 +13,8 @@ namespace WhaleSimulator
 {
     public class Player : Creature
     {
-        public Player(string species, Vector3 spawnPosition, ContentManager Content) 
-            : base(species, spawnPosition, Content)
+        public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
+            : base(species, spawnPosition, spawnDirection, Content)
         {
             
         }
@@ -22,7 +22,6 @@ namespace WhaleSimulator
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             base.Update(gameTime);
-            
         }
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).

@@ -24,19 +24,8 @@ namespace WhaleSimulator
             mapName = name;
             mapContent = MasterGame.GetNewContentManager();
             LoadMap();
-            //player = new Player(GetPlayerType(), chunkGrid.PlayerSpawn, mapContent);
+            player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
             
-        }
-
-        public string GetPlayerType()
-        {
-            switch (mapName)
-            {
-                case "Tutorial":
-                    return "Orca";
-                default:
-                    return "fish";
-            }
         }
 
         private void LoadMap()
@@ -47,7 +36,10 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
-            chunkGrid.Update(gameTime, inputStates);
+            if (chunkGrid != null)
+                chunkGrid.Update(gameTime, inputStates);
+            if (player != null)
+                player.Update(gameTime, inputStates);
         }
 
         /// <summary>
@@ -56,7 +48,10 @@ namespace WhaleSimulator
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         public virtual void Draw3D(GameTime gameTime)
         {
-            chunkGrid.Draw3D(gameTime);
+            if (chunkGrid != null)
+                chunkGrid.Draw3D(gameTime);
+            if (player != null)
+                player.Draw3D(gameTime);
         }
 
         ///// <summary>

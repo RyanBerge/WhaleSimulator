@@ -16,10 +16,11 @@ namespace WhaleSimulator
 
         public CreatureInfo Properties { get; set; }
 
-        public Creature(string species, Vector3 spawnPosition, ContentManager Content)
+        public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content)
         {
-            Properties = new CreatureInfo(species, spawnPosition, true);
+            Properties = new CreatureInfo(species, spawnPosition, spawnDirection, true);
             this.Position = spawnPosition;
+            this.Direction = spawnDirection;
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
             //this.BaseModel.Bones["blend_root"].Transform = Matrix.Identity;
         }
@@ -28,6 +29,7 @@ namespace WhaleSimulator
         {
             Properties = info;
             this.Position = info.SpawnPosition;
+            this.Direction = info.SpawnDirection;
             this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
         }
 
@@ -73,6 +75,10 @@ namespace WhaleSimulator
         /// </summary>
         public Vector3 SpawnPosition { get; set; }
         /// <summary>
+        /// The Vector direction the creature will face when spawning.
+        /// </summary>
+        public Vector3 SpawnDirection { get; set; }
+        /// <summary>
         /// Whether or not the Creature is still alive.
         /// </summary>
         public bool IsAlive { get; set; }
@@ -83,10 +89,11 @@ namespace WhaleSimulator
         /// <param name="species">The "Species" identifier for the Creature.</param>
         /// <param name="spawn">The coordinates relative to the Chunk where the Creature will spawn.</param>
         /// <param name="isAlive">Whether or not the Creature is still alive.</param>
-        public CreatureInfo(string species, Vector3 spawn, bool isAlive) : this()
+        public CreatureInfo(string species, Vector3 spawn, Vector3 direction, bool isAlive) : this()
         {
             Species = species;
             SpawnPosition = spawn;
+            SpawnDirection = direction;
             IsAlive = isAlive;
         }
     }
