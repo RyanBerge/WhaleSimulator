@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 #Other Stuff
-.suo
-.exe
-.cache
-.cachefile
+*.suo
+*.exe
+*.cache
+*.cachefile
