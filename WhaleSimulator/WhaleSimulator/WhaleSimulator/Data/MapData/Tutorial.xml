@@ -4,19 +4,19 @@
   <SizeY>3</SizeY>
   <SizeZ>3</SizeZ>
 
-  <PlayerSpecies>boxthingie</PlayerSpecies>
+  <PlayerSpecies>NewBox</PlayerSpecies>
   
-  <PlayerSpawnX>500</PlayerSpawnX>
+  <PlayerSpawnX>1500</PlayerSpawnX>
   <PlayerSpawnY>500</PlayerSpawnY>
-  <PlayerSpawnZ>500</PlayerSpawnZ>
+  <PlayerSpawnZ>1500</PlayerSpawnZ>
   
   <SpawnChunkX>1</SpawnChunkX>
   <SpawnChunkY>1</SpawnChunkY>
   <SpawnChunkZ>0</SpawnChunkZ>
   
-  <SpawnDirectionX>0</SpawnDirectionX>
+  <SpawnDirectionX>1</SpawnDirectionX>
   <SpawnDirectionY>0</SpawnDirectionY>
-  <SpawnDirectionZ>1</SpawnDirectionZ>
+  <SpawnDirectionZ>0</SpawnDirectionZ>
 
     <ChunkGrid>
       <Chunk>
@@ -44,6 +44,29 @@
         <PositionX>1</PositionX>
         <PositionY>1</PositionY>
         <PositionZ>0</PositionZ>
+
+        <CreatureList>
+          <Creature>
+            <Species>OceanFloor</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>500</PositionZ>
+            <DirectionX>1</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>0</DirectionZ>
+          </Creature>
+          <Creature>
+            <Species>Boxthingie</Species>
+            <PositionX>550</PositionX>
+            <PositionY>550</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>1</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>0</DirectionZ>
+          </Creature>
+       </CreatureList>
+        
+        
       </Chunk>
       <Chunk>
         <PositionX>2</PositionX>

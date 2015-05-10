@@ -32,6 +32,7 @@ namespace WhaleSimulator
         {
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml");
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
+            chunkGrid[1, 1, 0].LoadAssets();
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
@@ -40,6 +41,7 @@ namespace WhaleSimulator
                 chunkGrid.Update(gameTime, inputStates);
             if (player != null)
                 player.Update(gameTime, inputStates);
+            Camera.Update(gameTime, inputStates, player);
         }
 
         /// <summary>

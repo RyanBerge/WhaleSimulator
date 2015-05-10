@@ -145,9 +145,9 @@ namespace WhaleSimulator
                     stream.Close();
                 }
 
-                int x = 0;
-                int y = 0;
-                int z = 0;
+                float x = 0;
+                float y = 0;
+                float z = 0;
 
                 element = doc.Root.Element("PlayerSpecies");
                 if (element != null)
@@ -183,9 +183,9 @@ namespace WhaleSimulator
                 z = int.Parse(doc.Root.Element("PlayerSpawnZ").Value);
                 PlayerSpawn = new Vector3(x, y, z);
 
-                x = int.Parse(doc.Root.Element("SpawnDirectionX").Value);
-                y = int.Parse(doc.Root.Element("SpawnDirectionY").Value);
-                z = int.Parse(doc.Root.Element("SpawnDirectionZ").Value);
+                x = float.Parse(doc.Root.Element("SpawnDirectionX").Value);
+                y = float.Parse(doc.Root.Element("SpawnDirectionY").Value);
+                z = float.Parse(doc.Root.Element("SpawnDirectionZ").Value);
                 SpawnDirection = new Vector3(x, y, z);
 
                 x = int.Parse(doc.Root.Element("SpawnChunkX").Value);
@@ -229,7 +229,7 @@ namespace WhaleSimulator
 
                 rootChunk = chunkList[0];
                 currentChunk = rootChunk;
-                spawnChunk = this[x, y, z];
+                spawnChunk = this[(int)x, (int)y, (int)z];
 
             }
             catch (Exception e)

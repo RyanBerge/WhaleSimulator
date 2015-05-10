@@ -21,6 +21,8 @@ namespace WhaleSimulator
             Properties = new CreatureInfo(species, spawnPosition, spawnDirection, true);
             this.Position = spawnPosition;
             this.Direction = spawnDirection;
+            this.Rotations = new Vector3(0, 0, 0);
+            this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
             //this.BaseModel.Bones["blend_root"].Transform = Matrix.Identity;
         }
@@ -30,6 +32,8 @@ namespace WhaleSimulator
             Properties = info;
             this.Position = info.SpawnPosition;
             this.Direction = info.SpawnDirection;
+            this.Rotations = new Vector3(0, 0, 0);
+            this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
         }
 

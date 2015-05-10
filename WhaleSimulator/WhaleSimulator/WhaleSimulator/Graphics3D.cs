@@ -15,7 +15,11 @@ namespace WhaleSimulator
 
         public Model BaseModel { get; set; }
         public Vector3 Position { get; set; }
-        public Vector3 Direction { get; set; }
+        public Vector3 Direction { get { return direction; } set { direction = value; } }
+
+        protected Vector3 direction;
+        protected Vector3 Rotations;
+        protected Vector3 OldRotations;
 
         private Matrix worldTransformation;
 
@@ -50,8 +54,20 @@ namespace WhaleSimulator
         /// <param name="gameTime">The gameTime object to use as reference.</param>
         public void Update(GameTime gameTime)
         {
-            //worldTransformation = (Matrix.CreateTranslation(Position));
-            worldTransformation = Matrix.CreateWorld(Position, Direction, Camera.CameraUp);
+            //x = cos(yaw)*cos(pitch)
+            //y = sin(yaw)*cos(pitch)
+            //z = sin(pitch)
+            if (Rotations != OldRotations)
+            {
+                direction.X = (float)(Math.Cos(Rotations.Z) * Math.Cos(Rotations.Y));
+                direction.Y = (float)(Math.Sin(Rotations.Z));
+                direction.Z = (float)(Math.Sin(Rotations.Y) * Math.Cos(Rotations.Z));
+                
+            }
+
+            worldTransformation = Matrix.CreateWorld(Position, direction, Camera.CameraUp);
+
+            OldRotations = Rotations;
         }
 
         /// <summary>

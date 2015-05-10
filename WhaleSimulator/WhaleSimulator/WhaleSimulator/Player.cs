@@ -5,6 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
@@ -21,6 +22,23 @@ namespace WhaleSimulator
 
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
+            if (inputStates.NewKeyState.IsKeyDown(Keys.A))
+                Rotations.Y -= 0.01f;
+            if (inputStates.NewKeyState.IsKeyDown(Keys.D))
+                Rotations.Y += 0.01f;
+
+            if (inputStates.NewKeyState.IsKeyDown(Keys.W))
+            {
+                if (Rotations.Z > (-Math.PI/2) + 0.01)
+                    Rotations.Z -= 0.01f;
+            }
+            if (inputStates.NewKeyState.IsKeyDown(Keys.S))
+            {
+                if (Rotations.Z < (Math.PI / 2) - 0.01)
+                Rotations.Z += 0.01f;
+            }
+
+
             base.Update(gameTime);
         }
         /// <summary>
