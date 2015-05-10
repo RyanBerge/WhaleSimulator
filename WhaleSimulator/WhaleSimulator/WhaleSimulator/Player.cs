@@ -29,17 +29,18 @@ namespace WhaleSimulator
 
             if (inputStates.NewKeyState.IsKeyDown(Keys.W))
             {
-                if (Rotations.Z > (-Math.PI/2) + 0.01)
+                if (Rotations.Z > (-Math.PI/2) + 0.3)
                     Rotations.Z -= 0.01f;
             }
             if (inputStates.NewKeyState.IsKeyDown(Keys.S))
             {
-                if (Rotations.Z < (Math.PI / 2) - 0.01)
+                if (Rotations.Z < (Math.PI / 2) - 0.3)
                 Rotations.Z += 0.01f;
             }
 
+            //System.Diagnostics.Debug.WriteLine(Properties.Species);
 
-            base.Update(gameTime);
+            base.Update(gameTime, inputStates);
         }
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).

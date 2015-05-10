@@ -16,8 +16,10 @@ namespace WhaleSimulator
         public Model BaseModel { get; set; }
         public Vector3 Position { get; set; }
         public Vector3 Direction { get { return direction; } set { direction = value; } }
+        public Vector3 LocalUp { get { return localUp; } set { localUp = value; } }
 
         protected Vector3 direction;
+        protected Vector3 localUp;
         protected Vector3 Rotations;
         protected Vector3 OldRotations;
 
@@ -54,14 +56,26 @@ namespace WhaleSimulator
         /// <param name="gameTime">The gameTime object to use as reference.</param>
         public void Update(GameTime gameTime)
         {
-            //x = cos(yaw)*cos(pitch)
-            //y = sin(yaw)*cos(pitch)
-            //z = sin(pitch)
             if (Rotations != OldRotations)
             {
-                direction.X = (float)(Math.Cos(Rotations.Z) * Math.Cos(Rotations.Y));
-                direction.Y = (float)(Math.Sin(Rotations.Z));
-                direction.Z = (float)(Math.Sin(Rotations.Y) * Math.Cos(Rotations.Z));
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                direction.X = CosY * CosZ;
+                direction.Y = SinZ;
+                direction.Z = SinY * CosZ;
+
+                if (this.GetType() == typeof(Player))
+                {
+                    float CosZ90 = (float)(Math.Cos(Rotations.Z + (Math.PI / 2)));
+                    float SinZ90 = (float)(Math.Sin(Rotations.Z + (Math.PI / 2)));
+
+                    localUp.X = CosZ90 * CosY;
+                    localUp.Y = SinZ90;
+                    localUp.Z = SinY * CosZ90;
+                }
                 
             }
 
