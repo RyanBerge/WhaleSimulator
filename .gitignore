@@ -47,3 +47,7 @@ Temporary Items
 *.exe
 *.cache
 *.cachefile
+bin/
+obj/
+Properties/
+
