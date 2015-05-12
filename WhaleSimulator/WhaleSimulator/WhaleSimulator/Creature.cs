@@ -15,6 +15,7 @@ namespace WhaleSimulator
     {
 
         public CreatureInfo Properties { get; set; }
+        public float Speed { get; set; }
 
         public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content)
         {
@@ -25,6 +26,7 @@ namespace WhaleSimulator
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
+            Speed = 0;
         }
 
         public Creature(CreatureInfo info, ContentManager Content)
@@ -36,12 +38,16 @@ namespace WhaleSimulator
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
+            Speed = 0;
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
+            position.X += (Direction.X * Speed);
+            position.Y += (Direction.Y * Speed);
+            position.Z += (Direction.Z * Speed);
+
             base.Update(gameTime);
-            
         }
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
