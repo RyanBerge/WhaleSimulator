@@ -14,6 +14,8 @@ namespace WhaleSimulator
 {
     public class Player : Creature
     {
+        private const float ROTATION_RATIO = 100;
+
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, spawnPosition, spawnDirection, Content)
         {
@@ -23,25 +25,29 @@ namespace WhaleSimulator
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             if (inputStates.NewKeyState.IsKeyDown(Keys.A))
-                Rotations.Y -= 0.01f;
+                Rotations.Y -=  ((Speed == 0) ? 0.015f : 1f/(Speed*100));
             if (inputStates.NewKeyState.IsKeyDown(Keys.D))
-                Rotations.Y += 0.01f;
+                Rotations.Y += ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
 
             if (inputStates.NewKeyState.IsKeyDown(Keys.W))
             {
                 if (Rotations.Z > (-Math.PI/2) + 0.3)
-                    Rotations.Z -= 0.01f;
+                    Rotations.Z -= ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
             }
             if (inputStates.NewKeyState.IsKeyDown(Keys.S))
             {
                 if (Rotations.Z < (Math.PI / 2) - 0.3)
-                Rotations.Z += 0.01f;
+                    Rotations.Z += ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
             }
 
-            //System.Diagnostics.Debug.WriteLine(Properties.Species);
+            if (inputStates.NewKeyState.IsKeyDown(Keys.Space))
+                Speed = 1;
+            else
+                Speed = 0;
 
             base.Update(gameTime, inputStates);
         }
+
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
         /// </summary>

@@ -14,10 +14,11 @@ namespace WhaleSimulator
     {
 
         public Model BaseModel { get; set; }
-        public Vector3 Position { get; set; }
+        public Vector3 Position { get { return position; } set { position = value; } }
         public Vector3 Direction { get { return direction; } set { direction = value; } }
         public Vector3 LocalUp { get { return localUp; } set { localUp = value; } }
 
+        protected Vector3 position;
         protected Vector3 direction;
         protected Vector3 localUp;
         protected Vector3 Rotations;
