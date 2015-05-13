@@ -16,6 +16,9 @@ namespace WhaleSimulator
         private string mapName;
         private Player player;
         private ChunkGrid chunkGrid;
+        // stuff added
+        private Skybox skybox;
+        private OceanSurface oceanSurface;
 
         private ContentManager mapContent;
 
@@ -28,6 +31,9 @@ namespace WhaleSimulator
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
             Randomizer = new Random();
+            // stuff added
+            skybox = new Skybox(mapContent);
+            oceanSurface = new OceanSurface(mapContent);
         }
 
         private void LoadMap()
@@ -44,6 +50,8 @@ namespace WhaleSimulator
             if (player != null)
                 player.Update(gameTime, inputStates);
             Camera.Update(gameTime, inputStates, player);
+            // stuff added
+            oceanSurface.Update(gameTime.ElapsedGameTime.Milliseconds);
         }
 
         /// <summary>
@@ -56,6 +64,26 @@ namespace WhaleSimulator
                 chunkGrid.Draw3D(gameTime);
             if (player != null)
                 player.Draw3D(gameTime);
+
+            // stuff added
+            RasterizerState currentState = MasterGame.Graphics.GraphicsDevice.RasterizerState;
+
+            MasterGame.Graphics.GraphicsDevice.RasterizerState = RasterizerState.CullNone;
+
+            skybox.Draw();
+
+            BlendState currentBlend = MasterGame.Graphics.GraphicsDevice.BlendState;
+
+            MasterGame.Graphics.GraphicsDevice.BlendState = BlendState.AlphaBlend;
+
+            oceanSurface.Draw(Camera.ViewMatrix,
+                Camera.ProjectionMatrix, Camera.Position,
+                new Vector3(-1, 0, 0), MasterGame.Graphics.GraphicsDevice,
+                player.Position);
+
+            MasterGame.Graphics.GraphicsDevice.BlendState = currentBlend;
+
+            MasterGame.Graphics.GraphicsDevice.RasterizerState = currentState;
         }
 
         ///// <summary>

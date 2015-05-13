@@ -4,3 +4,10 @@ Content\Creatures\boxthingie.xnb
 Content\Creatures\OceanFloor.xnb
 Content\Creatures\NewBox.xnb
 Content\Creatures\FishSchool.xnb
+Content\Effects\wavesbump.xnb
+Content\Effects\oversea.xnb
+Content\Effects\water.xnb
+Content\Effects\OceanSurface.xnb
+Content\Effects\Skybox.xnb
+Content\Effects\cube.xnb
+Content\Effects\ocean.xnb
