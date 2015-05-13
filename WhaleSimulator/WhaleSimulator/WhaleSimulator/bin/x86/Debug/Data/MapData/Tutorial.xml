@@ -55,14 +55,425 @@
             <DirectionY>0</DirectionY>
             <DirectionZ>0</DirectionZ>
           </Creature>
+         
           <Creature>
-            <Species>Boxthingie</Species>
-            <PositionX>550</PositionX>
-            <PositionY>550</PositionY>
-            <PositionZ>600</PositionZ>
-            <DirectionX>1</DirectionX>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
             <DirectionY>0</DirectionY>
-            <DirectionZ>0</DirectionZ>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>300</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>500</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>600</PositionY>
+            <PositionZ>600</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>500</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>400</PositionX>
+            <PositionY>200</PositionY>
+            <PositionZ>300</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
+          </Creature>
+
+          <Creature>
+            <Species>FishSchool</Species>
+            <PositionX>600</PositionX>
+            <PositionY>400</PositionY>
+            <PositionZ>400</PositionZ>
+            <DirectionX>0</DirectionX>
+            <DirectionY>0</DirectionY>
+            <DirectionZ>-1</DirectionZ>
           </Creature>
        </CreatureList>
         

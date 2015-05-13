@@ -101,6 +101,26 @@
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\NewBox_0.xml</Output>
       <Time>2015-05-12T15:19:32.9999088-07:00</Time>
     </Item>
+    <Item>
+      <Source>Creatures\FishSchool.fbx</Source>
+      <Name>Creatures\FishSchool</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FishSchool.xnb</Output>
+      <Time>2015-05-12T16:19:31.7567459-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Key>
+        <Value>2015-05-12T16:19:36.9300418-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Creatures\FishSchool.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Output>
+      <Time>2015-05-12T16:19:31.7567459-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}</ContentProjectGUID>

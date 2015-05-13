@@ -99,6 +99,12 @@ namespace WhaleSimulator
                     effect.View = Camera.ViewMatrix;
                     effect.Projection = Camera.ProjectionMatrix;
                     effect.EnableDefaultLighting();
+
+                    effect.FogEnabled = false;
+                    effect.FogStart = Camera.UnderwaterFogStart;
+                    effect.FogEnd = Camera.UnderwaterFogEnd;
+                    effect.FogColor = Camera.FogColor;
+
                 }
 
                 mesh.Draw();

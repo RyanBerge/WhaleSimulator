@@ -18,7 +18,7 @@ namespace WhaleSimulator
     /// </summary>
     public class MasterGame : Microsoft.Xna.Framework.Game
     {
-        public GraphicsDeviceManager Graphics { get; private set; }
+        public static GraphicsDeviceManager Graphics { get; private set; }
         public SpriteBatch SpriteBatch { get; private set; }
 
         private InputStates inputStates;
@@ -105,7 +105,7 @@ namespace WhaleSimulator
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.FromNonPremultiplied(0,120,255,255));
 
             GraphicsDevice.BlendState = BlendState.Opaque;
             GraphicsDevice.DepthStencilState = DepthStencilState.Default;

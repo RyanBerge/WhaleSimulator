@@ -19,13 +19,15 @@ namespace WhaleSimulator
 
         private ContentManager mapContent;
 
+        public static Random Randomizer { get; set; }
+
         public Map(string name)
         {
             mapName = name;
             mapContent = MasterGame.GetNewContentManager();
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
-            
+            Randomizer = new Random();
         }
 
         private void LoadMap()

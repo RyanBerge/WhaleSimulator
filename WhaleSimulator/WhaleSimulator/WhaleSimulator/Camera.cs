@@ -50,9 +50,10 @@ namespace WhaleSimulator
             IsUnderwater = true;
             FogStart = 75;
             FogEnd = 100;
-            UnderwaterFogStart = 10;
-            UnderwaterFogEnd = 50;
-            FogColor = Color.Aqua.ToVector3();
+            UnderwaterFogStart = 80;
+            UnderwaterFogEnd = 500;
+            //FogColor = Color.Blue.ToVector3();
+            FogColor = new Vector3(0, (120f/255f), 1f);
 
             ProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(FieldOfView, AspectRatio, NearClippingPlane, FarClippingPlane);
             ViewMatrix = Matrix.CreateLookAt(Position, LookTarget, Vector3.Up);

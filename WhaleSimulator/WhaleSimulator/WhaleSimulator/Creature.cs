@@ -11,11 +11,14 @@ using RB_GameResources.Xna.Controls;
 
 namespace WhaleSimulator
 {
+    public delegate void VoidDelegate();
+    
     public class Creature : Graphics3D
     {
-
         public CreatureInfo Properties { get; set; }
         public float Speed { get; set; }
+
+        private VoidDelegate UpdateMove;
 
         public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content)
         {
@@ -27,6 +30,7 @@ namespace WhaleSimulator
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
             Speed = 0;
+            SetAI();
         }
 
         public Creature(CreatureInfo info, ContentManager Content)
@@ -39,13 +43,19 @@ namespace WhaleSimulator
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
             Speed = 0;
+            SetAI();
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
+            UpdateMove();
+
             position.X += (Direction.X * Speed);
             position.Y += (Direction.Y * Speed);
             position.Z += (Direction.Z * Speed);
+
+            if (Properties.Species == "FishSchool")
+                System.Diagnostics.Debug.WriteLine(Direction);
 
             base.Update(gameTime);
         }
@@ -70,6 +80,43 @@ namespace WhaleSimulator
         public void Dispose()
         {
 
+        }
+
+        private void SetAI()
+        {
+            switch (Properties.Species)
+            {
+                case "FishSchool": 
+                    UpdateMove = FishAI;
+                    break;
+                case "Boxthingie":
+                    UpdateMove = FishAI;
+                    break;
+                default:
+                    UpdateMove = NoAI;
+                    break;
+            }
+        }
+
+        private void NoAI() { }
+
+        private void FishAI()
+        {
+            if (Speed < 0.05f)
+            {
+                Speed = (float)(Map.Randomizer.NextDouble()/2);
+                Rotations.X += (float)(Map.Randomizer.NextDouble() + 0.5);
+                Rotations.Z += (float)(Map.Randomizer.NextDouble() + 0.5);
+            }
+            else
+            {
+                Speed -= 0.0002f;
+                if (Map.Randomizer.Next(4) == 3)
+                {
+                    Rotations.X += (float)(Map.Randomizer.NextDouble()/5);
+                    Rotations.Z += (float)(Map.Randomizer.NextDouble()/5);
+                }
+            }
         }
     }
 

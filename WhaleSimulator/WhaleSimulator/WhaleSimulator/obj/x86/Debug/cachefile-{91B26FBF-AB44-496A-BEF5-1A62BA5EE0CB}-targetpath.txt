@@ -3,3 +3,4 @@ Content\Creatures\WhalePod.xnb
 Content\Creatures\boxthingie.xnb
 Content\Creatures\OceanFloor.xnb
 Content\Creatures\NewBox.xnb
+Content\Creatures\FishSchool.xnb
