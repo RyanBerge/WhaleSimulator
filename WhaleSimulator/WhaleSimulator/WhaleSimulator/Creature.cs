@@ -54,9 +54,6 @@ namespace WhaleSimulator
             position.Y += (Direction.Y * Speed);
             position.Z += (Direction.Z * Speed);
 
-            if (Properties.Species == "FishSchool")
-                System.Diagnostics.Debug.WriteLine(Direction);
-
             base.Update(gameTime);
         }
         /// <summary>

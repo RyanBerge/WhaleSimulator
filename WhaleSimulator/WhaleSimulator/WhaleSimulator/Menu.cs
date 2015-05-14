@@ -5,15 +5,91 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Input;
 
 using RB_GameResources.Xna.Controls;
+using RB_GameResources.Xna.Graphics;
 
 namespace WhaleSimulator
 {
     public class Menu
     {
+        public class MenuButton
+        {
+            public MenuButton left;
+            public MenuButton right;
+            public MenuButton up;
+            public MenuButton down;
+
+            public VoidDelegate Click;
+            public Graphic2D Graphic;
+            public string name;
+        }
+
+        protected ContentManager Content;
+        //protected List<List<MenuButton>> stateList;
+        protected MenuButton selectedButton;
+
+        public Menu()
+        {
+            
+        }
+
         public virtual void Dispose() { }
-        public virtual void Update(GameTime gameTime, InputStates inputStates) { }
+
+        public virtual void Update(GameTime gameTime, InputStates inputStates)
+        {
+            if ((inputStates.WasButtonPressed(Keys.Enter) || inputStates.WasButtonPressed(Buttons.A)) && selectedButton.Click != null)
+                selectedButton.Click();
+
+            //Menu navigation
+            if (inputStates.WasButtonPressed(Keys.A) || inputStates.WasButtonPressed(Buttons.DPadLeft) ||
+                inputStates.NewGPState.ThumbSticks.Left.X < -0.3f)
+            {
+                if (selectedButton.left != null)
+                {
+                    selectedButton.Graphic.CurrentAnimationIndex = 0;
+                    selectedButton = selectedButton.left;
+                    selectedButton.Graphic.CurrentAnimationIndex = 1;
+                }
+            }
+
+            if (inputStates.WasButtonPressed(Keys.D) || inputStates.WasButtonPressed(Buttons.DPadRight) ||
+                inputStates.NewGPState.ThumbSticks.Left.X > 0.3f)
+            {
+                if (selectedButton.right != null)
+                {
+                    selectedButton.Graphic.CurrentAnimationIndex = 0;
+                    selectedButton = selectedButton.right;
+                    selectedButton.Graphic.CurrentAnimationIndex = 1;
+                }
+            }
+
+            if (inputStates.WasButtonPressed(Keys.W) || inputStates.WasButtonPressed(Buttons.DPadUp) ||
+                inputStates.NewGPState.ThumbSticks.Left.Y > 0.3f)
+            {
+                if (selectedButton.up != null)
+                {
+                    selectedButton.Graphic.CurrentAnimationIndex = 0;
+                    selectedButton = selectedButton.up;
+                    selectedButton.Graphic.CurrentAnimationIndex = 1;
+                }
+            }
+
+            if (inputStates.WasButtonPressed(Keys.S) || inputStates.WasButtonPressed(Buttons.DPadDown) ||
+                inputStates.NewGPState.ThumbSticks.Left.Y < -0.3f)
+            {
+                if (selectedButton.down != null)
+                {
+                    selectedButton.Graphic.CurrentAnimationIndex = 0;
+                    selectedButton = selectedButton.down;
+                    selectedButton.Graphic.CurrentAnimationIndex = 1;
+                }
+            }
+            
+        }
+
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
         /// </summary>

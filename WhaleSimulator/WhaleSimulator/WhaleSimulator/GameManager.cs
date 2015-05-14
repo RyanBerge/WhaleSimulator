@@ -84,6 +84,8 @@ namespace WhaleSimulator
         /// <param name="spriteBatch">The SpriteBatch to draw to.</param>
         public void Draw2D(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (gameState == GameState.MainMenu)
+                mainMenu.Draw2D(gameTime, spriteBatch);
 
         }
     }

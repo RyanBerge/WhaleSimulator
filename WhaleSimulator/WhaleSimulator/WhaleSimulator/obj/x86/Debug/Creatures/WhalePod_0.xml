@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>Whales7</Name>
     <Identity>
-      <SourceFilename>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\WhalePod.fbx</SourceFilename>
+      <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\WhalePod.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 4.54747351E-13 0 -2020.72778 1</Transform>
@@ -32,7 +32,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>lambert1</Name>
       <Identity>
-        <SourceFilename>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\WhalePod.fbx</SourceFilename>
+        <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\WhalePod.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
