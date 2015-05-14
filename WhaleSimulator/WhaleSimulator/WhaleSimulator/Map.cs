@@ -86,6 +86,13 @@ namespace WhaleSimulator
             MasterGame.Graphics.GraphicsDevice.RasterizerState = currentState;
         }
 
+        public void Quit()
+        {
+            foreach (Chunk c in chunkGrid)
+                c.UnloadAssets();
+            mapContent.Unload();
+        }
+
         ///// <summary>
         ///// Draws any 2-dimensional sprites to the SpriteBatch (2D Sprites are always drawn above 3D material).
         ///// </summary>

@@ -36,7 +36,7 @@ namespace WhaleSimulator
             
         }
 
-        public virtual void Dispose() { }
+        public virtual void Dispose() { Content.Unload(); }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
@@ -45,7 +45,7 @@ namespace WhaleSimulator
 
             //Menu navigation
             if (inputStates.WasButtonPressed(Keys.A) || inputStates.WasButtonPressed(Buttons.DPadLeft) ||
-                inputStates.NewGPState.ThumbSticks.Left.X < -0.3f)
+                inputStates.WasButtonPressed(Keys.Left) || inputStates.NewGPState.ThumbSticks.Left.X < -0.3f)
             {
                 if (selectedButton.left != null)
                 {
@@ -56,7 +56,7 @@ namespace WhaleSimulator
             }
 
             if (inputStates.WasButtonPressed(Keys.D) || inputStates.WasButtonPressed(Buttons.DPadRight) ||
-                inputStates.NewGPState.ThumbSticks.Left.X > 0.3f)
+                inputStates.WasButtonPressed(Keys.Right) || inputStates.NewGPState.ThumbSticks.Left.X > 0.3f)
             {
                 if (selectedButton.right != null)
                 {
@@ -67,7 +67,7 @@ namespace WhaleSimulator
             }
 
             if (inputStates.WasButtonPressed(Keys.W) || inputStates.WasButtonPressed(Buttons.DPadUp) ||
-                inputStates.NewGPState.ThumbSticks.Left.Y > 0.3f)
+                inputStates.WasButtonPressed(Keys.Up) || inputStates.NewGPState.ThumbSticks.Left.Y > 0.3f)
             {
                 if (selectedButton.up != null)
                 {
@@ -78,7 +78,7 @@ namespace WhaleSimulator
             }
 
             if (inputStates.WasButtonPressed(Keys.S) || inputStates.WasButtonPressed(Buttons.DPadDown) ||
-                inputStates.NewGPState.ThumbSticks.Left.Y < -0.3f)
+                inputStates.WasButtonPressed(Keys.Down) || inputStates.NewGPState.ThumbSticks.Left.Y < -0.3f)
             {
                 if (selectedButton.down != null)
                 {

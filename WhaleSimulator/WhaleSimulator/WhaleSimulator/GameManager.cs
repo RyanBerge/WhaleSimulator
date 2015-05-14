@@ -46,6 +46,23 @@ namespace WhaleSimulator
             gameState = GameState.Playing;
         }
 
+        public void Quit()
+        {
+            switch (gameState)
+            {
+                case GameState.MainMenu:
+                    mainMenu.Dispose();
+                    break;
+                case GameState.Playing:
+                    currentMap.Quit();
+                    break;
+                case GameState.PauseMenu:
+                    //pauseMenu.Dispose();
+                    currentMap.Quit();
+                    break;
+            }
+        }
+
         public void Update(GameTime gameTime, InputStates inputStates)
         {
             switch (gameState)

@@ -27,6 +27,7 @@ namespace WhaleSimulator
         private static IServiceProvider newServices;
 
         public static float AspectRatio { get; set; }
+        public static VoidDelegate Quit;
 
         public MasterGame()
         {
@@ -57,10 +58,17 @@ namespace WhaleSimulator
             MasterGame.AspectRatio = (float)Graphics.PreferredBackBufferWidth / (float)Graphics.PreferredBackBufferHeight;
 
             IsFixedTimeStep = false;
+            Quit = QuitGame;
 
             inputStates = new InputStates(Mouse.GetState(), Keyboard.GetState(), GamePad.GetState(PlayerIndex.One));
             gameManager = new GameManager();
             gameManager.Initialize();
+        }
+
+        private void QuitGame()
+        {
+            gameManager.Quit();
+            Exit();
         }
 
         /// <summary>

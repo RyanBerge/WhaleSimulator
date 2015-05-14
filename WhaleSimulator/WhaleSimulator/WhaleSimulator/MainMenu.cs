@@ -78,9 +78,9 @@ namespace WhaleSimulator
 
         private void PlayClick()
         {
-            //System.Diagnostics.Debug.WriteLine("Play Click!");
             if (mapChooseEvent != null)
                 mapChooseEvent("Tutorial");
+            //state = MenuState.Levels;
         }
 
         private void OptionsClick()
@@ -90,14 +90,13 @@ namespace WhaleSimulator
 
         private void ExitClick()
         {
+            MasterGame.Quit();
             System.Diagnostics.Debug.WriteLine("Exit was clicked!");
         }
 
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             base.Update(gameTime, inputStates);
-            //if (mapChooseEvent != null)
-            //    mapChooseEvent("Tutorial");
         }
 
         /// <summary>
@@ -115,8 +114,18 @@ namespace WhaleSimulator
         /// <param name="spriteBatch">The SpriteBatch to draw to.</param>
         public override void Draw2D(GameTime gameTime, SpriteBatch spriteBatch) 
         {
-            foreach (MenuButton button in MainButtonList)
-                button.Graphic.Draw(spriteBatch, gameTime);
+            switch (state)
+            {
+                case MenuState.Main:
+                    foreach (MenuButton button in MainButtonList)
+                        button.Graphic.Draw(spriteBatch, gameTime);
+                    break;
+                case MenuState.Levels:
+                    foreach (MenuButton button in LevelButtonList)
+                        button.Graphic.Draw(spriteBatch, gameTime);
+                    break;
+            }
+            
         }
 
         public override void Dispose()
