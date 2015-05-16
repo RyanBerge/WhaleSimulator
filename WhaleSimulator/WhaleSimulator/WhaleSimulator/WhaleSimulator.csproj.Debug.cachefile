@@ -9,9 +9,9 @@ Content\Effects\ocean.xnb
 Content\Effects\wavesbump.xnb
 Content\Effects\oversea.xnb
 Content\Effects\water.xnb
-Content\Effects\OceanSurface.xnb
-Content\Effects\Skybox.xnb
 Content\Images\OptionsButton.xnb
 Content\Images\PlayButton.xnb
 Content\Images\QuitButton.xnb
+Content\Effects\OceanSurface.xnb
+Content\Effects\Skybox.xnb
 Data\MapData\Tutorial.xml
