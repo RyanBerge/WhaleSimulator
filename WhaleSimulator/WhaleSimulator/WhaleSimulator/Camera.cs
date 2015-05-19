@@ -30,6 +30,8 @@ namespace WhaleSimulator
         public static float UnderwaterFogStart { get; set; }
         public static float UnderwaterFogEnd { get; set; }
 
+        private const float CAMERA_HEIGHT = 15f;
+
         public static void SetDefaults(Vector3 playerPosition, Vector3 playerDirection)
         {
             float x = playerPosition.X - (playerDirection.X * 75);
@@ -37,7 +39,7 @@ namespace WhaleSimulator
             float z = playerPosition.Z - (playerDirection.Z * 75);
 
             CameraUp = new Vector3(0, 1, 0);
-            Position = new Vector3(x, y, z) + (new Vector3(CameraUp.X, CameraUp.Y, CameraUp.Z) * 30);
+            Position = new Vector3(x, y, z) + (new Vector3(CameraUp.X, CameraUp.Y, CameraUp.Z) * CAMERA_HEIGHT);
             LookTarget = new Vector3(playerPosition.X, playerPosition.Y, playerPosition.Z) + (new Vector3(playerDirection.X, playerDirection.Y, playerDirection.Z) * 30);
             
 
@@ -67,7 +69,7 @@ namespace WhaleSimulator
             float z = player.Position.Z - (player.Direction.Z * 75);
 
             //CameraUp = player.LocalUp;
-            Position = new Vector3(x, y, z) + (new Vector3(player.LocalUp.X, player.LocalUp.Y, player.LocalUp.Z) * 30);
+            Position = new Vector3(x, y, z) + (new Vector3(player.LocalUp.X, player.LocalUp.Y, player.LocalUp.Z) * CAMERA_HEIGHT);
             LookTarget = new Vector3(player.Position.X, player.Position.Y, player.Position.Z) + (new Vector3(player.Direction.X, player.Direction.Y, player.Direction.Z) * 30);
 
 

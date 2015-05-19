@@ -31,6 +31,8 @@ namespace WhaleSimulator
         //protected List<List<MenuButton>> stateList;
         protected MenuButton selectedButton;
 
+        private float switchSelectionThreshold;
+
         public Menu()
         {
             
@@ -40,51 +42,61 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
+            switchSelectionThreshold += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             if ((inputStates.WasButtonPressed(Keys.Enter) || inputStates.WasButtonPressed(Buttons.A)) && selectedButton.Click != null)
                 selectedButton.Click();
 
             //Menu navigation
             if (inputStates.WasButtonPressed(Keys.A) || inputStates.WasButtonPressed(Buttons.DPadLeft) ||
-                inputStates.WasButtonPressed(Keys.Left) || inputStates.NewGPState.ThumbSticks.Left.X < -0.3f)
+                inputStates.WasButtonPressed(Keys.Left) || 
+                (inputStates.NewGPState.ThumbSticks.Left.X < -0.3f && switchSelectionThreshold >= 0.3))
             {
                 if (selectedButton.left != null)
                 {
                     selectedButton.Graphic.CurrentAnimationIndex = 0;
                     selectedButton = selectedButton.left;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
+                    switchSelectionThreshold = 0;
                 }
             }
 
             if (inputStates.WasButtonPressed(Keys.D) || inputStates.WasButtonPressed(Buttons.DPadRight) ||
-                inputStates.WasButtonPressed(Keys.Right) || inputStates.NewGPState.ThumbSticks.Left.X > 0.3f)
+                inputStates.WasButtonPressed(Keys.Right) ||
+                (inputStates.NewGPState.ThumbSticks.Left.X > 0.3f && switchSelectionThreshold >= 0.3))
             {
                 if (selectedButton.right != null)
                 {
                     selectedButton.Graphic.CurrentAnimationIndex = 0;
                     selectedButton = selectedButton.right;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
+                    switchSelectionThreshold = 0;
                 }
             }
 
             if (inputStates.WasButtonPressed(Keys.W) || inputStates.WasButtonPressed(Buttons.DPadUp) ||
-                inputStates.WasButtonPressed(Keys.Up) || inputStates.NewGPState.ThumbSticks.Left.Y > 0.3f)
+                inputStates.WasButtonPressed(Keys.Up) || 
+                (inputStates.NewGPState.ThumbSticks.Left.Y > 0.3f && switchSelectionThreshold >= 0.3))
             {
                 if (selectedButton.up != null)
                 {
                     selectedButton.Graphic.CurrentAnimationIndex = 0;
                     selectedButton = selectedButton.up;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
+                    switchSelectionThreshold = 0;
                 }
             }
 
             if (inputStates.WasButtonPressed(Keys.S) || inputStates.WasButtonPressed(Buttons.DPadDown) ||
-                inputStates.WasButtonPressed(Keys.Down) || inputStates.NewGPState.ThumbSticks.Left.Y < -0.3f)
+                inputStates.WasButtonPressed(Keys.Down) ||
+                (inputStates.NewGPState.ThumbSticks.Left.Y < -0.3f && switchSelectionThreshold >= 0.3))
             {
                 if (selectedButton.down != null)
                 {
                     selectedButton.Graphic.CurrentAnimationIndex = 0;
                     selectedButton = selectedButton.down;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
+                    switchSelectionThreshold = 0;
                 }
             }
             
