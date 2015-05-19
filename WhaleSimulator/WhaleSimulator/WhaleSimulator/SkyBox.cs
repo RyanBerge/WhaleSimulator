@@ -39,27 +39,18 @@ namespace WhaleSimulator
                     {
                         part.Effect = skyBoxEffect;
                         part.Effect.Parameters["World"].SetValue(
-                            Matrix.CreateScale(Camera.FarClippingPlane/2) * Matrix.CreateTranslation(Camera.Position));
+                            Matrix.CreateScale(Camera.FarClippingPlane/2) * Matrix.CreateTranslation(Camera.Position.X, 550, Camera.Position.Z));
                         part.Effect.Parameters["View"].SetValue(Camera.ViewMatrix);
                         part.Effect.Parameters["Projection"].SetValue(Camera.ProjectionMatrix);
-                        // if(Camera.Position.Y >= 0)
-                        // {
-                            part.Effect.Parameters["SkyBoxTexture"].SetValue(skyBoxTexture);
-                        // }
-                        // else
-                        // {
-                        //    part.Effect.Parameters["SkyBoxTexture"].SetValue(underWaterTexture);
-                        // }
+                    
+                        part.Effect.Parameters["SkyBoxTexture"].SetValue(skyBoxTexture);
                         
-                        // part.Effect.Parameters["CameraPosition"].SetValue(Camera.Position);
                     }
 
                     mesh.Draw();
 
                 }
-            }
-
-            
+            }  
         }
     }
 }
