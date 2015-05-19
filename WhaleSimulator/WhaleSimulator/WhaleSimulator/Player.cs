@@ -14,7 +14,14 @@ namespace WhaleSimulator
 {
     public class Player : Creature
     {
+        //Represents the ratio at which the Creature's Speed affects its turning radius --- higher numbers result in wider turns
+        //A value of 60 
         private const float ROTATION_RATIO = 100;
+
+        //Represents the turning speed when not moving at all, expressed in Radians Per Second
+        private const float BASE_TURN_RADIUS = 0.8f;
+
+        private const float BASE_SPEED = 60f;
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, spawnPosition, spawnDirection, Content)
@@ -25,23 +32,23 @@ namespace WhaleSimulator
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             if (inputStates.NewKeyState.IsKeyDown(Keys.A))
-                Rotations.Y -=  ((Speed == 0) ? 0.015f : 1f/(Speed*100));
+                Rotations.Y -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
             if (inputStates.NewKeyState.IsKeyDown(Keys.D))
-                Rotations.Y += ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
+                Rotations.Y += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
 
             if (inputStates.NewKeyState.IsKeyDown(Keys.W))
             {
                 if (Rotations.Z > (-Math.PI/2) + 0.3)
-                    Rotations.Z -= ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
+                    Rotations.Z -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
             }
             if (inputStates.NewKeyState.IsKeyDown(Keys.S))
             {
                 if (Rotations.Z < (Math.PI / 2) - 0.3)
-                    Rotations.Z += ((Speed == 0) ? 0.015f : 1f / (Speed * 100));
+                    Rotations.Z += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
             }
 
             if (inputStates.NewKeyState.IsKeyDown(Keys.Space))
-                Speed = 1;
+                Speed = BASE_SPEED;
             else
                 Speed = 0;
 

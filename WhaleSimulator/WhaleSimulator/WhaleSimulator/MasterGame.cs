@@ -58,6 +58,7 @@ namespace WhaleSimulator
             MasterGame.AspectRatio = (float)Graphics.PreferredBackBufferWidth / (float)Graphics.PreferredBackBufferHeight;
 
             IsFixedTimeStep = false;
+            
             Quit = QuitGame;
 
             inputStates = new InputStates(Mouse.GetState(), Keyboard.GetState(), GamePad.GetState(PlayerIndex.One));

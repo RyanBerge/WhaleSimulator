@@ -12,13 +12,23 @@ using RB_GameResources.Xna.Controls;
 namespace WhaleSimulator
 {
     public delegate void VoidDelegate();
+    public delegate void AIDelegate(GameTime gameTime);
     
     public class Creature : Graphics3D
     {
         public CreatureInfo Properties { get; set; }
+        
+        /// <summary>
+        /// The forward speed of the Creature, expressed in Units Per Second
+        /// </summary>
         public float Speed { get; set; }
 
-        private VoidDelegate UpdateMove;
+        /// <summary>
+        /// The actual forward speed of the Creature, expressed in Units Per Update
+        /// </summary>
+        public float Velocity { get; set; }
+
+        private AIDelegate UpdateMove;
 
         public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content)
         {
@@ -48,11 +58,13 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
-            UpdateMove();
+            UpdateMove(gameTime);
 
-            position.X += (Direction.X * Speed);
-            position.Y += (Direction.Y * Speed);
-            position.Z += (Direction.Z * Speed);
+            Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            position.X += (Direction.X * Velocity);
+            position.Y += (Direction.Y * Velocity);
+            position.Z += (Direction.Z * Velocity);
 
             base.Update(gameTime);
         }
@@ -95,24 +107,41 @@ namespace WhaleSimulator
             }
         }
 
-        private void NoAI() { }
+        private void NoAI(GameTime gameTime) { }
 
-        private void FishAI()
+        private void FishAI(GameTime gameTime)
         {
-            if (Speed < 0.05f)
+            //======================================================
+            //Move constants to classwide scope when done fiddling
+            //======================================================
+
+            //Units per second
+            const float FISH_MIN_SPEED = 6f;
+            const float FISH_MAX_SPEED = 16f;
+            const float FISH_SPEED_DECLINE = 0.1f;
+
+            //Radians
+            const float FISH_NEW_TURN_MIN = -1f;
+            const float FISH_NEW_TURN_MAX = 1f;
+
+            //Lower numbers result in faster turns
+            //const int FISH_TURN_FREQUENCY = 2;
+
+            //Radians Per Second
+            const float FISH_ROTATION_TURN = 1;
+
+            if (Speed < (FISH_MIN_SPEED))
             {
-                Speed = (float)(Map.Randomizer.NextDouble()/2);
-                Rotations.X += (float)(Map.Randomizer.NextDouble() + 0.5);
-                Rotations.Z += (float)(Map.Randomizer.NextDouble() + 0.5);
+                Speed = ((float)Map.Randomizer.NextDouble() * (FISH_MAX_SPEED - FISH_MIN_SPEED) + FISH_MIN_SPEED);
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
+                Rotations.Z += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
             }
             else
             {
-                Speed -= 0.0002f;
-                if (Map.Randomizer.Next(4) == 3)
-                {
-                    Rotations.X += (float)(Map.Randomizer.NextDouble()/5);
-                    Rotations.Z += (float)(Map.Randomizer.NextDouble()/5);
-                }
+                Speed -= FISH_SPEED_DECLINE;
+
+                Rotations.Z += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
         }
     }
