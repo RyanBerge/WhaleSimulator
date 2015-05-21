@@ -38,9 +38,9 @@ namespace WhaleSimulator
 
         private void LoadMap()
         {
-            chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml");
+            chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml", mapContent);
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
-            chunkGrid[1, 1, 0].LoadAssets();
+            chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)

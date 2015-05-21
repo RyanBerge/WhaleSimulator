@@ -39,9 +39,9 @@ namespace WhaleSimulator
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
             if (inputStates.NewKeyState.IsKeyDown(Keys.A))
-                Rotations.Y -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
+                Rotations.Y -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
             if (inputStates.NewKeyState.IsKeyDown(Keys.D))
-                Rotations.Y += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
+                Rotations.Y += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
 
             if (inputStates.NewGPState.ThumbSticks.Left.X != 0)
             {
@@ -60,12 +60,12 @@ namespace WhaleSimulator
             if (inputStates.NewKeyState.IsKeyDown(Keys.W))
             {
                 if (Rotations.Z > (-Math.PI/2) + 0.3)
-                    Rotations.Z -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
+                    Rotations.Z -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
             }
             if (inputStates.NewKeyState.IsKeyDown(Keys.S))
             {
                 if (Rotations.Z < (Math.PI / 2) - 0.3)
-                    Rotations.Z += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : 1f / (Velocity * ROTATION_RATIO));
+                    Rotations.Z += ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
             }
 
             if (inputStates.NewKeyState.IsKeyDown(Keys.Space))
@@ -83,6 +83,8 @@ namespace WhaleSimulator
                 Speed = MIN_SPEED;
 
             base.Update(gameTime, inputStates);
+
+            System.Diagnostics.Debug.WriteLine(Position);
         }
 
         /// <summary>

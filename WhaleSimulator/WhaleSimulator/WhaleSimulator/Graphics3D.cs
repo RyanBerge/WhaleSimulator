@@ -39,6 +39,7 @@ namespace WhaleSimulator
         public Graphics3D(Model model)
         {
             BaseModel = model;
+            Direction = new Vector3(1, 0, 0);
         }
 
 
@@ -100,7 +101,7 @@ namespace WhaleSimulator
                     effect.Projection = Camera.ProjectionMatrix;
                     effect.EnableDefaultLighting();
 
-                    effect.FogEnabled = false;
+                    effect.FogEnabled = true;
                     effect.FogStart = Camera.UnderwaterFogStart;
                     effect.FogEnd = Camera.UnderwaterFogEnd;
                     effect.FogColor = Camera.FogColor;

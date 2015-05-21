@@ -55,6 +55,8 @@ namespace WhaleSimulator
 
         public List<CreatureInfo> CreatureList { get; private set; }
         public List<Creature> Creatures { get; private set; }
+        public List<string> StaticTerrainList { get; set; }
+        public List<Graphics3D> StaticTerrain { get; set; }
 
         /// <summary>
         /// Creates a new Chunk object with a given grid position.  Does not link to other Chunks in the grid.
@@ -111,7 +113,7 @@ namespace WhaleSimulator
                         x = int.Parse(e.Element("PositionX").Value);
                         y = int.Parse(e.Element("PositionY").Value);
                         z = int.Parse(e.Element("PositionZ").Value);
-                        Vector3 spawn = new Vector3(x + (position.X * 1000), y + (position.Z * 1000), z + (position.Y * 1000));
+                        Vector3 spawn = new Vector3(x + (position.X * 1000), y + (position.Y * 1000), z + (position.Z * 1000));
                         x = int.Parse(e.Element("DirectionX").Value);
                         y = int.Parse(e.Element("DirectionY").Value);
                         z = int.Parse(e.Element("DirectionZ").Value);
@@ -120,9 +122,31 @@ namespace WhaleSimulator
                     }
                 }
 
+                element = rootElement.Element("TerrainList");
+
+                //List<TerrainInfo> staticTerrainList = new List<TerrainInfo>();
+                //List<DynamicTerrain> dynamicTerrainList = new List<DynamicTerrain>();
+
+                //if (element != null)
+                //{
+                //    IEnumerable<XElement> elements = element.Elements("Static");
+                //    foreach(XElement e in elements)
+                //    {
+                //        //Statics
+                //    }
+
+                //    elements = element.Elements("Dynamic");
+                //    foreach (XElement e in elements)
+                //    {
+                //        //Dynamics
+                //    }
+                //}
+
                 Chunk temp = new Chunk(position);
                 temp.CreatureList = creatureList;
                 temp.Creatures = new List<Creature>();
+                //temp.StaticTerrainList = staticTerrainList;
+                temp.StaticTerrain = new List<Graphics3D>();
 
                 return temp;
 
@@ -148,6 +172,12 @@ namespace WhaleSimulator
                 foreach (Creature c in Creatures)
                     c.Update(gameTime, inputStates);
             }
+
+            if (StaticTerrain != null)
+            {
+                foreach (Graphics3D t in StaticTerrain)
+                    t.Update(gameTime);
+            }
         }
 
         /// <summary>
@@ -162,6 +192,12 @@ namespace WhaleSimulator
                 foreach (Creature c in Creatures)
                     c.Draw3D(gameTime);
             }
+
+            if (StaticTerrain != null)
+            {
+                foreach (Graphics3D t in StaticTerrain)
+                    t.Draw3D(gameTime);
+            }
         }
 
         /// <summary>
@@ -175,6 +211,14 @@ namespace WhaleSimulator
                 if (info.IsAlive)
                     Creatures.Add(new Creature(info, Content));
             }
+
+            //foreach (string name in StaticTerrainList)
+            //{
+            //    Graphics3D graphic = new Graphics3D(Content.Load<Model>("Terrain/" + name));
+
+            //    StaticTerrain.Add(graphic);
+            //}
+
             IsLoaded = true;
         }
 
@@ -199,6 +243,13 @@ namespace WhaleSimulator
                 Creatures.Clear();
                 Creatures.TrimExcess();
             }
+
+            if (StaticTerrain.Count > 0)
+            {
+                StaticTerrain.Clear();
+                StaticTerrain.TrimExcess();
+            }
+
             IsLoaded = false;
         }
 

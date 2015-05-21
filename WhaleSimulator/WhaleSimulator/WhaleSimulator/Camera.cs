@@ -47,7 +47,7 @@ namespace WhaleSimulator
             AspectRatio = MasterGame.AspectRatio;
             //AspectRatio = 1;
             NearClippingPlane = 0.1f;
-            FarClippingPlane = 1000f;
+            FarClippingPlane = 10000f;
 
             IsUnderwater = true;
             FogStart = 75;

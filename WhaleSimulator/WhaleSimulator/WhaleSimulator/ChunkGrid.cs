@@ -8,6 +8,7 @@ using System.Collections;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -23,26 +24,37 @@ namespace WhaleSimulator
         private Chunk currentChunk;
         private Chunk rootChunk;
 
+        private ContentManager mapContent;
+
+        private List<Graphics3D> globalTerrain;
+
         private Vector3 mapSize;
 
         private bool initialized = false;
 
+        public Chunk SpawnChunk { get; set; }
         public Vector3 PlayerSpawn { get; set; }
         public Vector3 SpawnDirection { get; set; }
         public string PlayerSpecies { get; set; }
+        public int WaterLevel { get; set; }
+
+        public static Vector3 MapCenter { get; set; }
 
         /// <summary>
         /// Creates a new ChunkGrid by loading data from the designated filepath.
         /// </summary>
         /// <param name="filepath">The path to the XML data file.</param>
-        public ChunkGrid(string filepath)
+        public ChunkGrid(string filepath, ContentManager content)
         {
+            mapContent = content;
             LoadFromXML(filepath);
-
-            //foreach (Chunk c in this)
-            //{
-            //    c.LoadAssets();
-            //}
+            MapCenter = new Vector3((mapSize.X * 1000) / 2, (mapSize.Y * 1000) / 2, (mapSize.Z * 1000) / 2);
+            foreach (Graphics3D g in globalTerrain)
+            {
+                Vector3 position = MapCenter;
+                position.Y -= WaterLevel;
+                g.Position = position;
+            }
         }
 
         public void LoadAssets(Vector3 centerChunk)
@@ -175,6 +187,16 @@ namespace WhaleSimulator
 
                 mapSize = new Vector3(x, y, z);
 
+                WaterLevel = int.Parse(doc.Root.Element("WaterLevel").Value);
+
+                IEnumerable<XElement> elements = doc.Root.Elements("GlobalTerrain").Elements("Terrain");
+                globalTerrain = new List<Graphics3D>();
+
+                foreach (XElement e in elements)
+                {
+                    globalTerrain.Add(new Graphics3D(mapContent.Load<Model>("Terrain/" + e.Element("Name").Value)));
+                }
+
                 //element = doc.Root.Element("PlayerSpecies");
                 //if (element != null)
 
@@ -192,7 +214,7 @@ namespace WhaleSimulator
                 y = int.Parse(doc.Root.Element("SpawnChunkY").Value);
                 z = int.Parse(doc.Root.Element("SpawnChunkZ").Value);
 
-                IEnumerable<XElement> elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
+                elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
 
                 List<Chunk> chunkList = new List<Chunk>();
 
@@ -213,14 +235,14 @@ namespace WhaleSimulator
                         if ((c.Position.X == chunk.Position.X + 1) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z))
                             chunk.East = c;
 
-                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y - 1) && (c.Position.Z == chunk.Position.Z))
+                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z - 1))
                             chunk.North = c;
-                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y + 1) && (c.Position.Z == chunk.Position.Z))
+                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z + 1))
                             chunk.South = c;
 
-                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z - 1))
+                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y - 1) && (c.Position.Z == chunk.Position.Z))
                             chunk.Down = c;
-                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y) && (c.Position.Z == chunk.Position.Z + 1))
+                        if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y + 1) && (c.Position.Z == chunk.Position.Z))
                             chunk.Up = c;
                     }
                 }
@@ -229,7 +251,7 @@ namespace WhaleSimulator
 
                 rootChunk = chunkList[0];
                 currentChunk = rootChunk;
-                spawnChunk = this[(int)x, (int)y, (int)z];
+                SpawnChunk = this[(int)x, (int)y, (int)z];
 
             }
             catch (Exception e)
@@ -267,7 +289,7 @@ namespace WhaleSimulator
                     if (temp == null)
                         return null;
                     else
-                        temp = temp.South;
+                        temp = temp.Up;
                 }
 
                 for (int i = 0; i < z; i++)
@@ -276,7 +298,7 @@ namespace WhaleSimulator
                     if (temp == null)
                         return null;
                     else
-                        temp = temp.Up;
+                        temp = temp.South;
                 }
 
                 return temp;
@@ -297,6 +319,11 @@ namespace WhaleSimulator
                 {
                     chunk.Update(gameTime, inputStates);
                 }
+
+                foreach (Graphics3D g in globalTerrain)
+                {
+                    g.Update(gameTime);
+                }
             }
         }
 
@@ -311,6 +338,11 @@ namespace WhaleSimulator
                 foreach (Chunk chunk in this)
                 {
                     chunk.Draw3D(gameTime);
+                }
+
+                foreach (Graphics3D g in globalTerrain)
+                {
+                    g.Draw3D(gameTime);
                 }
             }
         }

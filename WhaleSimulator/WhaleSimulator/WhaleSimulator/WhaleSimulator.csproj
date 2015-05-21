@@ -94,6 +94,10 @@
     <Compile Include="SkyBox.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\MapData\OrcaLevel.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Data\MapData\Tutorial.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

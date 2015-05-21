@@ -79,7 +79,7 @@ namespace WhaleSimulator
         private void PlayClick()
         {
             if (mapChooseEvent != null)
-                mapChooseEvent("Tutorial");
+                mapChooseEvent("OrcaLevel");
             //state = MenuState.Levels;
         }
 
