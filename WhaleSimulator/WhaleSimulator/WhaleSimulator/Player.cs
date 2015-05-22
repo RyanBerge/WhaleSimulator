@@ -83,8 +83,6 @@ namespace WhaleSimulator
                 Speed = MIN_SPEED;
 
             base.Update(gameTime, inputStates);
-
-            System.Diagnostics.Debug.WriteLine(Position);
         }
 
         /// <summary>

@@ -113,88 +113,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Terrain\IceA1.fbx">
-      <Name>IceA1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceA2.fbx">
-      <Name>IceA2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceA3.fbx">
-      <Name>IceA3</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceA4.fbx">
-      <Name>IceA4</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceA5.fbx">
-      <Name>IceA5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceB1.fbx">
-      <Name>IceB1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceB5.fbx">
-      <Name>IceB5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceC1.fbx">
-      <Name>IceC1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceC5.fbx">
-      <Name>IceC5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceD1.fbx">
-      <Name>IceD1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceD5.fbx">
-      <Name>IceD5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceE1.fbx">
-      <Name>IceE1</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceE2.fbx">
-      <Name>IceE2</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceE3.fbx">
-      <Name>IceE3</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceE4.fbx">
-      <Name>IceE4</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-    <Compile Include="Terrain\IceE5.fbx">
-      <Name>IceE5</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Images\OptionsButton.jpg">
       <Name>OptionsButton</Name>
       <Importer>TextureImporter</Importer>
@@ -212,13 +130,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Terrain\sourceimages\Ice.jpg">
-      <Name>Ice</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Terrain\Runway.fbx">
       <Name>Runway</Name>
       <Importer>FbxImporter</Importer>
@@ -231,6 +142,9 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sourceimages\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Terrain\IceShelf.fbx">
