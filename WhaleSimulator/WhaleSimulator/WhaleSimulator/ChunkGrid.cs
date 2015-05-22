@@ -32,7 +32,7 @@ namespace WhaleSimulator
 
         private bool initialized = false;
 
-        public Chunk SpawnChunk { get; set; }
+        public Chunk SpawnChunk { get { return spawnChunk; } set { spawnChunk = value; } }
         public Vector3 PlayerSpawn { get; set; }
         public Vector3 SpawnDirection { get; set; }
         public string PlayerSpecies { get; set; }
@@ -49,10 +49,11 @@ namespace WhaleSimulator
             mapContent = content;
             LoadFromXML(filepath);
             MapCenter = new Vector3((mapSize.X * 1000) / 2, (mapSize.Y * 1000) / 2, (mapSize.Z * 1000) / 2);
+            Map.WaterLevel = WaterLevel;
             foreach (Graphics3D g in globalTerrain)
             {
                 Vector3 position = MapCenter;
-                position.Y -= WaterLevel;
+                position.Y = 0;
                 g.Position = position;
             }
         }
@@ -247,12 +248,11 @@ namespace WhaleSimulator
                     }
                 }
 
-                
+
 
                 rootChunk = chunkList[0];
-                currentChunk = rootChunk;
                 SpawnChunk = this[(int)x, (int)y, (int)z];
-
+                currentChunk = spawnChunk;
             }
             catch (Exception e)
             {
@@ -311,10 +311,23 @@ namespace WhaleSimulator
         /// </summary>
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         /// <param name="inputStates">The InputStates object to use when checking player input.</param>
-        public void Update(GameTime gameTime, InputStates inputStates)
+        public void Update(GameTime gameTime, InputStates inputStates, Player player)
         {
             if (initialized)
             {
+                if (((player.Position.X < currentChunk.Position.X * 1000) || (player.Position.X > currentChunk.Position.X * 1000 + 1000)) ||
+                    ((player.Position.Y < currentChunk.Position.Y * 1000) || (player.Position.Y > currentChunk.Position.Y * 1000 + 1000)) ||
+                    ((player.Position.Z < currentChunk.Position.Z * 1000) || (player.Position.Z > currentChunk.Position.Z * 1000 + 1000)))
+                {
+                    Chunk oldChunk = currentChunk;
+                    currentChunk = this[(int)Math.Floor(player.Position.X / 1000), (int)Math.Floor(player.Position.Y / 1000), (int)Math.Floor(player.Position.Z / 1000)];
+                    if (currentChunk == null)
+                        currentChunk = oldChunk;
+                    //System.Diagnostics.Debug.WriteLine("New Chunk: " + currentChunk.Position);
+                }
+
+
+
                 foreach (Chunk chunk in this)
                 {
                     chunk.Update(gameTime, inputStates);

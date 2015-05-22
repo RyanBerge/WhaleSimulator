@@ -7,12 +7,12 @@
   <PlayerSpecies>NewBox</PlayerSpecies>
   
   <PlayerSpawnX>1500</PlayerSpawnX>
-  <PlayerSpawnY>500</PlayerSpawnY>
+  <PlayerSpawnY>5000</PlayerSpawnY>
   <PlayerSpawnZ>1500</PlayerSpawnZ>
   
-  <SpawnChunkX>1</SpawnChunkX>
-  <SpawnChunkY>1</SpawnChunkY>
-  <SpawnChunkZ>0</SpawnChunkZ>
+  <SpawnChunkX>2</SpawnChunkX>
+  <SpawnChunkY>0</SpawnChunkY>
+  <SpawnChunkZ>2</SpawnChunkZ>
   
   <SpawnDirectionX>1</SpawnDirectionX>
   <SpawnDirectionY>0</SpawnDirectionY>

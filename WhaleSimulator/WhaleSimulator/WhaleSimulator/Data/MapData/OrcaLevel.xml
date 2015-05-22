@@ -6,15 +6,15 @@
 
   <PlayerSpecies>NewBox</PlayerSpecies>
 
-  <WaterLevel>1000</WaterLevel>
+  <WaterLevel>950</WaterLevel>
 
   <PlayerSpawnX>2500</PlayerSpawnX>
-  <PlayerSpawnY>500</PlayerSpawnY>
+  <PlayerSpawnY>930</PlayerSpawnY>
   <PlayerSpawnZ>2500</PlayerSpawnZ>
   
-  <SpawnChunkX>0</SpawnChunkX>
+  <SpawnChunkX>2</SpawnChunkX>
   <SpawnChunkY>0</SpawnChunkY>
-  <SpawnChunkZ>0</SpawnChunkZ>
+  <SpawnChunkZ>2</SpawnChunkZ>
   
   <SpawnDirectionX>1</SpawnDirectionX>
   <SpawnDirectionY>0</SpawnDirectionY>

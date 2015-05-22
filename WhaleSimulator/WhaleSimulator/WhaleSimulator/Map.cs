@@ -23,6 +23,7 @@ namespace WhaleSimulator
         private ContentManager mapContent;
 
         public static Random Randomizer { get; set; }
+        public static int WaterLevel { get; set; }
 
         public Map(string name)
         {
@@ -46,7 +47,7 @@ namespace WhaleSimulator
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
             if (chunkGrid != null)
-                chunkGrid.Update(gameTime, inputStates);
+                chunkGrid.Update(gameTime, inputStates, player);
             if (player != null)
                 player.Update(gameTime, inputStates);
             Camera.Update(gameTime, inputStates, player);

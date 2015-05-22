@@ -52,7 +52,7 @@ namespace WhaleSimulator
             oceanSurfaceEffect.Parameters["World"].SetValue(
                 Matrix.CreateRotationY((float)MathHelper.ToRadians((int)270)) *
                 Matrix.CreateRotationZ((float)MathHelper.ToRadians((int)90)) *
-                Matrix.CreateScale(100.0f) * Matrix.CreateTranslation(playerPos.X, 550, playerPos.Z));
+                Matrix.CreateScale(100.0f) * Matrix.CreateTranslation(playerPos.X, Map.WaterLevel, playerPos.Z));
             oceanSurfaceEffect.Parameters["View"].SetValue(view);
             oceanSurfaceEffect.Parameters["Projection"].SetValue(projection);
             oceanSurfaceEffect.Parameters["AmbientColor"].SetValue(Color.Gray.ToVector4());

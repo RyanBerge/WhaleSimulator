@@ -28,11 +28,15 @@ namespace WhaleSimulator
         /// </summary>
         public float Velocity { get; set; }
 
+        protected bool isUnderwater;
+        protected const float GRAVITY = 1f;
+        protected float fallingSpeed;
+
         private AIDelegate UpdateMove;
 
-        public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content)
+        public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, bool swims, ContentManager Content)
         {
-            Properties = new CreatureInfo(species, spawnPosition, spawnDirection, true);
+            Properties = new CreatureInfo(species, spawnPosition, spawnDirection, true, swims);
             this.Position = spawnPosition;
             this.Direction = spawnDirection;
             this.Rotations = new Vector3(0, 0, 0);
@@ -58,13 +62,29 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
-            UpdateMove(gameTime);
+            
+
+            if (Properties.Swims && !isUnderwater)
+                fallingSpeed += GRAVITY;
+            else
+            {
+                UpdateMove(gameTime);
+                fallingSpeed = 0;
+            }
 
             Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             position.X += (Direction.X * Velocity);
-            position.Y += (Direction.Y * Velocity);
+            position.Y += (Direction.Y * Velocity) - (fallingSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
             position.Z += (Direction.Z * Velocity);
+
+            if (position.Y < 0)
+                position.Y = 0;
+
+            if (position.Y > Map.WaterLevel)
+                isUnderwater = false;
+            else
+                isUnderwater = true;
 
             base.Update(gameTime);
         }
@@ -167,6 +187,10 @@ namespace WhaleSimulator
         /// Whether or not the Creature is still alive.
         /// </summary>
         public bool IsAlive { get; set; }
+        /// <summary>
+        /// Whether or not the Creature swims underwater.
+        /// </summary>
+        public bool Swims { get; set; }
 
         /// <summary>
         /// Creates a new CreatureInfo object.
@@ -174,12 +198,13 @@ namespace WhaleSimulator
         /// <param name="species">The "Species" identifier for the Creature.</param>
         /// <param name="spawn">The coordinates relative to the Chunk where the Creature will spawn.</param>
         /// <param name="isAlive">Whether or not the Creature is still alive.</param>
-        public CreatureInfo(string species, Vector3 spawn, Vector3 direction, bool isAlive) : this()
+        public CreatureInfo(string species, Vector3 spawn, Vector3 direction, bool isAlive, bool swims) : this()
         {
             Species = species;
             SpawnPosition = spawn;
             SpawnDirection = direction;
             IsAlive = isAlive;
+            Swims = swims;
         }
     }
 }
