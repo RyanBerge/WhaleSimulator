@@ -92,6 +92,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="MasterGame.cs" />
     <Compile Include="SkyBox.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\MapData\OrcaLevel.xml">

@@ -2,58 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Creatures\Wale.fbx</Source>
-      <Name>Creatures\Wale</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\Wale.xnb</Output>
-      <Time>2015-05-07T19:49:56.1409278-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\Wale_0.xml</Key>
-        <Value>2015-05-21T19:51:58.2032582-07:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Creatures\WhalePod.fbx</Source>
-      <Name>Creatures\WhalePod</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\WhalePod.xnb</Output>
-      <Time>2015-05-07T19:49:56.1419279-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\WhalePod_0.xml</Key>
-        <Value>2015-05-21T19:51:58.339266-07:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Creatures\boxthingie.fbx</Source>
-      <Name>Creatures\boxthingie</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\boxthingie.xnb</Output>
-      <Time>2015-05-07T19:49:56.1429279-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\boxthingie_0.xml</Key>
-        <Value>2015-05-21T19:51:58.3862687-07:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Creatures\OceanFloor.fbx</Source>
-      <Name>Creatures\OceanFloor</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\OceanFloor.xnb</Output>
-      <Time>2015-05-07T19:49:56.1409278-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\OceanFloor_0.xml</Key>
-        <Value>2015-05-21T19:51:58.4762738-07:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
       <Source>Creatures\NewBox.fbx</Source>
       <Name>Creatures\NewBox</Name>
       <Importer>FbxImporter</Importer>
@@ -77,19 +25,6 @@
       <Dependency>
         <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Key>
         <Value>2015-05-21T19:51:58.5792797-07:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Terrain\Runway.fbx</Source>
-      <Name>Terrain\Runway</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Terrain\Runway.xnb</Output>
-      <Time>2015-05-21T00:11:05.0271054-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Runway_0.xml</Key>
-        <Value>2015-05-21T19:51:58.619282-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -224,34 +159,6 @@
       <Time>2015-05-14T20:57:19.3727973-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\Wale.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\Wale_0.xml</Output>
-      <Time>2015-05-07T19:49:56.1409278-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\WhalePod.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\WhalePod_0.xml</Output>
-      <Time>2015-05-07T19:49:56.1419279-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\boxthingie.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\boxthingie_0.xml</Output>
-      <Time>2015-05-07T19:49:56.1429279-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\OceanFloor.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\OceanFloor_0.xml</Output>
-      <Time>2015-05-07T19:49:56.1409278-07:00</Time>
-    </Item>
-    <Item>
       <Source>Creatures\NewBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
@@ -264,13 +171,6 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Output>
       <Time>2015-05-14T20:57:19.3687971-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Terrain\Runway.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Runway_0.xml</Output>
-      <Time>2015-05-21T00:11:05.0271054-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\Ground.fbx</Source>
@@ -315,6 +215,26 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\ocean_0.xml</Output>
       <Time>2015-05-14T20:57:19.4177999-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\IceTest.fbx</Source>
+      <Name>Creatures\IceTest</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\IceTest.xnb</Output>
+      <Time>2015-05-24T03:01:58.7321349-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\IceTest_0.xml</Key>
+        <Value>2015-05-24T03:03:22.8259463-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Creatures\IceTest.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\IceTest_0.xml</Output>
+      <Time>2015-05-24T03:01:58.7321349-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

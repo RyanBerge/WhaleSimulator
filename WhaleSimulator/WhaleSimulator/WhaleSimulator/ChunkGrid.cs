@@ -39,6 +39,8 @@ namespace WhaleSimulator
         public int WaterLevel { get; set; }
 
         public static Vector3 MapCenter { get; set; }
+        public static List<Chunk> LoadedChunks { get; set; }
+        public static List<Graphics3D> GlobalTerrain { get; set; }
 
         /// <summary>
         /// Creates a new ChunkGrid by loading data from the designated filepath.
@@ -56,6 +58,8 @@ namespace WhaleSimulator
                 position.Y = 0;
                 g.Position = position;
             }
+            GlobalTerrain = globalTerrain;
+            LoadedChunks = new List<Chunk>();
         }
 
         public void LoadAssets(Vector3 centerChunk)
@@ -139,6 +143,13 @@ namespace WhaleSimulator
                         centerChunk.Down.West.LoadAssets();
                 }
             }
+            List<Chunk> loadedChunks = new List<Chunk>();
+            foreach (Chunk chunk in this)
+            {
+                if (chunk.IsLoaded)
+                    loadedChunks.Add(chunk);
+            }
+            LoadedChunks = loadedChunks;
         }
 
         /// <summary>
@@ -158,35 +169,18 @@ namespace WhaleSimulator
                     stream.Close();
                 }
 
-                float x = 0;
-                float y = 0;
-                float z = 0;
-
                 element = doc.Root.Element("PlayerSpecies");
                 if (element != null)
                     PlayerSpecies = element.Value;
                 else
                     throw new Exception("Player Species not found in XML Data.");
                 
-                element = doc.Root.Element("SizeX");
+                element = doc.Root.Element("Size");
                 if (element != null)
-                    x = int.Parse(element.Value);
+                    mapSize = Utilities.Parse(element.Value);
                 else
-                    throw new Exception("X-Size not found in XML Data.");
+                    throw new Exception("Size not found in XML Data.");
 
-                element = doc.Root.Element("SizeY");
-                if (element != null)
-                    y = int.Parse(element.Value);
-                else
-                    throw new Exception("Y-Size not found in XML Data.");
-
-                element = doc.Root.Element("SizeZ");
-                if (element != null)
-                    z = int.Parse(element.Value);
-                else
-                    throw new Exception("Z-Size not found in XML Data.");
-
-                mapSize = new Vector3(x, y, z);
 
                 WaterLevel = int.Parse(doc.Root.Element("WaterLevel").Value);
 
@@ -198,22 +192,11 @@ namespace WhaleSimulator
                     globalTerrain.Add(new Graphics3D(mapContent.Load<Model>("Terrain/" + e.Element("Name").Value)));
                 }
 
-                //element = doc.Root.Element("PlayerSpecies");
-                //if (element != null)
+                PlayerSpawn = Utilities.Parse(doc.Root.Element("PlayerSpawn").Value);
 
-                x = int.Parse(doc.Root.Element("PlayerSpawnX").Value);
-                y = int.Parse(doc.Root.Element("PlayerSpawnY").Value);
-                z = int.Parse(doc.Root.Element("PlayerSpawnZ").Value);
-                PlayerSpawn = new Vector3(x, y, z);
+                SpawnDirection = Utilities.Parse(doc.Root.Element("SpawnDirection").Value);
 
-                x = float.Parse(doc.Root.Element("SpawnDirectionX").Value);
-                y = float.Parse(doc.Root.Element("SpawnDirectionY").Value);
-                z = float.Parse(doc.Root.Element("SpawnDirectionZ").Value);
-                SpawnDirection = new Vector3(x, y, z);
-
-                x = int.Parse(doc.Root.Element("SpawnChunkX").Value);
-                y = int.Parse(doc.Root.Element("SpawnChunkY").Value);
-                z = int.Parse(doc.Root.Element("SpawnChunkZ").Value);
+                Vector3 SpawnChunkPosition = Utilities.Parse(doc.Root.Element("SpawnChunk").Value);
 
                 elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
 
@@ -251,7 +234,7 @@ namespace WhaleSimulator
 
 
                 rootChunk = chunkList[0];
-                SpawnChunk = this[(int)x, (int)y, (int)z];
+                SpawnChunk = this[(int)SpawnChunkPosition.X, (int)SpawnChunkPosition.Y, (int)SpawnChunkPosition.Z];
                 currentChunk = spawnChunk;
             }
             catch (Exception e)
@@ -323,11 +306,18 @@ namespace WhaleSimulator
                     currentChunk = this[(int)Math.Floor(player.Position.X / 1000), (int)Math.Floor(player.Position.Y / 1000), (int)Math.Floor(player.Position.Z / 1000)];
                     if (currentChunk == null)
                         currentChunk = oldChunk;
-                    //System.Diagnostics.Debug.WriteLine("New Chunk: " + currentChunk.Position);
+
+                    List<Chunk> loadedChunks = new List<Chunk>();
+                    foreach (Chunk chunk in this)
+                    {
+                        if (chunk.IsLoaded)
+                            loadedChunks.Add(chunk);
+                    }
+                    LoadedChunks = loadedChunks;
                 }
 
-
-
+                
+                
                 foreach (Chunk chunk in this)
                 {
                     chunk.Update(gameTime, inputStates);
@@ -359,15 +349,6 @@ namespace WhaleSimulator
                 }
             }
         }
-
-        ///// <summary>
-        ///// Draws any 2-dimensional sprites to the SpriteBatch (2D Sprites are always drawn above 3D material).
-        ///// </summary>
-        ///// <param name="gameTime">The GameTime object to use as reference.</param>
-        ///// <param name="spriteBatch">The SpriteBatch to draw to.</param>
-        //public void Draw2D(GameTime gameTime, SpriteBatch spriteBatch)
-        //{
-        //}
 
         /// <summary>
         /// Gets an Enumerator to enumerate through the Chunks in the grid.

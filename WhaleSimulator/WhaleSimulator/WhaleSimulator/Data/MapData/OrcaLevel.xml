@@ -1,180 +1,145 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MapData>
-  <SizeX>5</SizeX>
-  <SizeY>1</SizeY>
-  <SizeZ>5</SizeZ>
+  <Size>5, 1, 5</Size>
 
   <PlayerSpecies>NewBox</PlayerSpecies>
 
   <WaterLevel>950</WaterLevel>
 
-  <PlayerSpawnX>2500</PlayerSpawnX>
-  <PlayerSpawnY>930</PlayerSpawnY>
-  <PlayerSpawnZ>2500</PlayerSpawnZ>
+  <PlayerSpawn>2500, 930, 2500</PlayerSpawn>
   
-  <SpawnChunkX>2</SpawnChunkX>
-  <SpawnChunkY>0</SpawnChunkY>
-  <SpawnChunkZ>2</SpawnChunkZ>
+  <SpawnChunk>2,0,2</SpawnChunk>
   
-  <SpawnDirectionX>1</SpawnDirectionX>
-  <SpawnDirectionY>0</SpawnDirectionY>
-  <SpawnDirectionZ>0</SpawnDirectionZ>
+  <SpawnDirection>1, 0, 0</SpawnDirection>
 
   <GlobalTerrain>
     <Terrain>
       <Name>IceShelf</Name>
     </Terrain>
+    <Terrain>
+      <Name>Ground</Name>
+    </Terrain>
   </GlobalTerrain>
 
   <ChunkGrid>
     <Chunk>
-      <PositionX>0</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>0</PositionZ>
+      <Position>0,0,0</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>1</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>0</PositionZ>
+      <Position>1,0,0</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>2</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>0</PositionZ>
+      <Position>2,0,0</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>3</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>0</PositionZ>
+      <Position>3,0,0</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>4</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>0</PositionZ>
+      <Position>4,0,0</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>0</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>1</PositionZ>
+      <Position>0,0,1</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>1</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>1</PositionZ>
+      <Position>1,0,1</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>2</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>1</PositionZ>
+      <Position>2,0,1</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>3</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>1</PositionZ>
+      <Position>3,0,1</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>4</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>1</PositionZ>
+      <Position>4,0,1</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>0</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>2</PositionZ>
+      <Position>0,0,2</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>1</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>2</PositionZ>
+      <Position>1,0,2</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>2</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>2</PositionZ>
+      <Position>2,0,2</Position>
+      <CreatureList>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>500, 950, 500</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>400, 950, 500</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>500, 950, 400</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+      </CreatureList>
     </Chunk>
 
     <Chunk>
-      <PositionX>3</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>2</PositionZ>
+      <Position>3,0,2</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>4</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>2</PositionZ>
+      <Position>4,0,2</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>0</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>3</PositionZ>
+      <Position>0,0,3</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>1</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>3</PositionZ>
+      <Position>1,0,3</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>2</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>3</PositionZ>
+      <Position>2,0,3</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>3</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>3</PositionZ>
+      <Position>3,0,3</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>4</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>3</PositionZ>
+      <Position>4,0,3</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>0</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>4</PositionZ>
+      <Position>0,0,4</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>1</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>4</PositionZ>
+      <Position>1,0,4</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>2</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>4</PositionZ>
+      <Position>2,0,4</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>3</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>4</PositionZ>
+      <Position>3,0,4</Position>
     </Chunk>
 
     <Chunk>
-      <PositionX>4</PositionX>
-      <PositionY>0</PositionY>
-      <PositionZ>4</PositionZ>
+      <Position>4,0,4</Position>
     </Chunk>
     
   </ChunkGrid>

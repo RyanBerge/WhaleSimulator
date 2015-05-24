@@ -1,10 +1,5 @@
-Content\Creatures\Wale.xnb
-Content\Creatures\WhalePod.xnb
-Content\Creatures\boxthingie.xnb
-Content\Creatures\OceanFloor.xnb
 Content\Creatures\NewBox.xnb
 Content\Creatures\FishSchool.xnb
-Content\Terrain\Runway.xnb
 Content\Terrain\Ground.xnb
 Content\Terrain\IceShelf.xnb
 Content\Effects\cube.xnb
@@ -18,5 +13,6 @@ Content\Images\QuitButton.xnb
 Content\Effects\OceanSurface.xnb
 Content\Effects\Skybox.xnb
 Content\sourceimages\Ice_0.xnb
+Content\Creatures\IceTest.xnb
 Data\MapData\OrcaLevel.xml
 Data\MapData\Tutorial.xml

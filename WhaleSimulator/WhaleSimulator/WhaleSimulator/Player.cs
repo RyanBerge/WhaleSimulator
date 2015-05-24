@@ -22,8 +22,8 @@ namespace WhaleSimulator
         private const float BASE_TURN_RADIUS = 0.8f;
 
         private const float BASE_SPEED = 15f;
-        private const float MIN_SPEED = 8f;
-        private const float MAX_SPEED = 700; //44
+        private const float MIN_SPEED = 0f; //8
+        private const float MAX_SPEED = 600; //44
 
         //Expressed in Units Per Second
         private const float ACCELERATION = 10f;
@@ -31,7 +31,7 @@ namespace WhaleSimulator
         private const float BASE_DECELERATION = 0.6f;
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
-            : base(species, spawnPosition, spawnDirection, true, Content)
+            : base(species, "Player", spawnPosition, spawnDirection, true, Content)
         {
             
         }
@@ -89,7 +89,7 @@ namespace WhaleSimulator
             {
                 Speed -= BASE_DECELERATION;
                 if (Rotations.Z > -1)
-                    Rotations.Z -= 0.001f;
+                    Rotations.Z -= 0.005f;
             }
 
             base.Update(gameTime, inputStates);

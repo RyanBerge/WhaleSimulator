@@ -16,7 +16,7 @@ namespace WhaleSimulator
     
     public class Creature : Graphics3D
     {
-        public CreatureInfo Properties { get; set; }
+        public CreatureInfo Properties { get { return properties; } set { properties = value; } }
         
         /// <summary>
         /// The forward speed of the Creature, expressed in Units Per Second
@@ -28,18 +28,22 @@ namespace WhaleSimulator
         /// </summary>
         public float Velocity { get; set; }
 
+        protected CreatureInfo properties;
         protected bool isUnderwater;
-        protected const float GRAVITY = 1f;
+        protected const float GRAVITY = .5f;
         protected float fallingSpeed;
 
         private AIDelegate UpdateMove;
 
-        public Creature(string species, Vector3 spawnPosition, Vector3 spawnDirection, bool swims, ContentManager Content)
+        private float bounceTimer = 0;
+
+        public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims, ContentManager Content)
         {
-            Properties = new CreatureInfo(species, spawnPosition, spawnDirection, true, swims);
+            Properties = new CreatureInfo(species, family, spawnPosition, spawnDirection, true, swims);
             this.Position = spawnPosition;
             this.Direction = spawnDirection;
-            this.Rotations = new Vector3(0, 0, 0);
+            this.Direction.Normalize();
+            SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
@@ -52,7 +56,8 @@ namespace WhaleSimulator
             Properties = info;
             this.Position = info.SpawnPosition;
             this.Direction = info.SpawnDirection;
-            this.Rotations = new Vector3(0, 0, 0);
+            this.Direction.Normalize();
+            SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
             this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
@@ -69,7 +74,10 @@ namespace WhaleSimulator
             else
             {
                 UpdateMove(gameTime);
-                fallingSpeed = 0;
+                if (fallingSpeed > 0)
+                    fallingSpeed -= GRAVITY;
+                else
+                    fallingSpeed = 0;
             }
 
             Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -88,6 +96,7 @@ namespace WhaleSimulator
 
             base.Update(gameTime);
         }
+
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
         /// </summary>
@@ -111,6 +120,12 @@ namespace WhaleSimulator
 
         }
 
+        private void SetRotations()
+        {
+            Rotations.Y = (float)Math.Atan(Direction.Z / Direction.X);
+            Rotations.Z = (float)Math.Atan(Direction.Y / (Math.Sqrt(Direction.X * Direction.X + Direction.Z * Direction.Z)));
+        }
+
         private void SetAI()
         {
             switch (Properties.Species)
@@ -120,6 +135,9 @@ namespace WhaleSimulator
                     break;
                 case "Boxthingie":
                     UpdateMove = FishAI;
+                    break;
+                case "IceTest":
+                    UpdateMove = IceAI;
                     break;
                 default:
                     UpdateMove = NoAI;
@@ -164,6 +182,48 @@ namespace WhaleSimulator
                 //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
         }
+    
+        private void IceAI(GameTime gameTime)
+        {
+            Speed = 15;
+
+            if (bounceTimer <= 0)
+            {
+                foreach (Chunk chunk in ChunkGrid.LoadedChunks)
+                {
+                    IEnumerable<Creature> IceList =
+                        from ice in chunk.Creatures
+                        where ice.Properties.Family == "Ice"
+                        select ice;
+
+                    foreach (Creature ice in IceList)
+                    {
+                        if (ice != this)
+                        {
+                            if (((ice.Position.X - Position.X < 500) && (ice.Position.X - Position.X > -500)) &&
+                                (((ice.Position.Z - Position.Z < 500) && (ice.Position.Z - Position.Z > -500))))
+                            {
+                                if (ice.Sphere.Intersects(Sphere))
+                                {
+                                    Vector2 normal = new Vector2(-Direction.Z, Direction.X);
+                                    Vector2 vector = new Vector2(Direction.X, Direction.Y);
+                                    vector -= 2 * Vector2.Dot(vector, normal) * normal;
+                                    Direction = new Vector3(vector.X, Direction.Y, vector.Y);
+                                    System.Diagnostics.Debug.WriteLine("Bounce!");
+                                    bounceTimer = 0.5f;
+                                    SetRotations();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else
+                bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            properties.SpawnPosition = Position;
+            properties.SpawnDirection = Direction;
+        }
     }
 
     /// <summary>
@@ -192,19 +252,22 @@ namespace WhaleSimulator
         /// </summary>
         public bool Swims { get; set; }
 
+        public string Family { get; set; }
+
         /// <summary>
         /// Creates a new CreatureInfo object.
         /// </summary>
         /// <param name="species">The "Species" identifier for the Creature.</param>
         /// <param name="spawn">The coordinates relative to the Chunk where the Creature will spawn.</param>
         /// <param name="isAlive">Whether or not the Creature is still alive.</param>
-        public CreatureInfo(string species, Vector3 spawn, Vector3 direction, bool isAlive, bool swims) : this()
+        public CreatureInfo(string species, string family, Vector3 spawn, Vector3 direction, bool isAlive, bool swims) : this()
         {
             Species = species;
             SpawnPosition = spawn;
             SpawnDirection = direction;
             IsAlive = isAlive;
             Swims = swims;
+            Family = family;
         }
     }
 }

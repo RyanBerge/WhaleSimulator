@@ -77,30 +77,13 @@ namespace WhaleSimulator
             try
             {
                 XElement element;
-                int x = 0;
-                int y = 0;
-                int z = 0;
                 Vector3 position;
 
-                element = rootElement.Element("PositionX");
+                element = rootElement.Element("Position");
                 if (element != null)
-                    x = int.Parse(element.Value);
+                    position = Utilities.Parse(element.Value);
                 else
-                    throw new Exception("X-Position not found in XML Data.");
-
-                element = rootElement.Element("PositionY");
-                if (element != null)
-                    y = int.Parse(element.Value);
-                else
-                    throw new Exception("Y-Position not found in XML Data.");
-
-                element = rootElement.Element("PositionZ");
-                if (element != null)
-                    z = int.Parse(element.Value);
-                else
-                    throw new Exception("Z-Position not found in XML Data.");
-
-                position = new Vector3(x, y, z);
+                    throw new Exception("Position not found in XML Data.");
 
                 element = rootElement.Element("CreatureList");
                 List<CreatureInfo> creatureList = new List<CreatureInfo>();
@@ -110,16 +93,29 @@ namespace WhaleSimulator
                     foreach(XElement e in elements)
                     {
                         string species = e.Element("Species").Value;
-                        x = int.Parse(e.Element("PositionX").Value);
-                        y = int.Parse(e.Element("PositionY").Value);
-                        z = int.Parse(e.Element("PositionZ").Value);
-                        Vector3 spawn = new Vector3(x + (position.X * 1000), y + (position.Y * 1000), z + (position.Z * 1000));
-                        x = int.Parse(e.Element("DirectionX").Value);
-                        y = int.Parse(e.Element("DirectionY").Value);
-                        z = int.Parse(e.Element("DirectionZ").Value);
-                        Vector3 direction = new Vector3(x, y, z);
-                        bool swims = bool.Parse(e.Element("Swims").Value);
-                        creatureList.Add(new CreatureInfo(species, spawn, direction, true, swims));
+                        string family = e.Element("Family").Value;
+                        Vector3 spawn = Utilities.Parse(e.Element("Position").Value);
+                        spawn.X += position.X * 1000;
+                        spawn.Y += position.Y * 1000;
+                        spawn.Z += position.Z * 1000;
+
+                        Vector3 direction = Utilities.Parse(e.Element("Direction").Value);
+
+                        if (direction.X == -99)
+                            direction.X = (float)Map.Randomizer.NextDouble();
+                        if (direction.Y == -99)
+                            direction.Y = (float)Map.Randomizer.NextDouble();
+                        if (direction.Z == -99)
+                            direction.Z = (float)Map.Randomizer.NextDouble();
+
+                        bool swims;
+                        element = e.Element("Swims");
+                        if (element != null)
+                            swims = bool.Parse(element.Value);
+                        else
+                            swims = false;
+
+                        creatureList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
                     }
                 }
 

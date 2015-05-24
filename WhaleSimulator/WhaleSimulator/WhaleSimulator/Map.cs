@@ -27,11 +27,12 @@ namespace WhaleSimulator
 
         public Map(string name)
         {
+            Randomizer = new Random();
             mapName = name;
             mapContent = MasterGame.GetNewContentManager();
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
-            Randomizer = new Random();
+            
             // stuff added
             skybox = new Skybox(mapContent);
             oceanSurface = new OceanSurface(mapContent);
@@ -93,12 +94,5 @@ namespace WhaleSimulator
                 c.UnloadAssets();
             mapContent.Unload();
         }
-
-        ///// <summary>
-        ///// Draws any 2-dimensional sprites to the SpriteBatch (2D Sprites are always drawn above 3D material).
-        ///// </summary>
-        ///// <param name="gameTime">The GameTime object to use as reference.</param>
-        ///// <param name="spriteBatch">The SpriteBatch to draw to.</param>
-        //public virtual void Draw2D(GameTime gameTime, SpriteBatch spriteBatch) { }
     }
 }

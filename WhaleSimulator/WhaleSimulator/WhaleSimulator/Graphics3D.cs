@@ -18,6 +18,16 @@ namespace WhaleSimulator
         public Vector3 Direction { get { return direction; } set { direction = value; } }
         public Vector3 LocalUp { get { return localUp; } set { localUp = value; } }
 
+        public BoundingBox Box { get { return BoundingBox.CreateFromSphere(BaseModel.Meshes[0].BoundingSphere); } }
+        public BoundingSphere Sphere
+        {
+            get
+            {
+                BoundingSphere s = BaseModel.Meshes[0].BoundingSphere;
+                return new BoundingSphere(new Vector3(s.Center.X + Position.X, s.Center.Y + Position.Y, s.Center.Z + Position.Z), s.Radius);
+            }
+        }
+
         protected Vector3 position;
         protected Vector3 direction;
         protected Vector3 localUp;
