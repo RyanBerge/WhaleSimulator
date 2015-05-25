@@ -20,6 +20,10 @@ namespace WhaleSimulator
         private Skybox skybox;
         private OceanSurface oceanSurface;
 
+        private float blackOpacity = 1;
+        private Rectangle blackRect;
+        private Texture2D blackscreen;
+
         private ContentManager mapContent;
 
         public static Random Randomizer { get; set; }
@@ -36,10 +40,13 @@ namespace WhaleSimulator
             // stuff added
             skybox = new Skybox(mapContent);
             oceanSurface = new OceanSurface(mapContent);
+            blackRect = new Rectangle(0, 0, MasterGame.Graphics.PreferredBackBufferWidth, MasterGame.Graphics.PreferredBackBufferHeight);
+            
         }
 
         private void LoadMap()
         {
+            blackscreen = mapContent.Load<Texture2D>("Images/Blackscreen");
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml", mapContent);
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
             chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
@@ -47,6 +54,9 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
+            if (blackOpacity > 0)
+                blackOpacity -= 0.5f * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             if (chunkGrid != null)
                 chunkGrid.Update(gameTime, inputStates, player);
             if (player != null)
@@ -56,11 +66,16 @@ namespace WhaleSimulator
             oceanSurface.Update(gameTime.ElapsedGameTime.Milliseconds);
         }
 
+        public void Draw2D(SpriteBatch spriteBatch, GameTime gameTime)
+        {
+            spriteBatch.Draw(blackscreen, blackRect, Color.White * blackOpacity);
+        }
+
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
         /// </summary>
         /// <param name="gameTime">The GameTime object to use as reference.</param>
-        public virtual void Draw3D(GameTime gameTime)
+        public void Draw3D(GameTime gameTime)
         {
             if (chunkGrid != null)
                 chunkGrid.Draw3D(gameTime);

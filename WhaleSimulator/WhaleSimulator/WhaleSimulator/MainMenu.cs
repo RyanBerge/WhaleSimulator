@@ -26,6 +26,9 @@ namespace WhaleSimulator
 
         private Graphic2D backgroundLeft;
         private Graphic2D backgroundRight;
+        private Texture2D blackscreen;
+
+        private const float BLACK_DELAY = 1;
 
         private bool sliding = false;
         private float slideSpeed = 0; //Pixels per Second
@@ -33,6 +36,10 @@ namespace WhaleSimulator
         private float slideTotal = 0;
         private bool slidingRight = false;
         private bool slidingDown = false;
+        private int slideMax;
+        private float opacity = 0;
+        private Rectangle blackscreenRect;
+        private float blackDelayTimer = 0;
 
         public MainMenu()
         {
@@ -66,6 +73,9 @@ namespace WhaleSimulator
             tempArray[0] = new Animation2D("", new Vector2(0, 0), new Vector2(1280, 1600), 1, 0);
             backgroundLeft = new Graphic2D(Content.Load<Texture2D>("Images/BackgroundLeft"), tempArray, 0, new Vector2(0, 0));
             backgroundRight = new Graphic2D(Content.Load<Texture2D>("Images/BackgroundRight"), tempArray, 0, new Vector2(0, 0));
+            blackscreen = Content.Load<Texture2D>("Images/Blackscreen");
+            blackscreenRect = new Rectangle(0, 0, MasterGame.Graphics.PreferredBackBufferWidth, MasterGame.Graphics.PreferredBackBufferHeight);
+
 
             Animation2D[] orcaAnimations = new Animation2D[2];
             orcaAnimations[0] = new Animation2D("Default", new Vector2(0, 0), new Vector2(428, 339), 1, 0);
@@ -131,6 +141,7 @@ namespace WhaleSimulator
             state = MenuState.Levels;
             sliding = true;
             slidingRight = false;
+            slideMax = MasterGame.Graphics.PreferredBackBufferWidth;
             selectedButton.Graphic.CurrentAnimationIndex = 0;
         }
 
@@ -146,8 +157,13 @@ namespace WhaleSimulator
 
         private void OrcaClick()
         {
-            if (mapChooseEvent != null)
-                mapChooseEvent("OrcaLevel");
+            sliding = true;
+            slidingDown = true;
+            slideMax = MasterGame.Graphics.PreferredBackBufferHeight;
+            selectedButton.Graphic.CurrentAnimationIndex = 0;
+
+            //if (mapChooseEvent != null)
+            //    mapChooseEvent("OrcaLevel");
         }
 
         private void BackClick()
@@ -160,11 +176,24 @@ namespace WhaleSimulator
 
         public override void Update(GameTime gameTime, InputStates inputStates)
         {
+            if (slidingDown)
+            {
+                blackDelayTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (blackDelayTimer >= BLACK_DELAY)
+                    opacity += 0.6f * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                if (opacity >= 1 && blackDelayTimer >= BLACK_DELAY*2)
+                {
+                    if (mapChooseEvent != null)
+                        mapChooseEvent("OrcaLevel");
+                }
+            }
+
             if (!sliding)
                 base.Update(gameTime, inputStates);
             else
             {
-                if (slideTotal < (MasterGame.Graphics.PreferredBackBufferWidth / 2) + 2)
+                if (slideTotal < (slideMax / 2) + 2)
                     slideSpeed += (slideAcceleration * (float)gameTime.ElapsedGameTime.TotalSeconds);
                 else
                     slideSpeed -= (slideAcceleration * (float)gameTime.ElapsedGameTime.TotalSeconds);
@@ -172,12 +201,11 @@ namespace WhaleSimulator
                 if (slideSpeed < 0)
                     slideSpeed = 1;
 
-
                 float currentSlide = (slideSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
                 slideTotal += currentSlide;
-                if (slideTotal > MasterGame.Graphics.PreferredBackBufferWidth)
+                if (slideTotal > slideMax)
                 {
-                    float slideOffset = slideTotal - MasterGame.Graphics.PreferredBackBufferWidth;
+                    float slideOffset = slideTotal - slideMax;
                     slideTotal -= slideOffset;
                     currentSlide -= slideOffset;
                     sliding = false;
@@ -195,7 +223,27 @@ namespace WhaleSimulator
                     slideSpeed = 0;
                 }
 
-                if (slidingRight)
+                if (slidingDown)
+                {
+                    Vector2 coords = new Vector2(backgroundLeft.Coordinates.X, backgroundLeft.Coordinates.Y - currentSlide);
+                    backgroundLeft.Coordinates = coords;
+
+                    coords = new Vector2(backgroundRight.Coordinates.X, backgroundRight.Coordinates.Y - currentSlide);
+                    backgroundRight.Coordinates = coords;
+
+                    foreach (MenuButton button in MainButtonList)
+                    {
+                        coords = new Vector2(button.Graphic.Coordinates.X, button.Graphic.Coordinates.Y - currentSlide);
+                        button.Graphic.Coordinates = coords;
+                    }
+
+                    foreach (MenuButton button in LevelButtonList)
+                    {
+                        coords = new Vector2(button.Graphic.Coordinates.X, button.Graphic.Coordinates.Y - currentSlide);
+                        button.Graphic.Coordinates = coords;
+                    }
+                }
+                else if (slidingRight)
                 {
                     Vector2 coords = new Vector2(backgroundLeft.Coordinates.X + currentSlide, backgroundLeft.Coordinates.Y);
                     backgroundLeft.Coordinates = coords;
@@ -254,15 +302,17 @@ namespace WhaleSimulator
         /// <param name="spriteBatch">The SpriteBatch to draw to.</param>
         public override void Draw2D(GameTime gameTime, SpriteBatch spriteBatch) 
         {
+            
             backgroundLeft.Draw(spriteBatch, gameTime);
             backgroundRight.Draw(spriteBatch, gameTime);
+            
 
             foreach (MenuButton button in MainButtonList)
                 button.Graphic.Draw(spriteBatch, gameTime);
             foreach (MenuButton button in LevelButtonList)
                 button.Graphic.Draw(spriteBatch, gameTime);
 
-            
+            spriteBatch.Draw(blackscreen, blackscreenRect, Color.White * opacity);
             
         }
 

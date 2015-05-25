@@ -41,6 +41,7 @@ namespace WhaleSimulator
 
         void LoadMap(string name)
         {
+            mainMenu.Dispose();
             //Load map
             currentMap = new Map(name);
             gameState = GameState.Playing;
@@ -103,6 +104,8 @@ namespace WhaleSimulator
         {
             if (gameState == GameState.MainMenu)
                 mainMenu.Draw2D(gameTime, spriteBatch);
+            else if (gameState == GameState.Playing)
+                currentMap.Draw2D(spriteBatch, gameTime);
 
         }
     }

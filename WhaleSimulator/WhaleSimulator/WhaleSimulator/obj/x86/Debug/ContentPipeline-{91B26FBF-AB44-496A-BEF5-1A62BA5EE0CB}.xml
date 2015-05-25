@@ -272,6 +272,15 @@
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundRight.xnb</Output>
       <Time>2015-05-25T01:10:06.1789491-07:00</Time>
     </Item>
+    <Item>
+      <Source>Images\Blackscreen.jpg</Source>
+      <Name>Images\Blackscreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\Blackscreen.xnb</Output>
+      <Time>2015-05-25T03:33:07.6941133-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}</ContentProjectGUID>
