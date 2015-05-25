@@ -236,6 +236,42 @@
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\IceTest_0.xml</Output>
       <Time>2015-05-24T03:01:58.7321349-07:00</Time>
     </Item>
+    <Item>
+      <Source>Images\BackButton.png</Source>
+      <Name>Images\BackButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackButton.xnb</Output>
+      <Time>2015-05-25T01:26:31.1282864-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\BackgroundLeft.jpg</Source>
+      <Name>Images\BackgroundLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundLeft.xnb</Output>
+      <Time>2015-05-25T01:09:29.5998569-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\OrcaButton.png</Source>
+      <Name>Images\OrcaButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\OrcaButton.xnb</Output>
+      <Time>2015-05-25T01:31:42.5831006-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\BackgroundRight.jpg</Source>
+      <Name>Images\BackgroundRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundRight.xnb</Output>
+      <Time>2015-05-25T01:10:06.1789491-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}</ContentProjectGUID>
