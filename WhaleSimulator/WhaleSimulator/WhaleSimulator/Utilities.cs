@@ -11,10 +11,10 @@ namespace WhaleSimulator
     {
         public static Vector3 Parse(string vector)
         {
-int num = 1;
-                string num1 = "";
-                string num2 = "";
-                string num3 = "";
+            int num = 1;
+            string num1 = "";
+            string num2 = "";
+            string num3 = "";
             for (int i = 0; i < vector.Length; i++)
             {                
                 if (vector[i] != ' ')

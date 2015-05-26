@@ -94,6 +94,18 @@ namespace WhaleSimulator
 
             base.Update(gameTime, inputStates);
 
+            if (position.X < 0)
+                position.X += Map.MapSize.X * 1000;
+            if (position.X > Map.MapSize.X * 1000)
+                position.X -= Map.MapSize.X * 1000;
+
+            if (position.Z < 0)
+                position.Z += Map.MapSize.Z * 1000;
+            if (position.Z > Map.MapSize.Z * 1000)
+                position.Z -= Map.MapSize.Z * 1000;
+
+            //System.Diagnostics.Debug.WriteLine(position);
+
             //System.Diagnostics.Debug.WriteLine(isUnderwater);
         }
 

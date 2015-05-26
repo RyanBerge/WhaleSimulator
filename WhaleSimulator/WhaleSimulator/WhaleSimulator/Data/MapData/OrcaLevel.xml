@@ -6,6 +6,7 @@
 
   <WaterLevel>950</WaterLevel>
 
+  
   <PlayerSpawn>2500, 930, 2500</PlayerSpawn>
   
   <SpawnChunk>2,0,2</SpawnChunk>
@@ -13,12 +14,14 @@
   <SpawnDirection>1, 0, 0</SpawnDirection>
 
   <GlobalTerrain>
+    <!--
     <Terrain>
       <Name>IceShelf</Name>
     </Terrain>
     <Terrain>
       <Name>Ground</Name>
     </Terrain>
+    -->
   </GlobalTerrain>
 
   <ChunkGrid>

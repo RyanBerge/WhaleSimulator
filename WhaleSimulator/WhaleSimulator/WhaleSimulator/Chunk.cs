@@ -202,21 +202,16 @@ namespace WhaleSimulator
         /// </summary>
         public void LoadAssets()
         {
-            Content = MasterGame.GetNewContentManager();
-            foreach (CreatureInfo info in CreatureList)
+            if (!IsLoaded)
             {
-                if (info.IsAlive)
-                    Creatures.Add(new Creature(info, Content));
+                Content = MasterGame.GetNewContentManager();
+                foreach (CreatureInfo info in CreatureList)
+                {
+                    if (info.IsAlive)
+                        Creatures.Add(new Creature(info, Content));
+                }
+                IsLoaded = true;
             }
-
-            //foreach (string name in StaticTerrainList)
-            //{
-            //    Graphics3D graphic = new Graphics3D(Content.Load<Model>("Terrain/" + name));
-
-            //    StaticTerrain.Add(graphic);
-            //}
-
-            IsLoaded = true;
         }
 
         /// <summary>

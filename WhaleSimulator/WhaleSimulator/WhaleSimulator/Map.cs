@@ -28,6 +28,7 @@ namespace WhaleSimulator
 
         public static Random Randomizer { get; set; }
         public static int WaterLevel { get; set; }
+        public static Vector3 MapSize { get; set; }
 
         public Map(string name)
         {
@@ -50,6 +51,7 @@ namespace WhaleSimulator
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml", mapContent);
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
             chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
+            MapSize = chunkGrid.MapSize;
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)

@@ -209,7 +209,7 @@ namespace WhaleSimulator
                                     Vector2 vector = new Vector2(Direction.X, Direction.Y);
                                     vector -= 2 * Vector2.Dot(vector, normal) * normal;
                                     Direction = new Vector3(vector.X, Direction.Y, vector.Y);
-                                    System.Diagnostics.Debug.WriteLine("Bounce!");
+                                    //System.Diagnostics.Debug.WriteLine("Bounce!");
                                     bounceTimer = 0.5f;
                                     SetRotations();
                                 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Xml.Linq;
 using System.Collections;
+using System.Threading;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -31,7 +32,10 @@ namespace WhaleSimulator
         private Vector3 mapSize;
 
         private bool initialized = false;
+        private bool loadingChunk = false;
+        private bool unloadingChunk = false;
 
+        public Vector3 MapSize { get { return mapSize; } }
         public Chunk SpawnChunk { get { return spawnChunk; } set { spawnChunk = value; } }
         public Vector3 PlayerSpawn { get; set; }
         public Vector3 SpawnDirection { get; set; }
@@ -62,6 +66,20 @@ namespace WhaleSimulator
             LoadedChunks = new List<Chunk>();
         }
 
+        public void LoadAssets()
+        {
+            loadingChunk = true;
+            LoadAssets(currentChunk);
+            List<Chunk> loadedChunks = new List<Chunk>();
+            foreach (Chunk chunk in this)
+            {
+                if (chunk.IsLoaded)
+                    loadedChunks.Add(chunk);
+            }
+            LoadedChunks = loadedChunks;
+            loadingChunk = false;
+        }
+
         public void LoadAssets(Vector3 centerChunk)
         {
             LoadAssets(this[(int)centerChunk.X, (int)centerChunk.Y, (int)centerChunk.Z]);
@@ -71,78 +89,145 @@ namespace WhaleSimulator
         {
             if (centerChunk != null)
             {
-                centerChunk.LoadAssets();
+                if (!centerChunk.IsLoaded)
+                    centerChunk.LoadAssets();
                 if (centerChunk.North != null)
                 {
-                    centerChunk.North.LoadAssets();
+                    if (!centerChunk.North.IsLoaded)
+                        centerChunk.North.LoadAssets();
                     if (centerChunk.North.East != null)
-                        centerChunk.North.East.LoadAssets();
+                    {
+                        if (!centerChunk.North.East.IsLoaded)
+                            centerChunk.North.East.LoadAssets();
+                    }
                     if (centerChunk.North.West != null)
-                        centerChunk.North.West.LoadAssets();
+                    {
+                        if (!centerChunk.North.West.IsLoaded)
+                            centerChunk.North.West.LoadAssets();
+                    }
                 }
                 if (centerChunk.South != null)
                 {
-                    centerChunk.South.LoadAssets();
+                    if (!centerChunk.South.IsLoaded)
+                        centerChunk.South.LoadAssets();
                     if (centerChunk.South.East != null)
-                        centerChunk.South.East.LoadAssets();
+                    {
+                        if (!centerChunk.South.East.IsLoaded)
+                            centerChunk.South.East.LoadAssets();
+                    }
                     if (centerChunk.South.West != null)
-                        centerChunk.South.West.LoadAssets();
+                    {
+                        if (!centerChunk.South.West.IsLoaded)
+                            centerChunk.South.West.LoadAssets();
+                    }
                 }
+
                 if (centerChunk.East != null)
+                {
+                    if (!centerChunk.East.IsLoaded)
                     centerChunk.East.LoadAssets();
+                }
                 if (centerChunk.West != null)
+                {
+                    if (!centerChunk.West.IsLoaded)
                     centerChunk.West.LoadAssets();
+                }
 
                 if (centerChunk.Up != null)
                 {
-                    centerChunk.Up.LoadAssets();
+                    if (!centerChunk.Up.IsLoaded)
+                        centerChunk.Up.LoadAssets();
                     if (centerChunk.Up.North != null)
                     {
-                        centerChunk.Up.North.LoadAssets();
+                        if (!centerChunk.Up.North.IsLoaded)
+                            centerChunk.Up.North.LoadAssets();
                         if (centerChunk.Up.North.East != null)
-                            centerChunk.Up.North.East.LoadAssets();
+                        {
+                            if (!centerChunk.Up.North.East.IsLoaded)
+                                centerChunk.Up.North.East.LoadAssets();
+                        }
                         if (centerChunk.Up.North.West != null)
-                            centerChunk.Up.North.West.LoadAssets();
+                        {
+                            if (!centerChunk.Up.North.West.IsLoaded)
+                                centerChunk.Up.North.West.LoadAssets();
+                        }
                     }
                     if (centerChunk.Up.South != null)
                     {
-                        centerChunk.Up.South.LoadAssets();
+                        if (!centerChunk.Up.South.IsLoaded)
+                            centerChunk.Up.South.LoadAssets();
                         if (centerChunk.Up.South.East != null)
-                            centerChunk.Up.South.East.LoadAssets();
+                        {
+                            if (!centerChunk.Up.South.East.IsLoaded)
+                                centerChunk.Up.South.East.LoadAssets();
+                        }
                         if (centerChunk.Up.South.West != null)
-                            centerChunk.Up.South.West.LoadAssets();
+                        {
+                            if (!centerChunk.Up.South.West.IsLoaded)
+                                centerChunk.Up.South.West.LoadAssets();
+                        }
                     }
+
                     if (centerChunk.Up.East != null)
-                        centerChunk.Up.East.LoadAssets();
+                    {
+                        if (!centerChunk.Up.East.IsLoaded)
+                            centerChunk.Up.East.LoadAssets();
+                    }
                     if (centerChunk.Up.West != null)
-                        centerChunk.Up.West.LoadAssets();
+                    {
+                        if (!centerChunk.Up.West.IsLoaded)
+                            centerChunk.Up.West.LoadAssets();
+                    }
                 }
 
                 if (centerChunk.Down != null)
                 {
-                    centerChunk.Down.LoadAssets();
+                    if (!centerChunk.Down.IsLoaded)
+                        centerChunk.Down.LoadAssets();
                     if (centerChunk.Down.North != null)
                     {
-                        centerChunk.Down.North.LoadAssets();
+                        if (!centerChunk.Down.North.IsLoaded)
+                            centerChunk.Down.North.LoadAssets();
                         if (centerChunk.Down.North.East != null)
-                            centerChunk.Down.North.East.LoadAssets();
+                        {
+                            if (!centerChunk.Down.North.East.IsLoaded)
+                                centerChunk.Down.North.East.LoadAssets();
+                        }
                         if (centerChunk.Down.North.West != null)
-                            centerChunk.Down.North.West.LoadAssets();
+                        {
+                            if (!centerChunk.Down.North.West.IsLoaded)
+                                centerChunk.Down.North.West.LoadAssets();
+                        }
                     }
                     if (centerChunk.Down.South != null)
                     {
-                        centerChunk.Down.South.LoadAssets();
+                        if (!centerChunk.Down.South.IsLoaded)
+                            centerChunk.Down.South.LoadAssets();
                         if (centerChunk.Down.South.East != null)
-                            centerChunk.Down.South.East.LoadAssets();
+                        {
+                            if (!centerChunk.Down.South.East.IsLoaded)
+                                centerChunk.Down.South.East.LoadAssets();
+                        }
                         if (centerChunk.Down.South.West != null)
-                            centerChunk.Down.South.West.LoadAssets();
+                        {
+                            if (!centerChunk.Down.South.West.IsLoaded)
+                                centerChunk.Down.South.West.LoadAssets();
+                        }
                     }
+
                     if (centerChunk.Down.East != null)
-                        centerChunk.Down.East.LoadAssets();
+                    {
+                        if (!centerChunk.Down.East.IsLoaded)
+                            centerChunk.Down.East.LoadAssets();
+                    }
                     if (centerChunk.Down.West != null)
-                        centerChunk.Down.West.LoadAssets();
+                    {
+                        if (!centerChunk.Down.West.IsLoaded)
+                            centerChunk.Down.West.LoadAssets();
+                    }
                 }
             }
+
             List<Chunk> loadedChunks = new List<Chunk>();
             foreach (Chunk chunk in this)
             {
@@ -228,7 +313,41 @@ namespace WhaleSimulator
                             chunk.Down = c;
                         if ((c.Position.X == chunk.Position.X) && (c.Position.Y == chunk.Position.Y + 1) && (c.Position.Z == chunk.Position.Z))
                             chunk.Up = c;
+
+
+                        if (chunk.Position.X == 0 && c.Position.X == mapSize.X - 1 && c.Position.Y == chunk.Position.Y && c.Position.Z == chunk.Position.Z)
+                        {
+                            chunk.West = c;
+                            c.East = chunk;
+                        }
+                        
+                        if (chunk.Position.X == 0 && c.Position.X == chunk.Position.X && c.Position.Y == chunk.Position.Y && c.Position.Z == mapSize.Z - 1)
+                        {
+                            chunk.North = c;
+                            c.South = chunk;
+                        }
+
                     }
+
+                    /*if (chunk.Position.X == 0)
+                    {
+                        Chunk other = this[(int)this.mapSize.X - 1, (int)chunk.Position.Y, (int)chunk.Position.Z];
+                        chunk.West = other;
+                        other.East = chunk;
+                    }
+                    if (chunk.Position.Y == 0)
+                    {
+                        Chunk other = this[(int)chunk.Position.X, (int)this.mapSize.Y - 1, (int)chunk.Position.Z];
+                        chunk.North = other;
+                        other.South = chunk;
+                    }
+                    if (chunk.Position.Z == 0)
+                    {
+                        Chunk other = this[(int)chunk.Position.X, (int)chunk.Position.Y, (int)mapSize.Z - 1];
+                        chunk.Down = other;
+                        other.Up = chunk;
+                    }*/
+
                 }
 
 
@@ -307,13 +426,16 @@ namespace WhaleSimulator
                     if (currentChunk == null)
                         currentChunk = oldChunk;
 
-                    List<Chunk> loadedChunks = new List<Chunk>();
-                    foreach (Chunk chunk in this)
-                    {
-                        if (chunk.IsLoaded)
-                            loadedChunks.Add(chunk);
-                    }
-                    LoadedChunks = loadedChunks;
+
+                    Thread loadingThread = new Thread(LoadAssets);
+                    if (!loadingChunk)
+                        loadingThread.Start();
+
+                    //Thread unloadingThread = new Thread(UnloadAssets);
+                    //if (!unloadingChunk)
+                    //    unloadingThread.Start();
+
+                    UnloadAssets();                    
                 }
 
                 
@@ -327,6 +449,20 @@ namespace WhaleSimulator
                 {
                     g.Update(gameTime);
                 }
+            }
+        }
+
+        private void UnloadAssets()
+        {
+            foreach (Chunk chunk in this)
+            {
+                if (((chunk.Position.X < currentChunk.Position.X - 1) || (chunk.Position.X > currentChunk.Position.X + 1)) ||
+                    ((chunk.Position.Y < currentChunk.Position.Y - 1) || (chunk.Position.Y > currentChunk.Position.Y + 1)) ||
+                    ((chunk.Position.Z < currentChunk.Position.Z - 1) || (chunk.Position.Z > currentChunk.Position.Z + 1)))
+                {
+                    if (chunk.IsLoaded)
+                        chunk.UnloadAssets();
+                } 
             }
         }
 
@@ -365,7 +501,7 @@ namespace WhaleSimulator
         /// <returns></returns>
         public ChunkGridEnumerator GetEnumerator()
         {
-            return new ChunkGridEnumerator(rootChunk);
+            return new ChunkGridEnumerator(rootChunk, mapSize);
         }
     }
 
@@ -375,20 +511,22 @@ namespace WhaleSimulator
     public class ChunkGridEnumerator : IEnumerator
     {
         private Chunk chunk = null;
-        private Chunk root;
+        private Chunk root; //bottom tier, top-left
+        private Vector3 mapSize;
 
-        private bool left = false;
-        private bool up = false;
+        bool left = false;
+        bool up = false;
 
         /// <summary>
         /// Creates a new Enumerator.
         /// </summary>
         /// <param name="root">The root Chunk in the grid.</param>
-        public ChunkGridEnumerator(Chunk root)
+        public ChunkGridEnumerator(Chunk root, Vector3 size)
         {
             this.root = root;
+            this.mapSize = size;
         }
-
+/*
         /// <summary>
         /// Moves the enumerator one step forward through the grid.
         /// </summary>
@@ -481,6 +619,108 @@ namespace WhaleSimulator
                     else if (up && chunk.North == null)
                     {
                         if (chunk.Up != null)
+                        {
+                            chunk = chunk.Up;
+                            up = false;
+                            left = false;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+                }
+            }
+            return false;
+        }
+        */
+        public bool MoveNext()
+        {
+            if (chunk == null)
+            {
+                chunk = root;
+                return true;
+            }
+            else
+            {
+                if (!left && chunk.Position.X != mapSize.X - 1)
+                {
+                    chunk = chunk.East;
+                    return true;
+                }
+                else if (!left && chunk.Position.X == mapSize.X - 1)
+                {
+                    if (!up && chunk.Position.Z != mapSize.Z - 1)
+                    {
+                        chunk = chunk.South;
+                        left = true;
+                        return true;
+                    }
+                    else if (!up && chunk.Position.Z == mapSize.Z - 1)
+                    {
+                        if (chunk.Position.Y != mapSize.Y - 1)
+                        {
+                            chunk = chunk.Up;
+                            up = true;
+                            left = true;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+                    else if (up && chunk.Position.Z != 0)
+                    {
+                        chunk = chunk.North;
+                        left = true;
+                        return true;
+                    }
+                    else if (up && chunk.Position.Z == 0)
+                    {
+                        if (chunk.Position.Y != mapSize.Y - 1)
+                        {
+                            chunk = chunk.Up;
+                            up = false;
+                            left = true;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+
+                }
+                else if (left && chunk.Position.X != 0)
+                {
+                    chunk = chunk.West;
+                    return true;
+                }
+                else if (left && chunk.Position.X == 0)
+                {
+                    if (!up && chunk.Position.Z != mapSize.Z - 1)
+                    {
+                        chunk = chunk.South;
+                        left = false;
+                        return true;
+                    }
+                    else if (!up && chunk.Position.Z == mapSize.Z - 1)
+                    {
+                        if (chunk.Position.Y != mapSize.Y - 1)
+                        {
+                            chunk = chunk.Up;
+                            up = true;
+                            left = false;
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+                    else if (up && chunk.Position.Z != 0)
+                    {
+                        chunk = chunk.North;
+                        left = false;
+                        return true;
+                    }
+                    else if (up && chunk.Position.Z == 0)
+                    {
+                        if (chunk.Position.Y != mapSize.Y - 1)
                         {
                             chunk = chunk.Up;
                             up = false;
