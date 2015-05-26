@@ -11,28 +11,26 @@ namespace WhaleSimulator
     {
         public static Vector3 Parse(string vector)
         {
-            CharEnumerator sit = vector.GetEnumerator();
-            //sit.MoveNext();
-            int num = 1;
-            string num1 = "";
-            string num2 = "";
-            string num3 = "";
-            while (sit.MoveNext())
-            {
-                if (sit.Current != ' ')
+int num = 1;
+                string num1 = "";
+                string num2 = "";
+                string num3 = "";
+            for (int i = 0; i < vector.Length; i++)
+            {                
+                if (vector[i] != ' ')
                 {
-                    if (sit.Current != ',')
+                    if (vector[i] != ',')
                     {
                         switch (num)
                         {
                             case 1:
-                                num1 += sit.Current;
+                                num1 += vector[i];
                                 break;
                             case 2:
-                                num2 += sit.Current;
+                                num2 += vector[i];
                                 break;
                             case 3:
-                                num3 += sit.Current;
+                                num3 += vector[i];
                                 break;
                         }
                     }
