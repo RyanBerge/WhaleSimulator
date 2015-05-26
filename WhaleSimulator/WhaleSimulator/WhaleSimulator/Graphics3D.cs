@@ -113,7 +113,7 @@ namespace WhaleSimulator
 
                     if (Camera.Position.Y < Map.WaterLevel)
                     {
-                        effect.FogEnabled = false;
+                        effect.FogEnabled = true;
                         effect.FogStart = Camera.UnderwaterFogStart;
                         effect.FogEnd = Camera.UnderwaterFogEnd;
                         effect.FogColor = Camera.FogColor;
