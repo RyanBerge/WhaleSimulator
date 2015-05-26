@@ -2,6 +2,7 @@ Content\Creatures\NewBox.xnb
 Content\Creatures\FishSchool.xnb
 Content\Terrain\Ground.xnb
 Content\Terrain\IceShelf.xnb
+Content\Creatures\IceTest.xnb
 Content\Effects\cube.xnb
 Content\Effects\ocean.xnb
 Content\Effects\wavesbump.xnb
@@ -10,12 +11,11 @@ Content\Effects\water.xnb
 Content\Images\OptionsButton.xnb
 Content\Images\PlayButton.xnb
 Content\Images\QuitButton.xnb
+Content\Images\BackButton.xnb
+Content\Images\BackgroundRight.xnb
+Content\Images\BackgroundLeft.xnb
+Content\Images\OrcaButton.xnb
+Content\Images\Blackscreen.xnb
 Content\Effects\OceanSurface.xnb
 Content\Effects\Skybox.xnb
 Content\sourceimages\Ice_0.xnb
-Content\Creatures\IceTest.xnb
-Content\Images\BackButton.xnb
-Content\Images\BackgroundLeft.xnb
-Content\Images\OrcaButton.xnb
-Content\Images\BackgroundRight.xnb
-Content\Images\Blackscreen.xnb

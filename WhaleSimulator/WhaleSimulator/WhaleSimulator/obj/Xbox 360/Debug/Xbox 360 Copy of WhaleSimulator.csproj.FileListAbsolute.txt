@@ -1,0 +1,2 @@
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Xbox 360 Copy of WhaleSimulator.csprojResolveAssemblyReference.cache

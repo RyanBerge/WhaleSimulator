@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MapData>
+  <Size>5, 1, 5</Size>
+
+  <PlayerSpecies>NewBox</PlayerSpecies>
+
+  <WaterLevel>950</WaterLevel>
+
+  
+  <PlayerSpawn>2500, 930, 2500</PlayerSpawn>
+  
+  <SpawnChunk>2,0,2</SpawnChunk>
+  
+  <SpawnDirection>1, 0, 0</SpawnDirection>
+
+  <GlobalTerrain>
+    <!--
+    <Terrain>
+      <Name>IceShelf</Name>
+    </Terrain>
+    <Terrain>
+      <Name>Ground</Name>
+    </Terrain>
+    -->
+  </GlobalTerrain>
+
+  <ChunkGrid>
+    <Chunk>
+      <Position>0,0,0</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>1,0,0</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>2,0,0</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>3,0,0</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>4,0,0</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>0,0,1</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>1,0,1</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>2,0,1</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>3,0,1</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>4,0,1</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>0,0,2</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>1,0,2</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>2,0,2</Position>
+      <CreatureList>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>500, 950, 500</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>400, 950, 500</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>IceTest</Species>
+          <Family>Ice</Family>
+          <Position>500, 950, 400</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+      </CreatureList>
+    </Chunk>
+
+    <Chunk>
+      <Position>3,0,2</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>4,0,2</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>0,0,3</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>1,0,3</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>2,0,3</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>3,0,3</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>4,0,3</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>0,0,4</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>1,0,4</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>2,0,4</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>3,0,4</Position>
+    </Chunk>
+
+    <Chunk>
+      <Position>4,0,4</Position>
+    </Chunk>
+    
+  </ChunkGrid>
+
+
+
+  </MapData>

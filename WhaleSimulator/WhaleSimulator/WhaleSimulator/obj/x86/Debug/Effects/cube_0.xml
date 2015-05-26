@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Name>Root</Name>
+    <Identity>
+      <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Effects\cube.x</SourceFilename>
+      <SourceTool>XImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 0 -1 0 0 -1 0 0 0 0 0 1</Transform>
+    <Children>
+      <Child>
+        <Name>Cube</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+        <Children>
+          <Child Type="Graphics:MeshContent">
+            <Name></Name>
+            <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+            <Positions>-1 1 1 -1 1 -1 1 1 -1 1 1 1 1 0 1 -1 0 1 -1 0 -1 1 0 -1</Positions>
+            <Geometry>
+              <Batch>
+                <Indices>0 1 2 0 2 3 4 5 6 4 6 3 7 4 3 7 3 2 8 7 2 8 2 9 10 8 9 10 9 11</Indices>
+                <Vertices>
+                  <PositionIndices>3 2 1 0 5 4 3 6 7 2 4 3</PositionIndices>
+                  <Channels>
+                    <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0.577350259 0.577350259 0.577350259 0.577350259 0.577350259 -0.577350259 -0.577350259 0.577350259 -0.577350259 -0.577350259 0.577350259 0.577350259 -0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.577350259 0.577350259 0.577350259 -0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.577350259 0.577350259 -0.577350259 0.7071068 0 0.7071068 0.577350259 0.577350259 0.577350259</VertexChannel>
+                    <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.253693 0.00326 0.498855 0.00326 0.498855 0.336322 0.253693 0.336322 0.253693 0.498078 0.001888 0.498078 0.001888 0.336322 0.498855 0.498078 0.753206 0.498078 0.753206 0.336322 1.001165 0.498078 1.001165 0.336322</VertexChannel>
+                  </Channels>
+                </Vertices>
+              </Batch>
+            </Geometry>
+          </Child>
+        </Children>
+      </Child>
+    </Children>
+  </Asset>
+</XnaContent>

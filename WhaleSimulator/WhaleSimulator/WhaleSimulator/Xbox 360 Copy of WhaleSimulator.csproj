@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{9ec93c81-02f9-4265-adcd-80c30f775fcb}</ProjectGuid>
+    <ProjectGuid>{9EC93C81-02F9-4265-ADCD-80C30F775FCB}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
@@ -88,10 +88,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\RB_GameResources\RB_GameResources\Xbox 360 Copy (3) of RB_GameResources.csproj">
-      <Project>{9ffa9be5-26a3-4fd8-96ac-b16c67cf3948}</Project>
-      <Name>Xbox 360 Copy (3) of RB_GameResources</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WhaleSimulatorContent\WhaleSimulatorContent.contentproj">
       <Name>WhaleSimulatorContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>

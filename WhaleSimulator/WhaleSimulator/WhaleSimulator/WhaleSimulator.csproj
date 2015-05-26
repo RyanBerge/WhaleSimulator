@@ -101,8 +101,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\RB_GameResources\RB_GameResources\RB_GameResources.csproj">
-      <Project>{b96a1bd1-9289-4af9-aed6-6a5dcde3d857}</Project>
+    <ProjectReference Include="..\..\..\RB_GameResources\RB_GameResources.csproj">
+      <Project>{05c55063-fec1-4333-a260-77c18feeefaa}</Project>
       <Name>RB_GameResources</Name>
     </ProjectReference>
     <ProjectReference Include="..\WhaleSimulatorContent\WhaleSimulatorContent.contentproj">
