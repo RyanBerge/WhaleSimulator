@@ -72,6 +72,8 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimationPlayer.cs" />
+    <Compile Include="Bone.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Chunk.cs" />
     <Compile Include="ChunkGrid.cs" />
@@ -101,6 +103,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\AnimationAux\AnimationAux.csproj">
+      <Project>{f2f7fa8c-1fc7-42cc-93d8-e5dff48ac09b}</Project>
+      <Name>AnimationAux</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\RB_GameResources\RB_GameResources.csproj">
       <Project>{05c55063-fec1-4333-a260-77c18feeefaa}</Project>
       <Name>RB_GameResources</Name>

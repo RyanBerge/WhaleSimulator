@@ -8,6 +8,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 using RB_GameResources.Xna.Controls;
 
+using AnimationAux;
+
 namespace WhaleSimulator
 {
     public class Graphics3D
@@ -36,6 +38,12 @@ namespace WhaleSimulator
 
         private Matrix worldTransformation;
 
+        // purely animation stuff
+        protected ModelExtra modelExtra = null; // stuff that gets the information for animation from the model
+        protected List<Bone> bones = new List<Bone>(); // list of bones for transforms
+        protected AnimationPlayer player = null; // the animation player
+        public List<AnimationClip> Clips { get { return modelExtra.Clips; } } // the list of animation clips
+
 
         public Graphics3D()
         {
@@ -50,6 +58,9 @@ namespace WhaleSimulator
         {
             BaseModel = model;
             Direction = new Vector3(1, 0, 0);
+
+            modelExtra = model.Tag as ModelExtra;
+            ObtainBones();
         }
 
 
@@ -94,6 +105,10 @@ namespace WhaleSimulator
             worldTransformation = Matrix.CreateWorld(Position, direction, Camera.CameraUp);
 
             OldRotations = Rotations;
+
+            // Animation stuff
+            if (player != null)
+                player.Update(gameTime);
         }
 
         /// <summary>
@@ -104,31 +119,150 @@ namespace WhaleSimulator
         {
             foreach (ModelMesh mesh in BaseModel.Meshes)
             {
-                foreach (BasicEffect effect in mesh.Effects)
-                {
-                    effect.World = worldTransformation;
-                    effect.View = Camera.ViewMatrix;
-                    effect.Projection = Camera.ProjectionMatrix;
-                    effect.EnableDefaultLighting();
+                // This had to be a bit redone for the animation stuff
 
-                    if (Camera.Position.Y < Map.WaterLevel)
+                if (modelExtra == null)
+                {
+                    foreach (BasicEffect effect in mesh.Effects)
                     {
-                        effect.FogEnabled = true;
-                        effect.FogStart = Camera.UnderwaterFogStart;
-                        effect.FogEnd = Camera.UnderwaterFogEnd;
-                        effect.FogColor = Camera.FogColor;
+                        effect.World = worldTransformation;
+                        effect.View = Camera.ViewMatrix;
+                        effect.Projection = Camera.ProjectionMatrix;
+                        effect.EnableDefaultLighting();
+
+                        if (Camera.Position.Y < Map.WaterLevel)
+                        {
+                            effect.FogEnabled = true;
+                            effect.FogStart = Camera.UnderwaterFogStart;
+                            effect.FogEnd = Camera.UnderwaterFogEnd;
+                            effect.FogColor = Camera.FogColor;
+                        }
+                        else
+                        {
+                            effect.FogEnabled = false;
+                            effect.FogStart = Camera.FogStart;
+                            effect.FogEnd = Camera.FogEnd;
+                            effect.FogColor = Camera.FogColor;
+                        }
                     }
-                    else
+                }
+                else
+                {
+                    //
+                    // Compute all of the bone absolute transforms
+                    //
+
+                    Matrix[] boneTransforms = new Matrix[bones.Count];
+
+                    for (int i = 0; i < bones.Count; i++)
                     {
-                        effect.FogEnabled = false;
-                        effect.FogStart = Camera.FogStart;
-                        effect.FogEnd = Camera.FogEnd;
-                        effect.FogColor = Camera.FogColor;
+                        Bone bone = bones[i];
+                        bone.ComputeAbsoluteTransform();
+
+                        boneTransforms[i] = bone.AbsoluteTransform;
+                    }
+
+                    //
+                    // Determine the skin transforms from the skeleton
+                    //
+
+                    Matrix[] skeleton = new Matrix[modelExtra.Skeleton.Count];
+                    for (int s = 0; s < modelExtra.Skeleton.Count; s++)
+                    {
+                        Bone bone = bones[modelExtra.Skeleton[s]];
+                        skeleton[s] = bone.SkinTransform * bone.AbsoluteTransform;
+                    }
+
+                    // Draw the model.
+                    foreach (Effect effect in mesh.Effects)
+                    {
+                        if (effect is BasicEffect)
+                        {
+                            BasicEffect beffect = effect as BasicEffect;
+                            beffect.World = boneTransforms[mesh.ParentBone.Index] * worldTransformation;
+                            beffect.View = Camera.ViewMatrix;
+                            beffect.Projection = Camera.ProjectionMatrix;
+                            beffect.EnableDefaultLighting();
+                            beffect.PreferPerPixelLighting = true;
+
+                            if (Camera.Position.Y < Map.WaterLevel)
+                            {
+                                beffect.FogEnabled = true;
+                                beffect.FogStart = Camera.UnderwaterFogStart;
+                                beffect.FogEnd = Camera.UnderwaterFogEnd;
+                                beffect.FogColor = Camera.FogColor;
+                            }
+                            else
+                            {
+                                beffect.FogEnabled = false;
+                                beffect.FogStart = Camera.FogStart;
+                                beffect.FogEnd = Camera.FogEnd;
+                                beffect.FogColor = Camera.FogColor;
+                            }
+                        }
+
+                        if (effect is SkinnedEffect)
+                        {
+                            SkinnedEffect seffect = effect as SkinnedEffect;
+                            seffect.World = boneTransforms[mesh.ParentBone.Index] * worldTransformation;
+                            seffect.View = Camera.ViewMatrix;
+                            seffect.Projection = Camera.ProjectionMatrix;
+                            seffect.EnableDefaultLighting();
+                            seffect.PreferPerPixelLighting = true;
+                            seffect.SetBoneTransforms(skeleton);
+                        }
                     }
                 }
 
                 mesh.Draw();
             }
+        }
+
+        // Animation stuff down here
+
+        /// <summary>
+        /// Get the bones from the model and create a bone class object for
+        /// each bone. We use our bone class to do the real animated bone work.
+        /// </summary>
+        protected void ObtainBones()
+        {
+            bones.Clear();
+            foreach (ModelBone bone in BaseModel.Bones)
+            {
+                // Create the bone object and add to the heirarchy
+                Bone newBone = new Bone(bone.Name, bone.Transform, bone.Parent != null ? bones[bone.Parent.Index] : null);
+
+                // Add to the bones for this model
+                bones.Add(newBone);
+            }
+        }
+
+        /// <summary>
+        /// Find a bone in this model by name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Bone FindBone(string name)
+        {
+            foreach (Bone bone in bones)
+            {
+                if (bone.Name == name)
+                    return bone;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Play an animation clip
+        /// </summary>
+        /// <param name="clip">The clip to play</param>
+        /// <returns>The player that will play this clip</returns>
+        public AnimationPlayer SetClip(AnimationClip clip)
+        {
+            // Create a clip player and assign it to this model
+            player = new AnimationPlayer(clip, this);
+            return player;
         }
 
     }

@@ -1,0 +1,4 @@
+C:\Users\19\Documents\GitHub\WhaleSimulator\RB_GameResources\RB_GameResources\obj\x86\Debug\RB_GameResources.csprojResolveAssemblyReference.cache
+C:\Users\19\Documents\GitHub\WhaleSimulator\RB_GameResources\RB_GameResources\obj\x86\Debug\Interop.NetFwTypeLib.dll
+C:\Users\19\Documents\GitHub\WhaleSimulator\RB_GameResources\RB_GameResources\obj\x86\Debug\RB_GameResources.csproj.ResolveComReference.cache
+C:\Users\19\Documents\GitHub\WhaleSimulator\RB_GameResources\RB_GameResources\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt

@@ -1,8 +1,3 @@
-Content\Creatures\NewBox.xnb
-Content\Creatures\FishSchool.xnb
-Content\Terrain\Ground.xnb
-Content\Terrain\IceShelf.xnb
-Content\Creatures\IceTest.xnb
 Content\Effects\cube.xnb
 Content\Effects\ocean.xnb
 Content\Effects\wavesbump.xnb
@@ -19,4 +14,10 @@ Content\Images\Blackscreen.xnb
 Content\Effects\OceanSurface.xnb
 Content\Effects\Skybox.xnb
 Content\sourceimages\Ice_0.xnb
+Content\Creatures\NewBox.xnb
+Content\Creatures\FishSchool.xnb
+Content\Creatures\IceTest.xnb
+Content\Creatures\WaleAnimation.xnb
+Content\Terrain\Ground.xnb
+Content\Terrain\IceShelf.xnb
 Data\MapData\OrcaLevel.xml

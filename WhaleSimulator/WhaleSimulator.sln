@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhaleSimulator", "WhaleSimulator\WhaleSimulator\WhaleSimulator.csproj", "{F3B74A6E-AEC7-4DEE-A0AC-CEA6B0EB30BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhaleSimulatorContent", "WhaleSimulator\WhaleSimulatorContent\WhaleSimulatorContent.contentproj", "{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RB_GameResources", "..\RB_GameResources\RB_GameResources.csproj", "{05C55063-FEC1-4333-A260-77C18FEEEFAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationAux", "..\AnimationAux\AnimationAux.csproj", "{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationPipeline", "..\AnimationPipeline\AnimationPipeline.csproj", "{FF2FBE94-50B5-4E78-9592-B95F32A8881E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,34 @@ Global
 		{05C55063-FEC1-4333-A260-77C18FEEEFAA}.Release|x86.ActiveCfg = Release|x86
 		{05C55063-FEC1-4333-A260-77C18FEEEFAA}.Release|x86.Build.0 = Release|x86
 		{05C55063-FEC1-4333-A260-77C18FEEEFAA}.Release|Xbox 360.ActiveCfg = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|x86.ActiveCfg = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|x86.Build.0 = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|Any CPU.ActiveCfg = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|x86.ActiveCfg = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|x86.Build.0 = Release|x86
+		{F2F7FA8C-1FC7-42CC-93D8-E5DFF48AC09B}.Release|Xbox 360.ActiveCfg = Release|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Any CPU.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|x86.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|x86.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Debug|Xbox 360.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Any CPU.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Any CPU.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Mixed Platforms.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Mixed Platforms.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|x86.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|x86.Build.0 = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Xbox 360.ActiveCfg = Debug|x86
+		{FF2FBE94-50B5-4E78-9592-B95F32A8881E}.Release|Xbox 360.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

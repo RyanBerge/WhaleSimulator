@@ -9,6 +9,8 @@ using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
+using AnimationAux;
+
 namespace WhaleSimulator
 {
     public delegate void VoidDelegate();
@@ -49,6 +51,14 @@ namespace WhaleSimulator
             this.BaseModel = Content.Load<Model>("Creatures/" + species);
             Speed = 0;
             SetAI();
+
+            // animation stuff
+            modelExtra = BaseModel.Tag as ModelExtra;
+
+            ObtainBones();
+
+            // SetClip(Clips[0]);
+            // player.Looping = true;
         }
 
         public Creature(CreatureInfo info, ContentManager Content)

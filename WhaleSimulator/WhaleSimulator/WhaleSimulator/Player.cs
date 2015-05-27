@@ -33,7 +33,9 @@ namespace WhaleSimulator
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, "Player", spawnPosition, spawnDirection, true, Content)
         {
-            
+            // animation stuff
+            SetClip(Clips[0]);
+            player.Looping = true;
         }
 
         public override void Update(GameTime gameTime, InputStates inputStates)
