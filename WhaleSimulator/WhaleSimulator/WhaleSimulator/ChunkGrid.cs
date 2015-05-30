@@ -30,6 +30,7 @@ namespace WhaleSimulator
         //private List<Graphics3D> globalTerrain;
 
         private Vector3 mapSize;
+        private Vector3 playerChunkPosition;
 
         private bool initialized = false;
         //private bool loadingChunk = false;
@@ -64,6 +65,7 @@ namespace WhaleSimulator
             //}
             //GlobalTerrain = globalTerrain;
             LoadedChunks = new List<Chunk>();
+            playerChunkPosition = new Vector3(currentChunk.Position.X, currentChunk.Position.Y, currentChunk.Position.Z);
         }
 
         public void LoadAssets()
@@ -460,45 +462,71 @@ namespace WhaleSimulator
             {
                 Vector3 playerPosition = player.Position;
 
-                if (playerPosition.X < currentChunk.Position.X * 1000)
+                if (playerPosition.X < playerChunkPosition.X * 1000)
                 {
                     currentChunk = currentChunk.West;
+                    playerChunkPosition.X--;
                     Chunk movingChunk = this[(int)(mapSize.X - 1), 0, 0];
-                    for (int i = 0; i < mapSize.Z - 1; i++)
+                    for (int i = 0; i < mapSize.Z; i++)
+                    {
                         movingChunk.ShiftAssets(Chunk.Directions.West);
+                        movingChunk = movingChunk.South;
+                    }
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftPosition(Chunk.Directions.East);
                 }
-                else if (player.Position.X > currentChunk.Position.X * 1000 + 1000)
+                else if (playerPosition.X > playerChunkPosition.X * 1000 + 1000)
                 {
                     currentChunk = currentChunk.East;
+                    playerChunkPosition.X++;
                     Chunk movingChunk = this[0, 0, 0];
-                    for (int i = 0; i < mapSize.Z - 1; i++)
+                    for (int i = 0; i < mapSize.Z; i++)
+                    {
                         movingChunk.ShiftAssets(Chunk.Directions.East);
+                        movingChunk = movingChunk.South;
+                    }
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftPosition(Chunk.Directions.West);
                 }
-                else if (player.Position.Z < currentChunk.Position.Z * 1000)
+                else if (playerPosition.Z < playerChunkPosition.Z * 1000)
                 {
                     currentChunk = currentChunk.North;
+                    playerChunkPosition.Z--;
                     Chunk movingChunk = this[0, 0, (int)(mapSize.X - 1)];
-                    for (int i = 0; i < mapSize.X - 1; i++)
+                    for (int i = 0; i < mapSize.X; i++)
+                    {
                         movingChunk.ShiftAssets(Chunk.Directions.North);
+                        movingChunk = movingChunk.East;
+                    }
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftPosition(Chunk.Directions.South);
                 }
-                else if (player.Position.Z > currentChunk.Position.Z * 1000 + 1000)
+                else if (playerPosition.Z > playerChunkPosition.Z * 1000 + 1000)
                 {
                     currentChunk = currentChunk.South;
+                    playerChunkPosition.Z++;
                     Chunk movingChunk = this[0, 0, 0];
-                    for (int i = 0; i < mapSize.X - 1; i++)
+                    for (int i = 0; i < mapSize.X; i++)
+                    {
                         movingChunk.ShiftAssets(Chunk.Directions.South);
+                        movingChunk = movingChunk.East;
+                    }
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftPosition(Chunk.Directions.North);
                 }
 
 
-                if (player.Position.X < 0)
+                if (playerPosition.X < 0)
                 {
                     playerPosition.X += Map.MapSize.X * 1000;
+                    playerChunkPosition.X += Map.MapSize.X;
                     foreach (Chunk chunk in this)
                         chunk.ShiftAssets(Chunk.Directions.East);
                 }
                 if (playerPosition.X > Map.MapSize.X * 1000)
                 {
                     playerPosition.X -= Map.MapSize.X * 1000;
+                    playerChunkPosition.X -= Map.MapSize.X;
                     foreach (Chunk chunk in this)
                         chunk.ShiftAssets(Chunk.Directions.West);
                 }
@@ -506,12 +534,14 @@ namespace WhaleSimulator
                 if (playerPosition.Z < 0)
                 {
                     playerPosition.Z += Map.MapSize.Z * 1000;
+                    playerChunkPosition.Z += Map.MapSize.Z;
                     foreach (Chunk chunk in this)
                         chunk.ShiftAssets(Chunk.Directions.South);
                 }
                 if (playerPosition.Z > Map.MapSize.Z * 1000)
                 {
                     playerPosition.Z -= Map.MapSize.Z * 1000;
+                    playerChunkPosition.Z -= Map.MapSize.Z;
                     foreach (Chunk chunk in this)
                         chunk.ShiftAssets(Chunk.Directions.North);
                 }

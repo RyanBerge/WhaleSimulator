@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>pCube1</Name>
+    <Identity>
+      <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\BigIce_B.fbx</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+    <Positions>-5.738039 -3.56567383 13.1965437 2.295217 -4.02001858 14.1764536 8.033255 -3.3182497 9.821439 -11.4179382 -1.2002064 -3.97151351 -4.22429657 -0.8845704 8.775038 -4.875801 7.391718 3.77493334 11.4760761 -3.51513243 4.997384 -4.00824547 10.9016933 1.50750363 2.295217 -3.03999138 6.074568 -4.01662731 10.749918 -1.478966 -4.49317265 14.4976416 -3.44828534 0.0309882164 0.732762158 -4.688644 11.4760761 -3.393609 -4.336293 -7.993307 7.11658 -6.45991945 9.180861 -3.46726441 -14.2188578 7.15255737E-07 -2.88926125 -15.2514668 -8.097887 -2.755073 -11.4406395 -5.22886753 -17.13027 -0.0212013721 4.590432 -12.3270807 -3.0612607 4.590432 -9.942718 5.466425</Positions>
+    <Geometry>
+      <Batch>
+        <Material>#Resource1</Material>
+        <Indices>2 1 0 2 0 3 4 2 3 4 1 2 5 4 3 6 1 4 4 5 6 6 7 1 8 5 3 8 6 5 9 8 3 10 6 8 8 9 10 10 7 6 12 11 7 7 10 12 13 9 3 14 12 10 10 9 13 15 14 10 17 13 16 17 10 13 15 10 17 19 18 17 20 15 17 17 18 20 20 14 15 20 21 14 22 18 19 23 20 18 24 21 20 20 23 24 25 23 18 18 22 25 25 26 23 26 24 23</Indices>
+        <Vertices>
+          <PositionIndices>0 1 4 3 5 7 8 2 9 10 11 6 12 13 14 15 3 16 17 3 18 12 0 19 6 1 2</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">-0.4594273 -0.5437567 0.7023213 0.224622324 -0.491537482 0.8413892 -0.596188664 0.5668022 0.5685898 -0.98704195 -0.152303115 0.05051538 -0.00651638955 0.7671509 0.641433656 0.3737137 0.8886453 0.265796244 0.584732652 0.759614 0.2847354 0.5378272 0.7312847 0.419481277 0.7841488 0.5942696 0.178757519 0.716928244 0.6093111 -0.338753432 0.5749661 0.788246155 -0.219276384 0.8372491 0.5183881 0.174033627 0.9412138 0.337811261 0.000343887223 -0.190329552 0.4775685 -0.8577313 0.59768784 -0.0211472455 -0.801449955 -0.0628828555 -0.412368983 -0.908844054 -0.98704195 -0.152303115 0.05051538 -0.323288143 -0.449735224 -0.8326001 -0.4501456 -0.89081496 -0.061786525 -0.98704195 -0.152303115 0.05051538 0.298651 -0.853623748 -0.4267718 0.9412138 0.337811261 0.000343887223 -0.4594273 -0.5437567 0.7023213 0.364701629 -0.7937866 0.4867192 0.8372491 0.5183881 0.174033627 0.224622324 -0.491537482 0.8413892 0.5378272 0.7312847 0.419481277</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.427083343 0.983593762 0.525000036 0.96245116 0.45625 0.9050781 0.17979686 0.911390364 0.45625 0.7828125 0.453125 0.7121745 0.525000036 0.7083333 0.587500036 0.7685547 0.449609369 0.6959635 0.45 0.542122364 0.512500048 0.485156238 0.6805556 0.8364366 0.62500006 0.5307291 0.41875 0.508789063 0.6 0.337707639 0.5 0.3312745 0.375 0.418750048 0.41875 0.291015744 0.450000018 0.125000238 0.375 0.166666865 0.5500001 0.166666865 0.62500006 0.166666865 0.4375 0.0104168653 0.5500001 0.08333355 0.62500006 0.08333355 0.525000036 2.38418579E-07 0.6 2.38418579E-07</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Name>blinn2</Name>
+      <Identity>
+        <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\BigIce_B.fbx</SourceFilename>
+        <SourceTool>FbxImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0.8 0.8 0.8</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0.5 0.5 0.5</Data>
+        <Data Key="SpecularPower" Type="float">6.311791</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <OpaqueData>
+            <Data Key="TextureCoordinate">TextureCoordinate0</Data>
+          </OpaqueData>
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\..\WhaleSimulatorContent\sourceimages\floating ice2_Texture.jpg</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

@@ -50,5 +50,6 @@
   <Model>Squid</Model>
   <Model>StandingGull</Model>
   <Model>Toothfish_A</Model>
-  <Model>Toothfish_B</Model>  
+  <Model>Toothfish_B</Model>
+  <Model>OceanFloor</Model>
 </ModelList>

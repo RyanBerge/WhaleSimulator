@@ -74,7 +74,7 @@ namespace WhaleSimulator
         public Creature(CreatureInfo info)
         {
             Properties = info;
-            System.Diagnostics.Debug.WriteLine("Ice Position: " + info.SpawnPosition);
+            //System.Diagnostics.Debug.WriteLine("Ice Position: " + info.SpawnPosition);
             this.Position = info.SpawnPosition;
             this.Direction = info.SpawnDirection;
             this.Direction.Normalize();

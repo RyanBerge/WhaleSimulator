@@ -1,0 +1,6 @@
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\bin\Xbox 360\Debug\RB_GameResources.dll
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\bin\Xbox 360\Debug\RB_GameResources.pdb
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\Xbox 360\Debug\Xbox 360 Copy of RB_GameResources.csprojResolveAssemblyReference.cache
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\Xbox 360\Debug\RB_GameResources.dll
+D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\Xbox 360\Debug\RB_GameResources.pdb

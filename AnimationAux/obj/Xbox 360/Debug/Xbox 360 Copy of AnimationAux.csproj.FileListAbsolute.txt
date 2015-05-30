@@ -1,0 +1,6 @@
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\bin\Xbox 360\Debug\XnaAux.dll
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\bin\Xbox 360\Debug\XnaAux.pdb
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\Xbox 360\Debug\Xbox 360 Copy of AnimationAux.csprojResolveAssemblyReference.cache
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\Xbox 360\Debug\XnaAux.dll
+D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\Xbox 360\Debug\XnaAux.pdb

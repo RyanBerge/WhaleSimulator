@@ -48,7 +48,7 @@ namespace WhaleSimulator
         /// <summary>
         /// Get the position of this Chunk in the ChunkGrid.
         /// </summary>
-        public Vector3 Position { get; private set; }
+        public Vector3 Position { get { return position; } private set { position = value; } }
         /// <summary>
         /// The ContentManager responsible for this Chunk's assets.
         /// </summary>
@@ -62,6 +62,8 @@ namespace WhaleSimulator
         public List<Creature> Creatures { get; set; }
         //public List<string> StaticTerrainList { get; set; }
         //public List<Graphics3D> StaticTerrain { get; set; }
+
+        private Vector3 position;
 
         /// <summary>
         /// Creates a new Chunk object with a given grid position.  Does not link to other Chunks in the grid.
@@ -220,6 +222,37 @@ namespace WhaleSimulator
             }
         }
 
+        public void ShiftPosition(Directions direction)
+        {
+            switch (direction)
+            {
+                case Directions.East:
+                    if (Position.X < Map.MapSize.X - 1)
+                        position.X++;
+                    else
+                        position.X = 0;
+                    break;
+                case Directions.West:
+                    if (Position.X > 0)
+                        position.X--;
+                    else
+                        position.X = Map.MapSize.X - 1;
+                    break;
+                case Directions.South:
+                    if (Position.Z < Map.MapSize.Z - 1)
+                        position.Z++;
+                    else
+                        position.Z = 0;
+                    break;
+                case Directions.North:
+                    if (Position.Z > 0)
+                        position.Z--;
+                    else
+                        position.Z = Map.MapSize.Z - 1;
+                    break;
+            }
+        }
+
         public void ShiftAssets(Directions direction)
         {
             switch (direction)
@@ -229,7 +262,7 @@ namespace WhaleSimulator
                     {
                         Vector3 newPosition = creature.Position;
                         newPosition.X += Map.MapSize.X * 1000;
-                        Position = newPosition;
+                        creature.Position = newPosition;
                     }
                     break;
 
@@ -238,7 +271,7 @@ namespace WhaleSimulator
                     {
                         Vector3 newPosition = creature.Position;
                         newPosition.X -= Map.MapSize.X * 1000;
-                        Position = newPosition;
+                        creature.Position = newPosition;
                     }
                     break;
 
@@ -247,7 +280,7 @@ namespace WhaleSimulator
                     {
                         Vector3 newPosition = creature.Position;
                         newPosition.Z += Map.MapSize.Z * 1000;
-                        Position = newPosition;
+                        creature.Position = newPosition;
                     }
                     break;
 
@@ -256,7 +289,7 @@ namespace WhaleSimulator
                     {
                         Vector3 newPosition = creature.Position;
                         newPosition.Z -= Map.MapSize.Z * 1000;
-                        Position = newPosition;
+                        creature.Position = newPosition;
                     }
                     break;
             }

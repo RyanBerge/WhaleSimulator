@@ -1,1 +1,2 @@
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\Xbox 360\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\Xbox 360\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache
