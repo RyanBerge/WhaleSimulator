@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MapData>
+  <Size>5, 1, 5</Size>
+
+  <PlayerSpecies>OrcaWhale</PlayerSpecies>
+
+  <WaterLevel>950</WaterLevel>
+
+  
+  <PlayerSpawn>2500, 930, 2500</PlayerSpawn>
+  
+  <SpawnChunk>2,0,2</SpawnChunk>
+  
+  <SpawnDirection>1, 0, 0</SpawnDirection>
+
+  
+      <CreatureList>
+        <Creature>
+          <Species>BigIce_A</Species>
+          <Family>Ice</Family>
+          <Position>0, 950, 0</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>BigIce_A</Species>
+          <Family>Ice</Family>
+          <Position>-100, 950, 0</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+        <Creature>
+          <Species>BigIce_A</Species>
+          <Family>Ice</Family>
+          <Position>0, 950, -100</Position>
+          <Direction>-99, 0, -99</Direction>
+        </Creature>
+      </CreatureList>
+
+
+
+  </MapData>

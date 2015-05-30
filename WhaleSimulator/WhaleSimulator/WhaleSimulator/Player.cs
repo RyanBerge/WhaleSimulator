@@ -31,11 +31,12 @@ namespace WhaleSimulator
         private const float BASE_DECELERATION = 0.6f;
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
-            : base(species, "Player", spawnPosition, spawnDirection, true, Content)
+            : base(species, "Player", spawnPosition, spawnDirection, true)
         {
+
             // animation stuff
-            SetClip(Clips[0]);
-            player.Looping = true;
+            //SetClip(Clips[0]);
+            //player.Looping = true;
         }
 
         public override void Update(GameTime gameTime, InputStates inputStates)
@@ -96,15 +97,7 @@ namespace WhaleSimulator
 
             base.Update(gameTime, inputStates);
 
-            if (position.X < 0)
-                position.X += Map.MapSize.X * 1000;
-            if (position.X > Map.MapSize.X * 1000)
-                position.X -= Map.MapSize.X * 1000;
-
-            if (position.Z < 0)
-                position.Z += Map.MapSize.Z * 1000;
-            if (position.Z > Map.MapSize.Z * 1000)
-                position.Z -= Map.MapSize.Z * 1000;
+            
 
             //System.Diagnostics.Debug.WriteLine(position);
 

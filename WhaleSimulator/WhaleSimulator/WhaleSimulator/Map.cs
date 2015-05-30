@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
+using System.IO;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -29,6 +31,7 @@ namespace WhaleSimulator
         public static Random Randomizer { get; set; }
         public static int WaterLevel { get; set; }
         public static Vector3 MapSize { get; set; }
+        public static Dictionary<string, Model> Models { get; set; }
 
         public Map(string name)
         {
@@ -48,10 +51,39 @@ namespace WhaleSimulator
         private void LoadMap()
         {
             blackscreen = mapContent.Load<Texture2D>("Images/Blackscreen");
+            LoadModelList("Data/Models.xml");
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml", mapContent);
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
-            chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
+            //chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
+            chunkGrid.LoadMap();
             MapSize = chunkGrid.MapSize;
+        }
+
+        private void LoadModelList(string filepath)
+        {
+            XDocument doc;
+
+            try
+            {
+                using (Stream stream = TitleContainer.OpenStream(filepath))
+                {
+                    doc = XDocument.Load(stream);
+                    stream.Close();
+                }
+
+                IEnumerable<XElement> elements = doc.Root.Elements("Model");
+                Models = new Dictionary<string, Model>();
+
+                foreach (XElement e in elements)
+                {
+                    Models.Add(e.Value, mapContent.Load<Model>("Creatures/FBX/" + e.Value));
+                }
+
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
@@ -107,8 +139,8 @@ namespace WhaleSimulator
 
         public void Quit()
         {
-            foreach (Chunk c in chunkGrid)
-                c.UnloadAssets();
+            //foreach (Chunk c in chunkGrid)
+            //    c.UnloadAssets();
             mapContent.Unload();
         }
     }

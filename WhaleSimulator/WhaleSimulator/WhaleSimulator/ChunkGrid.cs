@@ -27,13 +27,13 @@ namespace WhaleSimulator
 
         private ContentManager mapContent;
 
-        private List<Graphics3D> globalTerrain;
+        //private List<Graphics3D> globalTerrain;
 
         private Vector3 mapSize;
 
         private bool initialized = false;
-        private bool loadingChunk = false;
-        private bool unloadingChunk = false;
+        //private bool loadingChunk = false;
+        //private bool unloadingChunk = false;
 
         public Vector3 MapSize { get { return mapSize; } }
         public Chunk SpawnChunk { get { return spawnChunk; } set { spawnChunk = value; } }
@@ -44,7 +44,7 @@ namespace WhaleSimulator
 
         public static Vector3 MapCenter { get; set; }
         public static List<Chunk> LoadedChunks { get; set; }
-        public static List<Graphics3D> GlobalTerrain { get; set; }
+        //public static List<Graphics3D> GlobalTerrain { get; set; }
 
         /// <summary>
         /// Creates a new ChunkGrid by loading data from the designated filepath.
@@ -56,19 +56,19 @@ namespace WhaleSimulator
             LoadFromXML(filepath);
             MapCenter = new Vector3((mapSize.X * 1000) / 2, (mapSize.Y * 1000) / 2, (mapSize.Z * 1000) / 2);
             Map.WaterLevel = WaterLevel;
-            foreach (Graphics3D g in globalTerrain)
-            {
-                Vector3 position = MapCenter;
-                position.Y = 0;
-                g.Position = position;
-            }
-            GlobalTerrain = globalTerrain;
+            //foreach (Graphics3D g in globalTerrain)
+            //{
+            //    Vector3 position = MapCenter;
+            //    position.Y = 0;
+            //    g.Position = position;
+            //}
+            //GlobalTerrain = globalTerrain;
             LoadedChunks = new List<Chunk>();
         }
 
         public void LoadAssets()
         {
-            loadingChunk = true;
+            //loadingChunk = true;
             LoadAssets(currentChunk);
             List<Chunk> loadedChunks = new List<Chunk>();
             foreach (Chunk chunk in this)
@@ -77,7 +77,13 @@ namespace WhaleSimulator
                     loadedChunks.Add(chunk);
             }
             LoadedChunks = loadedChunks;
-            loadingChunk = false;
+            //loadingChunk = false;
+        }
+
+        public void LoadMap()
+        {
+            foreach (Chunk chunk in this)
+                chunk.LoadAssets();
         }
 
         public void LoadAssets(Vector3 centerChunk)
@@ -269,13 +275,13 @@ namespace WhaleSimulator
 
                 WaterLevel = int.Parse(doc.Root.Element("WaterLevel").Value);
 
-                IEnumerable<XElement> elements = doc.Root.Elements("GlobalTerrain").Elements("Terrain");
-                globalTerrain = new List<Graphics3D>();
+                //IEnumerable<XElement> elements = doc.Root.Elements("GlobalTerrain").Elements("Terrain");
+                //globalTerrain = new List<Graphics3D>();
 
-                foreach (XElement e in elements)
-                {
-                    globalTerrain.Add(new Graphics3D(mapContent.Load<Model>("Terrain/" + e.Element("Name").Value)));
-                }
+                //foreach (XElement e in elements)
+                //{
+                //    globalTerrain.Add(new Graphics3D(mapContent.Load<Model>("Terrain/" + e.Element("Name").Value)));
+                //}
 
                 PlayerSpawn = Utilities.Parse(doc.Root.Element("PlayerSpawn").Value);
 
@@ -283,13 +289,31 @@ namespace WhaleSimulator
 
                 Vector3 SpawnChunkPosition = Utilities.Parse(doc.Root.Element("SpawnChunk").Value);
 
-                elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
+                IEnumerable<XElement> elements = doc.Root.Elements("ChunkGrid").Elements("Chunk");
 
-                List<Chunk> chunkList = new List<Chunk>();
-
+                
+                /*
                 foreach (XElement e in elements)
                 {
                     chunkList.Add(Chunk.FromXML(e));
+                }
+                 */
+
+                List<Chunk> chunkList = new List<Chunk>();
+                for (int i = 0; i < mapSize.X; i++)
+                {
+                    for (int j = 0; j < mapSize.Y; j++)
+                    {
+                        for (int k = 0; k < mapSize.Z; k++)
+                        {
+                            Chunk chunk = new Chunk(new Vector3(i, j, k));
+                            chunk.CreatureList = new List<CreatureInfo>();
+                            chunk.Creatures = new List<Creature>();
+                            //temp.StaticTerrainList = staticTerrainList;
+                            //temp.StaticTerrain = new List<Graphics3D>();
+                            chunkList.Add(chunk);
+                        }
+                    }
                 }
 
                 if (chunkList.Count == 0)
@@ -328,33 +352,50 @@ namespace WhaleSimulator
                         }
 
                     }
-
-                    /*if (chunk.Position.X == 0)
-                    {
-                        Chunk other = this[(int)this.mapSize.X - 1, (int)chunk.Position.Y, (int)chunk.Position.Z];
-                        chunk.West = other;
-                        other.East = chunk;
-                    }
-                    if (chunk.Position.Y == 0)
-                    {
-                        Chunk other = this[(int)chunk.Position.X, (int)this.mapSize.Y - 1, (int)chunk.Position.Z];
-                        chunk.North = other;
-                        other.South = chunk;
-                    }
-                    if (chunk.Position.Z == 0)
-                    {
-                        Chunk other = this[(int)chunk.Position.X, (int)chunk.Position.Y, (int)mapSize.Z - 1];
-                        chunk.Down = other;
-                        other.Up = chunk;
-                    }*/
-
                 }
-
-
 
                 rootChunk = chunkList[0];
                 SpawnChunk = this[(int)SpawnChunkPosition.X, (int)SpawnChunkPosition.Y, (int)SpawnChunkPosition.Z];
                 currentChunk = spawnChunk;
+
+                element = doc.Root.Element("CreatureList");
+                //List<CreatureInfo> creatureList = new List<CreatureInfo>();
+                if (element != null)
+                {
+                    elements = element.Elements("Creature");
+                    foreach (XElement e in elements)
+                    {
+                        string species = e.Element("Species").Value;
+                        string family = e.Element("Family").Value;
+                        Vector3 spawn = Utilities.Parse(e.Element("Position").Value);
+                        spawn.X += mapSize.X * 500;
+                        spawn.Z += mapSize.Z * 500;
+
+                        Vector3 direction = Utilities.Parse(e.Element("Direction").Value);
+
+                        if (direction.X == -99)
+                            direction.X = (float)Map.Randomizer.NextDouble() * 2 - 1;
+                        if (direction.Y == -99)
+                            direction.Y = (float)Map.Randomizer.NextDouble() * 2 - 1;
+                        if (direction.Z == -99)
+                            direction.Z = (float)Map.Randomizer.NextDouble() * 2 - 1;
+
+                        bool swims;
+                        element = e.Element("Swims");
+                        if (element != null)
+                            swims = bool.Parse(element.Value);
+                        else
+                            swims = false;
+
+                        Chunk chunk = this[(int)Math.Floor(spawn.X/1000), 0, (int)Math.Floor(spawn.X/1000)];
+                        //spawn.X -= chunk.Position.X * 1000;
+                        //spawn.Z -= chunk.Position.Z * 1000;
+
+                        chunk.CreatureList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
+                    }
+                }
+
+
             }
             catch (Exception e)
             {
@@ -417,27 +458,63 @@ namespace WhaleSimulator
         {
             if (initialized)
             {
-                if (((player.Position.X < currentChunk.Position.X * 1000) || (player.Position.X > currentChunk.Position.X * 1000 + 1000)) ||
-                    ((player.Position.Y < currentChunk.Position.Y * 1000) || (player.Position.Y > currentChunk.Position.Y * 1000 + 1000)) ||
-                    ((player.Position.Z < currentChunk.Position.Z * 1000) || (player.Position.Z > currentChunk.Position.Z * 1000 + 1000)))
+                Vector3 playerPosition = player.Position;
+
+                if (playerPosition.X < currentChunk.Position.X * 1000)
                 {
-                    Chunk oldChunk = currentChunk;
-                    currentChunk = this[(int)Math.Floor(player.Position.X / 1000), (int)Math.Floor(player.Position.Y / 1000), (int)Math.Floor(player.Position.Z / 1000)];
-                    if (currentChunk == null)
-                        currentChunk = oldChunk;
-
-
-                    Thread loadingThread = new Thread(LoadAssets);
-                    if (!loadingChunk)
-                        loadingThread.Start();
-
-                    //Thread unloadingThread = new Thread(UnloadAssets);
-                    //if (!unloadingChunk)
-                    //    unloadingThread.Start();
-
-                    UnloadAssets();                    
+                    currentChunk = currentChunk.West;
+                    Chunk movingChunk = this[(int)(mapSize.X - 1), 0, 0];
+                    for (int i = 0; i < mapSize.Z - 1; i++)
+                        movingChunk.ShiftAssets(Chunk.Directions.West);
+                }
+                else if (player.Position.X > currentChunk.Position.X * 1000 + 1000)
+                {
+                    currentChunk = currentChunk.East;
+                    Chunk movingChunk = this[0, 0, 0];
+                    for (int i = 0; i < mapSize.Z - 1; i++)
+                        movingChunk.ShiftAssets(Chunk.Directions.East);
+                }
+                else if (player.Position.Z < currentChunk.Position.Z * 1000)
+                {
+                    currentChunk = currentChunk.North;
+                    Chunk movingChunk = this[0, 0, (int)(mapSize.X - 1)];
+                    for (int i = 0; i < mapSize.X - 1; i++)
+                        movingChunk.ShiftAssets(Chunk.Directions.North);
+                }
+                else if (player.Position.Z > currentChunk.Position.Z * 1000 + 1000)
+                {
+                    currentChunk = currentChunk.South;
+                    Chunk movingChunk = this[0, 0, 0];
+                    for (int i = 0; i < mapSize.X - 1; i++)
+                        movingChunk.ShiftAssets(Chunk.Directions.South);
                 }
 
+
+                if (player.Position.X < 0)
+                {
+                    playerPosition.X += Map.MapSize.X * 1000;
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftAssets(Chunk.Directions.East);
+                }
+                if (playerPosition.X > Map.MapSize.X * 1000)
+                {
+                    playerPosition.X -= Map.MapSize.X * 1000;
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftAssets(Chunk.Directions.West);
+                }
+
+                if (playerPosition.Z < 0)
+                {
+                    playerPosition.Z += Map.MapSize.Z * 1000;
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftAssets(Chunk.Directions.South);
+                }
+                if (playerPosition.Z > Map.MapSize.Z * 1000)
+                {
+                    playerPosition.Z -= Map.MapSize.Z * 1000;
+                    foreach (Chunk chunk in this)
+                        chunk.ShiftAssets(Chunk.Directions.North);
+                }
                 
                 
                 foreach (Chunk chunk in this)
@@ -445,13 +522,14 @@ namespace WhaleSimulator
                     chunk.Update(gameTime, inputStates);
                 }
 
-                foreach (Graphics3D g in globalTerrain)
-                {
-                    g.Update(gameTime);
-                }
+                //foreach (Graphics3D g in globalTerrain)
+                //{
+                //    g.Update(gameTime);
+                //}
             }
         }
 
+        /*
         private void UnloadAssets()
         {
             foreach (Chunk chunk in this)
@@ -465,6 +543,7 @@ namespace WhaleSimulator
                 } 
             }
         }
+        */
 
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
@@ -479,10 +558,10 @@ namespace WhaleSimulator
                     chunk.Draw3D(gameTime);
                 }
 
-                foreach (Graphics3D g in globalTerrain)
-                {
-                    g.Draw3D(gameTime);
-                }
+                //foreach (Graphics3D g in globalTerrain)
+                //{
+                //    g.Draw3D(gameTime);
+                //}
             }
         }
 
@@ -526,113 +605,7 @@ namespace WhaleSimulator
             this.root = root;
             this.mapSize = size;
         }
-/*
-        /// <summary>
-        /// Moves the enumerator one step forward through the grid.
-        /// </summary>
-        /// <returns></returns>
-        public bool MoveNext()
-        {
-            if (chunk == null)
-            {
-                chunk = root;
-                return true;
-            }
-            else
-            {
-                if (!left && chunk.East != null)
-                {
-                    chunk = chunk.East;
-                    return true;
-                }
-                else if (!left && chunk.East == null)
-                {
-                    if (!up && chunk.South != null)
-                    {
-                        chunk = chunk.South;
-                        left = true;
-                        return true;
-                    }
-                    else if (!up && chunk.South == null)
-                    {
-                        if (chunk.Up != null)
-                        {
-                            chunk = chunk.Up;
-                            up = true;
-                            left = true;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                    else if (up && chunk.North != null)
-                    {
-                        chunk = chunk.North;
-                        left = true;
-                        return true;
-                    }
-                    else if (up && chunk.North == null)
-                    {
-                        if (chunk.Up != null)
-                        {
-                            chunk = chunk.Up;
-                            up = false;
-                            left = true;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
 
-                }
-                else if (left && chunk.West != null)
-                {
-                    chunk = chunk.West;
-                    return true;
-                }
-                else if (left && chunk.West == null)
-                {
-                    if (!up && chunk.South != null)
-                    {
-                        chunk = chunk.South;
-                        left = false;
-                        return true;
-                    }
-                    else if (!up && chunk.South == null)
-                    {
-                        if (chunk.Up != null)
-                        {
-                            chunk = chunk.Up;
-                            up = true;
-                            left = false;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                    else if (up && chunk.North != null)
-                    {
-                        chunk = chunk.North;
-                        left = false;
-                        return true;
-                    }
-                    else if (up && chunk.North == null)
-                    {
-                        if (chunk.Up != null)
-                        {
-                            chunk = chunk.Up;
-                            up = false;
-                            left = false;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                }
-            }
-            return false;
-        }
-        */
         public bool MoveNext()
         {
             if (chunk == null)

@@ -39,7 +39,7 @@ namespace WhaleSimulator
 
         private float bounceTimer = 0;
 
-        public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims, ContentManager Content)
+        public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims)
         {
             Properties = new CreatureInfo(species, family, spawnPosition, spawnDirection, true, swims);
             this.Position = spawnPosition;
@@ -48,7 +48,17 @@ namespace WhaleSimulator
             SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
-            this.BaseModel = Content.Load<Model>("Creatures/" + species);
+            Model outModel;
+            try
+            {
+                Map.Models.TryGetValue(species, out outModel);
+                BaseModel = outModel;
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+
             Speed = 0;
             SetAI();
 
@@ -61,16 +71,19 @@ namespace WhaleSimulator
             // player.Looping = true;
         }
 
-        public Creature(CreatureInfo info, ContentManager Content)
+        public Creature(CreatureInfo info)
         {
             Properties = info;
+            System.Diagnostics.Debug.WriteLine("Ice Position: " + info.SpawnPosition);
             this.Position = info.SpawnPosition;
             this.Direction = info.SpawnDirection;
             this.Direction.Normalize();
             SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
-            this.BaseModel = Content.Load<Model>("Creatures/" + Properties.Species);
+            Model outModel;
+            Map.Models.TryGetValue(info.Species, out outModel);
+            BaseModel = outModel;
             Speed = 0;
             SetAI();
         }
@@ -138,15 +151,12 @@ namespace WhaleSimulator
 
         private void SetAI()
         {
-            switch (Properties.Species)
+            switch (Properties.Family)
             {
                 case "FishSchool": 
                     UpdateMove = FishAI;
                     break;
-                case "Boxthingie":
-                    UpdateMove = FishAI;
-                    break;
-                case "IceTest":
+                case "Ice":
                     UpdateMove = IceAI;
                     break;
                 default:
@@ -195,7 +205,7 @@ namespace WhaleSimulator
     
         private void IceAI(GameTime gameTime)
         {
-            Speed = 15;
+            Speed = 3;
 
             if (bounceTimer <= 0)
             {

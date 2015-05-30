@@ -15,6 +15,11 @@ namespace WhaleSimulator
 {
     public class Chunk
     {
+        public enum Directions
+        {
+            North, South, East, West
+        }
+
         /// <summary>
         /// Get or set the Chunk immediately to the north of this one.
         /// </summary>
@@ -47,16 +52,16 @@ namespace WhaleSimulator
         /// <summary>
         /// The ContentManager responsible for this Chunk's assets.
         /// </summary>
-        public ContentManager Content { get; set; }
+        //public ContentManager Content { get; set; }
         /// <summary>
         /// Whether or not the assets in this Chunk are loaded in memory.
         /// </summary>
         public bool IsLoaded { get; private set; }
 
-        public List<CreatureInfo> CreatureList { get; private set; }
-        public List<Creature> Creatures { get; private set; }
-        public List<string> StaticTerrainList { get; set; }
-        public List<Graphics3D> StaticTerrain { get; set; }
+        public List<CreatureInfo> CreatureList { get; set; }
+        public List<Creature> Creatures { get; set; }
+        //public List<string> StaticTerrainList { get; set; }
+        //public List<Graphics3D> StaticTerrain { get; set; }
 
         /// <summary>
         /// Creates a new Chunk object with a given grid position.  Does not link to other Chunks in the grid.
@@ -68,6 +73,7 @@ namespace WhaleSimulator
             IsLoaded = false;
         }
 
+        /*
         /// <summary>
         /// Takes in an XML subtree and constructs a new Chunk object without spacial linking.
         /// </summary>
@@ -155,7 +161,8 @@ namespace WhaleSimulator
 
             return null;
         }
-
+        */
+         
         /// <summary>
         /// Update all the objects in this Chunk.
         /// </summary>
@@ -170,11 +177,11 @@ namespace WhaleSimulator
                     c.Update(gameTime, inputStates);
             }
 
-            if (StaticTerrain != null)
-            {
-                foreach (Graphics3D t in StaticTerrain)
-                    t.Update(gameTime);
-            }
+            //if (StaticTerrain != null)
+            //{
+            //    foreach (Graphics3D t in StaticTerrain)
+            //        t.Update(gameTime);
+            //}
         }
 
         /// <summary>
@@ -190,11 +197,11 @@ namespace WhaleSimulator
                     c.Draw3D(gameTime);
             }
 
-            if (StaticTerrain != null)
-            {
-                foreach (Graphics3D t in StaticTerrain)
-                    t.Draw3D(gameTime);
-            }
+            //if (StaticTerrain != null)
+            //{
+            //    foreach (Graphics3D t in StaticTerrain)
+            //        t.Draw3D(gameTime);
+            //}
         }
 
         /// <summary>
@@ -204,16 +211,58 @@ namespace WhaleSimulator
         {
             if (!IsLoaded)
             {
-                Content = MasterGame.GetNewContentManager();
                 foreach (CreatureInfo info in CreatureList)
                 {
                     if (info.IsAlive)
-                        Creatures.Add(new Creature(info, Content));
+                        Creatures.Add(new Creature(info));
                 }
                 IsLoaded = true;
             }
         }
 
+        public void ShiftAssets(Directions direction)
+        {
+            switch (direction)
+            {
+                case Directions.East:
+                    foreach (Creature creature in Creatures)
+                    {
+                        Vector3 newPosition = creature.Position;
+                        newPosition.X += Map.MapSize.X * 1000;
+                        Position = newPosition;
+                    }
+                    break;
+
+                case Directions.West:
+                    foreach (Creature creature in Creatures)
+                    {
+                        Vector3 newPosition = creature.Position;
+                        newPosition.X -= Map.MapSize.X * 1000;
+                        Position = newPosition;
+                    }
+                    break;
+
+                case Directions.North:
+                    foreach (Creature creature in Creatures)
+                    {
+                        Vector3 newPosition = creature.Position;
+                        newPosition.Z += Map.MapSize.Z * 1000;
+                        Position = newPosition;
+                    }
+                    break;
+
+                case Directions.South:
+                    foreach (Creature creature in Creatures)
+                    {
+                        Vector3 newPosition = creature.Position;
+                        newPosition.Z -= Map.MapSize.Z * 1000;
+                        Position = newPosition;
+                    }
+                    break;
+            }
+        }
+
+        /*
         /// <summary>
         /// Unloads this Chunk's ContentManager,  removing all assets associated with it from memory.
         /// </summary>
@@ -244,6 +293,7 @@ namespace WhaleSimulator
 
             IsLoaded = false;
         }
+         * */
 
     }
 }

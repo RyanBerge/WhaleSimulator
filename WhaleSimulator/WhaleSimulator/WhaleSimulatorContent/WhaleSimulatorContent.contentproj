@@ -30,20 +30,6 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creatures\NewBox.fbx">
-      <Name>NewBox</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Creatures\FishSchool.fbx">
-      <Name>FishSchool</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Effects\cube.x">
       <Name>cube</Name>
       <Importer>XImporter</Importer>
@@ -109,20 +95,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="sourceimages\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Terrain\IceShelf.fbx">
       <Name>IceShelf</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Creatures\IceTest.fbx">
-      <Name>IceTest</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -161,10 +137,489 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creatures\WaleAnimation.fbx">
-      <Name>WaleAnimation</Name>
+    <Compile Include="Creatures\FBX\Albatross.fbx">
+      <Name>Albatross</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\BigIce_A.fbx">
+      <Name>BigIce_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\BigIce_B.fbx">
+      <Name>BigIce_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\BigIce_C.fbx">
+      <Name>BigIce_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\BigIce_D.fbx">
+      <Name>BigIce_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\BigIce_E.fbx">
+      <Name>BigIce_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Cod.fbx">
+      <Name>Cod</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Complicatefish.fbx">
+      <Name>Complicatefish</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Fish_A.fbx">
+      <Name>Fish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Fish_B.fbx">
+      <Name>Fish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Fish_C.fbx">
+      <Name>Fish_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Icefish_A.fbx">
+      <Name>Icefish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Icefish_B.fbx">
+      <Name>Icefish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Icefish_C.fbx">
+      <Name>Icefish_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Jellyfish.fbx">
+      <Name>Jellyfish</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\MinkWhale.fbx">
+      <Name>MinkWhale</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\OrcaWhale.fbx">
+      <Name>OrcaWhale</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Penguin.fbx">
+      <Name>Penguin</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_A.fbx">
+      <Name>Rock_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_B.fbx">
+      <Name>Rock_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_C.fbx">
+      <Name>Rock_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_D.fbx">
+      <Name>Rock_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_E.fbx">
+      <Name>Rock_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_F.fbx">
+      <Name>Rock_F</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_G.fbx">
+      <Name>Rock_G</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Rock_H.fbx">
+      <Name>Rock_H</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SeaLion.fbx">
+      <Name>SeaLion</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Seal_A.fbx">
+      <Name>Seal_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Seal_B.fbx">
+      <Name>Seal_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_A.fbx">
+      <Name>SmallIce_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_B.fbx">
+      <Name>SmallIce_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_C.fbx">
+      <Name>SmallIce_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_D.fbx">
+      <Name>SmallIce_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_E.fbx">
+      <Name>SmallIce_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_F.fbx">
+      <Name>SmallIce_F</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_G.fbx">
+      <Name>SmallIce_G</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_H.fbx">
+      <Name>SmallIce_H</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_I.fbx">
+      <Name>SmallIce_I</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_J.fbx">
+      <Name>SmallIce_J</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_K.fbx">
+      <Name>SmallIce_K</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_L.fbx">
+      <Name>SmallIce_L</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_M.fbx">
+      <Name>SmallIce_M</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_N.fbx">
+      <Name>SmallIce_N</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallIce_O.fbx">
+      <Name>SmallIce_O</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallRock_A.fbx">
+      <Name>SmallRock_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\SmallRock_B.fbx">
+      <Name>SmallRock_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Sponge.fbx">
+      <Name>Sponge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Squid.fbx">
+      <Name>Squid</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\StandingGull.fbx">
+      <Name>StandingGull</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Toothfish_A.fbx">
+      <Name>Toothfish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Creatures\FBX\Toothfish_B.fbx">
+      <Name>Toothfish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sourceimages\250px-Toothfish.jpg">
+      <Name>250px-Toothfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\a-cod2.jpg">
+      <Name>a-cod2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\BBAlbatrossTexture.png">
+      <Name>BBAlbatrossTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\bluediamond-texture.jpg">
+      <Name>bluediamond-texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\CrocodileIcefish1.jpg">
+      <Name>CrocodileIcefish1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\ElephantSeal.png">
+      <Name>ElephantSeal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\ElephantSeal2.png">
+      <Name>ElephantSeal2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\fish.jpg">
+      <Name>fish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\fish2.jpg">
+      <Name>fish2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\fish3.jpg">
+      <Name>fish3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\fish4.jpg">
+      <Name>fish4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\floating ice2_Texture.jpg">
+      <Name>floating ice2_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\frigid-ice-grunge-texture.jpg">
+      <Name>frigid-ice-grunge-texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\hexactinellida%28sponges%29_Texture.jpg">
+      <Name>hexactinellida%28sponges%29_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\Ice.jpg">
+      <Name>Ice</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\Iceberg1.png">
+      <Name>Iceberg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\Iceberg1Texture.png">
+      <Name>Iceberg1Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\iceberg2.jpg">
+      <Name>iceberg2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\iceberg3_mat.jpg">
+      <Name>iceberg3_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\iceFish4.jpg">
+      <Name>iceFish4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\iceflow1Mat.jpg">
+      <Name>iceflow1Mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\jellyfish.jpg">
+      <Name>jellyfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\Jellyfish512.png">
+      <Name>Jellyfish512</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\KingPenguinTexture2.png">
+      <Name>KingPenguinTexture2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\largeflatice.png">
+      <Name>largeflatice</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\largerock.jpg">
+      <Name>largerock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\mackelIcefish.jpg">
+      <Name>mackelIcefish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\mackelIcefish_mat.jpg">
+      <Name>mackelIcefish_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\minkeWhale.png">
+      <Name>minkeWhale</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\orcawhaleR.jpg">
+      <Name>orcawhaleR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\orcawhale_tail.jpg">
+      <Name>orcawhale_tail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock1.png">
+      <Name>rock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock1_cmat.jpg">
+      <Name>rock1_cmat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock2.png">
+      <Name>rock2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock3.png">
+      <Name>rock3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock4.png">
+      <Name>rock4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock5.png">
+      <Name>rock5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\rock6.png">
+      <Name>rock6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\seagullstand1_mat.jpg">
+      <Name>seagullstand1_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\sealion1_mat.jpg">
+      <Name>sealion1_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\smallFloatingIceTexture1.png">
+      <Name>smallFloatingIceTexture1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\SmallRock1Texture.png">
+      <Name>SmallRock1Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\Squid_Texture.jpg">
+      <Name>Squid_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sourceimages\toothfish.jpg">
+      <Name>toothfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sourceimages\WeddelSeal5.png">
+      <Name>WeddelSeal5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

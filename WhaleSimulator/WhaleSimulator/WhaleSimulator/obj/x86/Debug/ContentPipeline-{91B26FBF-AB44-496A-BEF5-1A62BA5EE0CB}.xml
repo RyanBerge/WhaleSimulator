@@ -2,6 +2,33 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Terrain\Ground.fbx</Source>
+      <Name>Terrain\Ground</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Terrain\Ground.xnb</Output>
+      <Time>2015-05-28T01:22:47.5858424-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Ground_0.xml</Key>
+        <Value>2015-05-29T17:34:34.1780705-07:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Terrain\IceShelf.fbx</Source>
+      <Name>Terrain\IceShelf</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Terrain\IceShelf.xnb</Output>
+      <Time>2015-05-28T01:22:47.5928428-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\IceShelf_0.xml</Key>
+        <Value>2015-05-29T17:34:34.2160727-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
       <Source>Effects\cube.x</Source>
       <Name>Effects\cube</Name>
       <Importer>XImporter</Importer>
@@ -10,11 +37,11 @@
         <Data Key="GenerateTangentFrames">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\cube.xnb</Output>
-      <Time>2015-05-19T15:27:41.7466509-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\cube.xnb</Output>
+      <Time>2015-05-28T01:22:47.5708416-07:00</Time>
       <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\cube_0.xml</Key>
-        <Value>2015-05-27T16:07:43.4844233-07:00</Value>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\cube_0.xml</Key>
+        <Value>2015-05-29T17:34:34.5600923-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -26,11 +53,11 @@
         <Data Key="GenerateTangentFrames">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\ocean.xnb</Output>
-      <Time>2015-05-02T23:38:06-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\ocean.xnb</Output>
+      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
       <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\ocean_0.xml</Key>
-        <Value>2015-05-27T16:07:43.8504442-07:00</Value>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\ocean_0.xml</Key>
+        <Value>2015-05-29T17:34:34.8091066-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -39,8 +66,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\wavesbump.xnb</Output>
-      <Time>2015-05-02T23:38:06-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\wavesbump.xnb</Output>
+      <Time>2015-05-28T01:22:47.5768419-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\oversea.jpg</Source>
@@ -48,8 +75,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\oversea.xnb</Output>
-      <Time>2015-05-19T15:46:59.0237849-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\oversea.xnb</Output>
+      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\water.jpg</Source>
@@ -57,8 +84,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\water.xnb</Output>
-      <Time>2015-05-02T23:38:06-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\water.xnb</Output>
+      <Time>2015-05-28T01:22:47.5738417-07:00</Time>
     </Item>
     <Item>
       <Source>Images\OptionsButton.jpg</Source>
@@ -66,8 +93,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\OptionsButton.xnb</Output>
-      <Time>2015-05-19T15:20:47.3335768-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\OptionsButton.xnb</Output>
+      <Time>2015-05-28T01:22:47.5828422-07:00</Time>
     </Item>
     <Item>
       <Source>Images\PlayButton.jpg</Source>
@@ -75,8 +102,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\PlayButton.xnb</Output>
-      <Time>2015-05-19T15:20:47.3345769-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\PlayButton.xnb</Output>
+      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
     </Item>
     <Item>
       <Source>Images\QuitButton.jpg</Source>
@@ -84,8 +111,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\QuitButton.xnb</Output>
-      <Time>2015-05-19T15:20:47.3355769-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\QuitButton.xnb</Output>
+      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackButton.png</Source>
@@ -93,8 +120,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackButton.xnb</Output>
-      <Time>2015-05-26T15:08:49.3386188-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackButton.xnb</Output>
+      <Time>2015-05-28T01:22:47.5768419-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackgroundRight.jpg</Source>
@@ -102,8 +129,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundRight.xnb</Output>
-      <Time>2015-05-26T15:08:49.342619-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundRight.xnb</Output>
+      <Time>2015-05-28T01:22:47.5808421-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackgroundLeft.jpg</Source>
@@ -111,8 +138,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundLeft.xnb</Output>
-      <Time>2015-05-26T15:08:49.3406189-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\BackgroundLeft.xnb</Output>
+      <Time>2015-05-28T01:22:47.578842-07:00</Time>
     </Item>
     <Item>
       <Source>Images\OrcaButton.png</Source>
@@ -120,8 +147,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\OrcaButton.xnb</Output>
-      <Time>2015-05-26T15:08:49.3586199-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\OrcaButton.xnb</Output>
+      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Blackscreen.jpg</Source>
@@ -129,8 +156,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\Blackscreen.xnb</Output>
-      <Time>2015-05-26T15:08:49.3436191-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\Blackscreen.xnb</Output>
+      <Time>2015-05-28T01:22:47.5818422-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\OceanSurface.fx</Source>
@@ -138,8 +165,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\OceanSurface.xnb</Output>
-      <Time>2015-05-19T15:59:12.3887201-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\OceanSurface.xnb</Output>
+      <Time>2015-05-28T01:22:47.525839-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\Skybox.fx</Source>
@@ -147,36 +174,22 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\Skybox.xnb</Output>
-      <Time>2015-05-12T15:47:56.6058585-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\NewBox.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\NewBox_0.xml</Output>
-      <Time>2015-05-12T15:19:02.1161824-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\FishSchool.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Output>
-      <Time>2015-05-13T14:55:39.1497023-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Effects\Skybox.xnb</Output>
+      <Time>2015-05-28T01:22:47.526839-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\Ground.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Ground_0.xml</Output>
-      <Time>2015-05-26T15:08:49.3606201-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Ground_0.xml</Output>
+      <Time>2015-05-28T01:22:47.5858424-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\IceShelf.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\IceShelf_0.xml</Output>
-      <Time>2015-05-26T15:08:49.3696206-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\IceShelf_0.xml</Output>
+      <Time>2015-05-28T01:22:47.5928428-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Ice.jpg</Source>
@@ -191,115 +204,2123 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Output>
-      <Time>2015-05-26T15:08:49.3716207-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\IceTest.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\IceTest_0.xml</Output>
-      <Time>2015-05-26T15:08:49.3376187-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\cube.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\cube_0.xml</Output>
-      <Time>2015-05-19T15:27:41.7466509-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\cube_0.xml</Output>
+      <Time>2015-05-28T01:22:47.5708416-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\ocean.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\ocean_0.xml</Output>
-      <Time>2015-05-02T23:38:06-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Effects\ocean_0.xml</Output>
+      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\NewBox.fbx</Source>
-      <Name>Creatures\NewBox</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
+      <Source>sourceimages\250px-Toothfish.jpg</Source>
+      <Name>sourceimages\250px-Toothfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\NewBox.xnb</Output>
-      <Time>2015-05-12T15:19:02.1161824-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\NewBox_0.xml</Key>
-        <Value>2015-05-27T16:07:42.8123848-07:00</Value>
-      </Dependency>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\250px-Toothfish.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\FishSchool.fbx</Source>
-      <Name>Creatures\FishSchool</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
+      <Source>sourceimages\a-cod2.jpg</Source>
+      <Name>sourceimages\a-cod2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FishSchool.xnb</Output>
-      <Time>2015-05-13T14:55:39.1497023-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FishSchool_0.xml</Key>
-        <Value>2015-05-27T16:07:43.0323974-07:00</Value>
-      </Dependency>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\a-cod2.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\IceTest.fbx</Source>
-      <Name>Creatures\IceTest</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
+      <Source>sourceimages\BBAlbatrossTexture.png</Source>
+      <Name>sourceimages\BBAlbatrossTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\IceTest.xnb</Output>
-      <Time>2015-05-26T15:08:49.3376187-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\IceTest_0.xml</Key>
-        <Value>2015-05-27T16:07:43.4234198-07:00</Value>
-      </Dependency>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\BBAlbatrossTexture.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\WaleAnimation.fbx</Source>
-      <Name>Creatures\WaleAnimation</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
+      <Source>sourceimages\bluediamond-texture.jpg</Source>
+      <Name>sourceimages\bluediamond-texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\WaleAnimation.xnb</Output>
-      <Time>2015-05-26T16:18:11.1258797-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\WaleAnimation_0.xml</Key>
-        <Value>2015-05-27T16:16:09.5337062-07:00</Value>
-      </Dependency>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\bluediamond-texture.xnb</Output>
+      <Time>2015-05-29T18:09:16.5502181-07:00</Time>
     </Item>
     <Item>
-      <Source>Creatures\WaleAnimation.fbx</Source>
+      <Source>sourceimages\CrocodileIcefish1.jpg</Source>
+      <Name>sourceimages\CrocodileIcefish1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\CrocodileIcefish1.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\ElephantSeal.png</Source>
+      <Name>sourceimages\ElephantSeal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\ElephantSeal.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\ElephantSeal2.png</Source>
+      <Name>sourceimages\ElephantSeal2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\ElephantSeal2.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish.jpg</Source>
+      <Name>sourceimages\fish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish2.jpg</Source>
+      <Name>sourceimages\fish2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish2.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish3.jpg</Source>
+      <Name>sourceimages\fish3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish3.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish4.jpg</Source>
+      <Name>sourceimages\fish4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish4.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\floating ice2_Texture.jpg</Source>
+      <Name>sourceimages\floating ice2_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\frigid-ice-grunge-texture.jpg</Source>
+      <Name>sourceimages\frigid-ice-grunge-texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\frigid-ice-grunge-texture.xnb</Output>
+      <Time>2015-05-29T17:52:17.532901-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\hexactinellida(sponges)_Texture.jpg</Source>
+      <Name>sourceimages\hexactinellida(sponges)_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\hexactinellida(sponges)_Texture.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Ice.jpg</Source>
+      <Name>sourceimages\Ice</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Iceberg1.png</Source>
+      <Name>sourceimages\Iceberg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Iceberg1Texture.png</Source>
+      <Name>sourceimages\Iceberg1Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1Texture.xnb</Output>
+      <Time>2015-05-29T18:12:06.2619265-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceberg2.jpg</Source>
+      <Name>sourceimages\iceberg2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg2.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceberg3_mat.jpg</Source>
+      <Name>sourceimages\iceberg3_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg3_mat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceFish4.jpg</Source>
+      <Name>sourceimages\iceFish4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceFish4.xnb</Output>
+      <Time>2015-05-29T18:02:13.3620074-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceflow1Mat.jpg</Source>
+      <Name>sourceimages\iceflow1Mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceflow1Mat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\jellyfish.jpg</Source>
+      <Name>sourceimages\jellyfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\jellyfish.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Jellyfish512.png</Source>
+      <Name>sourceimages\Jellyfish512</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Jellyfish512.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\KingPenguinTexture2.png</Source>
+      <Name>sourceimages\KingPenguinTexture2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\KingPenguinTexture2.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\largeflatice.png</Source>
+      <Name>sourceimages\largeflatice</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largeflatice.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\largerock.jpg</Source>
+      <Name>sourceimages\largerock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largerock.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\mackelIcefish.jpg</Source>
+      <Name>sourceimages\mackelIcefish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\mackelIcefish.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\mackelIcefish_mat.jpg</Source>
+      <Name>sourceimages\mackelIcefish_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\mackelIcefish_mat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\minkeWhale.png</Source>
+      <Name>sourceimages\minkeWhale</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\minkeWhale.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\orcawhaleR.jpg</Source>
+      <Name>sourceimages\orcawhaleR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\orcawhaleR.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\orcawhale_tail.jpg</Source>
+      <Name>sourceimages\orcawhale_tail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\orcawhale_tail.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock1.png</Source>
+      <Name>sourceimages\rock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock1_cmat.jpg</Source>
+      <Name>sourceimages\rock1_cmat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1_cmat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock2.png</Source>
+      <Name>sourceimages\rock2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock2.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock3.png</Source>
+      <Name>sourceimages\rock3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock3.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock4.png</Source>
+      <Name>sourceimages\rock4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock4.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock5.png</Source>
+      <Name>sourceimages\rock5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock5.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock6.png</Source>
+      <Name>sourceimages\rock6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock6.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\seagullstand1_mat.jpg</Source>
+      <Name>sourceimages\seagullstand1_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\seagullstand1_mat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\sealion1_mat.jpg</Source>
+      <Name>sourceimages\sealion1_mat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\sealion1_mat.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\smallFloatingIceTexture1.png</Source>
+      <Name>sourceimages\smallFloatingIceTexture1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\smallFloatingIceTexture1.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\SmallRock1Texture.png</Source>
+      <Name>sourceimages\SmallRock1Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\SmallRock1Texture.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Squid_Texture.jpg</Source>
+      <Name>sourceimages\Squid_Texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Squid_Texture.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\toothfish.jpg</Source>
+      <Name>sourceimages\toothfish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\toothfish.xnb</Output>
+      <Time>2015-05-29T18:14:29.0494666-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Albatross.fbx</Source>
+      <Name>Creatures\FBX\Albatross</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Albatross.xnb</Output>
+      <Time>2015-05-28T17:56:57-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Albatross_0.xml</Key>
+        <Value>2015-05-29T17:56:02.9668016-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_A.fbx</Source>
+      <Name>Creatures\FBX\BigIce_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\BigIce_A.xnb</Output>
+      <Time>2015-05-28T17:56:58-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_A_0.xml</Key>
+        <Value>2015-05-29T17:56:03.252818-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_B.fbx</Source>
+      <Name>Creatures\FBX\BigIce_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\BigIce_B.xnb</Output>
+      <Time>2015-05-28T17:56:59-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_B_0.xml</Key>
+        <Value>2015-05-29T17:57:29.7657677-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_C.fbx</Source>
+      <Name>Creatures\FBX\BigIce_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\BigIce_C.xnb</Output>
+      <Time>2015-05-28T17:57:00-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_C_0.xml</Key>
+        <Value>2015-05-29T17:57:29.8637733-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_D.fbx</Source>
+      <Name>Creatures\FBX\BigIce_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\BigIce_D.xnb</Output>
+      <Time>2015-05-28T17:57:02-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_D_0.xml</Key>
+        <Value>2015-05-29T17:57:29.9307771-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_E.fbx</Source>
+      <Name>Creatures\FBX\BigIce_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\BigIce_E.xnb</Output>
+      <Time>2015-05-28T17:57:04-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_E_0.xml</Key>
+        <Value>2015-05-29T17:57:29.963779-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largeflatice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Cod.fbx</Source>
+      <Name>Creatures\FBX\Cod</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Cod.xnb</Output>
+      <Time>2015-05-28T17:57:05-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Cod_0.xml</Key>
+        <Value>2015-05-29T17:57:30.0037813-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\a-cod2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Complicatefish.fbx</Source>
+      <Name>Creatures\FBX\Complicatefish</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Complicatefish.xnb</Output>
+      <Time>2015-05-28T17:57:06-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Complicatefish_0.xml</Key>
+        <Value>2015-05-29T17:57:30.0667849-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_A.fbx</Source>
+      <Name>Creatures\FBX\Fish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Fish_A.xnb</Output>
+      <Time>2015-05-28T17:57:07-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_A_0.xml</Key>
+        <Value>2015-05-29T17:57:30.1187879-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_B.fbx</Source>
+      <Name>Creatures\FBX\Fish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Fish_B.xnb</Output>
+      <Time>2015-05-28T17:57:08-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_B_0.xml</Key>
+        <Value>2015-05-29T17:57:30.1927921-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_C.fbx</Source>
+      <Name>Creatures\FBX\Fish_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Fish_C.xnb</Output>
+      <Time>2015-05-28T17:57:10-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_C_0.xml</Key>
+        <Value>2015-05-29T17:57:30.2397948-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish3_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_A.fbx</Source>
+      <Name>Creatures\FBX\Icefish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Icefish_A.xnb</Output>
+      <Time>2015-05-28T17:57:11-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_A_0.xml</Key>
+        <Value>2015-05-29T17:57:30.2827973-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_B.fbx</Source>
+      <Name>Creatures\FBX\Icefish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Icefish_B.xnb</Output>
+      <Time>2015-05-28T17:57:12-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_B_0.xml</Key>
+        <Value>2015-05-29T17:57:30.3277998-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceFish4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_C.fbx</Source>
+      <Name>Creatures\FBX\Icefish_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Icefish_C.xnb</Output>
+      <Time>2015-05-28T17:57:13-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_C_0.xml</Key>
+        <Value>2015-05-29T18:02:19.8953811-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Jellyfish.fbx</Source>
+      <Name>Creatures\FBX\Jellyfish</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Jellyfish.xnb</Output>
+      <Time>2015-05-28T17:57:14-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Jellyfish_0.xml</Key>
+        <Value>2015-05-29T18:02:19.9973869-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Jellyfish512_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\MinkWhale.fbx</Source>
+      <Name>Creatures\FBX\MinkWhale</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\MinkWhale.xnb</Output>
+      <Time>2015-05-28T17:57:15-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\MinkWhale_0.xml</Key>
+        <Value>2015-05-29T18:02:20.1243942-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\minkeWhale_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\OrcaWhale.fbx</Source>
+      <Name>Creatures\FBX\OrcaWhale</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\OrcaWhale.xnb</Output>
+      <Time>2015-05-29T18:18:14.6191104-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\OrcaWhale_0.xml</Key>
+        <Value>2015-05-29T18:18:58.2016446-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\orcawhaleR_0.xnb</Request>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\orcawhale_tail_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Penguin.fbx</Source>
+      <Name>Creatures\FBX\Penguin</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Penguin.xnb</Output>
+      <Time>2015-05-28T17:57:17-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Penguin_0.xml</Key>
+        <Value>2015-05-29T18:08:20.0549867-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_A.fbx</Source>
+      <Name>Creatures\FBX\Rock_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_A.xnb</Output>
+      <Time>2015-05-28T17:57:18-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_A_0.xml</Key>
+        <Value>2015-05-29T18:08:20.1069897-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largerock_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_B.fbx</Source>
+      <Name>Creatures\FBX\Rock_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_B.xnb</Output>
+      <Time>2015-05-28T17:57:19-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_B_0.xml</Key>
+        <Value>2015-05-29T18:08:20.1629929-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_C.fbx</Source>
+      <Name>Creatures\FBX\Rock_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_C.xnb</Output>
+      <Time>2015-05-28T17:57:21-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_C_0.xml</Key>
+        <Value>2015-05-29T18:08:20.2199962-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_D.fbx</Source>
+      <Name>Creatures\FBX\Rock_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_D.xnb</Output>
+      <Time>2015-05-28T17:57:22-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_D_0.xml</Key>
+        <Value>2015-05-29T18:09:20.9684708-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock3_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_E.fbx</Source>
+      <Name>Creatures\FBX\Rock_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_E.xnb</Output>
+      <Time>2015-05-28T17:57:24-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_E_0.xml</Key>
+        <Value>2015-05-29T18:09:21.0724767-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_F.fbx</Source>
+      <Name>Creatures\FBX\Rock_F</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_F.xnb</Output>
+      <Time>2015-05-28T17:57:25-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_F_0.xml</Key>
+        <Value>2015-05-29T18:09:21.1354803-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock5_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_G.fbx</Source>
+      <Name>Creatures\FBX\Rock_G</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_G.xnb</Output>
+      <Time>2015-05-28T17:57:26-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_G_0.xml</Key>
+        <Value>2015-05-29T18:09:21.1914835-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock6_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_H.fbx</Source>
+      <Name>Creatures\FBX\Rock_H</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Rock_H.xnb</Output>
+      <Time>2015-05-28T17:57:28-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_H_0.xml</Key>
+        <Value>2015-05-29T18:09:21.2484868-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SeaLion.fbx</Source>
+      <Name>Creatures\FBX\SeaLion</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SeaLion.xnb</Output>
+      <Time>2015-05-28T17:57:32-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SeaLion_0.xml</Key>
+        <Value>2015-05-29T18:09:21.30449-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\sealion1_mat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Seal_A.fbx</Source>
+      <Name>Creatures\FBX\Seal_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Seal_A.xnb</Output>
+      <Time>2015-05-28T17:57:29-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Seal_A_0.xml</Key>
+        <Value>2015-05-29T18:09:21.3624933-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Seal_B.fbx</Source>
+      <Name>Creatures\FBX\Seal_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Seal_B.xnb</Output>
+      <Time>2015-05-28T17:57:30-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Seal_B_0.xml</Key>
+        <Value>2015-05-29T18:09:21.444498-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_A.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_A.xnb</Output>
+      <Time>2015-05-28T17:57:33-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_A_0.xml</Key>
+        <Value>2015-05-29T18:13:43.2186469-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_B.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_B.xnb</Output>
+      <Time>2015-05-28T17:57:34-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_B_0.xml</Key>
+        <Value>2015-05-29T18:13:43.2961567-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_C.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_C</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_C.xnb</Output>
+      <Time>2015-05-28T17:57:36-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_C_0.xml</Key>
+        <Value>2015-05-29T18:13:43.3271606-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_D.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_D</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_D.xnb</Output>
+      <Time>2015-05-28T17:57:38-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_D_0.xml</Key>
+        <Value>2015-05-29T18:13:43.3596648-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_E.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_E</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_E.xnb</Output>
+      <Time>2015-05-28T17:57:39-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_E_0.xml</Key>
+        <Value>2015-05-29T18:13:43.392669-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_F.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_F</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_F.xnb</Output>
+      <Time>2015-05-28T17:57:40-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_F_0.xml</Key>
+        <Value>2015-05-29T18:13:43.4256732-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_G.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_G</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_G.xnb</Output>
+      <Time>2015-05-28T17:57:41-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_G_0.xml</Key>
+        <Value>2015-05-29T18:13:43.4586773-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_H.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_H</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_H.xnb</Output>
+      <Time>2015-05-28T17:57:42-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_H_0.xml</Key>
+        <Value>2015-05-29T18:13:43.510684-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_I.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_I</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_I.xnb</Output>
+      <Time>2015-05-28T17:57:43-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_I_0.xml</Key>
+        <Value>2015-05-29T18:13:43.5401877-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_J.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_J</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_J.xnb</Output>
+      <Time>2015-05-28T17:57:45-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_J_0.xml</Key>
+        <Value>2015-05-29T18:13:43.6011954-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_K.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_K</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_K.xnb</Output>
+      <Time>2015-05-28T17:57:46-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_K_0.xml</Key>
+        <Value>2015-05-29T18:13:43.6552023-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_L.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_L</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_L.xnb</Output>
+      <Time>2015-05-28T17:57:47-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_L_0.xml</Key>
+        <Value>2015-05-29T18:13:43.7127096-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_M.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_M</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_M.xnb</Output>
+      <Time>2015-05-28T17:57:48-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_M_0.xml</Key>
+        <Value>2015-05-29T18:13:43.7477141-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_N.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_N</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_N.xnb</Output>
+      <Time>2015-05-28T17:57:50-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_N_0.xml</Key>
+        <Value>2015-05-29T18:13:43.7802182-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_O.fbx</Source>
+      <Name>Creatures\FBX\SmallIce_O</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallIce_O.xnb</Output>
+      <Time>2015-05-28T17:57:51-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_O_0.xml</Key>
+        <Value>2015-05-29T18:13:43.8122222-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallRock_A.fbx</Source>
+      <Name>Creatures\FBX\SmallRock_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallRock_A.xnb</Output>
+      <Time>2015-05-28T17:57:52-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallRock_A_0.xml</Key>
+        <Value>2015-05-29T18:13:43.8442263-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallRock_B.fbx</Source>
+      <Name>Creatures\FBX\SmallRock_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\SmallRock_B.xnb</Output>
+      <Time>2015-05-28T17:57:53-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallRock_B_0.xml</Key>
+        <Value>2015-05-29T18:13:43.8767304-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1_cmat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Sponge.fbx</Source>
+      <Name>Creatures\FBX\Sponge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Sponge.xnb</Output>
+      <Time>2015-05-28T17:57:54-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Sponge_0.xml</Key>
+        <Value>2015-05-29T18:13:43.9357379-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Squid.fbx</Source>
+      <Name>Creatures\FBX\Squid</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Squid.xnb</Output>
+      <Time>2015-05-28T17:57:56-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Squid_0.xml</Key>
+        <Value>2015-05-29T18:13:43.991245-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Squid_Texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\StandingGull.fbx</Source>
+      <Name>Creatures\FBX\StandingGull</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\StandingGull.xnb</Output>
+      <Time>2015-05-28T17:57:57-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\StandingGull_0.xml</Key>
+        <Value>2015-05-29T18:13:44.0497524-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Toothfish_A.fbx</Source>
+      <Name>Creatures\FBX\Toothfish_A</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Toothfish_A.xnb</Output>
+      <Time>2015-05-28T17:57:58-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Toothfish_A_0.xml</Key>
+        <Value>2015-05-29T18:13:44.1057595-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\toothfish_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Toothfish_B.fbx</Source>
+      <Name>Creatures\FBX\Toothfish_B</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\Toothfish_B.xnb</Output>
+      <Time>2015-05-28T17:58:00-07:00</Time>
+      <Dependency>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Toothfish_B_0.xml</Key>
+        <Value>2015-05-29T18:14:34.8487031-07:00</Value>
+      </Dependency>
+      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Albatross.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\WaleAnimation_0.xml</Output>
-      <Time>2015-05-26T16:18:11.1258797-07:00</Time>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Albatross_0.xml</Output>
+      <Time>2015-05-28T17:56:57-07:00</Time>
     </Item>
     <Item>
-      <Source>Terrain\Ground.fbx</Source>
-      <Name>Terrain\Ground</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Source>sourceimages\BBAlbatrossTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Terrain\Ground.xnb</Output>
-      <Time>2015-05-26T15:08:49.3606201-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\Ground_0.xml</Key>
-        <Value>2015-05-27T16:07:43.1114019-07:00</Value>
-      </Dependency>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
     </Item>
     <Item>
-      <Source>Terrain\IceShelf.fbx</Source>
-      <Name>Terrain\IceShelf</Name>
+      <Source>Creatures\FBX\BigIce_A.fbx</Source>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_A_0.xml</Output>
+      <Time>2015-05-28T17:56:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Iceberg1Texture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Terrain\IceShelf.xnb</Output>
-      <Time>2015-05-26T15:08:49.3696206-07:00</Time>
-      <Dependency>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Terrain\IceShelf_0.xml</Key>
-        <Value>2015-05-27T16:07:43.1774057-07:00</Value>
-      </Dependency>
-      <Request>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Output>
+      <Time>2015-05-29T18:12:06.2619265-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_B_0.xml</Output>
+      <Time>2015-05-28T17:56:59-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\floating ice2_Texture.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_C.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_C_0.xml</Output>
+      <Time>2015-05-28T17:57:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Iceberg1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Iceberg1_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_D.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_D_0.xml</Output>
+      <Time>2015-05-28T17:57:02-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\BigIce_E.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\BigIce_E_0.xml</Output>
+      <Time>2015-05-28T17:57:04-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\largeflatice.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largeflatice_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Cod.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Cod_0.xml</Output>
+      <Time>2015-05-28T17:57:05-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\a-cod2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\a-cod2_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Complicatefish.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Complicatefish_0.xml</Output>
+      <Time>2015-05-28T17:57:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish4.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish4_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_A_0.xml</Output>
+      <Time>2015-05-28T17:57:07-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_B_0.xml</Output>
+      <Time>2015-05-28T17:57:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish2_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Fish_C.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Fish_C_0.xml</Output>
+      <Time>2015-05-28T17:57:10-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\fish3.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\fish3_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_A_0.xml</Output>
+      <Time>2015-05-28T17:57:11-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\CrocodileIcefish1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_B_0.xml</Output>
+      <Time>2015-05-28T17:57:12-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceFish4.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceFish4_0.xnb</Output>
+      <Time>2015-05-29T18:02:13.3620074-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Icefish_C.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Icefish_C_0.xml</Output>
+      <Time>2015-05-28T17:57:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\mackelIcefish_mat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Jellyfish.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Jellyfish_0.xml</Output>
+      <Time>2015-05-28T17:57:14-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Jellyfish512.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Jellyfish512_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\MinkWhale.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\MinkWhale_0.xml</Output>
+      <Time>2015-05-28T17:57:15-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\minkeWhale.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\minkeWhale_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\OrcaWhale.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\OrcaWhale_0.xml</Output>
+      <Time>2015-05-29T18:18:14.6191104-07:00</Time>
+    </Item>
+    <Item>
+      <Source>D:\RyanBerge\Users\OrcaLevel0529\sourceimages\orcawhaleR.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\orcawhaleR_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>D:\RyanBerge\Users\OrcaLevel0529\sourceimages\orcawhale_tail.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\orcawhale_tail_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Penguin.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Penguin_0.xml</Output>
+      <Time>2015-05-28T17:57:17-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\KingPenguinTexture2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_A_0.xml</Output>
+      <Time>2015-05-28T17:57:18-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\largerock.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\largerock_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_B_0.xml</Output>
+      <Time>2015-05-28T17:57:19-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_C.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_C_0.xml</Output>
+      <Time>2015-05-28T17:57:21-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\bluediamond-texture.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Output>
+      <Time>2015-05-29T18:09:16.5502181-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_D.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_D_0.xml</Output>
+      <Time>2015-05-28T17:57:22-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock3.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock3_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_E.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_E_0.xml</Output>
+      <Time>2015-05-28T17:57:24-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock4.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock4_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_F.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_F_0.xml</Output>
+      <Time>2015-05-28T17:57:25-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock5.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock5_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_G.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_G_0.xml</Output>
+      <Time>2015-05-28T17:57:26-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock6.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock6_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Rock_H.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Rock_H_0.xml</Output>
+      <Time>2015-05-28T17:57:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\SmallRock1Texture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SeaLion.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SeaLion_0.xml</Output>
+      <Time>2015-05-28T17:57:32-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\sealion1_mat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\sealion1_mat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Seal_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Seal_A_0.xml</Output>
+      <Time>2015-05-28T17:57:29-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\ElephantSeal2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Seal_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Seal_B_0.xml</Output>
+      <Time>2015-05-28T17:57:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\WeddelSeal5.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Output>
+      <Time>2015-05-29T18:13:12.664267-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\WeddelSeal5.png</Source>
+      <Name>sourceimages\WeddelSeal5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\WeddelSeal5.xnb</Output>
+      <Time>2015-05-29T18:13:12.664267-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_A_0.xml</Output>
+      <Time>2015-05-28T17:57:33-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_B_0.xml</Output>
+      <Time>2015-05-28T17:57:34-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_C.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_C_0.xml</Output>
+      <Time>2015-05-28T17:57:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_D.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_D_0.xml</Output>
+      <Time>2015-05-28T17:57:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_E.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_E_0.xml</Output>
+      <Time>2015-05-28T17:57:39-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_F.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_F_0.xml</Output>
+      <Time>2015-05-28T17:57:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_G.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_G_0.xml</Output>
+      <Time>2015-05-28T17:57:41-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceberg2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg2_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_H.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_H_0.xml</Output>
+      <Time>2015-05-28T17:57:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_I.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_I_0.xml</Output>
+      <Time>2015-05-28T17:57:43-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceberg3_mat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_J.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_J_0.xml</Output>
+      <Time>2015-05-28T17:57:45-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\iceflow1Mat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_K.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_K_0.xml</Output>
+      <Time>2015-05-28T17:57:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\smallFloatingIceTexture1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_L.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_L_0.xml</Output>
+      <Time>2015-05-28T17:57:47-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_M.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_M_0.xml</Output>
+      <Time>2015-05-28T17:57:48-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_N.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_N_0.xml</Output>
+      <Time>2015-05-28T17:57:50-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallIce_O.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallIce_O_0.xml</Output>
+      <Time>2015-05-28T17:57:51-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallRock_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallRock_A_0.xml</Output>
+      <Time>2015-05-28T17:57:52-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\SmallRock_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\SmallRock_B_0.xml</Output>
+      <Time>2015-05-28T17:57:53-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock1_cmat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock1_cmat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Sponge.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Sponge_0.xml</Output>
+      <Time>2015-05-28T17:57:54-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\hexactinellida(sponges)_Texture.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Output>
+      <Time>2015-05-28T13:27:40-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Squid.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Squid_0.xml</Output>
+      <Time>2015-05-28T17:57:56-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\Squid_Texture.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\Squid_Texture_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\StandingGull.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\StandingGull_0.xml</Output>
+      <Time>2015-05-28T17:57:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\seagullstand1_mat.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Toothfish_A.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Toothfish_A_0.xml</Output>
+      <Time>2015-05-28T17:57:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\toothfish.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\toothfish_0.xnb</Output>
+      <Time>2015-05-29T18:14:29.0494666-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\Toothfish_B.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\Creatures\FBX\Toothfish_B_0.xml</Output>
+      <Time>2015-05-28T17:58:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sourceimages\rock2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock2_0.xnb</Output>
+      <Time>2015-05-28T13:27:42-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -308,43 +2329,43 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\</RootDirectory>
+      <LoggerRootDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T16:22:30-07:00</Value>
+        <Value>2011-09-01T17:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.dll</Key>
-        <Value>2015-05-27T15:13:14.3627053-07:00</Value>
+        <Key>D:\RyanBerge\Users\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.dll</Key>
+        <Value>2015-05-28T01:22:47.2878254-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-04-28T15:14:00.018373-07:00</Value>
+        <Value>2015-01-31T04:56:32.0823523-08:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
