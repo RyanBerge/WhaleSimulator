@@ -232,18 +232,21 @@ namespace WhaleSimulator
                     else
                         position.X = 0;
                     break;
+
                 case Directions.West:
                     if (Position.X > 0)
                         position.X--;
                     else
                         position.X = Map.MapSize.X - 1;
                     break;
+
                 case Directions.South:
                     if (Position.Z < Map.MapSize.Z - 1)
                         position.Z++;
                     else
                         position.Z = 0;
                     break;
+
                 case Directions.North:
                     if (Position.Z > 0)
                         position.Z--;
@@ -253,7 +256,7 @@ namespace WhaleSimulator
             }
         }
 
-        public void ShiftAssets(Directions direction)
+        public void ShiftAssets(Directions direction, int distance)
         {
             switch (direction)
             {
@@ -261,7 +264,7 @@ namespace WhaleSimulator
                     foreach (Creature creature in Creatures)
                     {
                         Vector3 newPosition = creature.Position;
-                        newPosition.X += Map.MapSize.X * 1000;
+                        newPosition.X += distance;
                         creature.Position = newPosition;
                     }
                     break;
@@ -270,7 +273,7 @@ namespace WhaleSimulator
                     foreach (Creature creature in Creatures)
                     {
                         Vector3 newPosition = creature.Position;
-                        newPosition.X -= Map.MapSize.X * 1000;
+                        newPosition.X -= distance;
                         creature.Position = newPosition;
                     }
                     break;
@@ -279,7 +282,7 @@ namespace WhaleSimulator
                     foreach (Creature creature in Creatures)
                     {
                         Vector3 newPosition = creature.Position;
-                        newPosition.Z += Map.MapSize.Z * 1000;
+                        newPosition.Z -= distance;
                         creature.Position = newPosition;
                     }
                     break;
@@ -288,7 +291,7 @@ namespace WhaleSimulator
                     foreach (Creature creature in Creatures)
                     {
                         Vector3 newPosition = creature.Position;
-                        newPosition.Z -= Map.MapSize.Z * 1000;
+                        newPosition.Z += distance;
                         creature.Position = newPosition;
                     }
                     break;

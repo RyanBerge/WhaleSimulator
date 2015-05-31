@@ -42,6 +42,7 @@ namespace WhaleSimulator
         public Vector3 SpawnDirection { get; set; }
         public string PlayerSpecies { get; set; }
         public int WaterLevel { get; set; }
+        public Chunk Root { get { return rootChunk; } set { rootChunk = value; } }
 
         public static Vector3 MapCenter { get; set; }
         public static List<Chunk> LoadedChunks { get; set; }
@@ -347,7 +348,7 @@ namespace WhaleSimulator
                             c.East = chunk;
                         }
                         
-                        if (chunk.Position.X == 0 && c.Position.X == chunk.Position.X && c.Position.Y == chunk.Position.Y && c.Position.Z == mapSize.Z - 1)
+                        if (chunk.Position.Z == 0 && c.Position.X == chunk.Position.X && c.Position.Y == chunk.Position.Y && c.Position.Z == mapSize.Z - 1)
                         {
                             chunk.North = c;
                             c.South = chunk;
@@ -389,7 +390,7 @@ namespace WhaleSimulator
                         else
                             swims = false;
 
-                        Chunk chunk = this[(int)Math.Floor(spawn.X/1000), 0, (int)Math.Floor(spawn.X/1000)];
+                        Chunk chunk = this[(int)Math.Floor(spawn.X/1000), 0, (int)Math.Floor(spawn.Z/1000)];
                         //spawn.X -= chunk.Position.X * 1000;
                         //spawn.Z -= chunk.Position.Z * 1000;
 
@@ -456,96 +457,85 @@ namespace WhaleSimulator
         /// </summary>
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         /// <param name="inputStates">The InputStates object to use when checking player input.</param>
-        public void Update(GameTime gameTime, InputStates inputStates, Player player)
+        public void Update(GameTime gameTime, InputStates inputStates, ref Player player)
         {
             if (initialized)
             {
                 Vector3 playerPosition = player.Position;
 
-                if (playerPosition.X < playerChunkPosition.X * 1000)
+                if (playerPosition.X < Map.MapSize.X * 500 - 500)
                 {
-                    currentChunk = currentChunk.West;
-                    playerChunkPosition.X--;
-                    Chunk movingChunk = this[(int)(mapSize.X - 1), 0, 0];
-                    for (int i = 0; i < mapSize.Z; i++)
-                    {
-                        movingChunk.ShiftAssets(Chunk.Directions.West);
-                        movingChunk = movingChunk.South;
-                    }
+                    playerPosition.X += 1000;
                     foreach (Chunk chunk in this)
+                    {
+                        chunk.ShiftAssets(Chunk.Directions.East, 1000);
                         chunk.ShiftPosition(Chunk.Directions.East);
-                }
-                else if (playerPosition.X > playerChunkPosition.X * 1000 + 1000)
-                {
-                    currentChunk = currentChunk.East;
-                    playerChunkPosition.X++;
+                    }
+                    rootChunk = rootChunk.West;
                     Chunk movingChunk = this[0, 0, 0];
-                    for (int i = 0; i < mapSize.Z; i++)
+                    for (int i = 0; i < Map.MapSize.Z; i++)
                     {
-                        movingChunk.ShiftAssets(Chunk.Directions.East);
+                        movingChunk.ShiftAssets(Chunk.Directions.West, (int)Map.MapSize.X * 1000);
                         movingChunk = movingChunk.South;
                     }
+                }
+                else if (playerPosition.X > Map.MapSize.X * 500 + 500)
+                {
+                    playerPosition.X -= 1000;
                     foreach (Chunk chunk in this)
+                    {
+                        chunk.ShiftAssets(Chunk.Directions.West, 1000);
                         chunk.ShiftPosition(Chunk.Directions.West);
-                }
-                else if (playerPosition.Z < playerChunkPosition.Z * 1000)
-                {
-                    currentChunk = currentChunk.North;
-                    playerChunkPosition.Z--;
-                    Chunk movingChunk = this[0, 0, (int)(mapSize.X - 1)];
-                    for (int i = 0; i < mapSize.X; i++)
-                    {
-                        movingChunk.ShiftAssets(Chunk.Directions.North);
-                        movingChunk = movingChunk.East;
                     }
+                    rootChunk = rootChunk.East;
+                    Chunk movingChunk = this[(int)Map.MapSize.X - 1, 0, 0];
+                    
+                    for (int i = 0; i < Map.MapSize.Z; i++)
+                    {
+                        movingChunk.ShiftAssets(Chunk.Directions.East, (int)Map.MapSize.X * 1000);
+                        movingChunk = movingChunk.South;
+                    }
+                    
+                }
+
+                if (playerPosition.Z < Map.MapSize.Z * 500 - 500)
+                {
+                    playerPosition.Z += 1000;
                     foreach (Chunk chunk in this)
+                    {
+                        chunk.ShiftAssets(Chunk.Directions.South, 1000);
                         chunk.ShiftPosition(Chunk.Directions.South);
-                }
-                else if (playerPosition.Z > playerChunkPosition.Z * 1000 + 1000)
-                {
-                    currentChunk = currentChunk.South;
-                    playerChunkPosition.Z++;
+                    }
+                    rootChunk = rootChunk.North;
                     Chunk movingChunk = this[0, 0, 0];
-                    for (int i = 0; i < mapSize.X; i++)
+                    for (int i = 0; i < Map.MapSize.X; i++)
                     {
-                        movingChunk.ShiftAssets(Chunk.Directions.South);
+                        movingChunk.ShiftAssets(Chunk.Directions.North, (int)Map.MapSize.Z * 1000);
                         movingChunk = movingChunk.East;
                     }
+                }
+                else if (playerPosition.Z > Map.MapSize.Z * 500 + 500)
+                {
+                    int k = 0;
+                    playerPosition.Z -= 1000;
                     foreach (Chunk chunk in this)
+                    {
+                        chunk.ShiftAssets(Chunk.Directions.North, 1000);
                         chunk.ShiftPosition(Chunk.Directions.North);
+                        k++;
+                    }
+                    rootChunk = rootChunk.South;
+                    Chunk movingChunk = this[0, 0, (int)Map.MapSize.Z - 1];
+
+                    for (int i = 0; i < Map.MapSize.X; i++)
+                    {
+                        movingChunk.ShiftAssets(Chunk.Directions.South, (int)Map.MapSize.Z * 1000);
+                        movingChunk = movingChunk.East;
+                    }
+
                 }
 
-
-                if (playerPosition.X < 0)
-                {
-                    playerPosition.X += Map.MapSize.X * 1000;
-                    playerChunkPosition.X += Map.MapSize.X;
-                    foreach (Chunk chunk in this)
-                        chunk.ShiftAssets(Chunk.Directions.East);
-                }
-                if (playerPosition.X > Map.MapSize.X * 1000)
-                {
-                    playerPosition.X -= Map.MapSize.X * 1000;
-                    playerChunkPosition.X -= Map.MapSize.X;
-                    foreach (Chunk chunk in this)
-                        chunk.ShiftAssets(Chunk.Directions.West);
-                }
-
-                if (playerPosition.Z < 0)
-                {
-                    playerPosition.Z += Map.MapSize.Z * 1000;
-                    playerChunkPosition.Z += Map.MapSize.Z;
-                    foreach (Chunk chunk in this)
-                        chunk.ShiftAssets(Chunk.Directions.South);
-                }
-                if (playerPosition.Z > Map.MapSize.Z * 1000)
-                {
-                    playerPosition.Z -= Map.MapSize.Z * 1000;
-                    playerChunkPosition.Z -= Map.MapSize.Z;
-                    foreach (Chunk chunk in this)
-                        chunk.ShiftAssets(Chunk.Directions.North);
-                }
-                
+                player.Position = playerPosition;
                 
                 foreach (Chunk chunk in this)
                 {
@@ -610,7 +600,7 @@ namespace WhaleSimulator
         /// <returns></returns>
         public ChunkGridEnumerator GetEnumerator()
         {
-            return new ChunkGridEnumerator(rootChunk, mapSize);
+            return new ChunkGridEnumerator(this, mapSize);
         }
     }
 
@@ -620,19 +610,23 @@ namespace WhaleSimulator
     public class ChunkGridEnumerator : IEnumerator
     {
         private Chunk chunk = null;
-        private Chunk root; //bottom tier, top-left
+        private ChunkGrid grid; //bottom tier, top-left
         private Vector3 mapSize;
 
         bool left = false;
         bool up = false;
 
+        int i = 0;
+        int k = 0;
+        int j = 0;
+
         /// <summary>
         /// Creates a new Enumerator.
         /// </summary>
         /// <param name="root">The root Chunk in the grid.</param>
-        public ChunkGridEnumerator(Chunk root, Vector3 size)
+        public ChunkGridEnumerator(ChunkGrid grid, Vector3 size)
         {
-            this.root = root;
+            this.grid = grid;
             this.mapSize = size;
         }
 
@@ -640,102 +634,35 @@ namespace WhaleSimulator
         {
             if (chunk == null)
             {
-                chunk = root;
+                chunk = grid.Root;
                 return true;
             }
+
+
+            if (i == grid.MapSize.X - 1 && j == grid.MapSize.Y - 1 && k == grid.MapSize.Z - 1)
+                return false;
+
+            if (i < grid.MapSize.X - 1)
+                i++;
             else
             {
-                if (!left && chunk.Position.X != mapSize.X - 1)
+                i = 0;
+                if (j < grid.MapSize.Y - 1)
+                    j++;
+                else
                 {
-                    chunk = chunk.East;
-                    return true;
-                }
-                else if (!left && chunk.Position.X == mapSize.X - 1)
-                {
-                    if (!up && chunk.Position.Z != mapSize.Z - 1)
+                    j = 0;
+                    if (k < grid.MapSize.Z - 1)
+                        k++;
+                    else
                     {
-                        chunk = chunk.South;
-                        left = true;
-                        return true;
-                    }
-                    else if (!up && chunk.Position.Z == mapSize.Z - 1)
-                    {
-                        if (chunk.Position.Y != mapSize.Y - 1)
-                        {
-                            chunk = chunk.Up;
-                            up = true;
-                            left = true;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                    else if (up && chunk.Position.Z != 0)
-                    {
-                        chunk = chunk.North;
-                        left = true;
-                        return true;
-                    }
-                    else if (up && chunk.Position.Z == 0)
-                    {
-                        if (chunk.Position.Y != mapSize.Y - 1)
-                        {
-                            chunk = chunk.Up;
-                            up = false;
-                            left = true;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-
-                }
-                else if (left && chunk.Position.X != 0)
-                {
-                    chunk = chunk.West;
-                    return true;
-                }
-                else if (left && chunk.Position.X == 0)
-                {
-                    if (!up && chunk.Position.Z != mapSize.Z - 1)
-                    {
-                        chunk = chunk.South;
-                        left = false;
-                        return true;
-                    }
-                    else if (!up && chunk.Position.Z == mapSize.Z - 1)
-                    {
-                        if (chunk.Position.Y != mapSize.Y - 1)
-                        {
-                            chunk = chunk.Up;
-                            up = true;
-                            left = false;
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                    else if (up && chunk.Position.Z != 0)
-                    {
-                        chunk = chunk.North;
-                        left = false;
-                        return true;
-                    }
-                    else if (up && chunk.Position.Z == 0)
-                    {
-                        if (chunk.Position.Y != mapSize.Y - 1)
-                        {
-                            chunk = chunk.Up;
-                            up = false;
-                            left = false;
-                            return true;
-                        }
-                        else
-                            return false;
+                        k = 0;
                     }
                 }
             }
-            return false;
+
+            chunk = grid[i, j, k];
+            return true;
         }
 
         /// <summary>

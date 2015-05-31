@@ -18,6 +18,20 @@
         <Creature>
           <Species>OceanFloor</Species>
           <Family>Terrain</Family>
+          <Position>0, 0, -2000</Position>
+          <Direction>1, 0, 0</Direction>
+        </Creature>
+
+        <Creature>
+          <Species>OceanFloor</Species>
+          <Family>Terrain</Family>
+          <Position>0, 0, -1000</Position>
+          <Direction>1, 0, 0</Direction>
+        </Creature>
+
+        <Creature>
+          <Species>OceanFloor</Species>
+          <Family>Terrain</Family>
           <Position>0, 0, 0</Position>
           <Direction>1, 0, 0</Direction>
         </Creature>
@@ -25,7 +39,14 @@
         <Creature>
           <Species>OceanFloor</Species>
           <Family>Terrain</Family>
-          <Position>1000, 0, 0</Position>
+          <Position>0, 0, 1000</Position>
+          <Direction>1, 0, 0</Direction>
+        </Creature>
+
+        <Creature>
+          <Species>OceanFloor</Species>
+          <Family>Terrain</Family>
+          <Position>0, 0, 2000</Position>
           <Direction>1, 0, 0</Direction>
         </Creature>
 
@@ -36,6 +57,13 @@
           <Direction>1, 0, 0</Direction>
         </Creature>
 
+        <Creature>
+          <Species>OceanFloor</Species>
+          <Family>Terrain</Family>
+          <Position>1000, 0, 0</Position>
+          <Direction>1, 0, 0</Direction>
+        </Creature>
+        
         <Creature>
           <Species>OceanFloor</Species>
           <Family>Terrain</Family>

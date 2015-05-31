@@ -92,7 +92,7 @@ namespace WhaleSimulator
                 blackOpacity -= 0.5f * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             if (chunkGrid != null)
-                chunkGrid.Update(gameTime, inputStates, player);
+                chunkGrid.Update(gameTime, inputStates, ref player);
             if (player != null)
                 player.Update(gameTime, inputStates);
             Camera.Update(gameTime, inputStates, player);
