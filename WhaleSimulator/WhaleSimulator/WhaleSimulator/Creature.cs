@@ -19,7 +19,8 @@ namespace WhaleSimulator
     public class Creature : Graphics3D
     {
         public CreatureInfo Properties { get { return properties; } set { properties = value; } }
-        
+
+        public Vector3 MovingDirection { get { return movingDirection; } set { movingDirection = value; } }
         /// <summary>
         /// The forward speed of the Creature, expressed in Units Per Second
         /// </summary>
@@ -30,6 +31,8 @@ namespace WhaleSimulator
         /// </summary>
         public float Velocity { get; set; }
 
+
+        protected Vector3 movingDirection;
         protected CreatureInfo properties;
         protected bool isUnderwater;
         protected const float GRAVITY = .5f;
@@ -43,8 +46,10 @@ namespace WhaleSimulator
         {
             Properties = new CreatureInfo(species, family, spawnPosition, spawnDirection, true, swims);
             this.Position = spawnPosition;
-            this.Direction = spawnDirection;
-            this.Direction.Normalize();
+            this.FacingDirection = spawnDirection;
+            this.FacingDirection.Normalize();
+            this.MovingDirection = spawnDirection;
+            this.MovingDirection.Normalize();
             SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
@@ -76,8 +81,10 @@ namespace WhaleSimulator
             Properties = info;
             //System.Diagnostics.Debug.WriteLine("Ice Position: " + info.SpawnPosition);
             this.Position = info.SpawnPosition;
-            this.Direction = info.SpawnDirection;
-            this.Direction.Normalize();
+            this.FacingDirection = info.SpawnDirection;
+            this.FacingDirection.Normalize();
+            this.MovingDirection = info.SpawnDirection;
+            this.MovingDirection.Normalize();
             SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
@@ -105,9 +112,9 @@ namespace WhaleSimulator
 
             Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            position.X += (Direction.X * Velocity);
-            position.Y += (Direction.Y * Velocity) - (fallingSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
-            position.Z += (Direction.Z * Velocity);
+            position.X += (MovingDirection.X * Velocity);
+            position.Y += (MovingDirection.Y * Velocity) - (fallingSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
+            position.Z += (MovingDirection.Z * Velocity);
 
             if (position.Y < 0)
                 position.Y = 0;
@@ -145,8 +152,8 @@ namespace WhaleSimulator
 
         private void SetRotations()
         {
-            Rotations.Y = (float)Math.Atan(Direction.Z / Direction.X);
-            Rotations.Z = (float)Math.Atan(Direction.Y / (Math.Sqrt(Direction.X * Direction.X + Direction.Z * Direction.Z)));
+            Rotations.Y = (float)Math.Atan(FacingDirection.Z / FacingDirection.X);
+            Rotations.Z = (float)Math.Atan(FacingDirection.Y / (Math.Sqrt(FacingDirection.X * FacingDirection.X + FacingDirection.Z * FacingDirection.Z)));
         }
 
         private void SetAI()
@@ -193,6 +200,15 @@ namespace WhaleSimulator
                 Speed = ((float)Map.Randomizer.NextDouble() * (FISH_MAX_SPEED - FISH_MIN_SPEED) + FISH_MIN_SPEED);
                 Rotations.Y += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
                 Rotations.Z += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Y = SinZ;
+                movingDirection.Z = SinY * CosZ;
             }
             else
             {
@@ -200,6 +216,15 @@ namespace WhaleSimulator
 
                 Rotations.Z += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Y = SinZ;
+                movingDirection.Z = SinY * CosZ;
             }
         }
     
@@ -225,10 +250,10 @@ namespace WhaleSimulator
                             {
                                 if (ice.Sphere.Intersects(Sphere))
                                 {
-                                    Vector2 normal = new Vector2(-Direction.Z, Direction.X);
-                                    Vector2 vector = new Vector2(Direction.X, Direction.Y);
+                                    Vector2 normal = new Vector2(-MovingDirection.Z, MovingDirection.X);
+                                    Vector2 vector = new Vector2(MovingDirection.X, MovingDirection.Y);
                                     vector -= 2 * Vector2.Dot(vector, normal) * normal;
-                                    Direction = new Vector3(vector.X, Direction.Y, vector.Y);
+                                    MovingDirection = new Vector3(vector.X, MovingDirection.Y, vector.Y);
                                     //System.Diagnostics.Debug.WriteLine("Bounce!");
                                     bounceTimer = 0.5f;
                                     SetRotations();
@@ -241,8 +266,10 @@ namespace WhaleSimulator
             else
                 bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
 
+            
+
             properties.SpawnPosition = Position;
-            properties.SpawnDirection = Direction;
+            properties.SpawnDirection = MovingDirection;
         }
     }
 

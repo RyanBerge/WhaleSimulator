@@ -17,7 +17,7 @@ namespace WhaleSimulator
 
         public Model BaseModel { get; set; }
         public Vector3 Position { get { return position; } set { position = value; } }
-        public Vector3 Direction { get { return direction; } set { direction = value; } }
+        public Vector3 FacingDirection { get { return facingDirection; } set { facingDirection = value; } }
         public Vector3 LocalUp { get { return localUp; } set { localUp = value; } }
 
         public BoundingBox Box { get { return BoundingBox.CreateFromSphere(BaseModel.Meshes[0].BoundingSphere); } }
@@ -31,7 +31,7 @@ namespace WhaleSimulator
         }
 
         protected Vector3 position;
-        protected Vector3 direction;
+        protected Vector3 facingDirection;
         protected Vector3 localUp;
         protected Vector3 Rotations;
         protected Vector3 OldRotations;
@@ -57,7 +57,7 @@ namespace WhaleSimulator
         public Graphics3D(Model model)
         {
             BaseModel = model;
-            Direction = new Vector3(1, 0, 0);
+            FacingDirection = new Vector3(1, 0, 0);
 
             modelExtra = model.Tag as ModelExtra;
             ObtainBones();
@@ -86,9 +86,9 @@ namespace WhaleSimulator
                 float SinZ = (float)Math.Sin(Rotations.Z);
                 float SinY = (float)Math.Sin(Rotations.Y);
 
-                direction.X = CosY * CosZ;
-                direction.Y = SinZ;
-                direction.Z = SinY * CosZ;
+                facingDirection.X = CosY * CosZ;
+                facingDirection.Y = SinZ;
+                facingDirection.Z = SinY * CosZ;
 
                 if (this.GetType() == typeof(Player))
                 {
@@ -102,7 +102,7 @@ namespace WhaleSimulator
                 
             }
 
-            worldTransformation = Matrix.CreateWorld(Position, direction, Camera.CameraUp);
+            worldTransformation = Matrix.CreateWorld(Position, facingDirection, Camera.CameraUp);
 
             OldRotations = Rotations;
 

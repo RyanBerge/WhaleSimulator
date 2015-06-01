@@ -65,13 +65,13 @@ namespace WhaleSimulator
 
         public static void Update(GameTime gameTime, InputStates inputStates, Player player)
         {
-            float x = player.Position.X - (player.Direction.X * CAMERA_DISTANCE);
-            float y = player.Position.Y - (player.Direction.Y * CAMERA_DISTANCE);
-            float z = player.Position.Z - (player.Direction.Z * CAMERA_DISTANCE);
+            float x = player.Position.X - (player.FacingDirection.X * CAMERA_DISTANCE);
+            float y = player.Position.Y - (player.FacingDirection.Y * CAMERA_DISTANCE);
+            float z = player.Position.Z - (player.FacingDirection.Z * CAMERA_DISTANCE);
 
             //CameraUp = player.LocalUp;
             Position = new Vector3(x, y, z) + (new Vector3(player.LocalUp.X, player.LocalUp.Y, player.LocalUp.Z) * CAMERA_HEIGHT);
-            LookTarget = new Vector3(player.Position.X, player.Position.Y, player.Position.Z) + (new Vector3(player.Direction.X, player.Direction.Y, player.Direction.Z) * 30);
+            LookTarget = new Vector3(player.Position.X, player.Position.Y, player.Position.Z) + (new Vector3(player.FacingDirection.X, player.FacingDirection.Y, player.FacingDirection.Z) * 30);
 
 
 

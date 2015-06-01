@@ -95,6 +95,15 @@ namespace WhaleSimulator
                     Rotations.Z -= 0.005f;
             }
 
+            float CosZ = (float)Math.Cos(Rotations.Z);
+            float CosY = (float)Math.Cos(Rotations.Y);
+            float SinZ = (float)Math.Sin(Rotations.Z);
+            float SinY = (float)Math.Sin(Rotations.Y);
+
+            movingDirection.X = CosY * CosZ;
+            movingDirection.Y = SinZ;
+            movingDirection.Z = SinY * CosZ;
+
             base.Update(gameTime, inputStates);
 
             

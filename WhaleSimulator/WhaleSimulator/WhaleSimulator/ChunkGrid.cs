@@ -86,7 +86,10 @@ namespace WhaleSimulator
         public void LoadMap()
         {
             foreach (Chunk chunk in this)
+            {
                 chunk.LoadAssets();
+                LoadedChunks.Add(chunk);
+            }
         }
 
         public void LoadAssets(Vector3 centerChunk)
