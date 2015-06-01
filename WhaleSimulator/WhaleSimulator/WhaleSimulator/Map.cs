@@ -33,11 +33,11 @@ namespace WhaleSimulator
         public static Vector3 MapSize { get; set; }
         public static Dictionary<string, Model> Models { get; set; }
 
-        public Map(string name)
+        public Map(string name, ContentManager content)
         {
             Randomizer = new Random();
             mapName = name;
-            mapContent = MasterGame.GetNewContentManager();
+            mapContent = content;
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
             

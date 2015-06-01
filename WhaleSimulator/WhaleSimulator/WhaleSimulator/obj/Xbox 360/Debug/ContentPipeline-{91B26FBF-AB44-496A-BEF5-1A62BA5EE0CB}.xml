@@ -1954,6 +1954,24 @@
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sand_0.xnb</Output>
       <Time>2015-05-31T19:07:15.4397477-07:00</Time>
     </Item>
+    <Item>
+      <Source>Images\PauseBackground.png</Source>
+      <Name>Images\PauseBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\PauseBackground.xnb</Output>
+      <Time>2015-06-01T02:44:39.8965657-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ResumeButton.jpg</Source>
+      <Name>Images\ResumeButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\ResumeButton.xnb</Output>
+      <Time>2015-06-01T02:43:45.860475-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}</ContentProjectGUID>

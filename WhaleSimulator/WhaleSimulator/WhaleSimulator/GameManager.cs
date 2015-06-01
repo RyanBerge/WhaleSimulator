@@ -5,6 +5,8 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 using RB_GameResources.Xna.Controls;
 
@@ -20,11 +22,39 @@ namespace WhaleSimulator
         private GameState gameState = GameState.Undefined;
         
         private MainMenu mainMenu;
+        private PauseMenu pauseMenu;
         private Map currentMap;
+        private ContentManager mapContent;
 
         public GameManager()
         {
+            mapContent = MasterGame.GetNewContentManager();
+            pauseMenu = new PauseMenu(mapContent);
+            pauseMenu.Resume += pauseMenuResume;
+            pauseMenu.Quit += pauseMenuQuit;
+        }
 
+        void pauseMenuQuit()
+        {
+            LoadMainMenu();
+
+            gameState = GameState.MainMenu;
+
+
+            currentMap.Quit();
+            currentMap = null;
+            mapContent = MasterGame.GetNewContentManager();
+            pauseMenu = new PauseMenu(mapContent);
+            pauseMenu.Resume += pauseMenuResume;
+            pauseMenu.Quit += pauseMenuQuit;
+            
+            
+        }
+
+        void pauseMenuResume()
+        {
+            pauseMenu.Reset();
+            gameState = GameState.Playing;
         }
 
         public void Initialize()
@@ -42,8 +72,7 @@ namespace WhaleSimulator
         void LoadMap(string name)
         {
             mainMenu.Dispose();
-            //Load map
-            currentMap = new Map(name);
+            currentMap = new Map(name, mapContent);
             gameState = GameState.Playing;
         }
 
@@ -74,12 +103,17 @@ namespace WhaleSimulator
                     mainMenu.Update(gameTime, inputStates);
                     break;
                 case GameState.PauseMenu:
+                    pauseMenu.Update(gameTime, inputStates);
                     break;
                 case GameState.Playing:
                     if (currentMap != null)
                     {
-                        currentMap.Update(gameTime, inputStates);
-                        //Camera.Update(gameTime, inputStates, player);
+                        if (inputStates.WasButtonPressed(Buttons.Start) || inputStates.WasButtonPressed(Keys.Escape))
+                        {
+                            gameState = GameState.PauseMenu;
+                        }
+                        else
+                            currentMap.Update(gameTime, inputStates);
                     }
                     break;
             }
@@ -106,6 +140,8 @@ namespace WhaleSimulator
                 mainMenu.Draw2D(gameTime, spriteBatch);
             else if (gameState == GameState.Playing)
                 currentMap.Draw2D(spriteBatch, gameTime);
+            else if (gameState == GameState.PauseMenu)
+                pauseMenu.Draw2D(gameTime, spriteBatch);
 
         }
     }

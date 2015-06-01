@@ -108,6 +108,8 @@ Content\sourceimages\toothfish_0.xnb
 Content\sourceimages\rock2_0.xnb
 Content\Creatures\FBX\OceanFloor.xnb
 Content\sand_0.xnb
+Content\Images\PauseBackground.xnb
+Content\Images\ResumeButton.xnb
 Data\Models.xml
 Data\MapData\OrcaLevel.xml
 Data\MapData\OrcaLevel_Backup.xml
