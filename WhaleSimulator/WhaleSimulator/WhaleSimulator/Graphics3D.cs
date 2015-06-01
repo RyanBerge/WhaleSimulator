@@ -130,20 +130,20 @@ namespace WhaleSimulator
                         effect.Projection = Camera.ProjectionMatrix;
                         effect.EnableDefaultLighting();
 
-                        if (Camera.Position.Y < Map.WaterLevel)
+                        //if (Camera.Position.Y < Map.WaterLevel)
                         {
-                            effect.FogEnabled = false;
+                            effect.FogEnabled = true;
                             effect.FogStart = Camera.UnderwaterFogStart;
                             effect.FogEnd = Camera.UnderwaterFogEnd;
                             effect.FogColor = Camera.FogColor;
                         }
-                        else
-                        {
-                            effect.FogEnabled = false;
-                            effect.FogStart = Camera.FogStart;
-                            effect.FogEnd = Camera.FogEnd;
-                            effect.FogColor = Camera.FogColor;
-                        }
+                        //else
+                        //{
+                        //    effect.FogEnabled = false;
+                        //    effect.FogStart = Camera.FogStart;
+                        //    effect.FogEnd = Camera.FogEnd;
+                        //    effect.FogColor = Camera.FogColor;
+                        //}
                     }
                 }
                 else

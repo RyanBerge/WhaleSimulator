@@ -30,13 +30,14 @@ namespace WhaleSimulator
         public static float UnderwaterFogStart { get; set; }
         public static float UnderwaterFogEnd { get; set; }
 
-        private const float CAMERA_HEIGHT = 15f;
+        private const float CAMERA_HEIGHT = 8f;
+        private const float CAMERA_DISTANCE = 40f;
 
         public static void SetDefaults(Vector3 playerPosition, Vector3 playerDirection)
         {
-            float x = playerPosition.X - (playerDirection.X * 75);
-            float y = playerPosition.Y - (playerDirection.Y * 75);
-            float z = playerPosition.Z - (playerDirection.Z * 75);
+            float x = playerPosition.X - (playerDirection.X * CAMERA_DISTANCE);
+            float y = playerPosition.Y - (playerDirection.Y * CAMERA_DISTANCE);
+            float z = playerPosition.Z - (playerDirection.Z * CAMERA_DISTANCE);
 
             CameraUp = new Vector3(0, 1, 0);
             Position = new Vector3(x, y, z) + (new Vector3(CameraUp.X, CameraUp.Y, CameraUp.Z) * CAMERA_HEIGHT);
@@ -52,10 +53,10 @@ namespace WhaleSimulator
             IsUnderwater = true;
             FogStart = 75;
             FogEnd = 100;
-            UnderwaterFogStart = 80;
-            UnderwaterFogEnd = 500;
+            UnderwaterFogStart = 0;
+            UnderwaterFogEnd = 2000;
             //FogColor = Color.Blue.ToVector3();
-            FogColor = new Vector3(0, (120f/255f), 1f);
+            FogColor = new Vector3((36f/255f), (78f/255f), (155f/255f));
 
             ProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(FieldOfView, AspectRatio, NearClippingPlane, FarClippingPlane);
             ViewMatrix = Matrix.CreateLookAt(Position, LookTarget, Vector3.Up);
@@ -64,9 +65,9 @@ namespace WhaleSimulator
 
         public static void Update(GameTime gameTime, InputStates inputStates, Player player)
         {
-            float x = player.Position.X - (player.Direction.X * 75);
-            float y = player.Position.Y - (player.Direction.Y * 75);
-            float z = player.Position.Z - (player.Direction.Z * 75);
+            float x = player.Position.X - (player.Direction.X * CAMERA_DISTANCE);
+            float y = player.Position.Y - (player.Direction.Y * CAMERA_DISTANCE);
+            float z = player.Position.Z - (player.Direction.Z * CAMERA_DISTANCE);
 
             //CameraUp = player.LocalUp;
             Position = new Vector3(x, y, z) + (new Vector3(player.LocalUp.X, player.LocalUp.Y, player.LocalUp.Z) * CAMERA_HEIGHT);

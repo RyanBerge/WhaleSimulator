@@ -114,7 +114,7 @@ namespace WhaleSimulator
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.FromNonPremultiplied(0,120,255,255));
+            GraphicsDevice.Clear(Color.FromNonPremultiplied(36,78,155,255));
 
             GraphicsDevice.BlendState = BlendState.Opaque;
             GraphicsDevice.DepthStencilState = DepthStencilState.Default;
