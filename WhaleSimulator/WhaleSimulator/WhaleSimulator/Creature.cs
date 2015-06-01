@@ -164,7 +164,8 @@ namespace WhaleSimulator
                     UpdateMove = FishAI;
                     break;
                 case "Ice":
-                    UpdateMove = IceAI;
+                    //UpdateMove = IceAI;
+                    UpdateMove = NoAI;
                     break;
                 default:
                     UpdateMove = NoAI;
