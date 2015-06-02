@@ -21,9 +21,9 @@ namespace WhaleSimulator
         //Represents the turning speed when not moving at all, expressed in Radians Per Second
         private const float BASE_TURN_RADIUS = 0.8f;
 
-        private const float BASE_SPEED = 15f;
-        private const float MIN_SPEED = 0f; //8
-        private const float MAX_SPEED = 600; //44
+        private const float BASE_SPEED = 45f;
+        private const float MIN_SPEED = 15f; //8
+        private const float MAX_SPEED = 60; //44
 
         //Expressed in Units Per Second
         private const float ACCELERATION = 10f;
@@ -33,8 +33,13 @@ namespace WhaleSimulator
         private const float ENERGY_LOSS = 1f;
         private const float AIR_GAIN = 15f;
 
+        private const float ENERGY_FOOD_GAIN = 30f;
+
+        public Vector3 Nose { get { return nose; } }
         public float Air { get; set; } // 0 - 100
         public float Energy { get; set; } // 0 - 100
+
+        private Vector3 nose;
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, "Player", spawnPosition, spawnDirection, true)
@@ -128,6 +133,9 @@ namespace WhaleSimulator
             movingDirection.Y = SinZ;
             movingDirection.Z = SinY * CosZ;
 
+            nose = position + (facingDirection * BaseModel.Meshes[0].BoundingSphere.Radius);
+            //CheckFood();
+
             base.Update(gameTime, inputStates);
 
             
@@ -135,6 +143,33 @@ namespace WhaleSimulator
             //System.Diagnostics.Debug.WriteLine(position);
 
             //System.Diagnostics.Debug.WriteLine(isUnderwater);
+        }
+
+        private void CheckFood()
+        {
+            
+            IEnumerable<Creature> FoodList =
+                from food in ChunkGrid.CurrentChunk.Creatures
+                where (food.Properties.Family == "Seal" || food.Properties.Family == "Fish")
+                select food;
+            
+            foreach (Creature food in FoodList)
+            {
+                float xd = food.Sphere.Center.X - nose.X;
+	            float yd = food.Sphere.Center.Y - nose.Y;
+	            float zd = food.Sphere.Center.Z - nose.Z;
+	            if (Math.Sqrt(xd*xd + yd*yd + zd*zd) < food.Sphere.Radius)
+                {
+                    Eat(food);
+                }
+            }
+
+        }
+
+        private void Eat(Creature food)
+        {
+            food.Despawn();
+            Energy += ENERGY_FOOD_GAIN;
         }
 
         /// <summary>

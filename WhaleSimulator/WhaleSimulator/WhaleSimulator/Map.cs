@@ -29,6 +29,7 @@ namespace WhaleSimulator
         private ContentManager mapContent;
 
         public Player Player { get { return player; } }
+        public static Player PlayerReference { get; set; }
         public static Random Randomizer { get; set; }
         public static int WaterLevel { get; set; }
         public static Vector3 MapSize { get; set; }
@@ -41,7 +42,7 @@ namespace WhaleSimulator
             mapContent = content;
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
-            
+            PlayerReference = player;
             // stuff added
             skybox = new Skybox(mapContent);
             oceanSurface = new OceanSurface(mapContent);

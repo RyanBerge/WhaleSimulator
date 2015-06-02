@@ -199,7 +199,7 @@ namespace WhaleSimulator
                     slideSpeed -= (slideAcceleration * (float)gameTime.ElapsedGameTime.TotalSeconds);
 
                 if (slideSpeed < 0)
-                    slideSpeed = 1;
+                    slideSpeed = 10;
 
                 float currentSlide = (slideSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
                 slideTotal += currentSlide;

@@ -39,7 +39,7 @@ namespace WhaleSimulator
                     {
                         part.Effect = skyBoxEffect;
                         part.Effect.Parameters["World"].SetValue(
-                            Matrix.CreateScale(Camera.FarClippingPlane/2) * Matrix.CreateTranslation(Camera.Position.X, 550, Camera.Position.Z));
+                            Matrix.CreateScale(Camera.FarClippingPlane/2) * Matrix.CreateTranslation(Camera.Position.X, 950, Camera.Position.Z));
                         part.Effect.Parameters["View"].SetValue(Camera.ViewMatrix);
                         part.Effect.Parameters["Projection"].SetValue(Camera.ProjectionMatrix);
                     

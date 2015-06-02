@@ -46,6 +46,7 @@ namespace WhaleSimulator
 
         public static Vector3 MapCenter { get; set; }
         public static List<Chunk> LoadedChunks { get; set; }
+        public static Chunk CurrentChunk { get; set; }
         //public static List<Graphics3D> GlobalTerrain { get; set; }
 
         /// <summary>
@@ -538,6 +539,8 @@ namespace WhaleSimulator
 
                 }
 
+                currentChunk = this[2, 0, 2];
+                CurrentChunk = currentChunk;
                 player.Position = playerPosition;
                 
                 foreach (Chunk chunk in this)

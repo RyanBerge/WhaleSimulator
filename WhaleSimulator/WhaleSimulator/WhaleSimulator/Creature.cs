@@ -109,34 +109,36 @@ namespace WhaleSimulator
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {
-            
 
-            if (Properties.Swims && !isUnderwater)
-                fallingSpeed += GRAVITY;
-            else
+            if (Properties.IsAlive)
             {
-                UpdateMove(gameTime);
-                if (fallingSpeed > 0)
-                    fallingSpeed -= GRAVITY;
+                if (Properties.Swims && !isUnderwater)
+                    fallingSpeed += GRAVITY;
                 else
-                    fallingSpeed = 0;
+                {
+                    UpdateMove(gameTime);
+                    if (fallingSpeed > 0)
+                        fallingSpeed -= GRAVITY;
+                    else
+                        fallingSpeed = 0;
+                }
+
+                Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                position.X += (MovingDirection.X * Velocity);
+                position.Y += (MovingDirection.Y * Velocity) - (fallingSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
+                position.Z += (MovingDirection.Z * Velocity);
+
+                if (position.Y < 0)
+                    position.Y = 0;
+
+                if (position.Y > Map.WaterLevel)
+                    isUnderwater = false;
+                else
+                    isUnderwater = true;
+
+                base.Update(gameTime);
             }
-
-            Velocity = Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            position.X += (MovingDirection.X * Velocity);
-            position.Y += (MovingDirection.Y * Velocity) - (fallingSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
-            position.Z += (MovingDirection.Z * Velocity);
-
-            if (position.Y < 0)
-                position.Y = 0;
-
-            if (position.Y > Map.WaterLevel)
-                isUnderwater = false;
-            else
-                isUnderwater = true;
-
-            base.Update(gameTime);
         }
 
         /// <summary>
@@ -145,7 +147,15 @@ namespace WhaleSimulator
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         public override void Draw3D(GameTime gameTime) 
         {
-            base.Draw3D(gameTime);
+            if (Properties.IsAlive)
+            {
+                Vector3 differenceVector = Position - Camera.Position;
+                differenceVector.Normalize();
+
+                if (Vector3.Dot(Map.PlayerReference.FacingDirection, differenceVector) >= 0)
+                    base.Draw3D(gameTime);
+            }
+                
         }
         /// <summary>
         /// Draws any 2-dimensional sprites to the SpriteBatch (2D Sprites are always drawn above 3D material).
@@ -155,6 +165,11 @@ namespace WhaleSimulator
         public virtual void Draw2D(GameTime gameTime, SpriteBatch spriteBatch)
         {
             
+        }
+
+        public void Despawn()
+        {
+            properties.IsAlive = false;
         }
 
         public void Dispose()

@@ -31,7 +31,7 @@ namespace WhaleSimulator
             airColor[0] = Color.Red;
             energyColor[0] = Color.Green;
             airBarTexture.SetData(airColor);
-            energyBarTexture.SetData(airColor);
+            energyBarTexture.SetData(energyColor);
             airBar = new Rectangle(50, 50, 200, 20);
             energyBar = new Rectangle(50, 100, 200, 20);
         }
