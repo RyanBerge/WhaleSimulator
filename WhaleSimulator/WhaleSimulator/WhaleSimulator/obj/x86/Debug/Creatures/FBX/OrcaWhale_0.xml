@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>pSphere1</Name>
     <Identity>
-      <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
+      <SourceFilename>C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <OpaqueData>
@@ -40,7 +40,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>blinn1</Name>
       <Identity>
-        <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
+        <SourceFilename>C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -62,7 +62,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>blinn2</Name>
       <Identity>
-        <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
+        <SourceFilename>C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Creatures\FBX\OrcaWhale.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

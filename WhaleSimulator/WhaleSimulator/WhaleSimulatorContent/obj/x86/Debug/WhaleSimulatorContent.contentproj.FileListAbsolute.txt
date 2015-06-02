@@ -1,3 +1,4 @@
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\x86\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\x86\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache
 C:\Users\19\Documents\GitHub\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\x86\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\obj\x86\Debug\WhaleSimulatorContent.contentprojResolveAssemblyReference.cache

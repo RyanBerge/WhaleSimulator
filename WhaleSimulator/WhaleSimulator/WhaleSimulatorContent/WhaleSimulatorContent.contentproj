@@ -54,11 +54,6 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
     </Compile>
-    <Compile Include="Effects\oversea.jpg">
-      <Name>oversea</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Effects\Skybox.fx">
       <Name>Skybox</Name>
       <Importer>EffectImporter</Importer>
@@ -140,257 +135,257 @@
     <Compile Include="Creatures\FBX\Albatross.fbx">
       <Name>Albatross</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\BigIce_A.fbx">
       <Name>BigIce_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\BigIce_B.fbx">
       <Name>BigIce_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\BigIce_C.fbx">
       <Name>BigIce_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\BigIce_D.fbx">
       <Name>BigIce_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\BigIce_E.fbx">
       <Name>BigIce_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Cod.fbx">
       <Name>Cod</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Complicatefish.fbx">
       <Name>Complicatefish</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Fish_A.fbx">
       <Name>Fish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Fish_B.fbx">
       <Name>Fish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Fish_C.fbx">
       <Name>Fish_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Icefish_A.fbx">
       <Name>Icefish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Icefish_B.fbx">
       <Name>Icefish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Icefish_C.fbx">
       <Name>Icefish_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Jellyfish.fbx">
       <Name>Jellyfish</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\MinkWhale.fbx">
       <Name>MinkWhale</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\OrcaWhale.fbx">
       <Name>OrcaWhale</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Penguin.fbx">
       <Name>Penguin</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_A.fbx">
       <Name>Rock_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_B.fbx">
       <Name>Rock_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_C.fbx">
       <Name>Rock_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_D.fbx">
       <Name>Rock_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_E.fbx">
       <Name>Rock_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_F.fbx">
       <Name>Rock_F</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_G.fbx">
       <Name>Rock_G</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Rock_H.fbx">
       <Name>Rock_H</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SeaLion.fbx">
       <Name>SeaLion</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Seal_A.fbx">
       <Name>Seal_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Seal_B.fbx">
       <Name>Seal_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_A.fbx">
       <Name>SmallIce_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_B.fbx">
       <Name>SmallIce_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_C.fbx">
       <Name>SmallIce_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_D.fbx">
       <Name>SmallIce_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_E.fbx">
       <Name>SmallIce_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_F.fbx">
       <Name>SmallIce_F</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_G.fbx">
       <Name>SmallIce_G</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_H.fbx">
       <Name>SmallIce_H</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_I.fbx">
       <Name>SmallIce_I</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_J.fbx">
       <Name>SmallIce_J</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_K.fbx">
       <Name>SmallIce_K</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_L.fbx">
       <Name>SmallIce_L</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_M.fbx">
       <Name>SmallIce_M</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_N.fbx">
       <Name>SmallIce_N</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallIce_O.fbx">
       <Name>SmallIce_O</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallRock_A.fbx">
       <Name>SmallRock_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\SmallRock_B.fbx">
       <Name>SmallRock_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Sponge.fbx">
       <Name>Sponge</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Squid.fbx">
       <Name>Squid</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\StandingGull.fbx">
       <Name>StandingGull</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Toothfish_A.fbx">
       <Name>Toothfish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <Compile Include="Creatures\FBX\Toothfish_B.fbx">
       <Name>Toothfish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -400,7 +395,9 @@
     <Compile Include="Creatures\FBX\OceanFloor.fbx">
       <Name>OceanFloor</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+      <ProcessorParameters_GenerateMipmaps>False</ProcessorParameters_GenerateMipmaps>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -411,6 +408,13 @@
     </Compile>
     <Compile Include="Images\ResumeButton.jpg">
       <Name>ResumeButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\oversea.png">
+      <Name>oversea</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

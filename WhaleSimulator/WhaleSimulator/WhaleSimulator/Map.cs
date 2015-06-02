@@ -131,7 +131,7 @@ namespace WhaleSimulator
 
             oceanSurface.Draw(Camera.ViewMatrix,
                 Camera.ProjectionMatrix, Camera.Position,
-                new Vector3(-1, 0, 0), MasterGame.Graphics.GraphicsDevice,
+                new Vector3(0, 0, 1), MasterGame.Graphics.GraphicsDevice,
                 player.Position);
 
             MasterGame.Graphics.GraphicsDevice.BlendState = currentBlend;

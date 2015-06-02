@@ -34,3 +34,9 @@ D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\x86\Debug\AnimationAux.csproj
 D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\x86\Debug\XnaAux.dll
 D:\RyanBerge\Users\WhaleSimulator\AnimationAux\obj\x86\Debug\XnaAux.pdb
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\bin\x86\Debug\XnaAux.dll
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\bin\x86\Debug\XnaAux.pdb
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\obj\x86\Debug\AnimationAux.csprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\obj\x86\Debug\XnaAux.dll
+C:\Users\John\Desktop\WhaleSimulator\AnimationAux\obj\x86\Debug\XnaAux.pdb

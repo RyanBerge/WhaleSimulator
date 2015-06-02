@@ -74,8 +74,8 @@ namespace WhaleSimulator
 
             ObtainBones();
 
-            // SetClip(Clips[0]);
-            // player.Looping = true;
+            SetClip(Clips[0]);
+            player.Looping = true;
         }
 
         public Creature(CreatureInfo info)
@@ -187,12 +187,21 @@ namespace WhaleSimulator
         {
             switch (Properties.Family)
             {
+                case "Whale":
+                    UpdateMove = WhaleAI;
+                    break;
                 case "FishSchool": 
                     UpdateMove = FishAI;
                     break;
                 case "Ice":
-                    //UpdateMove = IceAI;
-                    UpdateMove = NoAI;
+                    UpdateMove = IceAI;
+                    //UpdateMove = NoAI;
+                    break;
+                case "Penguin":
+                    UpdateMove = LandBirdAI;
+                    break;
+                case "Bird":
+                    UpdateMove = FlyingAI;
                     break;
                 default:
                     UpdateMove = NoAI;
@@ -200,7 +209,92 @@ namespace WhaleSimulator
             }
         }
 
-        private void NoAI(GameTime gameTime) { }
+        private void NoAI(GameTime gameTime) 
+        {
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    Map.PlayerReference.Speed = 0;
+            //}
+        }
+
+        private void LandBirdAI(GameTime gameTime)
+        {
+            float turnTimer = 10f;
+            
+            const float PENGUIN_SPEED = 15f;
+
+            if (turnTimer >= 10f)
+            {
+                Speed = PENGUIN_SPEED;
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (PENGUIN_SPEED) - 1f);
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Z = SinY * CosZ;
+            }
+            else if(turnTimer == 0)
+            {
+                turnTimer = 10.1f;
+            }
+
+            turnTimer -= 0.1f;
+        }
+
+        private void FlyingAI(GameTime gameTime)
+        {
+            //Units per second
+            const float BIRD_MIN_SPEED = 6f;
+            const float BIRD_MAX_SPEED = 16f;
+            const float BIRD_SPEED_DECLINE = 0.1f;
+
+            //Radians
+            const float BIRD_NEW_TURN_MIN = -1f;
+            const float BIRD_NEW_TURN_MAX = 1f;
+
+            //Lower numbers result in faster turns
+            //const int BIRD_TURN_FREQUENCY = 2;
+
+            //Radians Per Second
+            const float BIRD_ROTATION_TURN = 1;
+
+            if (Speed < (BIRD_MIN_SPEED))
+            {
+                Speed = ((float)Map.Randomizer.NextDouble() * (BIRD_MAX_SPEED - BIRD_MIN_SPEED) + BIRD_MIN_SPEED);
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (BIRD_NEW_TURN_MAX - BIRD_NEW_TURN_MIN) + BIRD_NEW_TURN_MIN);
+                Rotations.Z += ((float)Map.Randomizer.NextDouble() * (BIRD_NEW_TURN_MAX - BIRD_NEW_TURN_MIN) + BIRD_NEW_TURN_MIN);
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Y = SinZ;
+                movingDirection.Z = SinY * CosZ;
+            }
+            else
+            {
+                Speed -= BIRD_SPEED_DECLINE;
+
+                Rotations.Z += BIRD_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                //Rotations.Y += BIRD_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Y = SinZ;
+                movingDirection.Z = SinY * CosZ;
+            }
+
+            if (position.Y < Map.WaterLevel)
+                position.Y = Map.WaterLevel;
+        }
 
         private void FishAI(GameTime gameTime)
         {
@@ -254,50 +348,140 @@ namespace WhaleSimulator
                 movingDirection.Y = SinZ;
                 movingDirection.Z = SinY * CosZ;
             }
+
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            {
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 20;
+            }
+
+            if (position.Y > Map.WaterLevel)
+                position.Y = Map.WaterLevel;
+        }
+
+        private void WhaleAI(GameTime gameTime)
+        {
+            //======================================================
+            //Move constants to classwide scope when done fiddling
+            //======================================================
+
+            //Units per second
+            const float FISH_MIN_SPEED = 15f;
+            const float FISH_MAX_SPEED = 60f;
+            const float FISH_SPEED_DECLINE = 0.01f;
+            float breathTimer = 60f;
+
+            //Radians
+            const float FISH_NEW_TURN_MIN = -1f;
+            const float FISH_NEW_TURN_MAX = 1f;
+
+            //Lower numbers result in faster turns
+            //const int FISH_TURN_FREQUENCY = 2;
+
+            //Radians Per Second
+            const float FISH_ROTATION_TURN = 1;
+
+            breathTimer -= 1f;
+
+            if (Speed < (FISH_MIN_SPEED))
+            {
+                Speed = ((float)Map.Randomizer.NextDouble() * (FISH_MAX_SPEED - FISH_MIN_SPEED) + FISH_MIN_SPEED);
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
+                Rotations.Z += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                if (breathTimer > 0)
+                    movingDirection.Y = SinZ;
+                else
+                    movingDirection.Y = 1f;
+                movingDirection.Z = SinY * CosZ;
+            }
+            else
+            {
+                Speed -= FISH_SPEED_DECLINE;
+
+                Rotations.Z += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinZ = (float)Math.Sin(Rotations.Z);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                if (breathTimer > 0)
+                    movingDirection.Y = SinZ;
+                else
+                    movingDirection.Y = 1f;
+                movingDirection.Z = SinY * CosZ;
+            }
+
+            if (Position.Y == Map.WaterLevel)
+                breathTimer = 60f;
+
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            {
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 50;
+            }
+
+            if (position.Y > Map.WaterLevel)
+                position.Y = Map.WaterLevel;
         }
     
         private void IceAI(GameTime gameTime)
         {
-            Speed = 3;
+            //Speed = 3;
+            //
+            //if (bounceTimer <= 0)
+            //{
+            //    foreach (Chunk chunk in ChunkGrid.LoadedChunks)
+            //    {
+            //        IEnumerable<Creature> IceList =
+            //            from ice in chunk.Creatures
+            //            where ice.Properties.Family == "Ice"
+            //            select ice;
+            //
+            //        foreach (Creature ice in IceList)
+            //        {
+            //            if (ice != this)
+            //            {
+            //                if (((ice.Position.X - Position.X < 500) && (ice.Position.X - Position.X > -500)) &&
+            //                    (((ice.Position.Z - Position.Z < 500) && (ice.Position.Z - Position.Z > -500))))
+            //                {
+            //                    if (ice.Sphere.Intersects(Sphere))
+            //                    {
+            //                        Vector2 normal = new Vector2(-MovingDirection.Z, MovingDirection.X);
+            //                        Vector2 vector = new Vector2(MovingDirection.X, MovingDirection.Y);
+            //                        vector -= 2 * Vector2.Dot(vector, normal) * normal;
+            //                        MovingDirection = new Vector3(vector.X, MovingDirection.Y, vector.Y);
+            //                        //System.Diagnostics.Debug.WriteLine("Bounce!");
+            //                        bounceTimer = 0.5f;
+            //                        SetRotations();
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
+            //else
+            //    bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            //
+            //
+            //
+            //properties.SpawnPosition = Position;
+            //properties.SpawnDirection = MovingDirection;
 
-            if (bounceTimer <= 0)
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
             {
-                foreach (Chunk chunk in ChunkGrid.LoadedChunks)
-                {
-                    IEnumerable<Creature> IceList =
-                        from ice in chunk.Creatures
-                        where ice.Properties.Family == "Ice"
-                        select ice;
-
-                    foreach (Creature ice in IceList)
-                    {
-                        if (ice != this)
-                        {
-                            if (((ice.Position.X - Position.X < 500) && (ice.Position.X - Position.X > -500)) &&
-                                (((ice.Position.Z - Position.Z < 500) && (ice.Position.Z - Position.Z > -500))))
-                            {
-                                if (ice.Sphere.Intersects(Sphere))
-                                {
-                                    Vector2 normal = new Vector2(-MovingDirection.Z, MovingDirection.X);
-                                    Vector2 vector = new Vector2(MovingDirection.X, MovingDirection.Y);
-                                    vector -= 2 * Vector2.Dot(vector, normal) * normal;
-                                    MovingDirection = new Vector3(vector.X, MovingDirection.Y, vector.Y);
-                                    //System.Diagnostics.Debug.WriteLine("Bounce!");
-                                    bounceTimer = 0.5f;
-                                    SetRotations();
-                                }
-                            }
-                        }
-                    }
-                }
+                Map.PlayerReference.Speed = 0;
+                Map.PlayerReference.Position -= 30 * Map.PlayerReference.facingDirection * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            else
-                bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            
-
-            properties.SpawnPosition = Position;
-            properties.SpawnDirection = MovingDirection;
         }
     }
 

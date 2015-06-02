@@ -15,3 +15,9 @@ D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResource
 D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResources.dll
 D:\RyanBerge\Users\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResources.pdb
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\bin\x86\Debug\RB_GameResources.dll
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\bin\x86\Debug\RB_GameResources.pdb
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResources.csprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResources.dll
+C:\Users\John\Desktop\WhaleSimulator\RB_GameResources\obj\x86\Debug\RB_GameResources.pdb
