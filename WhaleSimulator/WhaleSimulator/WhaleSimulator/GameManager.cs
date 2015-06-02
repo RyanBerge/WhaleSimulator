@@ -25,10 +25,12 @@ namespace WhaleSimulator
         private PauseMenu pauseMenu;
         private Map currentMap;
         private ContentManager mapContent;
+        private UI ui;
 
         public GameManager()
         {
             mapContent = MasterGame.GetNewContentManager();
+            ui = new UI(mapContent);
             pauseMenu = new PauseMenu(mapContent);
             pauseMenu.Resume += pauseMenuResume;
             pauseMenu.Quit += pauseMenuQuit;
@@ -113,7 +115,10 @@ namespace WhaleSimulator
                             gameState = GameState.PauseMenu;
                         }
                         else
+                        {
                             currentMap.Update(gameTime, inputStates);
+                            ui.Update(gameTime, inputStates, currentMap.Player);
+                        }
                     }
                     break;
             }
@@ -139,7 +144,10 @@ namespace WhaleSimulator
             if (gameState == GameState.MainMenu)
                 mainMenu.Draw2D(gameTime, spriteBatch);
             else if (gameState == GameState.Playing)
+            {
                 currentMap.Draw2D(spriteBatch, gameTime);
+                ui.Draw2D(gameTime, spriteBatch);
+            }
             else if (gameState == GameState.PauseMenu)
                 pauseMenu.Draw2D(gameTime, spriteBatch);
 

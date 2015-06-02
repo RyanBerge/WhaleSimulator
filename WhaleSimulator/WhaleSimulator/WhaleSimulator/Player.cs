@@ -29,11 +29,18 @@ namespace WhaleSimulator
         private const float ACCELERATION = 10f;
         private const float MANUAL_DECELERATION = 6f;
         private const float BASE_DECELERATION = 0.6f;
+        private const float AIR_LOSS = 1f;
+        private const float ENERGY_LOSS = 1f;
+        private const float AIR_GAIN = 15f;
+
+        public float Air { get; set; } // 0 - 100
+        public float Energy { get; set; } // 0 - 100
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, "Player", spawnPosition, spawnDirection, true)
         {
-
+            Air = 100;
+            Energy = 100;
             // animation stuff
             //SetClip(Clips[0]);
             //player.Looping = true;
@@ -43,6 +50,8 @@ namespace WhaleSimulator
         {
             if (isUnderwater)
             {
+                
+
                 if (inputStates.NewKeyState.IsKeyDown(Keys.A))
                     Rotations.Y -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
                 if (inputStates.NewKeyState.IsKeyDown(Keys.D))
@@ -82,6 +91,21 @@ namespace WhaleSimulator
                 else if (Speed > MIN_SPEED)
                     Speed -= BASE_DECELERATION;
             }
+
+            if (position.Y < Map.WaterLevel - 20)
+                Air -= AIR_LOSS * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            else
+                Air += AIR_GAIN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            Energy -= ENERGY_LOSS * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            
+            if (Air > 100)
+                Air = 100;
+
+            if (Energy > 100)
+                Energy = 100;
+
+            
 
             if (Speed >= MAX_SPEED)
                 Speed = MAX_SPEED;

@@ -28,6 +28,7 @@ namespace WhaleSimulator
 
         private ContentManager mapContent;
 
+        public Player Player { get { return player; } }
         public static Random Randomizer { get; set; }
         public static int WaterLevel { get; set; }
         public static Vector3 MapSize { get; set; }
