@@ -56,8 +56,10 @@ namespace WhaleSimulator
             Model outModel;
             try
             {
-                Map.Models.TryGetValue(species, out outModel);
+                bool success = Map.Models.TryGetValue(species, out outModel);
                 BaseModel = outModel;
+                if (!success)
+                    System.Diagnostics.Debug.WriteLine("Model not found: " + species);
             }
             catch (Exception e)
             {
@@ -88,9 +90,19 @@ namespace WhaleSimulator
             SetRotations();
             this.localUp = new Vector3(0, 1, 0);
             this.OldRotations = new Vector3(0, 0, 0);
+
             Model outModel;
-            Map.Models.TryGetValue(info.Species, out outModel);
-            BaseModel = outModel;
+            try
+            {
+                bool success = Map.Models.TryGetValue(Properties.Species, out outModel);
+                BaseModel = outModel;
+                if (!success)
+                    System.Diagnostics.Debug.WriteLine("Model not found: " + Properties.Species);
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
             Speed = 0;
             SetAI();
         }

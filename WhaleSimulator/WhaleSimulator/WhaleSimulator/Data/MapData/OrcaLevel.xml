@@ -191,349 +191,5915 @@
       <Direction>1, 0, 0</Direction>
     </Creature>
 
+    <Creature>
+      <Species>SmallIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-46, 950, 112</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-      <Creature>
-    <Species>SmallIce_A</Species>
-    <Family>Ice</Family>
-    <Position>-46, 950, 112</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>237, 950, -71</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_B</Species>
-    <Family>Ice</Family>
-    <Position>237, 950, -71</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>244, 950, 28</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_C</Species>
-    <Family>Ice</Family>
-    <Position>244, 950, 28</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>316, 950, -60</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_D</Species>
-    <Family>Ice</Family>
-    <Position>316, 950, -60</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>178, 950, -41</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_E</Species>
-    <Family>Ice</Family>
-    <Position>178, 950, -41</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_F</Species>
+      <Family>Ice</Family>
+      <Position>0, 950, 21</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_F</Species>
-    <Family>Ice</Family>
-    <Position>0, 950, 21</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>266, 950, 4</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_G</Species>
-    <Family>Ice</Family>
-    <Position>266, 950, 4</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>340, 950, 71</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_H</Species>
-    <Family>Ice</Family>
-    <Position>340, 950, 71</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>187, 950, 8</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_I</Species>
-    <Family>Ice</Family>
-    <Position>187, 950, 8</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>275, 950, -25</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_J</Species>
-    <Family>Ice</Family>
-    <Position>275, 950, -25</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>262, 950, -14</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_K</Species>
-    <Family>Ice</Family>
-    <Position>262, 950, -14</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>253, 950, 11</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_L</Species>
-    <Family>Ice</Family>
-    <Position>253, 950, 11</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>221, 950, -7</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_M</Species>
-    <Family>Ice</Family>
-    <Position>221, 950, -7</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>230, 950, -7</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_N</Species>
-    <Family>Ice</Family>
-    <Position>230, 950, -7</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>290, 950, -40</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_O</Species>
-    <Family>Ice</Family>
-    <Position>290, 950, -40</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>253, 950, 87</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_A</Species>
-    <Family>Ice</Family>
-    <Position>253, 950, 87</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-126, 950, -61</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_B</Species>
-    <Family>Ice</Family>
-    <Position>-126, 950, -61</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-386, 950, 0</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_C</Species>
-    <Family>Ice</Family>
-    <Position>-386, 950, 0</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-250, 950, 415</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_D</Species>
-    <Family>Ice</Family>
-    <Position>-250, 950, 415</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-109, 950, 443</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_E</Species>
-    <Family>Ice</Family>
-    <Position>-109, 950, 443</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>339, 950, -5</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_D</Species>
-    <Family>Ice</Family>
-    <Position>339, 950, -5</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>302, 950, 274</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_E</Species>
-    <Family>Ice</Family>
-    <Position>302, 950, 274</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-198, 950, 277</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_C</Species>
-    <Family>Ice</Family>
-    <Position>-198, 950, 277</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>230, 950, -135</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_C</Species>
-    <Family>Ice</Family>
-    <Position>230, 950, -135</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>408, 950, -65</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>BigIce_A</Species>
-    <Family>Ice</Family>
-    <Position>408, 950, -65</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>348.5134574, 950, 56</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_G</Species>
-    <Family>Ice</Family>
-    <Position>348.5134574, 950, 56</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>391, 950, -4</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_K</Species>
-    <Family>Ice</Family>
-    <Position>391, 950, -4</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>251, 950, 56</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_H</Species>
-    <Family>Ice</Family>
-    <Position>251, 950, 56</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>385, 950, 32</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_I</Species>
-    <Family>Ice</Family>
-    <Position>385, 950, 32</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>380, 950, -40</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_D</Species>
-    <Family>Ice</Family>
-    <Position>380, 950, -40</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>168, 950, 41</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_B</Species>
-    <Family>Ice</Family>
-    <Position>168, 950, 41</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-104, 950, 400</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_B</Species>
-    <Family>Ice</Family>
-    <Position>-104, 950, 400</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-338, 950, 439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_C</Species>
-    <Family>Ice</Family>
-    <Position>-338, 950, 439</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-266, 950, 350</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_D</Species>
-    <Family>Ice</Family>
-    <Position>-266, 950, 350</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-162, 950, 430</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_E</Species>
-    <Family>Ice</Family>
-    <Position>-162, 950, 430</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-316, 950, 414</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_G</Species>
-    <Family>Ice</Family>
-    <Position>-316, 950, 414</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-242, 950, 481</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_H</Species>
-    <Family>Ice</Family>
-    <Position>-242, 950, 481</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-153, 950, 478</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_I</Species>
-    <Family>Ice</Family>
-    <Position>-153, 950, 478</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-307, 950, 385</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_J</Species>
-    <Family>Ice</Family>
-    <Position>-307, 950, 385</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-320, 950, 396</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_K</Species>
-    <Family>Ice</Family>
-    <Position>-320, 950, 396</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-329, 950, 422</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_L</Species>
-    <Family>Ice</Family>
-    <Position>-329, 950, 422</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-114, 950, 496</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_M</Species>
-    <Family>Ice</Family>
-    <Position>-114, 950, 496</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-64, 950, 456</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_N</Species>
-    <Family>Ice</Family>
-    <Position>-64, 950, 456</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-292, 950, 370</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_O</Species>
-    <Family>Ice</Family>
-    <Position>-292, 950, 370</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-234, 950, 467</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_G</Species>
-    <Family>Ice</Family>
-    <Position>-234, 950, 467</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-191, 950, 407</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_K</Species>
-    <Family>Ice</Family>
-    <Position>-191, 950, 407</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-197, 950, 442</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_I</Species>
-    <Family>Ice</Family>
-    <Position>-197, 950, 442</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-202, 950, 371</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_D</Species>
-    <Family>Ice</Family>
-    <Position>-202, 950, 371</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-172, 950, 511</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
 
-  <Creature>
-    <Species>SmallIce_B</Species>
-    <Family>Ice</Family>
-    <Position>-172, 950, 511</Position>
-    <Direction>-99, 0, -99</Direction>
-  </Creature>
+    <Creature>
+      <Species>SmallIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1600.247681, 950, 1848.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1317.247681, 950, 1665.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1310.247681, 950, 1764.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1238.247681, 950, 1676.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1376.247681, 950, 1695.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_F</Species>
+      <Family>Ice</Family>
+      <Position>-1554.247681, 950, 1757.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1288.247681, 950, 1740.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1214.247681, 950, 1807.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1367.247681, 950, 1744.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-1279.247681, 950, 1711.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1292.247681, 950, 1722.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-1301.247681, 950, 1747.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-1333.247681, 950, 1729.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-1324.247681, 950, 1729.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-1264.247681, 950, 1696.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1301.247681, 950, 1823.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1680.247681, 950, 1675.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1971.875065, 950, 2248.357014</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1804.247681, 950, 2151.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1663.247681, 950, 2179.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1215.247681, 950, 1731.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1252.247681, 950, 2010.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1752.247681, 950, 2013.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1324.247681, 950, 1601.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1146.247681, 950, 1671.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1205.734223, 950, 1792.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1163.247681, 950, 1732.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1303.247681, 950, 1792.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1169.247681, 950, 1768.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1174.247681, 950, 1696.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1386.247681, 950, 1777.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1658.247681, 950, 2136.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1892.247681, 950, 2175.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1820.247681, 950, 2086.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1716.247681, 950, 2166.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1870.247681, 950, 2150.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1796.247681, 950, 2217.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1707.247681, 950, 2214.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-1861.247681, 950, 2121.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1874.247681, 950, 2132.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-1883.247681, 950, 2158.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-1668.247681, 950, 2232.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-1618.247681, 950, 2192.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-1846.247681, 950, 2106.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1788.247681, 950, 2203.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1745.247681, 950, 2143.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1751.247681, 950, 2178.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1756.247681, 950, 2107.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1726.247681, 950, 2247.671117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1915.137206, 950, 1750.44233</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_A</Species>
+      <Family>Ice</Family>
+      <Position>1405.763038, 950, 1798.431384</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1943.592428, 950, 2229.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1950.592428, 950, 2328.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>2022.592428, 950, 2240.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1884.592428, 950, 2259.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_F</Species>
+      <Family>Ice</Family>
+      <Position>1451.763038, 950, 1707.431384</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>1972.592428, 950, 2304.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>2046.592428, 950, 2371.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1893.592428, 950, 2308.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>1981.592428, 950, 2275.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1968.592428, 950, 2286.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>1959.592428, 950, 2311.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>1927.592428, 950, 2293.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>1936.592428, 950, 2293.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>1996.592428, 950, 2260.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>1959.592428, 950, 2387.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1325.763038, 950, 1625.431384</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1472.776407, 950, 1822.139492</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1640.403792, 950, 1725.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1781.403792, 950, 1753.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>332.8047231, 950, 2308.061032</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>2008.592428, 950, 2574.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1253.763038, 950, 1963.431384</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1936.592428, 950, 2165.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>2114.592428, 950, 2235.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>2055.105886, 950, 2356.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>2097.592428, 950, 2296.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>1957.592428, 950, 2356.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>2091.592428, 950, 2332.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>2086.592428, 950, 2260.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1874.592428, 950, 2341.528439</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1786.403792, 950, 1710.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1552.403792, 950, 1749.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1624.403792, 950, 1660.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1728.403792, 950, 1740.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>1574.403792, 950, 1724.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>1648.403792, 950, 1791.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1737.403792, 950, 1788.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>1583.403792, 950, 1695.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1570.403792, 950, 1706.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>1561.403792, 950, 1732.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>1776.403792, 950, 1806.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>1826.403792, 950, 1766.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>1598.403792, 950, 1680.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>1656.403792, 950, 1777.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1699.403792, 950, 1717.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1693.403792, 950, 1752.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1688.403792, 950, 1681.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1718.403792, 950, 1821.453595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>940.482397, 950, 1553.989012</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1814.540804, 950, 345.2205059</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1818.587963, 950, -92.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1744.587963, 950, -25.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-1809.587963, 950, -121.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1822.587963, 950, -110.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-1831.587963, 950, -85.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-1794.587963, 950, -136.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1831.587963, 950, -9.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1745.587963, 950, -101.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1900.540804, 950, 270.2205059</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1676.587963, 950, -161.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1736.074506, 950, -40.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1693.587963, 950, -100.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1833.587963, 950, -40.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1699.587963, 950, -64.08321273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1704.587963, 950, -136.0832127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1040.458528, 950, 925.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-757.4585283, 950, 742.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-750.4585283, 950, 841.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-816.4585283, 950, 772.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_F</Species>
+      <Family>Ice</Family>
+      <Position>-994.4585283, 950, 834.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-807.4585283, 950, 821.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-741.4585283, 950, 824.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-773.4585283, 950, 806.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-764.4585283, 950, 806.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-741.4585283, 950, 900.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1120.458528, 950, 752.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1192.458528, 950, 1090.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-764.4585283, 950, 678.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-743.4585283, 950, 869.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-826.4585283, 950, 854.436769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1355.348054, 950, 827.2079811</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1891.023782, 950, -879.3951119</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1515.961331, 950, -1340.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1508.961331, 950, -1241.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1436.961331, 950, -1329.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1574.961331, 950, -1310.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1486.961331, 950, -1265.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1412.961331, 950, -1198.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1565.961331, 950, -1261.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-1477.961331, 950, -1294.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1490.961331, 950, -1283.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-1499.961331, 950, -1258.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-1531.961331, 950, -1276.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-1522.961331, 950, -1276.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-1462.961331, 950, -1309.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-1499.961331, 950, -1182.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1144.002026, 950, -1193.62008</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-1133.611051, 950, -1303.056823</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-1522.961331, 950, -1404.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-942.9843099, 950, -988.7383797</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-1404.447874, 950, -1213.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-1092.002026, 950, -1192.62008</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-1501.961331, 950, -1213.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-1098.002026, 950, -1156.62008</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-1103.002026, 950, -1228.62008</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-1584.961331, 950, -1228.861752</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>114.8596831, 950, 940.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-119.1403169, 950, 979.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-47.14031688, 950, 890.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>56.85968312, 950, 970.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-97.14031688, 950, 954.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-23.14031688, 950, 1021.022426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>65.85968312, 950, 1018.022426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-88.14031688, 950, 925.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-101.1403169, 950, 936.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-110.1403169, 950, 962.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>104.8596831, 950, 1036.022426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>154.8596831, 950, 996.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-73.14031688, 950, 910.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-15.14031688, 950, 1007.022426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>27.85968312, 950, 947.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>21.85968312, 950, 982.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>16.85968312, 950, 911.0224257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>46.85968312, 950, 1051.022426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1469.631831, 950, 79.41587487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1476.631831, 950, 178.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1548.631831, 950, 90.41587487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1410.631831, 950, 109.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>1498.631831, 950, 154.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>1572.631831, 950, 221.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1419.631831, 950, 158.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>1507.631831, 950, 125.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1494.631831, 950, 136.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>1485.631831, 950, 161.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>1453.631831, 950, 143.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>1462.631831, 950, 143.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>1522.631831, 950, 110.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>1485.631831, 950, 237.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1117.19624, 950, 945.2164683</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>1462.631831, 950, 15.41587487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>1640.631831, 950, 85.41587487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>1581.145288, 950, 206.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1623.631831, 950, 146.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>1483.631831, 950, 206.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1617.631831, 950, 182.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>1612.631831, 950, 110.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1400.631831, 950, 191.4158749</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_A</Species>
+      <Family>Ice</Family>
+      <Position>140.8521213, 950, -838.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>364.8521213, 950, -991.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_F</Species>
+      <Family>Ice</Family>
+      <Position>186.8521213, 950, -929.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>373.8521213, 950, -942.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>407.8521213, 950, -957.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>416.8521213, 950, -957.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_B</Species>
+      <Family>Ice</Family>
+      <Position>60.8521213, 950, -1011.162915</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-199.1478787, 950, -950.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-11.1478787, 950, -673.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>416.8521213, 950, -1085.162915</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>354.8521213, 950, -909.1629147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1707.257568, 950, -1768.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1712.257568, 950, -1811.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>1654.257568, 950, -1781.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>1663.257568, 950, -1733.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>1702.257568, 950, -1715.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>1752.257568, 950, -1755.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>1625.257568, 950, -1804.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>1644.257568, 950, -1700.096169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>275.8257055, 950, -1857.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>282.8257055, 950, -1758.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>354.8257055, 950, -1846.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>216.8257055, 950, -1827.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>304.8257055, 950, -1782.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>378.8257055, 950, -1715.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>225.8257055, 950, -1778.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>313.8257055, 950, -1811.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>300.8257055, 950, -1800.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>291.8257055, 950, -1775.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>259.8257055, 950, -1793.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>268.8257055, 950, -1793.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>328.8257055, 950, -1826.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>291.8257055, 950, -1699.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>268.8257055, 950, -1921.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>446.8257055, 950, -1851.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>387.339163, 950, -1730.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>429.8257055, 950, -1790.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>289.8257055, 950, -1730.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>423.8257055, 950, -1754.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>418.8257055, 950, -1826.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>206.8257055, 950, -1745.615853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-2269.721985, 950, -2122.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-2262.721985, 950, -2023.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-2190.721985, 950, -2111.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_E</Species>
+      <Family>Ice</Family>
+      <Position>-2328.721985, 950, -2092.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-2240.721985, 950, -2047.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-2166.721985, 950, -1980.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-2319.721985, 950, -2043.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_J</Species>
+      <Family>Ice</Family>
+      <Position>-2231.721985, 950, -2076.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-2244.721985, 950, -2065.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_L</Species>
+      <Family>Ice</Family>
+      <Position>-2253.721985, 950, -2040.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_M</Species>
+      <Family>Ice</Family>
+      <Position>-2285.721985, 950, -2058.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_N</Species>
+      <Family>Ice</Family>
+      <Position>-2276.721985, 950, -2058.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_O</Species>
+      <Family>Ice</Family>
+      <Position>-2216.721985, 950, -2091.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-2253.721985, 950, -1964.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_C</Species>
+      <Family>Ice</Family>
+      <Position>-2276.721985, 950, -2186.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>BigIce_A</Species>
+      <Family>Ice</Family>
+      <Position>-2098.721985, 950, -2116.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_G</Species>
+      <Family>Ice</Family>
+      <Position>-2158.208528, 950, -1995.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_K</Species>
+      <Family>Ice</Family>
+      <Position>-2115.721985, 950, -2055.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_H</Species>
+      <Family>Ice</Family>
+      <Position>-2255.721985, 950, -1995.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_I</Species>
+      <Family>Ice</Family>
+      <Position>-2121.721985, 950, -2019.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_D</Species>
+      <Family>Ice</Family>
+      <Position>-2126.721985, 950, -2091.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>SmallIce_B</Species>
+      <Family>Ice</Family>
+      <Position>-2338.721985, 950, -2010.389974</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1489.964102, 407.3047862, -1348.117473</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1586.094959, 407.3047862, -1255.278782</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1676.206938, 391.1115756, -1329.740787</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1640.059452, 392.2971516, -1434.698099</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1702.958663, 398.2140334, -1297.510608</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1623.845949, 431.2880079, -1357.49398</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1504.421556, 398.4967182, -1464.396469</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1553.669878, 407.3047862, -1302.975584</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1644.349236, 407.3047862, -1183.734542</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1494.032029, 407.3047862, -1170.822832</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Ice</Family>
+      <Position>-1535.781864, 335.7008044, -1335.244625</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-37.91682036, 3.664466252, 30.79444572</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-42.44648964, 3.854744267, 30.26339202</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>49.98533301, 5.098791865, 49.32637063</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-36.44861082, 3.146421453, 35.88887542</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>69.58970388, -1.665776848, 26.2470596</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>65.89426358, 0.9709714206, 48.87383512</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>15.71621022, 9.840607382, 65.1651135</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>17.299097, 10.97166746, 69.95828144</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1423.27146, 1.471614054, -131.9696711</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1418.741791, 2.352487877, -132.5007248</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1602.444542, -0.9450180677, -150.283266</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1424.73967, 1.683839016, -126.8752414</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1559.194791, 0.1356745347, -215.9877863</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1620.197644, -1.621521183, -150.7358015</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1505.321297, -0.3090762882, -177.0697324</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1506.904184, 0.1463442415, -172.2765644</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1386.540268, -0.6721430223, -255.8339709</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1391.069937, -0.3091682309, -256.3650246</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1298.638114, 0.4578243281, -237.302046</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1385.072058, -1.845755193, -250.7395412</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1279.033743, 0.01437563014, -260.381357</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1280.885012, 0.2417115015, -237.7545815</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1332.907237, 0.6053669334, -221.4633031</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1331.32435, 0.7976258269, -216.6701352</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>74.64801283, 0.3916552589, -418.5980877</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>70.11834355, 0.3916552589, -419.1291414</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>253.8210944, -1.997122357, -436.9116826</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>76.11622236, 0.3916552589, -413.503658</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>210.5713432, -0.4843117405, -502.6162029</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>271.5741971, -1.720777129, -437.3642181</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>156.6978495, -0.4443514395, -463.698149</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>158.2807363, 0.09020113176, -458.904981</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-475.2088918, -0.0301897544, 1162.609219</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-479.7385611, -0.0301897544, 1162.078165</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-387.3067385, -1.468468185, 1181.141144</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-473.7406823, -0.0301897544, 1167.703649</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-367.7023676, 6.630463471, 1158.061833</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-369.5536357, 6.630463471, 1180.688608</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-421.5758613, 6.630463471, 1196.979887</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-419.9929745, 6.630463471, 1201.773055</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>985.9793887, 6.630463471, 999.8451021</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>981.4497194, 6.630463471, 999.3140484</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1165.15247, 6.630463471, 981.5315072</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>987.4475982, 6.630463471, 1004.939532</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1121.902719, 6.630463471, 915.826987</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1182.905573, 6.630463471, 981.0789717</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1068.029225, 6.630463471, 954.7450409</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1069.612112, 6.630463471, 959.5382088</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1823.832339, 6.630463471, 875.9808024</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1828.362008, 6.630463471, 875.4497487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1735.930186, 6.630463471, 894.5127273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1822.36413, 6.630463471, 881.0752321</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1716.325815, 6.630463471, 871.4334162</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1718.177083, 6.630463471, 894.0601918</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1770.199309, 6.630463471, 910.3514701</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1768.616422, 6.630463471, 915.1446381</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-362.6440587, 6.630463471, 713.2166855</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-367.1737279, 6.630463471, 712.6856318</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-183.4709771, 6.630463471, 694.9030906</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-361.1758491, 6.630463471, 718.3111152</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-226.7207283, 6.630463471, 629.1985704</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-165.7178744, 6.630463471, 694.4505551</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-280.5942219, 6.630463471, 668.1166243</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-279.0113352, 6.630463471, 672.9097922</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-393.907451, 6.630463471, -658.5842358</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-398.4371202, 6.630463471, -659.1152895</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-306.0052976, 6.630463471, -640.0523109</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-392.4392414, 6.630463471, -653.4898061</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-286.4009267, 6.630463471, -663.1316219</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-288.2521949, 6.630463471, -640.5048464</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-340.2744204, 6.630463471, -624.213568</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-338.6915336, 6.630463471, -619.4204</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1067.28083, 6.630463471, -821.3483526</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1062.75116, 6.630463471, -821.8794063</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1246.453911, 6.630463471, -839.6619475</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1068.749039, 6.630463471, -816.2539229</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1203.20416, 6.630463471, -905.3664677</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1264.207014, 6.630463471, -840.114483</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1149.330666, 6.630463471, -866.4484139</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1150.913553, 6.630463471, -861.6552459</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1742.530898, 6.630463471, -945.2126524</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1747.060568, 6.630463471, -945.7437061</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1654.628745, 6.630463471, -926.6807274</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1741.062689, 6.630463471, -940.1182227</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1635.024374, 6.630463471, -949.7600385</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1636.875642, 6.630463471, -927.133263</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1688.897868, 6.630463471, -910.8419846</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1687.314981, 6.630463471, -906.0488166</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-281.3426178, 6.630463471, -1107.976769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-285.8722871, 6.630463471, -1108.507823</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-102.1695362, 6.630463471, -1126.290364</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-279.8744082, 6.630463471, -1102.882339</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-145.4192874, 6.630463471, -1191.994884</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-84.41643349, 6.630463471, -1126.7429</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-199.2927811, 6.630463471, -1153.07683</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-197.7098943, 6.630463471, -1148.283663</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-831.1995224, 6.630463471, 473.2305375</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-835.7291917, 6.630463471, 472.6994838</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-743.2973691, 6.630463471, 491.7624624</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-829.7313129, 6.630463471, 478.3249672</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-723.6929982, 6.630463471, 468.6831514</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-725.5442663, 6.630463471, 491.3099269</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-777.5664919, 6.630463471, 507.6012052</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-775.9836051, 6.630463471, 512.3943732</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>629.9887581, 6.630463471, 310.4664206</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>625.4590888, 6.630463471, 309.9353669</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>809.1618396, 6.630463471, 292.1528257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>631.4569676, 6.630463471, 315.5608503</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>765.9120885, 6.630463471, 226.4483055</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>826.9149424, 6.630463471, 291.7002902</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>712.0385948, 6.630463471, 265.3663594</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>713.6214816, 6.630463471, 270.1595273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-2179.82297, 6.630463471, 186.6021209</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-2184.352639, 6.630463471, 186.0710672</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-2091.920816, 6.630463471, 205.1340458</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-2178.35476, 6.630463471, 191.6965506</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-2072.316446, 6.630463471, 182.0547348</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-2074.167714, 6.630463471, 204.6815103</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-2126.189939, 6.630463471, 220.9727887</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-2124.607052, 6.630463471, 225.7659566</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-718.6346893, 6.630463471, 23.83800404</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-723.1643585, 6.630463471, 23.30695033</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-539.4616077, 6.630463471, 5.524409127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-717.1664797, 6.630463471, 28.93243374</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-582.7113589, 6.630463471, -60.18011111</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-521.708505, 6.630463471, 5.071873617</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-636.5848525, 6.630463471, -21.26205722</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-635.0019658, 6.630463471, -16.46888927</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>309.6444582, 6.630463471, -638.2610156</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>305.114789, 6.630463471, -638.7920693</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>397.5466116, 6.630463471, -619.7290907</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>311.1126678, 6.630463471, -633.1665859</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>417.1509825, 6.630463471, -642.8084017</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>415.2997143, 6.630463471, -620.1816262</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>363.2774888, 6.630463471, -603.8903478</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>364.8603756, 6.630463471, -599.0971799</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1770.832739, 6.630463471, -801.0251324</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1766.303069, 6.630463471, -801.5561861</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1950.00582, 6.630463471, -819.3387273</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1772.300948, 6.630463471, -795.9307027</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1906.756069, 6.630463471, -885.0432476</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1967.758923, 6.630463471, -819.7912628</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1852.882575, 6.630463471, -846.1251937</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1854.465462, 6.630463471, -841.3320257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1038.978989, 6.630463471, -924.8894322</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1043.508658, 6.630463471, -925.4204859</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-951.0768357, 6.630463471, -906.3575073</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1037.51078, 6.630463471, -919.7950025</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-931.4724648, 6.630463471, -929.4368183</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-933.323733, 6.630463471, -906.8100428</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-985.3459585, 6.630463471, -890.5187644</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-983.7630717, 6.630463471, -885.7255965</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>422.2092914, 6.630463471, -1087.653549</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>417.6796221, 6.630463471, -1088.184603</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>601.382373, 6.630463471, -1105.967144</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>423.677501, 6.630463471, -1082.559119</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>558.1326218, 6.630463471, -1171.671664</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>619.1354757, 6.630463471, -1106.419679</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>504.2591281, 6.630463471, -1132.75361</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>505.8420149, 6.630463471, -1127.960442</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-127.6476132, 6.630463471, 493.5537576</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-132.1772825, 6.630463471, 493.0227039</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-39.74545987, 6.630463471, 512.0856826</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-126.1794037, 6.630463471, 498.6481874</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-20.141089, 6.630463471, 489.0063715</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-21.99235714, 6.630463471, 511.633147</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-74.01458266, 6.630463471, 527.9244254</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-72.43169587, 6.630463471, 532.7175934</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1333.540667, 6.630463471, 330.7896408</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1329.010998, 6.630463471, 330.2585871</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1512.713749, 6.630463471, 312.4760459</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1335.008877, 6.630463471, 335.8840705</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1469.463998, 6.630463471, 246.7715257</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1530.466852, 6.630463471, 312.0235104</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1415.590504, 6.630463471, 285.6895796</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1417.173391, 6.630463471, 290.4827475</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1476.271061, 6.630463471, 206.925341</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1480.80073, 6.630463471, 206.3942873</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1388.368907, 6.630463471, 225.457266</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1474.802851, 6.630463471, 212.0197708</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1368.764536, 6.630463471, 202.3779549</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1370.615804, 6.630463471, 225.0047305</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1422.63803, 6.630463471, 241.2960088</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1421.055143, 6.630463471, 246.0891768</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-15.08278005, 6.630463471, 44.16122421</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-19.61244933, 6.630463471, 43.63017051</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>164.0903015, 6.630463471, 25.8476293</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-13.61457051, 6.630463471, 49.25565392</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>120.8405503, 6.630463471, -39.85689094</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>181.8434042, 6.630463471, 25.39509379</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>66.96705667, 6.630463471, -0.9388370414</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>68.54994345, 6.630463471, 3.854330904</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-46.34617236, 6.630463471, -1327.639697</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-50.87584164, 6.630463471, -1328.170751</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>41.55598101, 6.630463471, -1309.107772</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-44.87796282, 6.630463471, -1322.545267</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>61.16035188, 6.630463471, -1332.187083</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>59.30908374, 6.630463471, -1309.560308</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>7.286858218, 6.630463471, -1293.269029</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>8.869745001, 6.630463471, -1288.475861</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1414.842108, 6.630463471, -1490.403814</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1410.312439, 6.630463471, -1490.934868</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1594.01519, 6.630463471, -1508.717409</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1416.310318, 6.630463471, -1485.309384</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1550.765439, 6.630463471, -1574.421929</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1611.768292, 6.630463471, -1509.169944</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1496.891945, 6.630463471, -1535.503875</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1498.474832, 6.630463471, -1530.710707</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1394.96962, 6.630463471, -1614.268114</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1399.499289, 6.630463471, -1614.799167</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1307.067466, 6.630463471, -1595.736189</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1393.50141, 6.630463471, -1609.173684</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1287.463095, 6.630463471, -1618.8155</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1289.314364, 6.630463471, -1596.188724</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1341.336589, 6.630463471, -1579.897446</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1339.753702, 6.630463471, -1575.104278</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>66.21866082, 6.630463471, -1777.032231</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>61.68899155, 6.630463471, -1777.563284</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>245.3917424, 6.630463471, -1795.345825</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>67.68687036, 6.630463471, -1771.937801</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>202.1419912, 6.630463471, -1861.050346</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>263.1448451, 6.630463471, -1795.798361</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>148.2684975, 6.630463471, -1822.132292</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>149.8513843, 6.630463471, -1817.339124</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-483.6382438, 6.630463471, -195.8249238</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-488.1679131, 6.630463471, -196.3559775</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-395.7360905, 6.630463471, -177.2929989</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-482.1700343, 6.630463471, -190.7304941</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-376.1317196, 6.630463471, -200.37231</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-377.9829877, 6.630463471, -177.7455344</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-430.0052133, 6.630463471, -161.4542561</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-428.4223265, 6.630463471, -156.6610881</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>977.5500367, 6.630463471, -358.5890407</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>973.0203674, 6.630463471, -359.1200944</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1156.723118, 6.630463471, -376.9026356</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>979.0182462, 6.630463471, -353.494611</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1113.473367, 6.630463471, -442.6071558</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1174.476221, 6.630463471, -377.3551711</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1059.599873, 6.630463471, -403.6891019</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1061.18276, 6.630463471, -398.895934</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1832.261691, 6.630463471, -482.4533404</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1836.79136, 6.630463471, -482.9843941</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1744.359538, 6.630463471, -463.9214155</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1830.793482, 6.630463471, -477.3589107</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1724.755167, 6.630463471, -487.0007266</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1726.606435, 6.630463471, -464.373951</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1778.628661, 6.630463471, -448.0826727</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1777.045774, 6.630463471, -443.2895047</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-371.0734107, 6.630463471, -645.2174573</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-375.6030799, 6.630463471, -645.748511</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-191.9003291, 6.630463471, -663.5310522</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-369.6052011, 6.630463471, -640.1230276</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-235.1500803, 6.630463471, -729.2355724</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-174.1472264, 6.630463471, -663.9835877</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-289.0235739, 6.630463471, -690.3175185</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-287.4406872, 6.630463471, -685.5243506</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-116.118108, 6.630463471, 1134.301505</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-120.6477773, 6.630463471, 1133.770452</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-28.21595468, 6.630463471, 1152.83343</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-114.6498985, 6.630463471, 1139.395935</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-8.611583805, 6.630463471, 1129.754119</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-10.46285194, 6.630463471, 1152.380895</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-62.48507747, 6.630463471, 1168.672173</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-60.90219068, 6.630463471, 1173.465341</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1345.070172, 6.630463471, 971.5373884</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1340.540503, 6.630463471, 971.0063347</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1524.243254, 6.630463471, 953.2237935</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1346.538382, 6.630463471, 976.6318181</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1480.993503, 6.630463471, 887.5192733</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1541.996357, 6.630463471, 952.771258</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1427.120009, 6.630463471, 926.4373272</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1428.702896, 6.630463471, 931.2304951</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1464.741555, 6.630463471, 847.6730887</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1469.271225, 6.630463471, 847.142035</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1376.839402, 6.630463471, 866.2050136</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1463.273346, 6.630463471, 852.7675184</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1357.235031, 6.630463471, 843.1257026</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1359.086299, 6.630463471, 865.7524781</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1411.108525, 6.630463471, 882.0437565</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1409.525638, 6.630463471, 886.8369244</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-3.55327486, 6.630463471, 684.9089718</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-8.082944137, 6.630463471, 684.3779181</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>175.6198067, 6.630463471, 666.5953769</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-2.085065324, 6.630463471, 690.0034015</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>132.3700555, 6.630463471, 600.8908567</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>193.3729094, 6.630463471, 666.1428414</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>78.49656186, 6.630463471, 639.8089106</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>80.07944864, 6.630463471, 644.6020785</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-553.4101795, 6.630463471, 2266.116279</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-557.9398488, 6.630463471, 2265.585225</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-465.5080262, 6.630463471, 2284.648203</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-551.94197, 6.630463471, 2271.210708</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-445.9036553, 6.630463471, 2261.568892</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-447.7549234, 6.630463471, 2284.195668</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-499.7771489, 6.630463471, 2300.486946</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-498.1942622, 6.630463471, 2305.280114</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>907.778101, 6.630463471, 2103.352162</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>903.2484317, 6.630463471, 2102.821108</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1086.951183, 6.630463471, 2085.038567</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>909.2463105, 6.630463471, 2108.446591</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1043.701431, 6.630463471, 2019.334047</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1104.704285, 6.630463471, 2084.586031</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>989.8279377, 6.630463471, 2058.2521</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>991.4108245, 6.630463471, 2063.045268</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1902.033627, 6.630463471, 1979.487862</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1906.563296, 6.630463471, 1978.956808</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1814.131473, 6.630463471, 1998.019787</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1900.565417, 6.630463471, 1984.582292</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1794.527103, 6.630463471, 1974.940476</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1796.378371, 6.630463471, 1997.567251</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1848.400596, 6.630463471, 2013.85853</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1846.817709, 6.630463471, 2018.651698</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-440.8453463, 6.630463471, 1816.723745</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-445.3750156, 6.630463471, 1816.192691</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-261.6722648, 6.630463471, 1798.41015</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-439.3771368, 6.630463471, 1821.818175</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-304.922016, 6.630463471, 1732.70563</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-243.919162, 6.630463471, 1797.957615</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-358.7955096, 6.630463471, 1771.623684</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-357.2126228, 6.630463471, 1776.416852</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-472.1087386, 6.630463471, 444.9228238</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-476.6384079, 6.630463471, 444.3917701</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-384.2065853, 6.630463471, 463.4547487</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-470.6405291, 6.630463471, 450.0172535</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-364.6022144, 6.630463471, 440.3754377</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-366.4534825, 6.630463471, 463.0022132</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-418.4757081, 6.630463471, 479.2934916</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-416.8928213, 6.630463471, 484.0866595</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>989.0795419, 6.630463471, 282.158707</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>984.5498726, 6.630463471, 281.6276533</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1168.252623, 6.630463471, 263.8451121</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>990.5477514, 6.630463471, 287.2531367</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1125.002872, 6.630463471, 198.1405918</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1186.005726, 6.630463471, 263.3925765</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1071.129379, 6.630463471, 237.0586457</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1072.712265, 6.630463471, 241.8518137</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1820.732186, 6.630463471, 158.2944072</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1825.261855, 6.630463471, 157.7633535</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1732.830033, 6.630463471, 176.8263321</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1819.263976, 6.630463471, 163.3888369</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1713.225662, 6.630463471, 153.7470211</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1715.07693, 6.630463471, 176.3737966</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1767.099155, 6.630463471, 192.665075</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1765.516269, 6.630463471, 197.4582429</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-359.5439055, 6.630463471, -4.469709638</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-364.0735747, 6.630463471, -5.000763341</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-180.3708239, 6.630463471, -22.78330455</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-358.0756959, 6.630463471, 0.6247200654</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-223.6205751, 6.630463471, -88.48782479</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-162.6177212, 6.630463471, -23.23584006</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-277.4940687, 6.630463471, -49.56977089</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-275.911182, 6.630463471, -44.77660295</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-909.4008101, 6.630463471, 1576.737597</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-913.9304794, 6.630463471, 1576.206543</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-821.4986568, 6.630463471, 1595.269522</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-907.9326006, 6.630463471, 1581.832027</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-801.8942859, 6.630463471, 1572.190211</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-803.745554, 6.630463471, 1594.816986</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-855.7677795, 6.630463471, 1611.108265</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-854.1848928, 6.630463471, 1615.901433</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>551.7874704, 6.630463471, 1413.97348</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>547.2578011, 6.630463471, 1413.442426</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>730.9605519, 6.630463471, 1395.659885</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>553.2556799, 6.630463471, 1419.06791</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>687.7108008, 6.630463471, 1329.955365</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>748.7136547, 6.630463471, 1395.20735</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>633.8373071, 6.630463471, 1368.873419</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>635.4201939, 6.630463471, 1373.666587</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-2258.024257, 6.630463471, 1290.10918</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-2262.553927, 6.630463471, 1289.578127</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-2170.122104, 6.630463471, 1308.641105</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-2256.556048, 6.630463471, 1295.20361</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-2150.517733, 6.630463471, 1285.561794</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-2152.369001, 6.630463471, 1308.18857</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-2204.391227, 6.630463471, 1324.479848</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-2202.80834, 6.630463471, 1329.273016</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-796.8359769, 6.630463471, 1127.345064</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-801.3656462, 6.630463471, 1126.81401</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-617.6628954, 6.630463471, 1109.031469</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-795.3677674, 6.630463471, 1132.439493</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-660.9126466, 6.630463471, 1043.326948</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-599.9097926, 6.630463471, 1108.578933</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-714.7861402, 6.630463471, 1082.245002</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-713.2032534, 6.630463471, 1087.03817</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>231.4431706, 6.630463471, 465.246044</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>226.9135013, 6.630463471, 464.7149903</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>319.3453239, 6.630463471, 483.7779689</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>232.9113801, 6.630463471, 470.3404737</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>338.9496948, 6.630463471, 460.6986579</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>337.0984267, 6.630463471, 483.3254334</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>285.0762011, 6.630463471, 499.6167117</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>286.6590879, 6.630463471, 504.4098797</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1692.631451, 6.630463471, 302.4819271</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1688.101782, 6.630463471, 301.9508734</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1871.804533, 6.630463471, 284.1683322</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1694.099661, 6.630463471, 307.5763568</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1828.554781, 6.630463471, 218.463812</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1889.557635, 6.630463471, 283.7157967</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1774.681288, 6.630463471, 257.3818659</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1776.264175, 6.630463471, 262.1750338</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1117.180277, 6.630463471, 178.6176274</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1121.709946, 6.630463471, 178.0865737</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1029.278123, 6.630463471, 197.1495523</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1115.712067, 6.630463471, 183.7120571</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1009.673753, 6.630463471, 174.0702413</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1011.525021, 6.630463471, 196.6970168</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1063.547246, 6.630463471, 212.9882952</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1061.964359, 6.630463471, 217.7814631</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>344.0080037, 6.630463471, 15.85351054</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>339.4783345, 6.630463471, 15.32245683</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>523.1810853, 6.630463471, -2.460084373</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>345.4762133, 6.630463471, 20.94794024</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>479.9313341, 6.630463471, -68.16460461</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>540.934188, 6.630463471, -2.912619883</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>426.0578405, 6.630463471, -29.24655072</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>427.6407272, 6.630463471, -24.45338277</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-205.8489009, 6.630463471, 1597.060817</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-210.3785702, 6.630463471, 1596.529764</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-117.9467476, 6.630463471, 1615.592742</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-204.3806914, 6.630463471, 1602.155247</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-98.34237668, 6.630463471, 1592.513431</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-100.1936448, 6.630463471, 1615.140207</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-152.2158703, 6.630463471, 1631.431485</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-150.6329836, 6.630463471, 1636.224653</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1255.33938, 6.630463471, 1434.2967</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1250.80971, 6.630463471, 1433.765647</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1434.512461, 6.630463471, 1415.983105</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1256.807589, 6.630463471, 1439.39113</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1391.26271, 6.630463471, 1350.278585</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1452.265564, 6.630463471, 1415.53057</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1337.389216, 6.630463471, 1389.196639</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1338.972103, 6.630463471, 1393.989807</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1554.472348, 6.630463471, 1310.432401</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1559.002018, 6.630463471, 1309.901347</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1466.570195, 6.630463471, 1328.964326</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1553.004139, 6.630463471, 1315.52683</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1446.965824, 6.630463471, 1305.885014</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1448.817092, 6.630463471, 1328.51179</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1500.839318, 6.630463471, 1344.803068</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1499.256431, 6.630463471, 1349.596236</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-93.28406774, 6.630463471, 1147.668284</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-97.81373701, 6.630463471, 1147.13723</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>85.88901382, 6.630463471, 1129.354689</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-91.8158582, 6.630463471, 1152.762713</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>42.63926264, 6.630463471, 1063.650169</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>103.6421166, 6.630463471, 1128.902153</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-11.23423102, 6.630463471, 1102.568223</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-9.651344237, 6.630463471, 1107.36139</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-124.54746, 6.630463471, -224.1326375</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-129.0771293, 6.630463471, -224.6636912</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-36.64530668, 6.630463471, -205.6007126</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-123.0792505, 6.630463471, -219.0382078</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-17.04093581, 6.630463471, -228.6800236</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-18.89220395, 6.630463471, -206.0532481</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-70.91442947, 6.630463471, -189.7619697</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-69.33154268, 6.630463471, -184.9688018</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>1336.64082, 6.630463471, -386.8967543</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>1332.111151, 6.630463471, -387.4278081</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1515.813902, 6.630463471, -405.2103493</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>1338.10903, 6.630463471, -381.8023246</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1472.564151, 6.630463471, -470.9148695</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1533.567005, 6.630463471, -405.6628848</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>1418.690657, 6.630463471, -431.9968156</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>1420.273544, 6.630463471, -427.2036477</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1473.170907, 6.630463471, -510.7610541</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1477.700577, 6.630463471, -511.2921078</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1385.268754, 6.630463471, -492.2291292</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1471.702698, 6.630463471, -505.6666244</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1365.664383, 6.630463471, -515.3084402</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1367.515651, 6.630463471, -492.6816647</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1419.537877, 6.630463471, -476.3903863</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1417.95499, 6.630463471, -471.5972184</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-11.98262686, 6.630463471, -673.5251709</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-16.51229614, 6.630463471, -674.0562246</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>167.1904547, 6.630463471, -691.8387659</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-10.51441732, 6.630463471, -668.4307412</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>123.9407035, 6.630463471, -757.5432861</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>184.9435574, 6.630463471, -692.2913014</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>70.06720986, 6.630463471, -718.6252322</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>71.65009664, 6.630463471, -713.8320643</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-561.8395315, 6.630463471, 907.6821357</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-566.3692008, 6.630463471, 907.151082</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-473.9373782, 6.630463471, 926.2140606</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-560.371322, 6.630463471, 912.7765654</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-454.3330073, 6.630463471, 903.1347496</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-456.1842754, 6.630463471, 925.7615251</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-508.2065009, 6.630463471, 942.0528035</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-506.6236142, 6.630463471, 946.8459714</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>899.348749, 6.630463471, 744.9180189</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>894.8190797, 6.630463471, 744.3869652</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>1078.521831, 6.630463471, 726.604424</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>900.8169585, 6.630463471, 750.0124486</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>1035.272079, 6.630463471, 660.8999037</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>1096.274933, 6.630463471, 726.1518885</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>981.3985857, 6.630463471, 699.8179576</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>982.9814725, 6.630463471, 704.6111256</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-1910.462979, 6.630463471, 621.0537191</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-1914.992648, 6.630463471, 620.5226654</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-1822.560825, 6.630463471, 639.585644</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-1908.994769, 6.630463471, 626.1481488</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-1802.956455, 6.630463471, 616.506333</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-1804.807723, 6.630463471, 639.1331085</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-1856.829948, 6.630463471, 655.4243869</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-1855.247061, 6.630463471, 660.2175548</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_H</Species>
+      <Family>Rock</Family>
+      <Position>-449.2746983, 6.630463471, 458.2896023</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_G</Species>
+      <Family>Rock</Family>
+      <Position>-453.8043676, 6.630463471, 457.7585486</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_F</Species>
+      <Family>Rock</Family>
+      <Position>-270.1016168, 6.630463471, 439.9760074</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_E</Species>
+      <Family>Rock</Family>
+      <Position>-447.8064888, 6.630463471, 463.384032</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_D</Species>
+      <Family>Rock</Family>
+      <Position>-313.351368, 6.630463471, 374.2714871</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_C</Species>
+      <Family>Rock</Family>
+      <Position>-252.348514, 6.630463471, 439.5234719</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_B</Species>
+      <Family>Rock</Family>
+      <Position>-367.2248616, 6.630463471, 413.189541</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>Rock_A</Species>
+      <Family>Rock</Family>
+      <Position>-365.6419748, 6.630463471, 417.982709</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1489.964102, 407.3047862, -1348.117473</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1586.094959, 407.3047862, -1255.278782</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1676.206938, 391.1115756, -1329.740787</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1640.059452, 392.2971516, -1434.698099</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1702.958663, 398.2140334, -1297.510608</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1623.845949, 431.2880079, -1357.49398</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1504.421556, 398.4967182, -1464.396469</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1553.669878, 407.3047862, -1302.975584</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1644.349236, 407.3047862, -1183.734542</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1494.032029, 407.3047862, -1170.822832</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+    <Creature>
+      <Species>MinkWhale</Species>
+      <Family>Whale</Family>
+      <Position>-1535.781864, 335.7008044, -1335.244625</Position>
+      <Direction>-99, 0, -99</Direction>
+    </Creature>
+
+
 
 
 
