@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>pPlane2</Name>
     <Identity>
-      <SourceFilename>C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Terrain\Ground.fbx</SourceFilename>
+      <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Terrain\Ground.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <OpaqueData>
@@ -29,7 +29,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>lambert1</Name>
       <Identity>
-        <SourceFilename>C:\Users\John\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Terrain\Ground.fbx</SourceFilename>
+        <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Terrain\Ground.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

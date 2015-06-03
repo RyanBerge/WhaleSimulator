@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>Plane01</Name>
     <Identity>
-      <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Effects\ocean.x</SourceFilename>
+      <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Effects\ocean.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 -5.7326355 3.09668732 0 1</Transform>
@@ -31,7 +31,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Effects\ocean.x</SourceFilename>
+        <SourceFilename>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\Effects\ocean.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

@@ -1,7 +1,6 @@
 Content\Effects\cube.xnb
 Content\Effects\ocean.xnb
 Content\Effects\wavesbump.xnb
-Content\Effects\oversea.xnb
 Content\Effects\water.xnb
 Content\Images\OptionsButton.xnb
 Content\Images\PlayButton.xnb
@@ -11,6 +10,9 @@ Content\Images\BackgroundRight.xnb
 Content\Images\BackgroundLeft.xnb
 Content\Images\OrcaButton.xnb
 Content\Images\Blackscreen.xnb
+Content\Images\PauseBackground.xnb
+Content\Images\ResumeButton.xnb
+Content\Effects\oversea.xnb
 Content\Effects\OceanSurface.xnb
 Content\Effects\Skybox.xnb
 Content\Terrain\Ground.xnb
@@ -66,6 +68,7 @@ Content\Creatures\FBX\Squid.xnb
 Content\Creatures\FBX\StandingGull.xnb
 Content\Creatures\FBX\Toothfish_A.xnb
 Content\Creatures\FBX\Toothfish_B.xnb
+Content\Creatures\FBX\OceanFloor.xnb
 Content\sourceimages\Ice_0.xnb
 Content\sourceimages\BBAlbatrossTexture_0.xnb
 Content\sourceimages\Iceberg1Texture_0.xnb
@@ -82,8 +85,8 @@ Content\sourceimages\iceFish4_0.xnb
 Content\sourceimages\mackelIcefish_mat_0.xnb
 Content\sourceimages\Jellyfish512_0.xnb
 Content\sourceimages\minkeWhale_0.xnb
-Content\orcawhaleR_0.xnb
-Content\orcawhale_tail_0.xnb
+Content\sourceimages\orcawhaleR_0.xnb
+Content\sourceimages\orcawhale_tail_0.xnb
 Content\sourceimages\KingPenguinTexture2_0.xnb
 Content\sourceimages\largerock_0.xnb
 Content\sourceimages\rock1_0.xnb
@@ -106,10 +109,7 @@ Content\sourceimages\Squid_Texture_0.xnb
 Content\sourceimages\seagullstand1_mat_0.xnb
 Content\sourceimages\toothfish_0.xnb
 Content\sourceimages\rock2_0.xnb
-Content\Creatures\FBX\OceanFloor.xnb
 Content\sand_0.xnb
-Content\Images\PauseBackground.xnb
-Content\Images\ResumeButton.xnb
 Data\Models.xml
 Data\MapData\OrcaLevel.xml
 Data\MapData\OrcaLevel_Backup.xml

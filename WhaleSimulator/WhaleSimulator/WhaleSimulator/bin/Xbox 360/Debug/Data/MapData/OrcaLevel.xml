@@ -16,6 +16,13 @@
 
   <CreatureList>
     <Creature>
+      <Species>Penguin</Species>
+      <Family>Penguin</Family>
+      <Position>0, 950, 0</Position>
+      <Direction>1, 0, 0</Direction>
+    </Creature>
+      
+    <Creature>
       <Species>OceanFloor</Species>
       <Family>Terrain</Family>
       <Position>-2000, 0, -2000</Position>
@@ -2363,77 +2370,77 @@
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1489.964102, 407.3047862, -1348.117473</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1586.094959, 407.3047862, -1255.278782</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1676.206938, 391.1115756, -1329.740787</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1640.059452, 392.2971516, -1434.698099</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1702.958663, 398.2140334, -1297.510608</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1623.845949, 431.2880079, -1357.49398</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1504.421556, 398.4967182, -1464.396469</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1553.669878, 407.3047862, -1302.975584</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1644.349236, 407.3047862, -1183.734542</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1494.032029, 407.3047862, -1170.822832</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
 
     <Creature>
       <Species>MinkWhale</Species>
-      <Family>Ice</Family>
+      <Family>Whale</Family>
       <Position>-1535.781864, 335.7008044, -1335.244625</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
@@ -6098,13 +6105,6 @@
       <Position>-1535.781864, 335.7008044, -1335.244625</Position>
       <Direction>-99, 0, -99</Direction>
     </Creature>
-
-
-
-
-
-
-
 
   </CreatureList>
   </MapData>

@@ -18,7 +18,7 @@
     <Creature>
       <Species>Penguin</Species>
       <Family>Penguin</Family>
-      <Position>2500, 950, 2500</Position>
+      <Position>0, 950, 0</Position>
       <Direction>1, 0, 0</Direction>
     </Creature>
       

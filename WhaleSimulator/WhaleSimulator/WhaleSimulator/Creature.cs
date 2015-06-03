@@ -147,7 +147,9 @@ namespace WhaleSimulator
         /// <param name="gameTime">The GameTime object to use as reference.</param>
         public override void Draw3D(GameTime gameTime) 
         {
-            if (Properties.IsAlive)
+            if (Properties.Family == "Terrain")
+                base.Draw3D(gameTime);
+            else if (Properties.IsAlive)
             {
                 Vector3 differenceVector = Position - Camera.Position;
                 differenceVector.Normalize();

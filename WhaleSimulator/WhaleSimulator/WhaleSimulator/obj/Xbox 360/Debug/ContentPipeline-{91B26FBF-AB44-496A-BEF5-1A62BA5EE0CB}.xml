@@ -10,11 +10,11 @@
         <Data Key="GenerateTangentFrames">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\cube.xnb</Output>
-      <Time>2015-05-28T01:22:47.5708416-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\cube.xnb</Output>
+      <Time>2015-06-02T15:26:07.387845-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\cube_0.xml</Key>
-        <Value>2015-05-30T02:36:45.1581561-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\cube_0.xml</Key>
+        <Value>2015-06-02T16:05:39.0574968-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -26,11 +26,11 @@
         <Data Key="GenerateTangentFrames">True</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\ocean.xnb</Output>
-      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\ocean.xnb</Output>
+      <Time>2015-06-02T15:12:14.4772053-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\ocean_0.xml</Key>
-        <Value>2015-05-30T02:36:45.5767092-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\ocean_0.xml</Key>
+        <Value>2015-06-02T16:05:39.8535423-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -39,17 +39,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\wavesbump.xnb</Output>
-      <Time>2015-05-28T01:22:47.5768419-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Effects\oversea.jpg</Source>
-      <Name>Effects\oversea</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\oversea.xnb</Output>
-      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\wavesbump.xnb</Output>
+      <Time>2015-06-02T15:12:14.4822056-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\water.jpg</Source>
@@ -57,8 +48,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\water.xnb</Output>
-      <Time>2015-05-28T01:22:47.5738417-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\water.xnb</Output>
+      <Time>2015-06-02T15:12:14.4792054-07:00</Time>
     </Item>
     <Item>
       <Source>Images\OptionsButton.jpg</Source>
@@ -66,8 +57,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\OptionsButton.xnb</Output>
-      <Time>2015-05-28T01:22:47.5828422-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\OptionsButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.489206-07:00</Time>
     </Item>
     <Item>
       <Source>Images\PlayButton.jpg</Source>
@@ -75,8 +66,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\PlayButton.xnb</Output>
-      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\PlayButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.4992065-07:00</Time>
     </Item>
     <Item>
       <Source>Images\QuitButton.jpg</Source>
@@ -84,8 +75,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\QuitButton.xnb</Output>
-      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\QuitButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.4992065-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackButton.png</Source>
@@ -93,8 +84,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackButton.xnb</Output>
-      <Time>2015-05-28T01:22:47.5768419-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.4832056-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackgroundRight.jpg</Source>
@@ -102,8 +93,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackgroundRight.xnb</Output>
-      <Time>2015-05-28T01:22:47.5808421-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackgroundRight.xnb</Output>
+      <Time>2015-06-02T15:12:14.4882059-07:00</Time>
     </Item>
     <Item>
       <Source>Images\BackgroundLeft.jpg</Source>
@@ -111,8 +102,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackgroundLeft.xnb</Output>
-      <Time>2015-05-28T01:22:47.578842-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\BackgroundLeft.xnb</Output>
+      <Time>2015-06-02T15:12:14.4852057-07:00</Time>
     </Item>
     <Item>
       <Source>Images\OrcaButton.png</Source>
@@ -120,8 +111,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\OrcaButton.xnb</Output>
-      <Time>2015-05-28T01:22:47.5848424-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\OrcaButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.4932062-07:00</Time>
     </Item>
     <Item>
       <Source>Images\Blackscreen.jpg</Source>
@@ -129,8 +120,35 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\Blackscreen.xnb</Output>
-      <Time>2015-05-28T01:22:47.5818422-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\Blackscreen.xnb</Output>
+      <Time>2015-06-02T15:12:14.4882059-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\PauseBackground.png</Source>
+      <Name>Images\PauseBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\PauseBackground.xnb</Output>
+      <Time>2015-06-02T15:12:14.4982065-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ResumeButton.jpg</Source>
+      <Name>Images\ResumeButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\ResumeButton.xnb</Output>
+      <Time>2015-06-02T15:12:14.5002066-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\oversea.png</Source>
+      <Name>Effects\oversea</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\oversea.xnb</Output>
+      <Time>2015-06-02T15:26:07.3938454-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\OceanSurface.fx</Source>
@@ -138,8 +156,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\OceanSurface.xnb</Output>
-      <Time>2015-05-28T01:22:47.525839-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\OceanSurface.xnb</Output>
+      <Time>2015-06-02T15:12:14.4102014-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\Skybox.fx</Source>
@@ -147,8 +165,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\Skybox.xnb</Output>
-      <Time>2015-05-28T01:22:47.526839-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\Skybox.xnb</Output>
+      <Time>2015-06-02T15:12:14.4102014-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\Ground.fbx</Source>
@@ -156,11 +174,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Terrain\Ground.xnb</Output>
-      <Time>2015-05-28T01:22:47.5858424-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Terrain\Ground.xnb</Output>
+      <Time>2015-06-02T15:12:14.5012067-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\Ground_0.xml</Key>
-        <Value>2015-05-30T02:37:00.2280697-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\Ground_0.xml</Key>
+        <Value>2015-06-02T16:05:53.6203297-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -169,756 +187,774 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Terrain\IceShelf.xnb</Output>
-      <Time>2015-05-28T01:22:47.5928428-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Terrain\IceShelf.xnb</Output>
+      <Time>2015-06-02T15:12:14.5092071-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\IceShelf_0.xml</Key>
-        <Value>2015-05-30T02:37:00.2805764-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\IceShelf_0.xml</Key>
+        <Value>2015-06-02T16:05:53.6933339-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Albatross.fbx</Source>
       <Name>Creatures\FBX\Albatross</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Albatross.xnb</Output>
-      <Time>2015-05-28T17:56:57-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Albatross.xnb</Output>
+      <Time>2015-06-02T15:12:14.3621987-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Albatross_0.xml</Key>
-        <Value>2015-05-30T02:37:00.3975912-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Albatross_0.xml</Key>
+        <Value>2015-06-02T16:05:53.7683382-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_A.fbx</Source>
       <Name>Creatures\FBX\BigIce_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_A.xnb</Output>
-      <Time>2015-05-28T17:56:58-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.3621987-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_A_0.xml</Key>
-        <Value>2015-05-30T02:37:00.521607-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_A_0.xml</Key>
+        <Value>2015-06-02T16:05:53.9803503-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_B.fbx</Source>
       <Name>Creatures\FBX\BigIce_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_B.xnb</Output>
-      <Time>2015-05-28T17:56:59-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.3631988-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_B_0.xml</Key>
-        <Value>2015-05-30T02:37:00.8191448-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_B_0.xml</Key>
+        <Value>2015-06-02T16:05:54.3923739-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_C.fbx</Source>
       <Name>Creatures\FBX\BigIce_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_C.xnb</Output>
-      <Time>2015-05-28T17:57:00-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_C.xnb</Output>
+      <Time>2015-06-02T15:12:14.3641988-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_C_0.xml</Key>
-        <Value>2015-05-30T02:37:00.9016553-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_C_0.xml</Key>
+        <Value>2015-06-02T16:05:54.5223813-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_D.fbx</Source>
       <Name>Creatures\FBX\BigIce_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_D.xnb</Output>
-      <Time>2015-05-28T17:57:02-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_D.xnb</Output>
+      <Time>2015-06-02T15:12:14.3641988-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_D_0.xml</Key>
-        <Value>2015-05-30T02:37:00.9801652-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_D_0.xml</Key>
+        <Value>2015-06-02T16:05:54.6403881-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_E.fbx</Source>
       <Name>Creatures\FBX\BigIce_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_E.xnb</Output>
-      <Time>2015-05-28T17:57:04-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\BigIce_E.xnb</Output>
+      <Time>2015-06-02T15:12:14.3651989-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_E_0.xml</Key>
-        <Value>2015-05-30T02:37:01.0196702-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_E_0.xml</Key>
+        <Value>2015-06-02T16:05:54.7013916-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largeflatice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largeflatice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Cod.fbx</Source>
       <Name>Creatures\FBX\Cod</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Cod.xnb</Output>
-      <Time>2015-05-28T17:57:05-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Cod.xnb</Output>
+      <Time>2015-06-02T15:12:14.3661989-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Cod_0.xml</Key>
-        <Value>2015-05-30T02:37:01.0656761-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Cod_0.xml</Key>
+        <Value>2015-06-02T16:05:54.779396-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\a-cod2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\a-cod2_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Complicatefish.fbx</Source>
       <Name>Creatures\FBX\Complicatefish</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Complicatefish.xnb</Output>
-      <Time>2015-05-28T17:57:06-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Complicatefish.xnb</Output>
+      <Time>2015-06-02T15:12:14.3661989-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Complicatefish_0.xml</Key>
-        <Value>2015-05-30T02:37:01.1441861-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Complicatefish_0.xml</Key>
+        <Value>2015-06-02T16:05:54.9094035-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish4_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish4_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_A.fbx</Source>
       <Name>Creatures\FBX\Fish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_A.xnb</Output>
-      <Time>2015-05-28T17:57:07-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.367199-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_A_0.xml</Key>
-        <Value>2015-05-30T02:37:01.2061939-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_A_0.xml</Key>
+        <Value>2015-06-02T16:05:55.0164096-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_B.fbx</Source>
       <Name>Creatures\FBX\Fish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_B.xnb</Output>
-      <Time>2015-05-28T17:57:08-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.368199-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_B_0.xml</Key>
-        <Value>2015-05-30T02:37:01.3222087-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_B_0.xml</Key>
+        <Value>2015-06-02T16:05:55.2084206-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish2_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_C.fbx</Source>
       <Name>Creatures\FBX\Fish_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_C.xnb</Output>
-      <Time>2015-05-28T17:57:10-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Fish_C.xnb</Output>
+      <Time>2015-06-02T15:12:14.368199-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_C_0.xml</Key>
-        <Value>2015-05-30T02:37:01.3752154-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_C_0.xml</Key>
+        <Value>2015-06-02T16:05:55.2994258-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish3_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish3_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_A.fbx</Source>
       <Name>Creatures\FBX\Icefish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_A.xnb</Output>
-      <Time>2015-05-28T17:57:11-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.3691991-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_A_0.xml</Key>
-        <Value>2015-05-30T02:37:01.4282221-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_A_0.xml</Key>
+        <Value>2015-06-02T16:05:55.390431-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_B.fbx</Source>
       <Name>Creatures\FBX\Icefish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_B.xnb</Output>
-      <Time>2015-05-28T17:57:12-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.3691991-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_B_0.xml</Key>
-        <Value>2015-05-30T02:37:01.482729-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_B_0.xml</Key>
+        <Value>2015-06-02T16:05:55.4914368-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceFish4_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceFish4_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_C.fbx</Source>
       <Name>Creatures\FBX\Icefish_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_C.xnb</Output>
-      <Time>2015-05-28T17:57:13-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Icefish_C.xnb</Output>
+      <Time>2015-06-02T15:12:14.3701992-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_C_0.xml</Key>
-        <Value>2015-05-30T02:37:01.6747534-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_C_0.xml</Key>
+        <Value>2015-06-02T16:05:55.7884537-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Jellyfish.fbx</Source>
       <Name>Creatures\FBX\Jellyfish</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Jellyfish.xnb</Output>
-      <Time>2015-05-28T17:57:14-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Jellyfish.xnb</Output>
+      <Time>2015-06-02T15:12:14.3701992-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Jellyfish_0.xml</Key>
-        <Value>2015-05-30T02:37:01.7527633-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Jellyfish_0.xml</Key>
+        <Value>2015-06-02T16:05:55.9234615-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Jellyfish512_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Jellyfish512_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\MinkWhale.fbx</Source>
       <Name>Creatures\FBX\MinkWhale</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\MinkWhale.xnb</Output>
-      <Time>2015-05-28T17:57:15-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\MinkWhale.xnb</Output>
+      <Time>2015-06-02T15:12:14.3711992-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\MinkWhale_0.xml</Key>
-        <Value>2015-05-30T02:37:01.9427875-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\MinkWhale_0.xml</Key>
+        <Value>2015-06-02T16:05:56.2004773-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\minkeWhale_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\minkeWhale_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\OrcaWhale.fbx</Source>
       <Name>Creatures\FBX\OrcaWhale</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OrcaWhale.xnb</Output>
-      <Time>2015-05-29T18:18:14.6191104-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OrcaWhale.xnb</Output>
+      <Time>2015-06-02T17:03:28.0479117-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OrcaWhale_0.xml</Key>
-        <Value>2015-05-30T02:37:02.0578021-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OrcaWhale_0.xml</Key>
+        <Value>2015-06-02T17:03:29.6000005-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\orcawhaleR_0.xnb</Request>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\orcawhale_tail_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhaleR_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhale_tail_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Penguin.fbx</Source>
       <Name>Creatures\FBX\Penguin</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Penguin.xnb</Output>
-      <Time>2015-05-28T17:57:17-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Penguin.xnb</Output>
+      <Time>2015-06-02T15:12:14.3741994-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Penguin_0.xml</Key>
-        <Value>2015-05-30T02:37:02.4863565-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Penguin_0.xml</Key>
+        <Value>2015-06-02T16:31:36.3085665-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_A.fbx</Source>
       <Name>Creatures\FBX\Rock_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_A.xnb</Output>
-      <Time>2015-05-28T17:57:18-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.3751994-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_A_0.xml</Key>
-        <Value>2015-05-30T02:37:02.5963705-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_A_0.xml</Key>
+        <Value>2015-06-02T16:31:36.4535747-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largerock_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largerock_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_B.fbx</Source>
       <Name>Creatures\FBX\Rock_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_B.xnb</Output>
-      <Time>2015-05-28T17:57:19-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.3751994-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_B_0.xml</Key>
-        <Value>2015-05-30T02:37:02.6648792-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_B_0.xml</Key>
+        <Value>2015-06-02T16:31:36.5525804-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_C.fbx</Source>
       <Name>Creatures\FBX\Rock_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_C.xnb</Output>
-      <Time>2015-05-28T17:57:21-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_C.xnb</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_C_0.xml</Key>
-        <Value>2015-05-30T02:37:02.734888-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_C_0.xml</Key>
+        <Value>2015-06-02T16:31:36.6485859-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_D.fbx</Source>
       <Name>Creatures\FBX\Rock_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_D.xnb</Output>
-      <Time>2015-05-28T17:57:22-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_D.xnb</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_D_0.xml</Key>
-        <Value>2015-05-30T02:37:02.8033967-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_D_0.xml</Key>
+        <Value>2015-06-02T16:31:36.7465915-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock3_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock3_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_E.fbx</Source>
       <Name>Creatures\FBX\Rock_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_E.xnb</Output>
-      <Time>2015-05-28T17:57:24-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_E.xnb</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_E_0.xml</Key>
-        <Value>2015-05-30T02:37:02.8784063-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_E_0.xml</Key>
+        <Value>2015-06-02T16:31:36.8435971-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock4_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock4_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_F.fbx</Source>
       <Name>Creatures\FBX\Rock_F</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_F.xnb</Output>
-      <Time>2015-05-28T17:57:25-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_F.xnb</Output>
+      <Time>2015-06-02T15:12:14.3771996-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_F_0.xml</Key>
-        <Value>2015-05-30T02:37:02.9494153-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_F_0.xml</Key>
+        <Value>2015-06-02T16:31:36.9456029-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock5_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock5_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_G.fbx</Source>
       <Name>Creatures\FBX\Rock_G</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_G.xnb</Output>
-      <Time>2015-05-28T17:57:26-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_G.xnb</Output>
+      <Time>2015-06-02T15:12:14.3781996-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_G_0.xml</Key>
-        <Value>2015-05-30T02:37:03.0209244-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_G_0.xml</Key>
+        <Value>2015-06-02T16:31:37.0456086-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock6_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock6_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_H.fbx</Source>
       <Name>Creatures\FBX\Rock_H</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_H.xnb</Output>
-      <Time>2015-05-28T17:57:28-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_H.xnb</Output>
+      <Time>2015-06-02T15:12:14.3781996-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_H_0.xml</Key>
-        <Value>2015-05-30T02:37:03.088933-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_H_0.xml</Key>
+        <Value>2015-06-02T16:31:37.140614-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SeaLion.fbx</Source>
       <Name>Creatures\FBX\SeaLion</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SeaLion.xnb</Output>
-      <Time>2015-05-28T17:57:32-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SeaLion.xnb</Output>
+      <Time>2015-06-02T15:12:14.3791997-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SeaLion_0.xml</Key>
-        <Value>2015-05-30T02:37:03.1859453-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SeaLion_0.xml</Key>
+        <Value>2015-06-02T16:31:37.2686214-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\sealion1_mat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\sealion1_mat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Seal_A.fbx</Source>
       <Name>Creatures\FBX\Seal_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Seal_A.xnb</Output>
-      <Time>2015-05-28T17:57:29-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Seal_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.3801997-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_A_0.xml</Key>
-        <Value>2015-05-30T02:37:03.2609548-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_A_0.xml</Key>
+        <Value>2015-06-02T16:31:37.3856281-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Seal_B.fbx</Source>
       <Name>Creatures\FBX\Seal_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Seal_B.xnb</Output>
-      <Time>2015-05-28T17:57:30-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Seal_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.3801997-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_B_0.xml</Key>
-        <Value>2015-05-30T02:37:03.3684685-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_B_0.xml</Key>
+        <Value>2015-06-02T16:31:37.5336365-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_A.fbx</Source>
       <Name>Creatures\FBX\SmallIce_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_A.xnb</Output>
-      <Time>2015-05-28T17:57:33-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.3811998-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_A_0.xml</Key>
-        <Value>2015-05-30T02:37:03.4404776-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_A_0.xml</Key>
+        <Value>2015-06-02T16:31:37.6376425-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_B.fbx</Source>
       <Name>Creatures\FBX\SmallIce_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_B.xnb</Output>
-      <Time>2015-05-28T17:57:34-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.3811998-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_B_0.xml</Key>
-        <Value>2015-05-30T02:37:03.4714816-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_B_0.xml</Key>
+        <Value>2015-06-02T16:31:37.6836451-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_C.fbx</Source>
       <Name>Creatures\FBX\SmallIce_C</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_C.xnb</Output>
-      <Time>2015-05-28T17:57:36-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_C.xnb</Output>
+      <Time>2015-06-02T15:12:14.3821998-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_C_0.xml</Key>
-        <Value>2015-05-30T02:37:03.5014854-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_C_0.xml</Key>
+        <Value>2015-06-02T16:31:37.7296477-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_D.fbx</Source>
       <Name>Creatures\FBX\SmallIce_D</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_D.xnb</Output>
-      <Time>2015-05-28T17:57:38-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_D.xnb</Output>
+      <Time>2015-06-02T15:12:14.3821998-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_D_0.xml</Key>
-        <Value>2015-05-30T02:37:03.5319893-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_D_0.xml</Key>
+        <Value>2015-06-02T16:31:37.7776505-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_E.fbx</Source>
       <Name>Creatures\FBX\SmallIce_E</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_E.xnb</Output>
-      <Time>2015-05-28T17:57:39-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_E.xnb</Output>
+      <Time>2015-06-02T15:12:14.3831999-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_E_0.xml</Key>
-        <Value>2015-05-30T02:37:03.5624931-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_E_0.xml</Key>
+        <Value>2015-06-02T16:31:37.8256532-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_F.fbx</Source>
       <Name>Creatures\FBX\SmallIce_F</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_F.xnb</Output>
-      <Time>2015-05-28T17:57:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_F.xnb</Output>
+      <Time>2015-06-02T15:12:14.3992008-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_F_0.xml</Key>
-        <Value>2015-05-30T02:37:03.5949973-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_F_0.xml</Key>
+        <Value>2015-06-02T16:31:37.873656-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_G.fbx</Source>
       <Name>Creatures\FBX\SmallIce_G</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_G.xnb</Output>
-      <Time>2015-05-28T17:57:41-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_G.xnb</Output>
+      <Time>2015-06-02T15:12:14.4002009-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_G_0.xml</Key>
-        <Value>2015-05-30T02:37:03.6265013-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_G_0.xml</Key>
+        <Value>2015-06-02T16:31:37.9216587-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg2_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_H.fbx</Source>
       <Name>Creatures\FBX\SmallIce_H</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_H.xnb</Output>
-      <Time>2015-05-28T17:57:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_H.xnb</Output>
+      <Time>2015-06-02T15:12:14.4002009-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_H_0.xml</Key>
-        <Value>2015-05-30T02:37:03.6910095-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_H_0.xml</Key>
+        <Value>2015-06-02T16:31:38.0176642-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_I.fbx</Source>
       <Name>Creatures\FBX\SmallIce_I</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_I.xnb</Output>
-      <Time>2015-05-28T17:57:43-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_I.xnb</Output>
+      <Time>2015-06-02T15:12:14.4012009-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_I_0.xml</Key>
-        <Value>2015-05-30T02:37:03.7220134-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_I_0.xml</Key>
+        <Value>2015-06-02T16:31:38.0636668-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_J.fbx</Source>
       <Name>Creatures\FBX\SmallIce_J</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_J.xnb</Output>
-      <Time>2015-05-28T17:57:45-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_J.xnb</Output>
+      <Time>2015-06-02T15:12:14.402201-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_J_0.xml</Key>
-        <Value>2015-05-30T02:37:03.7905221-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_J_0.xml</Key>
+        <Value>2015-06-02T16:31:38.1606724-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_K.fbx</Source>
       <Name>Creatures\FBX\SmallIce_K</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_K.xnb</Output>
-      <Time>2015-05-28T17:57:46-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_K.xnb</Output>
+      <Time>2015-06-02T15:12:14.403201-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_K_0.xml</Key>
-        <Value>2015-05-30T02:37:03.8600309-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_K_0.xml</Key>
+        <Value>2015-06-02T16:31:38.258678-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_L.fbx</Source>
       <Name>Creatures\FBX\SmallIce_L</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_L.xnb</Output>
-      <Time>2015-05-28T17:57:47-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_L.xnb</Output>
+      <Time>2015-06-02T15:12:14.403201-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_L_0.xml</Key>
-        <Value>2015-05-30T02:37:03.9510425-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_L_0.xml</Key>
+        <Value>2015-06-02T16:31:38.3776848-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_M.fbx</Source>
       <Name>Creatures\FBX\SmallIce_M</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_M.xnb</Output>
-      <Time>2015-05-28T17:57:48-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_M.xnb</Output>
+      <Time>2015-06-02T15:12:14.4042011-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_M_0.xml</Key>
-        <Value>2015-05-30T02:37:03.9830465-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_M_0.xml</Key>
+        <Value>2015-06-02T16:31:38.4266876-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_N.fbx</Source>
       <Name>Creatures\FBX\SmallIce_N</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_N.xnb</Output>
-      <Time>2015-05-28T17:57:50-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_N.xnb</Output>
+      <Time>2015-06-02T15:12:14.4042011-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_N_0.xml</Key>
-        <Value>2015-05-30T02:37:04.0145505-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_N_0.xml</Key>
+        <Value>2015-06-02T16:31:38.4736903-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_O.fbx</Source>
       <Name>Creatures\FBX\SmallIce_O</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_O.xnb</Output>
-      <Time>2015-05-28T17:57:51-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallIce_O.xnb</Output>
+      <Time>2015-06-02T15:12:14.4052012-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_O_0.xml</Key>
-        <Value>2015-05-30T02:37:04.0460545-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_O_0.xml</Key>
+        <Value>2015-06-02T16:31:38.521693-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallRock_A.fbx</Source>
       <Name>Creatures\FBX\SmallRock_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallRock_A.xnb</Output>
-      <Time>2015-05-28T17:57:52-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallRock_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.4052012-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_A_0.xml</Key>
-        <Value>2015-05-30T02:37:04.0760584-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_A_0.xml</Key>
+        <Value>2015-06-02T16:31:38.5676957-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallRock_B.fbx</Source>
       <Name>Creatures\FBX\SmallRock_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallRock_B.xnb</Output>
-      <Time>2015-05-28T17:57:53-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\SmallRock_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.4062012-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_B_0.xml</Key>
-        <Value>2015-05-30T02:37:04.1065622-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_B_0.xml</Key>
+        <Value>2015-06-02T16:31:38.6146984-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_cmat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_cmat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Sponge.fbx</Source>
       <Name>Creatures\FBX\Sponge</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Sponge.xnb</Output>
-      <Time>2015-05-28T17:57:54-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Sponge.xnb</Output>
+      <Time>2015-06-02T15:12:14.4062012-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Sponge_0.xml</Key>
-        <Value>2015-05-30T02:37:04.1770712-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Sponge_0.xml</Key>
+        <Value>2015-06-02T16:31:38.7147041-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Squid.fbx</Source>
       <Name>Creatures\FBX\Squid</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Squid.xnb</Output>
-      <Time>2015-05-28T17:57:56-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Squid.xnb</Output>
+      <Time>2015-06-02T15:12:14.4072013-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Squid_0.xml</Key>
-        <Value>2015-05-30T02:37:04.2460799-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Squid_0.xml</Key>
+        <Value>2015-06-02T16:31:38.8287106-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Squid_Texture_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Squid_Texture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\StandingGull.fbx</Source>
       <Name>Creatures\FBX\StandingGull</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\StandingGull.xnb</Output>
-      <Time>2015-05-28T17:57:57-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\StandingGull.xnb</Output>
+      <Time>2015-06-02T15:12:14.4082013-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\StandingGull_0.xml</Key>
-        <Value>2015-05-30T02:37:04.3100881-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\StandingGull_0.xml</Key>
+        <Value>2015-06-02T16:31:38.922716-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Toothfish_A.fbx</Source>
       <Name>Creatures\FBX\Toothfish_A</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Toothfish_A.xnb</Output>
-      <Time>2015-05-28T17:57:58-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Toothfish_A.xnb</Output>
+      <Time>2015-06-02T15:12:14.4082013-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_A_0.xml</Key>
-        <Value>2015-05-30T02:37:04.3925985-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_A_0.xml</Key>
+        <Value>2015-06-02T16:31:39.0297221-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\toothfish_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\toothfish_0.xnb</Request>
     </Item>
     <Item>
       <Source>Creatures\FBX\Toothfish_B.fbx</Source>
       <Name>Creatures\FBX\Toothfish_B</Name>
       <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
+      <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Toothfish_B.xnb</Output>
-      <Time>2015-05-28T17:58:00-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Toothfish_B.xnb</Output>
+      <Time>2015-06-02T15:12:14.4092014-07:00</Time>
       <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_B_0.xml</Key>
-        <Value>2015-05-30T02:37:04.4601071-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_B_0.xml</Key>
+        <Value>2015-06-02T16:31:39.1277277-07:00</Value>
       </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock2_0.xnb</Request>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Creatures\FBX\OceanFloor.fbx</Source>
+      <Name>Creatures\FBX\OceanFloor</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">NoChange</Data>
+        <Data Key="GenerateMipmaps">False</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OceanFloor.xnb</Output>
+      <Time>2015-06-02T16:41:20.808998-07:00</Time>
+      <Dependency>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OceanFloor_0.xml</Key>
+        <Value>2015-06-02T16:46:05.8232999-07:00</Value>
+      </Dependency>
+      <Request>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sand_0.xnb</Request>
     </Item>
     <Item>
       <Source>Effects\cube.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\cube_0.xml</Output>
-      <Time>2015-05-28T01:22:47.5708416-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\cube_0.xml</Output>
+      <Time>2015-06-02T15:26:07.387845-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\ocean.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\ocean_0.xml</Output>
-      <Time>2015-05-28T01:22:47.5728417-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Effects\ocean_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4772053-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\Ground.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\Ground_0.xml</Output>
-      <Time>2015-05-28T01:22:47.5858424-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\Ground_0.xml</Output>
+      <Time>2015-06-02T15:12:14.5012067-07:00</Time>
     </Item>
     <Item>
       <Source>Terrain\IceShelf.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\IceShelf_0.xml</Output>
-      <Time>2015-05-28T01:22:47.5928428-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Terrain\IceShelf_0.xml</Output>
+      <Time>2015-06-02T15:12:14.5092071-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Ice.jpg</Source>
@@ -933,15 +969,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Ice_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5192077-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Albatross.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Albatross_0.xml</Output>
-      <Time>2015-05-28T17:56:57-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Albatross_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3621987-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\BBAlbatrossTexture.png</Source>
@@ -956,15 +992,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5152075-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_A_0.xml</Output>
-      <Time>2015-05-28T17:56:58-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3621987-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Iceberg1Texture.png</Source>
@@ -979,15 +1015,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Output>
-      <Time>2015-05-29T18:12:06.2619265-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1Texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.525208-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_B_0.xml</Output>
-      <Time>2015-05-28T17:56:59-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3631988-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\floating ice2_Texture.jpg</Source>
@@ -1002,15 +1038,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\floating ice2_Texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.542209-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_C.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_C_0.xml</Output>
-      <Time>2015-05-28T17:57:00-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_C_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3641988-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Iceberg1.png</Source>
@@ -1025,22 +1061,22 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Iceberg1_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5202077-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_D.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_D_0.xml</Output>
-      <Time>2015-05-28T17:57:02-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_D_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3641988-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\BigIce_E.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_E_0.xml</Output>
-      <Time>2015-05-28T17:57:04-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\BigIce_E_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3651989-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\largeflatice.png</Source>
@@ -1055,15 +1091,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largeflatice_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largeflatice_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5472093-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Cod.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Cod_0.xml</Output>
-      <Time>2015-05-28T17:57:05-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Cod_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3661989-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\a-cod2.jpg</Source>
@@ -1078,15 +1114,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\a-cod2_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\a-cod2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5372087-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Complicatefish.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Complicatefish_0.xml</Output>
-      <Time>2015-05-28T17:57:06-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Complicatefish_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3661989-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\fish4.jpg</Source>
@@ -1101,15 +1137,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish4_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish4_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5412089-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_A_0.xml</Output>
-      <Time>2015-05-28T17:57:07-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.367199-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\fish.jpg</Source>
@@ -1124,15 +1160,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5402089-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_B_0.xml</Output>
-      <Time>2015-05-28T17:57:08-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.368199-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\fish2.jpg</Source>
@@ -1147,15 +1183,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish2_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5402089-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Fish_C.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_C_0.xml</Output>
-      <Time>2015-05-28T17:57:10-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Fish_C_0.xml</Output>
+      <Time>2015-06-02T15:12:14.368199-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\fish3.jpg</Source>
@@ -1170,15 +1206,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish3_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\fish3_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5412089-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_A_0.xml</Output>
-      <Time>2015-05-28T17:57:11-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3691991-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\CrocodileIcefish1.jpg</Source>
@@ -1193,15 +1229,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\CrocodileIcefish1_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5162075-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_B_0.xml</Output>
-      <Time>2015-05-28T17:57:12-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3691991-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\iceFish4.jpg</Source>
@@ -1216,15 +1252,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceFish4_0.xnb</Output>
-      <Time>2015-05-29T18:02:13.3620074-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceFish4_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5442091-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Icefish_C.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_C_0.xml</Output>
-      <Time>2015-05-28T17:57:13-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Icefish_C_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3701992-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\mackelIcefish_mat.jpg</Source>
@@ -1239,15 +1275,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\mackelIcefish_mat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5492094-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Jellyfish.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Jellyfish_0.xml</Output>
-      <Time>2015-05-28T17:57:14-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Jellyfish_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3701992-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Jellyfish512.png</Source>
@@ -1262,15 +1298,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Jellyfish512_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Jellyfish512_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5282082-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\MinkWhale.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\MinkWhale_0.xml</Output>
-      <Time>2015-05-28T17:57:15-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\MinkWhale_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3711992-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\minkeWhale.png</Source>
@@ -1285,18 +1321,18 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\minkeWhale_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\minkeWhale_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5502095-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\OrcaWhale.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OrcaWhale_0.xml</Output>
-      <Time>2015-05-29T18:18:14.6191104-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OrcaWhale_0.xml</Output>
+      <Time>2015-06-02T17:03:28.0479117-07:00</Time>
     </Item>
     <Item>
-      <Source>D:\RyanBerge\Users\OrcaLevel0529\sourceimages\orcawhaleR.jpg</Source>
+      <Source>sourceimages\orcawhaleR.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -1308,11 +1344,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\orcawhaleR_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhaleR_0.xnb</Output>
+      <Time>2015-06-02T16:28:41.588573-07:00</Time>
     </Item>
     <Item>
-      <Source>D:\RyanBerge\Users\OrcaLevel0529\sourceimages\orcawhale_tail.jpg</Source>
+      <Source>sourceimages\orcawhale_tail.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -1324,15 +1360,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\orcawhale_tail_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhale_tail_0.xnb</Output>
+      <Time>2015-06-02T15:08:50.9035615-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Penguin.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Penguin_0.xml</Output>
-      <Time>2015-05-28T17:57:17-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Penguin_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3741994-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\KingPenguinTexture2.png</Source>
@@ -1347,15 +1383,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\KingPenguinTexture2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5282082-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_A_0.xml</Output>
-      <Time>2015-05-28T17:57:18-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3751994-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\largerock.jpg</Source>
@@ -1370,15 +1406,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largerock_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\largerock_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5472093-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_B_0.xml</Output>
-      <Time>2015-05-28T17:57:19-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3751994-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock1.png</Source>
@@ -1393,15 +1429,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5522096-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_C.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_C_0.xml</Output>
-      <Time>2015-05-28T17:57:21-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_C_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\bluediamond-texture.jpg</Source>
@@ -1416,15 +1452,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Output>
-      <Time>2015-05-29T18:09:16.5502181-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\bluediamond-texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5382088-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_D.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_D_0.xml</Output>
-      <Time>2015-05-28T17:57:22-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_D_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock3.png</Source>
@@ -1439,15 +1475,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock3_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock3_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5552097-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_E.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_E_0.xml</Output>
-      <Time>2015-05-28T17:57:24-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_E_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3761995-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock4.png</Source>
@@ -1462,15 +1498,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock4_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock4_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5562098-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_F.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_F_0.xml</Output>
-      <Time>2015-05-28T17:57:25-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_F_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3771996-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock5.png</Source>
@@ -1485,15 +1521,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock5_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock5_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5572099-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_G.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_G_0.xml</Output>
-      <Time>2015-05-28T17:57:26-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_G_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3781996-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock6.png</Source>
@@ -1508,15 +1544,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock6_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock6_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5582099-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Rock_H.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_H_0.xml</Output>
-      <Time>2015-05-28T17:57:28-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Rock_H_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3781996-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\SmallRock1Texture.png</Source>
@@ -1531,15 +1567,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\SmallRock1Texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5352086-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SeaLion.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SeaLion_0.xml</Output>
-      <Time>2015-05-28T17:57:32-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SeaLion_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3791997-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\sealion1_mat.jpg</Source>
@@ -1554,15 +1590,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\sealion1_mat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\sealion1_mat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.56021-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Seal_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_A_0.xml</Output>
-      <Time>2015-05-28T17:57:29-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3801997-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\ElephantSeal2.png</Source>
@@ -1577,15 +1613,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\ElephantSeal2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5182076-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Seal_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_B_0.xml</Output>
-      <Time>2015-05-28T17:57:30-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Seal_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3801997-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\WeddelSeal5.png</Source>
@@ -1600,57 +1636,57 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Output>
-      <Time>2015-05-29T18:13:12.664267-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\WeddelSeal5_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5362087-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_A_0.xml</Output>
-      <Time>2015-05-28T17:57:33-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3811998-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_B_0.xml</Output>
-      <Time>2015-05-28T17:57:34-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3811998-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_C.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_C_0.xml</Output>
-      <Time>2015-05-28T17:57:36-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_C_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3821998-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_D.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_D_0.xml</Output>
-      <Time>2015-05-28T17:57:38-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_D_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3821998-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_E.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_E_0.xml</Output>
-      <Time>2015-05-28T17:57:39-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_E_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3831999-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_F.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_F_0.xml</Output>
-      <Time>2015-05-28T17:57:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_F_0.xml</Output>
+      <Time>2015-06-02T15:12:14.3992008-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_G.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_G_0.xml</Output>
-      <Time>2015-05-28T17:57:41-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_G_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4002009-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\iceberg2.jpg</Source>
@@ -1665,22 +1701,22 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg2_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5452092-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_H.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_H_0.xml</Output>
-      <Time>2015-05-28T17:57:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_H_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4002009-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_I.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_I_0.xml</Output>
-      <Time>2015-05-28T17:57:43-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_I_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4012009-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\iceberg3_mat.jpg</Source>
@@ -1695,15 +1731,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceberg3_mat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5452092-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_J.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_J_0.xml</Output>
-      <Time>2015-05-28T17:57:45-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_J_0.xml</Output>
+      <Time>2015-06-02T15:12:14.402201-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\iceflow1Mat.jpg</Source>
@@ -1718,15 +1754,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\iceflow1Mat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5462092-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_K.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_K_0.xml</Output>
-      <Time>2015-05-28T17:57:46-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_K_0.xml</Output>
+      <Time>2015-06-02T15:12:14.403201-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\smallFloatingIceTexture1.png</Source>
@@ -1741,50 +1777,50 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\smallFloatingIceTexture1_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5612101-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_L.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_L_0.xml</Output>
-      <Time>2015-05-28T17:57:47-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_L_0.xml</Output>
+      <Time>2015-06-02T15:12:14.403201-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_M.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_M_0.xml</Output>
-      <Time>2015-05-28T17:57:48-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_M_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4042011-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_N.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_N_0.xml</Output>
-      <Time>2015-05-28T17:57:50-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_N_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4042011-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallIce_O.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_O_0.xml</Output>
-      <Time>2015-05-28T17:57:51-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallIce_O_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4052012-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallRock_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_A_0.xml</Output>
-      <Time>2015-05-28T17:57:52-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4052012-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\SmallRock_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_B_0.xml</Output>
-      <Time>2015-05-28T17:57:53-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\SmallRock_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4062012-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock1_cmat.jpg</Source>
@@ -1799,15 +1835,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_cmat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock1_cmat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5532096-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Sponge.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Sponge_0.xml</Output>
-      <Time>2015-05-28T17:57:54-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Sponge_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4062012-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\hexactinellida(sponges)_Texture.jpg</Source>
@@ -1822,15 +1858,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Output>
-      <Time>2015-05-28T13:27:40-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\hexactinellida(sponges)_Texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5432091-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Squid.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Squid_0.xml</Output>
-      <Time>2015-05-28T17:57:56-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Squid_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4072013-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\Squid_Texture.jpg</Source>
@@ -1845,15 +1881,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Squid_Texture_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\Squid_Texture_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5352086-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\StandingGull.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\StandingGull_0.xml</Output>
-      <Time>2015-05-28T17:57:57-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\StandingGull_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4082013-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\seagullstand1_mat.jpg</Source>
@@ -1868,15 +1904,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\seagullstand1_mat_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.55921-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Toothfish_A.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_A_0.xml</Output>
-      <Time>2015-05-28T17:57:58-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_A_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4082013-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\toothfish.jpg</Source>
@@ -1891,15 +1927,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\toothfish_0.xnb</Output>
-      <Time>2015-05-29T18:14:29.0494666-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\toothfish_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5622101-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\Toothfish_B.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_B_0.xml</Output>
-      <Time>2015-05-28T17:58:00-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\Toothfish_B_0.xml</Output>
+      <Time>2015-06-02T15:12:14.4092014-07:00</Time>
     </Item>
     <Item>
       <Source>sourceimages\rock2.png</Source>
@@ -1914,63 +1950,31 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock2_0.xnb</Output>
-      <Time>2015-05-28T13:27:42-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\FBX\OceanFloor.fbx</Source>
-      <Name>Creatures\FBX\OceanFloor</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OceanFloor.xnb</Output>
-      <Time>2015-06-02T04:01:01.3928786-07:00</Time>
-      <Dependency>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OceanFloor_0.xml</Key>
-        <Value>2015-06-02T04:06:34.8409529-07:00</Value>
-      </Dependency>
-      <Request>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sand_0.xnb</Request>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\rock2_0.xnb</Output>
+      <Time>2015-06-02T15:12:14.5542097-07:00</Time>
     </Item>
     <Item>
       <Source>Creatures\FBX\OceanFloor.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OceanFloor_0.xml</Output>
-      <Time>2015-06-02T04:01:01.3928786-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\Creatures\FBX\OceanFloor_0.xml</Output>
+      <Time>2015-06-02T16:41:20.808998-07:00</Time>
     </Item>
     <Item>
-      <Source>D:\RyanBerge\Users\OrcaLevel0529\sourceimages\sand.jpg</Source>
+      <Source>C:\Users\04\Desktop\OrcaLevel\sourceimages\sand.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
         <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
         <Data Key="ColorKeyEnabled" Type="bool">true</Data>
-        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
-        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">NoChange</Data>
+        <Data Key="GenerateMipmaps" Type="bool">false</Data>
         <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sand_0.xnb</Output>
-      <Time>2015-05-31T19:07:15.4397477-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\PauseBackground.png</Source>
-      <Name>Images\PauseBackground</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\PauseBackground.xnb</Output>
-      <Time>2015-06-01T02:44:39.8965657-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\ResumeButton.jpg</Source>
-      <Name>Images\ResumeButton</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\ResumeButton.xnb</Output>
-      <Time>2015-06-01T02:43:45.860475-07:00</Time>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sand_0.xnb</Output>
+      <Time>2015-06-02T15:08:50.9875663-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1979,43 +1983,43 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\</RootDirectory>
-      <LoggerRootDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulatorContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T17:22:30-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>D:\RyanBerge\Users\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.dll</Key>
-        <Value>2015-05-28T01:22:47.2878254-07:00</Value>
+        <Key>C:\Users\04\Desktop\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.dll</Key>
+        <Value>2015-06-02T15:12:13.8221678-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-01-31T04:56:32.0823523-08:00</Value>
+        <Value>2015-04-30T15:04:23.8248632-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
