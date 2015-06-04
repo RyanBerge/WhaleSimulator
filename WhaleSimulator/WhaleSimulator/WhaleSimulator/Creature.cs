@@ -42,6 +42,8 @@ namespace WhaleSimulator
 
         private float bounceTimer = 0;
 
+        private float turnTimer = 10f;
+
         public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims)
         {
             Properties = new CreatureInfo(species, family, spawnPosition, spawnDirection, true, swims);
@@ -190,7 +192,7 @@ namespace WhaleSimulator
             switch (Properties.Family)
             {
                 case "Whale":
-                    UpdateMove = WhaleAI;
+                    UpdateMove = LandBirdAI;
                     break;
                 case "FishSchool": 
                     UpdateMove = FishAI;
@@ -221,14 +223,12 @@ namespace WhaleSimulator
 
         private void LandBirdAI(GameTime gameTime)
         {
-            float turnTimer = 10f;
-            
             const float PENGUIN_SPEED = 15f;
 
             if (turnTimer >= 10f)
             {
                 Speed = PENGUIN_SPEED;
-                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (PENGUIN_SPEED) - 1f);
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * 2 - 1);
 
                 float CosZ = (float)Math.Cos(Rotations.Z);
                 float CosY = (float)Math.Cos(Rotations.Y);
@@ -236,13 +236,22 @@ namespace WhaleSimulator
 
                 movingDirection.X = CosY * CosZ;
                 movingDirection.Z = SinY * CosZ;
+                turnTimer -= 0.1f;
             }
-            else if(turnTimer == 0)
+            else if (turnTimer < 0f)
             {
-                turnTimer = 10.1f;
+                turnTimer = 10.0f;
+            }
+            else
+            {
+                turnTimer -= 0.01f;
             }
 
-            turnTimer -= 0.1f;
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            {
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 50;
+            }
         }
 
         private void FlyingAI(GameTime gameTime)
@@ -292,6 +301,12 @@ namespace WhaleSimulator
                 movingDirection.X = CosY * CosZ;
                 movingDirection.Y = SinZ;
                 movingDirection.Z = SinY * CosZ;
+            }
+
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            {
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 50;
             }
 
             if (position.Y < Map.WaterLevel)
@@ -355,6 +370,12 @@ namespace WhaleSimulator
             {
                 properties.IsAlive = false;
                 Map.PlayerReference.Energy += 20;
+            }
+
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            {
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 50;
             }
 
             if (position.Y > Map.WaterLevel)
