@@ -5,6 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 using RB_GameResources.Xna.Controls;
 using RB_GameResources.Xna.Graphics;
@@ -14,6 +15,10 @@ namespace WhaleSimulator
     public class MainMenu : Menu
     {
         public event MapChooseEvent mapChooseEvent;
+
+        private SoundEffect titleMusic;
+
+        private SoundEffectInstance titleMusicInstance;
 
         private enum MenuState
         {
@@ -53,6 +58,11 @@ namespace WhaleSimulator
 
         private void LoadMenu()
         {
+
+            titleMusic = Content.Load<SoundEffect>("sounds/TitleScreenSong");
+
+            titleMusicInstance = titleMusic.CreateInstance();
+            titleMusicInstance.IsLooped = true;
             
             MenuButton play = new MenuButton();
             MenuButton options = new MenuButton();
@@ -133,6 +143,9 @@ namespace WhaleSimulator
             coords = new Vector2(back.Graphic.Coordinates.X, back.Graphic.Coordinates.Y);
             coords.X += MasterGame.Graphics.PreferredBackBufferWidth;
             back.Graphic.Coordinates = coords;
+
+            //sound stuff
+            titleMusicInstance.Play();
 
         }
 
