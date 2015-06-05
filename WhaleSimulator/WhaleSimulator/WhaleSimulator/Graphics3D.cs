@@ -47,7 +47,6 @@ namespace WhaleSimulator
 
         public Graphics3D()
         {
-
         }
 
         /// <summary>
@@ -57,10 +56,22 @@ namespace WhaleSimulator
         public Graphics3D(Model model)
         {
             BaseModel = model;
+
             FacingDirection = new Vector3(1, 0, 0);
 
             modelExtra = model.Tag as ModelExtra;
             ObtainBones();
+
+            
+        }
+
+        public void InitializeGraphic()
+        {
+
+            //FacingDirection = new Vector3(1, 0, 0);
+
+            //modelExtra = BaseModel.Tag as ModelExtra;
+            //ObtainBones();
         }
 
 

@@ -193,10 +193,13 @@ namespace WhaleSimulator
         public void Draw3D(GameTime gameTime)
         {
             //Draw
-            if (Creatures != null)
+            if ((position.X > 0 && position.Y < 4) && (position.Z > 0 && position.Z < 4))
             {
-                foreach (Creature c in Creatures)
-                    c.Draw3D(gameTime);
+                if (Creatures != null)
+                {
+                    foreach (Creature c in Creatures)
+                        c.Draw3D(gameTime);
+                }
             }
 
             //if (StaticTerrain != null)

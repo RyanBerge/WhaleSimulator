@@ -39,10 +39,10 @@ namespace WhaleSimulator
         protected float fallingSpeed;
 
         private AIDelegate UpdateMove;
-
-        private float bounceTimer = 0;
-
+        //private float bounceTimer = 0;
         private float turnTimer = 10f;
+
+        
 
         public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims)
         {
@@ -72,6 +72,9 @@ namespace WhaleSimulator
             SetAI();
 
             // animation stuff
+
+            InitializeGraphic();
+
             modelExtra = BaseModel.Tag as ModelExtra;
 
             ObtainBones();
@@ -107,6 +110,8 @@ namespace WhaleSimulator
             }
             Speed = 0;
             SetAI();
+
+            InitializeGraphic();
         }
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
@@ -141,6 +146,7 @@ namespace WhaleSimulator
 
                 base.Update(gameTime);
             }
+            
         }
 
         /// <summary>
@@ -156,8 +162,21 @@ namespace WhaleSimulator
                 Vector3 differenceVector = Position - Camera.Position;
                 differenceVector.Normalize();
 
-                if (Vector3.Dot(Map.PlayerReference.FacingDirection, differenceVector) >= 0)
-                    base.Draw3D(gameTime);
+                if (Vector3.Dot(Map.PlayerReference.FacingDirection, differenceVector) >= .5)
+                {
+                    if (Properties.Family == "Ice")
+                        base.Draw3D(gameTime);
+                    else
+                    {
+                        float xd = Position.X - Map.PlayerReference.Position.X;
+                        float yd = Position.Y - Map.PlayerReference.Position.Y;
+                        float zd = Position.Z - Map.PlayerReference.Position.Z;
+                        if (Math.Sqrt(xd * xd + yd * yd + zd * zd) < 1000)
+                        {
+                            base.Draw3D(gameTime);
+                        }
+                    }
+                }
             }
                 
         }
@@ -194,17 +213,17 @@ namespace WhaleSimulator
                 case "Whale":
                     UpdateMove = LandBirdAI;
                     break;
-                case "FishSchool": 
+                case "Fish": 
                     UpdateMove = FishAI;
                     break;
                 case "Ice":
                     UpdateMove = IceAI;
                     //UpdateMove = NoAI;
                     break;
-                case "Penguin":
+                case "StandingBird":
                     UpdateMove = LandBirdAI;
                     break;
-                case "Bird":
+                case "FlyingBird":
                     UpdateMove = FlyingAI;
                     break;
                 default:

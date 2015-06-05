@@ -8,7 +8,7 @@ C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\RB_GameResources.dll
 2015-06-02T22:12:13.8411689Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\WhaleSimulator.exe
-2015-06-02T23:50:26.6722196Z
+2015-06-05T00:16:24.0772016Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\XnaAux.dll
 2015-06-02T22:12:13.8161675Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\orcawhaleR_0.xnb
@@ -52,7 +52,7 @@ C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OceanFloor.xnb
 2015-06-02T23:46:06.0113106Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\OrcaWhale.xnb
-2015-06-02T23:31:35.6765303Z
+2015-06-04T23:19:09.9357799Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Penguin.xnb
 2015-06-02T23:31:36.3195671Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\Rock_A.xnb
@@ -155,6 +155,54 @@ C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\
 2015-06-02T23:05:41.5436390Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\ResumeButton.xnb
 2015-06-02T23:05:51.5772129Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Bloop.xnb
+2015-06-04T23:19:10.0687875Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\BreathingIn.xnb
+2015-06-04T23:19:10.1727935Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\ChompAndGulp.xnb
+2015-06-04T23:19:10.2847999Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\FadeIntoGame.xnb
+2015-06-04T23:19:10.3878058Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Heartbeat1.xnb
+2015-06-04T23:19:10.4998122Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Heartbeat2.xnb
+2015-06-04T23:19:10.5928175Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\HungryWhale.xnb
+2015-06-04T23:19:10.8108299Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Pause.xnb
+2015-06-04T23:19:10.8578326Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Penguin.xnb
+2015-06-04T23:19:13.0119558Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Penguin1.xnb
+2015-06-04T23:19:13.7189963Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Penguin2.xnb
+2015-06-04T23:19:14.8330600Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\SeagullsAbovewater.xnb
+2015-06-04T23:19:22.9625250Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\SeagullsUnderwater.xnb
+2015-06-04T23:19:29.4758975Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\TitleScreenSong.xnb
+2015-06-04T23:19:32.8910929Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Unpause.xnb
+2015-06-04T23:19:32.9730976Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WavesAbovewater.xnb
+2015-06-04T23:19:39.2614572Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WavesUnderwater.xnb
+2015-06-04T23:19:45.3668064Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleCall1.xnb
+2015-06-04T23:19:45.4708124Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleCall2.xnb
+2015-06-04T23:19:45.5908192Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleCall3.xnb
+2015-06-04T23:19:45.6808244Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleCall4.xnb
+2015-06-04T23:19:45.8258327Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleEmerging.xnb
+2015-06-04T23:19:46.0868476Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleGamePlaySong.xnb
+2015-06-04T23:19:54.5353308Z
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\WhaleSubmerging.xnb
+2015-06-04T23:19:54.7643439Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\a-cod2_0.xnb
 2015-06-02T23:05:54.8544003Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\BBAlbatrossTexture_0.xnb
@@ -240,8 +288,8 @@ C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Terrain\IceShelf.xnb
 2015-06-02T23:05:53.6993343Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\Models.xml
-2015-06-02T22:12:13.9501751Z
+2015-06-04T22:52:12.1242464Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\MapData\OrcaLevel.xml
-2015-06-02T23:49:18.1212987Z
+2015-06-04T23:04:35.5837698Z
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\MapData\OrcaLevel_Backup.xml
 2015-06-02T22:12:13.9501751Z

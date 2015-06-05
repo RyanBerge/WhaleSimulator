@@ -25,7 +25,7 @@ namespace WhaleSimulator
             Main, Levels
         }
 
-        private MenuState state;
+        //private MenuState state;
         private List<MenuButton> MainButtonList;
         private List<MenuButton> LevelButtonList;
 
@@ -151,7 +151,7 @@ namespace WhaleSimulator
 
         private void PlayClick()
         {
-            state = MenuState.Levels;
+            //state = MenuState.Levels;
             sliding = true;
             slidingRight = false;
             slideMax = MasterGame.Graphics.PreferredBackBufferWidth;
@@ -181,7 +181,7 @@ namespace WhaleSimulator
 
         private void BackClick()
         {
-            state = MenuState.Main;
+            //state = MenuState.Main;
             sliding = true;
             slidingRight = true;
             selectedButton.Graphic.CurrentAnimationIndex = 0;

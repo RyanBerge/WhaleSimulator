@@ -19,7 +19,7 @@ namespace WhaleSimulator
         public event DelegateVoid Resume;
         public event DelegateVoid Quit;
 
-        private ContentManager Content;
+        //private ContentManager Content;
         private List<MenuButton> buttons;
 
         private Graphic2D background;

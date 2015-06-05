@@ -167,8 +167,8 @@
       <Importer>FbxImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>
-    <Compile Include="Creatures\FBX\Complicatefish.fbx">
-      <Name>Complicatefish</Name>
+    <Compile Include="Creatures\FBX\ComplicateFish.fbx">
+      <Name>ComplicateFish</Name>
       <Importer>FbxImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>
@@ -262,8 +262,8 @@
       <Importer>FbxImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>
-    <Compile Include="Creatures\FBX\SeaLion.fbx">
-      <Name>SeaLion</Name>
+    <Compile Include="Creatures\FBX\Sealion.fbx">
+      <Name>Sealion</Name>
       <Importer>FbxImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>

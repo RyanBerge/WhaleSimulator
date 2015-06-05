@@ -134,7 +134,7 @@ namespace WhaleSimulator
             movingDirection.Z = SinY * CosZ;
 
             nose = position + (facingDirection * BaseModel.Meshes[0].BoundingSphere.Radius);
-            //CheckFood();
+            CheckFood();
 
             base.Update(gameTime, inputStates);
 
@@ -155,9 +155,9 @@ namespace WhaleSimulator
             
             foreach (Creature food in FoodList)
             {
-                float xd = food.Sphere.Center.X - nose.X;
-	            float yd = food.Sphere.Center.Y - nose.Y;
-	            float zd = food.Sphere.Center.Z - nose.Z;
+                float xd = food.Position.X - nose.X;
+                float yd = food.Position.Y - nose.Y;
+                float zd = food.Position.Z - nose.Z;
 	            if (Math.Sqrt(xd*xd + yd*yd + zd*zd) < food.Sphere.Radius)
                 {
                     Eat(food);
