@@ -18,6 +18,7 @@ namespace WhaleSimulator
         private string mapName;
         private Player player;
         private ChunkGrid chunkGrid;
+        
         // stuff added
         private Skybox skybox;
         private OceanSurface oceanSurface;
@@ -34,12 +35,14 @@ namespace WhaleSimulator
         public static int WaterLevel { get; set; }
         public static Vector3 MapSize { get; set; }
         public static Dictionary<string, Model> Models { get; set; }
+        public static SoundEngine soundEngine;
 
         public Map(string name, ContentManager content)
         {
             Randomizer = new Random();
             mapName = name;
             mapContent = content;
+            soundEngine = new SoundEngine(mapContent);
             LoadMap();
             player = new Player(chunkGrid.PlayerSpecies, chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection, mapContent);
             PlayerReference = player;
@@ -47,13 +50,15 @@ namespace WhaleSimulator
             skybox = new Skybox(mapContent);
             oceanSurface = new OceanSurface(mapContent);
             blackRect = new Rectangle(0, 0, MasterGame.Graphics.PreferredBackBufferWidth, MasterGame.Graphics.PreferredBackBufferHeight);
-            
+            Map.soundEngine.Play("FadeIntoGame", false, false);
         }
 
         private void LoadMap()
         {
             blackscreen = mapContent.Load<Texture2D>("Images/Blackscreen");
             LoadModelList("Data/Models.xml");
+            soundEngine = new SoundEngine(mapContent);
+            soundEngine.LoadSounds("Data/Sounds.xml");
             chunkGrid = new ChunkGrid("Data/MapData/" + mapName + ".xml", mapContent);
             Camera.SetDefaults(chunkGrid.PlayerSpawn, chunkGrid.SpawnDirection);
             //chunkGrid.LoadAssets(chunkGrid.SpawnChunk);
@@ -87,6 +92,8 @@ namespace WhaleSimulator
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
         }
+
+        
 
         public virtual void Update(GameTime gameTime, InputStates inputStates)
         {

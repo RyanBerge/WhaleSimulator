@@ -7,9 +7,11 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 using RB_GameResources.Xna.Controls;
 using RB_GameResources.Xna.Graphics;
+
 
 namespace WhaleSimulator
 {
@@ -30,6 +32,8 @@ namespace WhaleSimulator
         protected ContentManager Content;
         //protected List<List<MenuButton>> stateList;
         protected MenuButton selectedButton;
+        protected SoundEffectInstance menuBoopInstance;
+        protected SoundEffectInstance menuBoopInstanceBackup;
 
         private float switchSelectionThreshold;
 
@@ -58,6 +62,8 @@ namespace WhaleSimulator
                     selectedButton = selectedButton.left;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
                     switchSelectionThreshold = 0;
+                    if (menuBoopInstance != null)
+                        menuBoopInstance.Play();
                 }
             }
 
@@ -71,6 +77,8 @@ namespace WhaleSimulator
                     selectedButton = selectedButton.right;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
                     switchSelectionThreshold = 0;
+                    if (menuBoopInstance != null)
+                        menuBoopInstance.Play();
                 }
             }
 
@@ -84,6 +92,8 @@ namespace WhaleSimulator
                     selectedButton = selectedButton.up;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
                     switchSelectionThreshold = 0;
+                    if (menuBoopInstance != null)
+                        menuBoopInstance.Play();
                 }
             }
 
@@ -97,6 +107,17 @@ namespace WhaleSimulator
                     selectedButton = selectedButton.down;
                     selectedButton.Graphic.CurrentAnimationIndex = 1;
                     switchSelectionThreshold = 0;
+                    if (menuBoopInstance != null)
+                    {
+                        if (menuBoopInstance.State == SoundState.Playing)
+                        {
+                            menuBoopInstance.Stop();
+                            menuBoopInstanceBackup.Play();
+                        }
+                        else
+                            menuBoopInstance.Play();
+                    }
+                    
                 }
             }
             

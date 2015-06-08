@@ -17,8 +17,10 @@ namespace WhaleSimulator
         public event MapChooseEvent mapChooseEvent;
 
         private SoundEffect titleMusic;
+        private SoundEffect menuBoop;
 
         private SoundEffectInstance titleMusicInstance;
+        
 
         private enum MenuState
         {
@@ -60,9 +62,13 @@ namespace WhaleSimulator
         {
 
             titleMusic = Content.Load<SoundEffect>("sounds/TitleScreenSong");
+            menuBoop = Content.Load<SoundEffect>("sounds/Bloop");
 
             titleMusicInstance = titleMusic.CreateInstance();
             titleMusicInstance.IsLooped = true;
+
+            menuBoopInstance = menuBoop.CreateInstance();
+            menuBoopInstanceBackup = menuBoop.CreateInstance();
             
             MenuButton play = new MenuButton();
             MenuButton options = new MenuButton();
@@ -200,6 +206,10 @@ namespace WhaleSimulator
                     if (mapChooseEvent != null)
                         mapChooseEvent("OrcaLevel");
                 }
+                if (titleMusicInstance.Volume >= 0.007f && !titleMusicInstance.IsDisposed)
+                    titleMusicInstance.Volume -= 0.007f;
+                else if (!titleMusicInstance.IsDisposed)
+                    titleMusicInstance.Volume = 0;
             }
 
             if (!sliding)
