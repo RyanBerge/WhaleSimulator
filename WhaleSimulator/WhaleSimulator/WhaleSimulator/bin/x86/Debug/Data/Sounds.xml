@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SoundList>
+  
+  <Sound>
+    <Name>BreathingIn</Name>
+    <Instance>BreathingIn</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>ChompAndGulp</Name>
+    <Instance>ChompAndGulp</Instance>
+    <Count>4</Count>
+  </Sound>
+
+  <Sound>
+    <Name>FadeIntoGame</Name>
+    <Instance>FadeIntoGame</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>Heartbeat</Name>
+    <Instance>Heartbeat1</Instance>
+    <Instance>Heartbeat2</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>HungryWhale</Name>
+    <Instance>HungryWhale</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>Pause</Name>
+    <Instance>Pause</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>Penguin</Name>
+    <Instance>Penguin</Instance>
+    <Instance>Penguin1</Instance>
+    <Instance>Penguin2</Instance>
+    <Count>8</Count>
+  </Sound>
+
+  <Sound>
+    <Name>SeagullsAboveWater</Name>
+    <Instance>SeagullsAboveWater</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>SeagullsUnderwater</Name>
+    <Instance>SeagullsUnderwater</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>Unpause</Name>
+    <Instance>Unpause</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WavesAbovewater</Name>
+    <Instance>WavesAbovewater</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WavesUnderwater</Name>
+    <Instance>WavesUnderwater</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WhaleCall</Name>
+    <Instance>WhaleCall1</Instance>
+    <Instance>WhaleCall2</Instance>
+    <Instance>WhaleCall3</Instance>
+    <Instance>WhaleCall4</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WhaleEmerging</Name>
+    <Instance>WhaleEmerging</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WhaleGamePlaySound</Name>
+    <Instance>WhaleGamePlaySound</Instance>
+    <Count>1</Count>
+  </Sound>
+
+  <Sound>
+    <Name>WhaleSubmerging</Name>
+    <Instance>WhaleSubmerging</Instance>
+    <Count>1</Count>
+  </Sound>
+
+</SoundList>

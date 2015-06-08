@@ -91,6 +91,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="MasterGame.cs" />
     <Compile Include="SkyBox.cs" />
+    <Compile Include="SoundEngine.cs" />
     <Compile Include="UI.cs" />
     <Compile Include="Utilities.cs" />
   </ItemGroup>
@@ -103,6 +104,9 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="Data\Sounds.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\Models.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

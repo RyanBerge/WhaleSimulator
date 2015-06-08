@@ -34,6 +34,7 @@ namespace WhaleSimulator
         private const float AIR_GAIN = 15f;
 
         private const float ENERGY_FOOD_GAIN = 30f;
+        //private const float EATING_BUFFER = 0.5f;
 
         public Vector3 Nose { get { return nose; } }
         public float Air { get; set; } // 0 - 100
@@ -134,6 +135,7 @@ namespace WhaleSimulator
             movingDirection.Z = SinY * CosZ;
 
             nose = position + (facingDirection * BaseModel.Meshes[0].BoundingSphere.Radius);
+            
             CheckFood();
 
             base.Update(gameTime, inputStates);
@@ -155,12 +157,15 @@ namespace WhaleSimulator
             
             foreach (Creature food in FoodList)
             {
-                float xd = food.Position.X - nose.X;
-                float yd = food.Position.Y - nose.Y;
-                float zd = food.Position.Z - nose.Z;
-	            if (Math.Sqrt(xd*xd + yd*yd + zd*zd) < food.Sphere.Radius)
+                if (food.Properties.IsAlive)
                 {
-                    Eat(food);
+                    float xd = food.Position.X - nose.X;
+                    float yd = food.Position.Y - nose.Y;
+                    float zd = food.Position.Z - nose.Z;
+                    if (Math.Sqrt(xd * xd + yd * yd + zd * zd) < food.Sphere.Radius)
+                    {
+                        Eat(food);
+                    }
                 }
             }
 
@@ -170,6 +175,7 @@ namespace WhaleSimulator
         {
             food.Despawn();
             Energy += ENERGY_FOOD_GAIN;
+            Map.soundEngine.Play("ChompAndGulp", false, true);
         }
 
         /// <summary>
