@@ -8,20 +8,21 @@ using Microsoft.Xna.Framework.Content;
 
 namespace WhaleSimulator
 {
+    // class that implements the ocean surface
     class OceanSurface
     {
+        // model of the ocean surface
         public Model surfaceModel;
-
+        // texture that determines the color of the surface
         private Texture2D surfaceTexture;
-
+        // texture that determines the bumps and waves on the surface
         private Texture2D surfaceNormal;
-
+        // hlsl file that moves the bumps and waves on the surface
         private Effect oceanSurfaceEffect;
-
+        // bumps and waves on the surface move on a sin curve in accordance to totaltime
         public float TotalTime;
-
-        public OceanSurface(// string texturePath, string normalPath, 
-            ContentManager Content)
+        // loads the models, textures and hlsl files for the oceanSurface
+        public OceanSurface(ContentManager Content)
         {
             surfaceModel = Content.Load<Model>("Effects/ocean");
             surfaceTexture = Content.Load<Texture2D>(// texturePath
@@ -32,11 +33,13 @@ namespace WhaleSimulator
             TotalTime = 0;
         }
 
+        // updates totalTime
         public void Update(int ElaspedTimeInMilliseconds)
         {
             TotalTime += ElaspedTimeInMilliseconds / 5000.0f;
         }
 
+        // sends the values needed to calculate the color, position, and waves of the ocean surface
         public void Draw(Matrix view, Matrix projection, 
             Vector3 cameraPosition, Vector3 lightDirection, GraphicsDevice graphicsDev, Vector3 playerPos)
         {
