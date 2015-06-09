@@ -136,6 +136,13 @@ namespace WhaleSimulator
 
             MasterGame.Graphics.GraphicsDevice.BlendState = BlendState.AlphaBlend;
 
+            if (Camera.Position.Y > Map.WaterLevel + 10)
+                MasterGame.Graphics.GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
+            else if (Camera.Position.Y < Map.WaterLevel - 10)
+                MasterGame.Graphics.GraphicsDevice.RasterizerState = RasterizerState.CullClockwise;
+            else
+                MasterGame.Graphics.GraphicsDevice.RasterizerState = RasterizerState.CullNone;
+
             oceanSurface.Draw(Camera.ViewMatrix,
                 Camera.ProjectionMatrix, Camera.Position,
                 new Vector3(0, 0, 1), MasterGame.Graphics.GraphicsDevice,
