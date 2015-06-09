@@ -92,8 +92,8 @@
   </Sound>
 
   <Sound>
-    <Name>WhaleGamePlaySound</Name>
-    <Instance>WhaleGamePlaySound</Instance>
+    <Name>WhaleGamePlaySong</Name>
+    <Instance>WhaleGamePlaySong</Instance>
     <Count>1</Count>
   </Sound>
 

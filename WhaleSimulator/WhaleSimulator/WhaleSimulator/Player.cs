@@ -34,13 +34,15 @@ namespace WhaleSimulator
         private const float AIR_GAIN = 15f;
 
         private const float ENERGY_FOOD_GAIN = 30f;
-        //private const float EATING_BUFFER = 0.5f;
+        private const float HUNGRY_SOUND_DELAY = 5f;
 
         public Vector3 Nose { get { return nose; } }
         public float Air { get; set; } // 0 - 100
         public float Energy { get; set; } // 0 - 100
 
         private Vector3 nose;
+        private Sound heartbeat;
+        private float hungrySoundTimer = 0f;
 
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, "Player", spawnPosition, spawnDirection, true)
@@ -56,8 +58,6 @@ namespace WhaleSimulator
         {
             if (isUnderwater)
             {
-                
-
                 if (inputStates.NewKeyState.IsKeyDown(Keys.A))
                     Rotations.Y -= ((Speed == 0) ? (float)(BASE_TURN_RADIUS * gameTime.ElapsedGameTime.TotalSeconds) : (1f / (Velocity * ROTATION_RATIO) * (float)gameTime.ElapsedGameTime.TotalSeconds));
                 if (inputStates.NewKeyState.IsKeyDown(Keys.D))
@@ -99,11 +99,36 @@ namespace WhaleSimulator
             }
 
             if (position.Y < Map.WaterLevel - 20)
+            {
                 Air -= AIR_LOSS * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (Air <= 20 && heartbeat == null)
+                {
+                    heartbeat = Map.soundEngine.GetSound("Heartbeat");
+                    heartbeat.Play(true, true);
+                }
+            }
             else
+            {
                 Air += AIR_GAIN * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (Air > 20 && heartbeat != null)
+                {
+                    heartbeat.Stop();
+                    heartbeat = null;
+                }
+            }
 
             Energy -= ENERGY_LOSS * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (Energy <= 20)
+            {
+                if (hungrySoundTimer == 0)
+                {
+                    Map.soundEngine.Play("HungryWhale", false, true);
+                }
+                hungrySoundTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (hungrySoundTimer >= HUNGRY_SOUND_DELAY)
+                    hungrySoundTimer = 0;
+            }
+            
             
             if (Air > 100)
                 Air = 100;

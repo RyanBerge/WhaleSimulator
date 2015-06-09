@@ -55,6 +55,7 @@ namespace WhaleSimulator
                     foreach (XElement x in instances)
                     {
                         soundEffects[i] = Content.Load<SoundEffect>("sounds/" + x.Value);
+                        i++;
                     }
 
                     Sounds.Add(name, new Sound(name, soundEffects, count));
@@ -74,15 +75,29 @@ namespace WhaleSimulator
             if (sound != null)
                 sound.Play(loop, overwrite);
         }
+
+        public Sound GetSound(string name)
+        {
+            Sound sound;
+            Sounds.TryGetValue(name, out sound);
+            return sound;
+        }
     }
 
     public class Sound
     {
         public int Count { get; set; }
         public string Name { get; set; }
-        public float Volume { get; set; }
+        public float Volume { get { return volume; } set { volume = value; if (currentlyPlaying != null) currentlyPlaying.Volume = value; } }
+        public bool IsPlaying { get { if (currentlyPlaying == null) return false; else return currentlyPlaying.State == SoundState.Playing; } }
 
         private SoundEffectInstance[][] soundEffects;
+        private bool[][] hasPlayed;
+
+        private SoundEffectInstance currentlyPlaying;
+        
+
+        private float volume = 1f;
 
         public Sound(string name, SoundEffect[] instances, int count)
         {
@@ -90,13 +105,16 @@ namespace WhaleSimulator
             Name = name;
             Count = count;
             soundEffects = new SoundEffectInstance[instances.Length][];
+            hasPlayed = new bool[instances.Length][];
 
             for (int i = 0; i < instances.Length; i++)
             {
                 soundEffects[i] = new SoundEffectInstance[count];
+                hasPlayed[i] = new bool[count];
                 for (int j = 0; j < count; j++)
                 {
                     soundEffects[i][j] = instances[i].CreateInstance();
+                    hasPlayed[i][j] = false;
                 }
             }
         }
@@ -110,17 +128,29 @@ namespace WhaleSimulator
             {
                 if (soundEffects[index][i].State == SoundState.Stopped)
                 {
-                    if (soundEffects[index][i].Volume == 0)
-                        soundEffects[index][i].Volume = Volume;
 
-                    soundEffects[index][i].Play();
+                    currentlyPlaying = soundEffects[index][i];
+
+                    if (currentlyPlaying.Volume == 0)
+                        currentlyPlaying.Volume = Volume;
+
+                    if (!hasPlayed[index][i])
+                        currentlyPlaying.IsLooped = loop;
+
+                    currentlyPlaying.Play();
+                    hasPlayed[index][i] = true;
                     break;
                 }
 
                 if (overwrite && soundEffects[index][i].State == SoundState.Playing)
                     soundEffects[index][i].Volume = 0;
             }
+        }
 
+        public void Stop()
+        {
+            if (currentlyPlaying != null)
+                currentlyPlaying.Stop();
         }
     }
 }

@@ -73,7 +73,10 @@ namespace WhaleSimulator
             Position = new Vector3(x, y, z) + (new Vector3(player.LocalUp.X, player.LocalUp.Y, player.LocalUp.Z) * CAMERA_HEIGHT);
             LookTarget = new Vector3(player.Position.X, player.Position.Y, player.Position.Z) + (new Vector3(player.FacingDirection.X, player.FacingDirection.Y, player.FacingDirection.Z) * 30);
 
-
+            if (Position.Y > Map.WaterLevel)
+                IsUnderwater = false;
+            else
+                IsUnderwater = true;
 
             ViewMatrix = Matrix.CreateLookAt(Position, LookTarget, Vector3.Up);
         }

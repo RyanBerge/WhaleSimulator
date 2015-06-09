@@ -42,6 +42,10 @@ namespace WhaleSimulator
         //private float bounceTimer = 0;
         private float turnTimer = 10f;
 
+        private float distanceToPlayerSquared;
+        private bool isInCamera;
+
+        private const int DRAWCULL_DISTANCE = 1000;
         
 
         public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims)
@@ -119,6 +123,21 @@ namespace WhaleSimulator
 
             if (Properties.IsAlive)
             {
+                float xd = Position.X - Map.PlayerReference.Position.X;
+                float yd = Position.Y - Map.PlayerReference.Position.Y;
+                float zd = Position.Z - Map.PlayerReference.Position.Z;
+
+                distanceToPlayerSquared = (xd*xd + yd*yd + zd*zd);
+
+                Vector3 differenceVector = Position - Camera.Position;
+                differenceVector.Normalize();
+
+                if (Vector3.Dot(Map.PlayerReference.FacingDirection, differenceVector) >= .5)
+                    isInCamera = true;
+                else
+                    isInCamera = false;
+
+
                 if (Properties.Swims && !isUnderwater)
                     fallingSpeed += GRAVITY;
                 else
@@ -157,26 +176,16 @@ namespace WhaleSimulator
         {
             if (Properties.Family == "Terrain")
                 base.Draw3D(gameTime);
-            else if (Properties.IsAlive)
+            else if (Properties.IsAlive && isInCamera)
             {
-                Vector3 differenceVector = Position - Camera.Position;
-                differenceVector.Normalize();
-
-                if (Vector3.Dot(Map.PlayerReference.FacingDirection, differenceVector) >= .5)
+                if (Properties.Family == "Ice")
+                    base.Draw3D(gameTime);
+                else
                 {
-                    if (Properties.Family == "Ice")
+                    if (distanceToPlayerSquared < (DRAWCULL_DISTANCE * DRAWCULL_DISTANCE))
                         base.Draw3D(gameTime);
-                    else
-                    {
-                        float xd = Position.X - Map.PlayerReference.Position.X;
-                        float yd = Position.Y - Map.PlayerReference.Position.Y;
-                        float zd = Position.Z - Map.PlayerReference.Position.Z;
-                        if (Math.Sqrt(xd * xd + yd * yd + zd * zd) < 1000)
-                        {
-                            base.Draw3D(gameTime);
-                        }
-                    }
                 }
+                
             }
                 
         }
@@ -266,11 +275,27 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            if (Properties.Species == "Penguin")
             {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
+                if (!Properties.SoundEffect.IsPlaying)
+                {
+                    if (distanceToPlayerSquared < (1000*1000) && !Camera.IsUnderwater)
+                    {
+                        Properties.SoundEffect.Play(false, false);
+                        Properties.SoundEffect.Volume = (distanceToPlayerSquared / (1000*1000));
+                    }
+                    else
+                    {
+                        Properties.SoundEffect.Stop();
+                    }
+                }
             }
+
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
         }
 
         private void FlyingAI(GameTime gameTime)
@@ -322,11 +347,11 @@ namespace WhaleSimulator
                 movingDirection.Z = SinY * CosZ;
             }
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
-            }
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
 
             if (position.Y < Map.WaterLevel)
                 position.Y = Map.WaterLevel;
@@ -391,11 +416,11 @@ namespace WhaleSimulator
                 Map.PlayerReference.Energy += 20;
             }
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
-            }
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
 
             if (position.Y > Map.WaterLevel)
                 position.Y = Map.WaterLevel;
@@ -466,11 +491,11 @@ namespace WhaleSimulator
             if (Position.Y == Map.WaterLevel)
                 breathTimer = 60f;
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
-            }
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
 
             if (position.Y > Map.WaterLevel)
                 position.Y = Map.WaterLevel;
@@ -555,6 +580,8 @@ namespace WhaleSimulator
 
         public string Family { get; set; }
 
+        public Sound SoundEffect { get; set; }
+
         /// <summary>
         /// Creates a new CreatureInfo object.
         /// </summary>
@@ -569,6 +596,19 @@ namespace WhaleSimulator
             IsAlive = isAlive;
             Swims = swims;
             Family = family;
+
+            switch (species)
+            {
+                case "Penguin":
+                    SoundEffect = Map.soundEngine.GetSound("Penguin");
+                    break;
+                case "Whale":
+                    SoundEffect = Map.soundEngine.GetSound("WhaleCall");
+                    break;
+                default:
+                    SoundEffect = null;
+                    break;
+            }
         }
     }
 }

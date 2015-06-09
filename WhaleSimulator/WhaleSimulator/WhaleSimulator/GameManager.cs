@@ -113,6 +113,7 @@ namespace WhaleSimulator
                         if (inputStates.WasButtonPressed(Buttons.Start) || inputStates.WasButtonPressed(Keys.Escape))
                         {
                             gameState = GameState.PauseMenu;
+                            Map.soundEngine.Play("Pause", false, true);
                         }
                         else
                         {
