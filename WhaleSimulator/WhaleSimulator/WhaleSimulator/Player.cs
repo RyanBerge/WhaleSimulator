@@ -21,9 +21,9 @@ namespace WhaleSimulator
         //Represents the turning speed when not moving at all, expressed in Radians Per Second
         private const float BASE_TURN_RADIUS = 0.8f;
 
-        private const float BASE_SPEED = 150f;
+        private const float BASE_SPEED = 40f;
         private const float MIN_SPEED = 15f; //8
-        private const float MAX_SPEED = 200; //44
+        private const float MAX_SPEED = 60f; //44
 
         //Expressed in Units Per Second
         private const float ACCELERATION = 10f;

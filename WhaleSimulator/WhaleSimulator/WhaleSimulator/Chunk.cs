@@ -60,8 +60,8 @@ namespace WhaleSimulator
 
         public List<CreatureInfo> CreatureList { get; set; }
         public List<Creature> Creatures { get; set; }
-        //public List<string> StaticTerrainList { get; set; }
-        //public List<Graphics3D> StaticTerrain { get; set; }
+        public List<CreatureInfo> TerrainList { get; set; }
+        public List<Creature> Terrain { get; set; }
 
         private Vector3 position;
 
@@ -74,96 +74,6 @@ namespace WhaleSimulator
             Position = position;
             IsLoaded = false;
         }
-
-        /*
-        /// <summary>
-        /// Takes in an XML subtree and constructs a new Chunk object without spacial linking.
-        /// </summary>
-        /// <param name="rootElement">The root of the XML subtree to read from.</param>
-        public static Chunk FromXML(XElement rootElement)
-        {
-            try
-            {
-                XElement element;
-                Vector3 position;
-
-                element = rootElement.Element("Position");
-                if (element != null)
-                    position = Utilities.Parse(element.Value);
-                else
-                    throw new Exception("Position not found in XML Data.");
-
-                element = rootElement.Element("CreatureList");
-                List<CreatureInfo> creatureList = new List<CreatureInfo>();
-                if (element != null)
-                {
-                    IEnumerable<XElement> elements = element.Elements("Creature");
-                    foreach(XElement e in elements)
-                    {
-                        string species = e.Element("Species").Value;
-                        string family = e.Element("Family").Value;
-                        Vector3 spawn = Utilities.Parse(e.Element("Position").Value);
-                        spawn.X += position.X * 1000;
-                        spawn.Y += position.Y * 1000;
-                        spawn.Z += position.Z * 1000;
-
-                        Vector3 direction = Utilities.Parse(e.Element("Direction").Value);
-
-                        if (direction.X == -99)
-                            direction.X = (float)Map.Randomizer.NextDouble();
-                        if (direction.Y == -99)
-                            direction.Y = (float)Map.Randomizer.NextDouble();
-                        if (direction.Z == -99)
-                            direction.Z = (float)Map.Randomizer.NextDouble();
-
-                        bool swims;
-                        element = e.Element("Swims");
-                        if (element != null)
-                            swims = bool.Parse(element.Value);
-                        else
-                            swims = false;
-
-                        creatureList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
-                    }
-                }
-
-                element = rootElement.Element("TerrainList");
-
-                //List<TerrainInfo> staticTerrainList = new List<TerrainInfo>();
-                //List<DynamicTerrain> dynamicTerrainList = new List<DynamicTerrain>();
-
-                //if (element != null)
-                //{
-                //    IEnumerable<XElement> elements = element.Elements("Static");
-                //    foreach(XElement e in elements)
-                //    {
-                //        //Statics
-                //    }
-
-                //    elements = element.Elements("Dynamic");
-                //    foreach (XElement e in elements)
-                //    {
-                //        //Dynamics
-                //    }
-                //}
-
-                Chunk temp = new Chunk(position);
-                temp.CreatureList = creatureList;
-                temp.Creatures = new List<Creature>();
-                //temp.StaticTerrainList = staticTerrainList;
-                temp.StaticTerrain = new List<Graphics3D>();
-
-                return temp;
-
-            }
-            catch (Exception e)
-            {
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-
-            return null;
-        }
-        */
          
         /// <summary>
         /// Update all the objects in this Chunk.
@@ -179,11 +89,11 @@ namespace WhaleSimulator
                     c.Update(gameTime, inputStates);
             }
 
-            //if (StaticTerrain != null)
-            //{
-            //    foreach (Graphics3D t in StaticTerrain)
-            //        t.Update(gameTime);
-            //}
+            if (Terrain != null)
+            {
+                foreach (Creature t in Terrain)
+                    t.Update(gameTime, inputStates);
+            }
         }
 
         /// <summary>
@@ -200,6 +110,13 @@ namespace WhaleSimulator
                     foreach (Creature c in Creatures)
                         c.Draw3D(gameTime);
                 }
+            }
+            
+
+            if (Terrain != null)
+            {
+                foreach (Creature t in Terrain)
+                    t.Draw3D(gameTime);
             }
 
             //if (StaticTerrain != null)
@@ -220,6 +137,10 @@ namespace WhaleSimulator
                 {
                     if (info.IsAlive)
                         Creatures.Add(new Creature(info));
+                }
+                foreach (CreatureInfo info in TerrainList)
+                {
+                    Terrain.Add(new Creature(info));
                 }
                 IsLoaded = true;
             }

@@ -59,20 +59,12 @@ namespace WhaleSimulator
             LoadFromXML(filepath);
             MapCenter = new Vector3((mapSize.X * 1000) / 2, (mapSize.Y * 1000) / 2, (mapSize.Z * 1000) / 2);
             Map.WaterLevel = WaterLevel;
-            //foreach (Graphics3D g in globalTerrain)
-            //{
-            //    Vector3 position = MapCenter;
-            //    position.Y = 0;
-            //    g.Position = position;
-            //}
-            //GlobalTerrain = globalTerrain;
             LoadedChunks = new List<Chunk>();
             playerChunkPosition = new Vector3(currentChunk.Position.X, currentChunk.Position.Y, currentChunk.Position.Z);
         }
 
         public void LoadAssets()
         {
-            //loadingChunk = true;
             LoadAssets(currentChunk);
             List<Chunk> loadedChunks = new List<Chunk>();
             foreach (Chunk chunk in this)
@@ -81,7 +73,6 @@ namespace WhaleSimulator
                     loadedChunks.Add(chunk);
             }
             LoadedChunks = loadedChunks;
-            //loadingChunk = false;
         }
 
         public void LoadMap()
@@ -307,6 +298,7 @@ namespace WhaleSimulator
                  */
 
                 List<Chunk> chunkList = new List<Chunk>();
+                
                 for (int i = 0; i < mapSize.X; i++)
                 {
                     for (int j = 0; j < mapSize.Y; j++)
@@ -315,9 +307,9 @@ namespace WhaleSimulator
                         {
                             Chunk chunk = new Chunk(new Vector3(i, j, k));
                             chunk.CreatureList = new List<CreatureInfo>();
+                            chunk.TerrainList = new List<CreatureInfo>();
                             chunk.Creatures = new List<Creature>();
-                            //temp.StaticTerrainList = staticTerrainList;
-                            //temp.StaticTerrain = new List<Graphics3D>();
+                            chunk.Terrain = new List<Creature>();
                             chunkList.Add(chunk);
                         }
                     }
@@ -395,10 +387,10 @@ namespace WhaleSimulator
                             swims = false;
 
                         Chunk chunk = this[(int)Math.Floor(spawn.X/1000), 0, (int)Math.Floor(spawn.Z/1000)];
-                        //spawn.X -= chunk.Position.X * 1000;
-                        //spawn.Z -= chunk.Position.Z * 1000;
-
-                        chunk.CreatureList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
+                        if (family == "Terrain")
+                            chunk.TerrainList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
+                        else
+                            chunk.CreatureList.Add(new CreatureInfo(species, family, spawn, direction, true, swims));
                     }
                 }
 
@@ -555,22 +547,6 @@ namespace WhaleSimulator
             }
         }
 
-        /*
-        private void UnloadAssets()
-        {
-            foreach (Chunk chunk in this)
-            {
-                if (((chunk.Position.X < currentChunk.Position.X - 1) || (chunk.Position.X > currentChunk.Position.X + 1)) ||
-                    ((chunk.Position.Y < currentChunk.Position.Y - 1) || (chunk.Position.Y > currentChunk.Position.Y + 1)) ||
-                    ((chunk.Position.Z < currentChunk.Position.Z - 1) || (chunk.Position.Z > currentChunk.Position.Z + 1)))
-                {
-                    if (chunk.IsLoaded)
-                        chunk.UnloadAssets();
-                } 
-            }
-        }
-        */
-
         /// <summary>
         /// Draws any 3D objects to the screen (3D objects are always drawn behind 2D sprites).
         /// </summary>
@@ -618,9 +594,6 @@ namespace WhaleSimulator
         private Chunk chunk = null;
         private ChunkGrid grid; //bottom tier, top-left
         private Vector3 mapSize;
-
-        bool left = false;
-        bool up = false;
 
         int i = 0;
         int k = 0;
@@ -677,8 +650,6 @@ namespace WhaleSimulator
         public void Reset()
         {
             chunk = null;
-            left = false;
-            up = false;
         }
 
         /// <summary>
