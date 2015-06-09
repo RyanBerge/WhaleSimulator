@@ -45,6 +45,7 @@ namespace WhaleSimulator
         private float distanceToPlayerSquared;
         private bool isInCamera;
 
+        private bool playerCollision = false;
         private const int DRAWCULL_DISTANCE = 1000;
         
 
@@ -548,6 +549,13 @@ namespace WhaleSimulator
             {
                 Map.PlayerReference.Speed = 0;
                 Map.PlayerReference.Position -= 30 * Map.PlayerReference.facingDirection * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                Map.PlayerReference.Collision = true;
+                playerCollision = true;
+            }
+            else if (playerCollision)
+            {
+                playerCollision = false;
+                Map.PlayerReference.Collision = false;
             }
         }
     }

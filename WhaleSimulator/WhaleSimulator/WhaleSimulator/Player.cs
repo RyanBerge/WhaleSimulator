@@ -44,6 +44,8 @@ namespace WhaleSimulator
         private Sound heartbeat;
         private float hungrySoundTimer = 0f;
 
+        public bool Collision;
+
         public Player(string species, Vector3 spawnPosition, Vector3 spawnDirection, ContentManager Content) 
             : base(species, "Player", spawnPosition, spawnDirection, true)
         {
