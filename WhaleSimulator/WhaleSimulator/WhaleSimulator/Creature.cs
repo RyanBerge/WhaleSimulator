@@ -47,8 +47,10 @@ namespace WhaleSimulator
 
         private bool playerCollision = false;
         private const int DRAWCULL_DISTANCE = 1000;
-        
 
+        // penguin's iceberg
+        private Creature IceBerg;
+        
         public Creature(string species, string family, Vector3 spawnPosition, Vector3 spawnDirection, bool swims)
         {
             Properties = new CreatureInfo(species, family, spawnPosition, spawnDirection, true, swims);
@@ -252,7 +254,22 @@ namespace WhaleSimulator
 
         private void LandBirdAI(GameTime gameTime)
         {
-            const float PENGUIN_SPEED = 15f;
+            const float PENGUIN_SPEED = 5f;
+
+            if (IceBerg == null)
+            {
+                foreach (Creature creature in ChunkGrid.CurrentChunk.Creatures)
+                {
+                    if (creature.properties.Family == "Ice")
+                    {
+                        if ((creature.Sphere.Contains(Sphere) == ContainmentType.Contains) ||
+                            (creature.Sphere.Contains(Sphere) == ContainmentType.Intersects))
+                        {
+                            IceBerg = creature;
+                        }
+                    }
+                }
+            }
 
             if (turnTimer >= 10f)
             {
@@ -276,19 +293,18 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
 
-            if (Properties.Species == "Penguin")
+            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
             {
-                if (!Properties.SoundEffect.IsPlaying)
+                properties.IsAlive = false;
+                Map.PlayerReference.Energy += 50;
+            }
+
+            if (IceBerg != null)
+            {
+                if (IceBerg.Sphere.Contains(Position) == ContainmentType.Disjoint)
                 {
-                    if (distanceToPlayerSquared < (1000*1000) && !Camera.IsUnderwater)
-                    {
-                        Properties.SoundEffect.Play(false, false);
-                        Properties.SoundEffect.Volume = (distanceToPlayerSquared / (1000*1000));
-                    }
-                    else
-                    {
-                        Properties.SoundEffect.Stop();
-                    }
+                    facingDirection = -facingDirection;
+                    movingDirection = -movingDirection;
                 }
             }
 
@@ -429,77 +445,29 @@ namespace WhaleSimulator
 
         private void WhaleAI(GameTime gameTime)
         {
-            //======================================================
-            //Move constants to classwide scope when done fiddling
-            //======================================================
+            const float WHALE_SPEED = 15f;
 
-            //Units per second
-            const float FISH_MIN_SPEED = 15f;
-            const float FISH_MAX_SPEED = 60f;
-            const float FISH_SPEED_DECLINE = 0.01f;
-            float breathTimer = 60f;
-
-            //Radians
-            const float FISH_NEW_TURN_MIN = -1f;
-            const float FISH_NEW_TURN_MAX = 1f;
-
-            //Lower numbers result in faster turns
-            //const int FISH_TURN_FREQUENCY = 2;
-
-            //Radians Per Second
-            const float FISH_ROTATION_TURN = 1;
-
-            breathTimer -= 1f;
-
-            if (Speed < (FISH_MIN_SPEED))
+            if (turnTimer >= 10f)
             {
-                Speed = ((float)Map.Randomizer.NextDouble() * (FISH_MAX_SPEED - FISH_MIN_SPEED) + FISH_MIN_SPEED);
-                Rotations.Y += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
-                Rotations.Z += ((float)Map.Randomizer.NextDouble() * (FISH_NEW_TURN_MAX - FISH_NEW_TURN_MIN) + FISH_NEW_TURN_MIN);
+                Speed = WHALE_SPEED;
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * 2 - 1);
 
                 float CosZ = (float)Math.Cos(Rotations.Z);
                 float CosY = (float)Math.Cos(Rotations.Y);
-                float SinZ = (float)Math.Sin(Rotations.Z);
                 float SinY = (float)Math.Sin(Rotations.Y);
 
                 movingDirection.X = CosY * CosZ;
-                if (breathTimer > 0)
-                    movingDirection.Y = SinZ;
-                else
-                    movingDirection.Y = 1f;
                 movingDirection.Z = SinY * CosZ;
+                turnTimer -= 0.1f;
+            }
+            else if (turnTimer < 0f)
+            {
+                turnTimer = 10.0f;
             }
             else
             {
-                Speed -= FISH_SPEED_DECLINE;
-
-                Rotations.Z += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-                float CosZ = (float)Math.Cos(Rotations.Z);
-                float CosY = (float)Math.Cos(Rotations.Y);
-                float SinZ = (float)Math.Sin(Rotations.Z);
-                float SinY = (float)Math.Sin(Rotations.Y);
-
-                movingDirection.X = CosY * CosZ;
-                if (breathTimer > 0)
-                    movingDirection.Y = SinZ;
-                else
-                    movingDirection.Y = 1f;
-                movingDirection.Z = SinY * CosZ;
+                turnTimer -= 0.01f;
             }
-
-            if (Position.Y == Map.WaterLevel)
-                breathTimer = 60f;
-
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
-
-            if (position.Y > Map.WaterLevel)
-                position.Y = Map.WaterLevel;
         }
     
         private void IceAI(GameTime gameTime)
