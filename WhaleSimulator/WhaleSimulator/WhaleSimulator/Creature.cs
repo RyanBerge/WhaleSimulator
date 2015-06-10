@@ -223,9 +223,12 @@ namespace WhaleSimulator
             switch (Properties.Family)
             {
                 case "Whale":
+                case "Seal":
                     UpdateMove = LandBirdAI;
                     break;
                 case "Fish": 
+                case "Squid":
+                case "Jellyfish":
                     UpdateMove = FishAI;
                     break;
                 case "Ice":
@@ -282,6 +285,7 @@ namespace WhaleSimulator
 
                 movingDirection.X = CosY * CosZ;
                 movingDirection.Z = SinY * CosZ;
+                movingDirection.Y = -1;
                 turnTimer -= 0.1f;
             }
             else if (turnTimer < 0f)
@@ -293,11 +297,11 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
-            }
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
 
             if (IceBerg != null)
             {
@@ -306,13 +310,11 @@ namespace WhaleSimulator
                     facingDirection = -facingDirection;
                     movingDirection = -movingDirection;
                 }
+                else if (position.Y < Map.WaterLevel)
+                {
+                    movingDirection.Y = -movingDirection.Y;
+                }
             }
-
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
         }
 
         private void FlyingAI(GameTime gameTime)
@@ -427,6 +429,10 @@ namespace WhaleSimulator
                 movingDirection.Z = SinY * CosZ;
             }
 
+            facingDirection.X = movingDirection.X;
+            facingDirection.Y = movingDirection.Y;
+            facingDirection.Z = movingDirection.Z;
+
             if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
             {
                 properties.IsAlive = false;
@@ -472,47 +478,6 @@ namespace WhaleSimulator
     
         private void IceAI(GameTime gameTime)
         {
-            //Speed = 3;
-            //
-            //if (bounceTimer <= 0)
-            //{
-            //    foreach (Chunk chunk in ChunkGrid.LoadedChunks)
-            //    {
-            //        IEnumerable<Creature> IceList =
-            //            from ice in chunk.Creatures
-            //            where ice.Properties.Family == "Ice"
-            //            select ice;
-            //
-            //        foreach (Creature ice in IceList)
-            //        {
-            //            if (ice != this)
-            //            {
-            //                if (((ice.Position.X - Position.X < 500) && (ice.Position.X - Position.X > -500)) &&
-            //                    (((ice.Position.Z - Position.Z < 500) && (ice.Position.Z - Position.Z > -500))))
-            //                {
-            //                    if (ice.Sphere.Intersects(Sphere))
-            //                    {
-            //                        Vector2 normal = new Vector2(-MovingDirection.Z, MovingDirection.X);
-            //                        Vector2 vector = new Vector2(MovingDirection.X, MovingDirection.Y);
-            //                        vector -= 2 * Vector2.Dot(vector, normal) * normal;
-            //                        MovingDirection = new Vector3(vector.X, MovingDirection.Y, vector.Y);
-            //                        //System.Diagnostics.Debug.WriteLine("Bounce!");
-            //                        bounceTimer = 0.5f;
-            //                        SetRotations();
-            //                    }
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-            //else
-            //    bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //
-            //
-            //
-            //properties.SpawnPosition = Position;
-            //properties.SpawnDirection = MovingDirection;
-
             if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
             {
                 Map.PlayerReference.Speed = 0;

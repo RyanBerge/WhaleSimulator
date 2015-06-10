@@ -47,3 +47,10 @@ C:\Users\19\Downloads\BetterSkinned\AnimationPipeline\bin\x86\Debug\XnaAux.pdb
 C:\Users\19\Downloads\BetterSkinned\AnimationPipeline\obj\x86\Debug\AnimationPipeline.csprojResolveAssemblyReference.cache
 C:\Users\19\Downloads\BetterSkinned\AnimationPipeline\obj\x86\Debug\AnimationPipeline.dll
 C:\Users\19\Downloads\BetterSkinned\AnimationPipeline\obj\x86\Debug\AnimationPipeline.pdb
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.dll
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\bin\x86\Debug\AnimationPipeline.pdb
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\bin\x86\Debug\XnaAux.dll
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\bin\x86\Debug\XnaAux.pdb
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\obj\x86\Debug\AnimationPipeline.csprojResolveAssemblyReference.cache
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\obj\x86\Debug\AnimationPipeline.dll
+C:\Users\19\Documents\GitHub\WhaleSimulator\AnimationPipeline\obj\x86\Debug\AnimationPipeline.pdb
