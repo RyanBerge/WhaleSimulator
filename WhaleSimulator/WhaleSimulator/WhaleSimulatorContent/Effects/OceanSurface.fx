@@ -59,7 +59,7 @@ struct VertexShaderOutput
 VertexShaderOutput VertexShaderFunction(VertexShaderInput input)
 {
 	VertexShaderOutput output;
-	input.Position.z += sin((TotalTime * 8) + (input.Position.y / 1)) / 32;
+	input.Position.z += sin((TotalTime * 4) + (input.Position.y / 1)) / 64;
 
 	float4 worldPosition = mul(input.Position, World);
 	float4 viewPosition = mul(worldPosition, View);
