@@ -935,7 +935,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Bloop.xnb</Output>
-      <Time>2015-06-11T15:41:40.6440146-07:00</Time>
+      <Time>2015-06-11T16:36:44.466075-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\BreathingIn.wav</Source>
@@ -944,7 +944,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\BreathingIn.xnb</Output>
-      <Time>2015-06-11T15:41:40.6490149-07:00</Time>
+      <Time>2015-06-11T16:36:44.6376753-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\ChompAndGulp.wav</Source>
@@ -953,7 +953,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\ChompAndGulp.xnb</Output>
-      <Time>2015-06-11T15:41:40.652015-07:00</Time>
+      <Time>2015-06-11T16:36:44.4972751-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\FadeIntoGame.wav</Source>
@@ -962,7 +962,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\FadeIntoGame.xnb</Output>
-      <Time>2015-06-11T15:41:40.6550152-07:00</Time>
+      <Time>2015-06-11T16:36:43.7016737-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Heartbeat1.wav</Source>
@@ -971,7 +971,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Heartbeat1.xnb</Output>
-      <Time>2015-06-11T15:41:40.6600155-07:00</Time>
+      <Time>2015-06-11T16:36:43.1088727-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Heartbeat2.wav</Source>
@@ -980,7 +980,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Heartbeat2.xnb</Output>
-      <Time>2015-06-11T15:41:40.6650158-07:00</Time>
+      <Time>2015-06-11T16:36:43.6860737-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\HungryWhale.wav</Source>
@@ -989,7 +989,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\HungryWhale.xnb</Output>
-      <Time>2015-06-11T15:41:40.6710161-07:00</Time>
+      <Time>2015-06-11T16:36:42.6564719-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Pause.wav</Source>
@@ -998,7 +998,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Pause.xnb</Output>
-      <Time>2015-06-11T15:41:40.6740163-07:00</Time>
+      <Time>2015-06-11T16:36:43.6548736-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Penguin.wav</Source>
@@ -1007,7 +1007,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Penguin.xnb</Output>
-      <Time>2015-06-11T15:41:40.7320196-07:00</Time>
+      <Time>2015-06-11T16:36:43.2180728-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Penguin1.wav</Source>
@@ -1016,7 +1016,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Penguin1.xnb</Output>
-      <Time>2015-06-11T15:41:40.7600212-07:00</Time>
+      <Time>2015-06-11T16:36:43.7484738-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Penguin2.wav</Source>
@@ -1025,7 +1025,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Penguin2.xnb</Output>
-      <Time>2015-06-11T15:41:40.792023-07:00</Time>
+      <Time>2015-06-11T16:36:44.7000754-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\SeagullsAbovewater.wav</Source>
@@ -1034,7 +1034,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\SeagullsAbovewater.xnb</Output>
-      <Time>2015-06-11T15:41:41.0330368-07:00</Time>
+      <Time>2015-06-11T16:36:43.0776726-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\SeagullsUnderwater.wav</Source>
@@ -1043,7 +1043,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\SeagullsUnderwater.xnb</Output>
-      <Time>2015-06-11T15:41:41.6840741-07:00</Time>
+      <Time>2015-06-11T16:36:43.4676733-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\TitleScreenSong.wav</Source>
@@ -1052,7 +1052,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\TitleScreenSong.xnb</Output>
-      <Time>2015-06-11T15:41:41.8110813-07:00</Time>
+      <Time>2015-06-11T16:36:43.6392736-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\Unpause.wav</Source>
@@ -1061,7 +1061,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Unpause.xnb</Output>
-      <Time>2015-06-11T15:41:41.8130814-07:00</Time>
+      <Time>2015-06-11T16:36:43.6860737-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WavesAbovewater.wav</Source>
@@ -1070,7 +1070,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WavesAbovewater.xnb</Output>
-      <Time>2015-06-11T15:41:41.9720905-07:00</Time>
+      <Time>2015-06-11T16:36:44.9652759-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WavesUnderwater.wav</Source>
@@ -1079,7 +1079,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WavesUnderwater.xnb</Output>
-      <Time>2015-06-11T15:41:42.1391001-07:00</Time>
+      <Time>2015-06-11T16:36:44.419275-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleCall1.wav</Source>
@@ -1088,7 +1088,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleCall1.xnb</Output>
-      <Time>2015-06-11T15:41:42.1431003-07:00</Time>
+      <Time>2015-06-11T16:36:43.6704736-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleCall2.wav</Source>
@@ -1097,7 +1097,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleCall2.xnb</Output>
-      <Time>2015-06-11T15:41:42.1471005-07:00</Time>
+      <Time>2015-06-11T16:36:43.0932726-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleCall3.wav</Source>
@@ -1106,7 +1106,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleCall3.xnb</Output>
-      <Time>2015-06-11T15:41:42.1501007-07:00</Time>
+      <Time>2015-06-11T16:36:42.6720719-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleCall4.wav</Source>
@@ -1115,7 +1115,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleCall4.xnb</Output>
-      <Time>2015-06-11T15:41:42.1561011-07:00</Time>
+      <Time>2015-06-11T16:36:44.450475-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleEmerging.wav</Source>
@@ -1124,7 +1124,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleEmerging.xnb</Output>
-      <Time>2015-06-11T15:41:42.1641015-07:00</Time>
+      <Time>2015-06-11T16:36:44.4816751-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleGamePlaySong.wav</Source>
@@ -1133,7 +1133,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleGamePlaySong.xnb</Output>
-      <Time>2015-06-11T15:41:42.3911145-07:00</Time>
+      <Time>2015-06-11T16:36:44.1540745-07:00</Time>
     </Item>
     <Item>
       <Source>sounds\WhaleSubmerging.wav</Source>
@@ -1142,7 +1142,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\WhaleSubmerging.xnb</Output>
-      <Time>2015-06-11T15:41:42.4041152-07:00</Time>
+      <Time>2015-06-11T16:36:44.450475-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\cube.x</Source>
@@ -2200,6 +2200,33 @@
       <Options>None</Options>
       <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\DeathScreen.xnb</Output>
       <Time>2015-06-09T17:34:17.5739294-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\Chomp.wav</Source>
+      <Name>sounds\Chomp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\Chomp.xnb</Output>
+      <Time>2015-06-11T16:36:43.0776726-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\DeathSong.wav</Source>
+      <Name>sounds\DeathSong</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\DeathSong.xnb</Output>
+      <Time>2015-06-11T16:36:44.6220753-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\DeathSound.wav</Source>
+      <Name>sounds\DeathSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sounds\DeathSound.xnb</Output>
+      <Time>2015-06-11T16:36:42.6876719-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

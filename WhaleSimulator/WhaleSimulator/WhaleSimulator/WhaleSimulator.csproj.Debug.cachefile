@@ -135,6 +135,9 @@ Content\sourceimages\toothfish_0.xnb
 Content\sourceimages\rock2_0.xnb
 Content\sand_0.xnb
 Content\Images\DeathScreen.xnb
+Content\sounds\Chomp.xnb
+Content\sounds\DeathSong.xnb
+Content\sounds\DeathSound.xnb
 Data\Sounds.xml
 Data\Models.xml
 Data\MapData\OrcaLevel.xml
