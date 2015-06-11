@@ -161,14 +161,17 @@ namespace WhaleSimulator
                 if (position.Y < 0)
                     position.Y = 0;
 
-                if (position.Y > Map.WaterLevel)
+                
+
+                
+            }
+
+            if (position.Y > Map.WaterLevel)
                     isUnderwater = false;
                 else
                     isUnderwater = true;
-
-                base.Update(gameTime);
-            }
             
+            base.Update(gameTime);
         }
 
         /// <summary>
@@ -179,7 +182,9 @@ namespace WhaleSimulator
         {
             if (Properties.Family == "Terrain")
                 base.Draw3D(gameTime);
-            else if (Properties.IsAlive && isInCamera)
+            else if (Properties.Family == "Player")
+                base.Draw3D(gameTime);
+            else if ((Properties.IsAlive && isInCamera))
             {
                 if (Properties.Family == "Ice")
                     base.Draw3D(gameTime);
@@ -188,7 +193,7 @@ namespace WhaleSimulator
                     if (distanceToPlayerSquared < (DRAWCULL_DISTANCE * DRAWCULL_DISTANCE))
                         base.Draw3D(gameTime);
                 }
-                
+
             }
                 
         }

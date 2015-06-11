@@ -47,6 +47,7 @@ namespace WhaleSimulator
             currentMap = null;
             mapContent = MasterGame.GetNewContentManager();
             pauseMenu = new PauseMenu(mapContent);
+            ui = new UI(mapContent);
             pauseMenu.Resume += pauseMenuResume;
             pauseMenu.Quit += pauseMenuQuit;
             
@@ -119,6 +120,17 @@ namespace WhaleSimulator
                         {
                             currentMap.Update(gameTime, inputStates);
                             ui.Update(gameTime, inputStates, currentMap.Player);
+                        }
+                    }
+
+                    if (currentMap.Player != null)
+                    {
+                        if (!currentMap.Player.Properties.IsAlive)
+                        {
+                            if (inputStates.WasButtonPressed(Buttons.Start) || inputStates.WasButtonPressed(Keys.Enter))
+                            {
+                                pauseMenuQuit();
+                            }
                         }
                     }
                     break;

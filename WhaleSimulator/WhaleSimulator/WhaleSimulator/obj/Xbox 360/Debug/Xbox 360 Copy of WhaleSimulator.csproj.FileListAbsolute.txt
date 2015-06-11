@@ -298,3 +298,5 @@ D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\b
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhaleR_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sourceimages\orcawhale_tail_0.xnb
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\Sounds.xml
+C:\Users\04\Desktop\New folder\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\WhaleSimulator.exe
+C:\Users\04\Desktop\New folder\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\WhaleSimulator.pdb
