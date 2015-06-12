@@ -132,10 +132,17 @@ namespace WhaleSimulator
                     wavesAbove.Stop();
                     seagullsUnder.Play(true, false);
                     wavesUnder.Play(true, false);
+                    aboveWaterPlaying = false;
                 }
-                float volume = ((float)WaterLevel - player.Position.Y) / (400f);
-                if (volume < 0)
+
+                float volume;
+                if (player.Position.Y > Map.WaterLevel)
+                    volume = 1f;
+                else if (player.Position.Y < ((float)Map.WaterLevel - 400f))
                     volume = 0;
+                else
+                    volume =  (Map.WaterLevel - player.Position.Y) / 400f;
+
                 seagullsUnder.Volume = volume;
             }
             else
@@ -146,6 +153,7 @@ namespace WhaleSimulator
                     wavesAbove.Play(true, false);
                     seagullsUnder.Stop();
                     wavesUnder.Stop();
+                    aboveWaterPlaying = true;
                 }
             }
         }
