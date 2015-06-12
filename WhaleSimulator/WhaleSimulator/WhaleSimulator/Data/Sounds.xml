@@ -47,7 +47,7 @@
   </Sound>
 
   <Sound>
-    <Name>SeagullsAboveWater</Name>
+    <Name>SeagullsAbovewater</Name>
     <Instance>SeagullsAboveWater</Instance>
     <Count>1</Count>
   </Sound>

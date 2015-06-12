@@ -27,6 +27,14 @@ namespace WhaleSimulator
         private Rectangle blackRect;
         private Texture2D blackscreen;
 
+        private Sound music;
+        private Sound wavesUnder;
+        private Sound wavesAbove;
+        private Sound seagullsUnder;
+        private Sound seagullsAbove;
+
+        bool aboveWaterPlaying = false;
+
         private ContentManager mapContent;
 
         public Player Player { get { return player; } }
@@ -51,6 +59,14 @@ namespace WhaleSimulator
             oceanSurface = new OceanSurface(mapContent);
             blackRect = new Rectangle(0, 0, MasterGame.Graphics.PreferredBackBufferWidth, MasterGame.Graphics.PreferredBackBufferHeight);
             Map.soundEngine.Play("FadeIntoGame", false, false);
+            music = soundEngine.GetSound("WhaleGamePlaySong");
+            seagullsAbove = soundEngine.GetSound("SeagullsAbovewater");
+            seagullsUnder = soundEngine.GetSound("SeagullsUnderwater");
+            wavesAbove = soundEngine.GetSound("WavesAbovewater");
+            wavesUnder = soundEngine.GetSound("WavesUnderwater");
+            music.Play(true, false);
+            soundEngine.Play("SeagullsUnderwater", true, false);
+            soundEngine.Play("WavesUnderwater", true, false);
         }
 
         private void LoadMap()
@@ -107,6 +123,31 @@ namespace WhaleSimulator
             Camera.Update(gameTime, inputStates, player);
             // stuff added
             oceanSurface.Update(gameTime.ElapsedGameTime.Milliseconds);
+
+            if (Camera.IsUnderwater)
+            {
+                if (aboveWaterPlaying)
+                {
+                    seagullsAbove.Stop();
+                    wavesAbove.Stop();
+                    seagullsUnder.Play(true, false);
+                    wavesUnder.Play(true, false);
+                }
+                float volume = ((float)WaterLevel - player.Position.Y) / (400f);
+                if (volume < 0)
+                    volume = 0;
+                seagullsUnder.Volume = volume;
+            }
+            else
+            {
+                if (!aboveWaterPlaying)
+                {
+                    seagullsAbove.Play(true, false);
+                    wavesAbove.Play(true, false);
+                    seagullsUnder.Stop();
+                    wavesUnder.Stop();
+                }
+            }
         }
 
         public void Draw2D(SpriteBatch spriteBatch, GameTime gameTime)

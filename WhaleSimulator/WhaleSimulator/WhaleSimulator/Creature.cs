@@ -227,9 +227,11 @@ namespace WhaleSimulator
         {
             switch (Properties.Family)
             {
+                case "Seal":
                 case "Whale":
-                    UpdateMove = LandBirdAI;
+                    UpdateMove = WhaleAI;
                     break;
+                case "Jellyfish":
                 case "Fish": 
                     UpdateMove = FishAI;
                     break;
@@ -298,11 +300,11 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
 
-            if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            {
-                properties.IsAlive = false;
-                Map.PlayerReference.Energy += 50;
-            }
+            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
+            //{
+            //    properties.IsAlive = false;
+            //    Map.PlayerReference.Energy += 50;
+            //}
 
             if (IceBerg != null)
             {
@@ -310,6 +312,22 @@ namespace WhaleSimulator
                 {
                     facingDirection = -facingDirection;
                     movingDirection = -movingDirection;
+                }
+            }
+
+            if (Properties.Species == "Penguin")
+            {
+                if (!Properties.SoundEffect.IsPlaying)
+                {
+                    if (distanceToPlayerSquared < (1000 * 1000) && !Camera.IsUnderwater)
+                    {
+                        Properties.SoundEffect.Play(false, false);
+                        Properties.SoundEffect.Volume = (distanceToPlayerSquared / (1000 * 1000));
+                    }
+                    else
+                    {
+                        Properties.SoundEffect.Stop();
+                    }
                 }
             }
 
