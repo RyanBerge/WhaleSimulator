@@ -223,6 +223,7 @@ namespace WhaleSimulator
             Rotations.Z = (float)Math.Atan(FacingDirection.Y / (Math.Sqrt(FacingDirection.X * FacingDirection.X + FacingDirection.Z * FacingDirection.Z)));
         }
 
+        // asigns the AI for each species family
         private void SetAI()
         {
             switch (Properties.Family)
@@ -231,13 +232,15 @@ namespace WhaleSimulator
                 case "Whale":
                     UpdateMove = WhaleAI;
                     break;
+                case "Squid":
                 case "Jellyfish":
+                    UpdateMove = DriftAI;
+                    break;
                 case "Fish": 
                     UpdateMove = FishAI;
                     break;
                 case "Ice":
                     UpdateMove = IceAI;
-                    //UpdateMove = NoAI;
                     break;
                 case "StandingBird":
                     UpdateMove = LandBirdAI;
@@ -253,12 +256,38 @@ namespace WhaleSimulator
 
         private void NoAI(GameTime gameTime) 
         {
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    Map.PlayerReference.Speed = 0;
-            //}
+
         }
 
+        // Give a drifting motion to the squid and jellyfish
+        private void DriftAI(GameTime gameTime)
+        {
+            const float DRIFT_SPEED = 3f;
+
+            if (turnTimer >= 10f)
+            {
+                Speed = DRIFT_SPEED;
+                Rotations.Y += ((float)Map.Randomizer.NextDouble() * 2 - 1);
+
+                float CosZ = (float)Math.Cos(Rotations.Z);
+                float CosY = (float)Math.Cos(Rotations.Y);
+                float SinY = (float)Math.Sin(Rotations.Y);
+
+                movingDirection.X = CosY * CosZ;
+                movingDirection.Z = SinY * CosZ;
+                turnTimer -= 0.1f;
+            }
+            else if (turnTimer < 0f)
+            {
+                turnTimer = 10.0f;
+            }
+            else
+            {
+                turnTimer -= 0.01f;
+            }
+        }
+
+        // makes the nonflying birds stay on their icebergs or otherwise sink
         private void LandBirdAI(GameTime gameTime)
         {
             const float PENGUIN_SPEED = 5f;
@@ -300,12 +329,6 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
 
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
-
             if (IceBerg != null)
             {
                 if (IceBerg.Sphere.Contains(Position) == ContainmentType.Disjoint)
@@ -313,6 +336,14 @@ namespace WhaleSimulator
                     facingDirection = -facingDirection;
                     movingDirection = -movingDirection;
                 }
+                else
+                {
+                    movingDirection.Y = -movingDirection.Y;
+                }
+            }
+            else
+            {
+                movingDirection.Y = -1;
             }
 
             if (Properties.Species == "Penguin")
@@ -330,14 +361,10 @@ namespace WhaleSimulator
                     }
                 }
             }
-
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
         }
 
+        // AI for flying creatures, similar to Fish AI, but prevents the birds from going below the 
+        // ocean surface instead 
         private void FlyingAI(GameTime gameTime)
         {
             //Units per second
@@ -348,9 +375,6 @@ namespace WhaleSimulator
             //Radians
             const float BIRD_NEW_TURN_MIN = -1f;
             const float BIRD_NEW_TURN_MAX = 1f;
-
-            //Lower numbers result in faster turns
-            //const int BIRD_TURN_FREQUENCY = 2;
 
             //Radians Per Second
             const float BIRD_ROTATION_TURN = 1;
@@ -375,7 +399,6 @@ namespace WhaleSimulator
                 Speed -= BIRD_SPEED_DECLINE;
 
                 Rotations.Z += BIRD_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                //Rotations.Y += BIRD_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
                 float CosZ = (float)Math.Cos(Rotations.Z);
                 float CosY = (float)Math.Cos(Rotations.Y);
@@ -387,16 +410,11 @@ namespace WhaleSimulator
                 movingDirection.Z = SinY * CosZ;
             }
 
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
-
             if (position.Y < Map.WaterLevel)
                 position.Y = Map.WaterLevel;
         }
 
+        // Gives the fish a swarming motion making the school of fish look alive
         private void FishAI(GameTime gameTime)
         {
             //======================================================
@@ -411,9 +429,6 @@ namespace WhaleSimulator
             //Radians
             const float FISH_NEW_TURN_MIN = -1f;
             const float FISH_NEW_TURN_MAX = 1f;
-
-            //Lower numbers result in faster turns
-            //const int FISH_TURN_FREQUENCY = 2;
 
             //Radians Per Second
             const float FISH_ROTATION_TURN = 1;
@@ -456,16 +471,11 @@ namespace WhaleSimulator
                 Map.PlayerReference.Energy += 20;
             }
 
-            //if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
-            //{
-            //    properties.IsAlive = false;
-            //    Map.PlayerReference.Energy += 50;
-            //}
-
             if (position.Y > Map.WaterLevel)
                 position.Y = Map.WaterLevel;
         }
 
+        // Makes the whales wander and slowly move across the ocean, unlike the frenetic fish
         private void WhaleAI(GameTime gameTime)
         {
             const float WHALE_SPEED = 15f;
@@ -492,50 +502,10 @@ namespace WhaleSimulator
                 turnTimer -= 0.01f;
             }
         }
-    
+        
+        // IceAI responds to collisions with the player and prevents the player from going through it. 
         private void IceAI(GameTime gameTime)
         {
-            //Speed = 3;
-            //
-            //if (bounceTimer <= 0)
-            //{
-            //    foreach (Chunk chunk in ChunkGrid.LoadedChunks)
-            //    {
-            //        IEnumerable<Creature> IceList =
-            //            from ice in chunk.Creatures
-            //            where ice.Properties.Family == "Ice"
-            //            select ice;
-            //
-            //        foreach (Creature ice in IceList)
-            //        {
-            //            if (ice != this)
-            //            {
-            //                if (((ice.Position.X - Position.X < 500) && (ice.Position.X - Position.X > -500)) &&
-            //                    (((ice.Position.Z - Position.Z < 500) && (ice.Position.Z - Position.Z > -500))))
-            //                {
-            //                    if (ice.Sphere.Intersects(Sphere))
-            //                    {
-            //                        Vector2 normal = new Vector2(-MovingDirection.Z, MovingDirection.X);
-            //                        Vector2 vector = new Vector2(MovingDirection.X, MovingDirection.Y);
-            //                        vector -= 2 * Vector2.Dot(vector, normal) * normal;
-            //                        MovingDirection = new Vector3(vector.X, MovingDirection.Y, vector.Y);
-            //                        //System.Diagnostics.Debug.WriteLine("Bounce!");
-            //                        bounceTimer = 0.5f;
-            //                        SetRotations();
-            //                    }
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-            //else
-            //    bounceTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //
-            //
-            //
-            //properties.SpawnPosition = Position;
-            //properties.SpawnDirection = MovingDirection;
-
             if (Sphere.Contains(Map.PlayerReference.Nose) == ContainmentType.Contains)
             {
                 Map.PlayerReference.Speed = 0;
