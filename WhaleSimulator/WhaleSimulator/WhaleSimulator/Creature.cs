@@ -160,10 +160,6 @@ namespace WhaleSimulator
 
                 if (position.Y < 0)
                     position.Y = 0;
-
-                
-
-                
             }
 
             if (position.Y > Map.WaterLevel)
@@ -344,6 +340,8 @@ namespace WhaleSimulator
             else
             {
                 movingDirection.Y = -1;
+                if (position.Y == (Map.WaterLevel * 0.75f))
+                    UpdateMove = FishAI;
             }
 
             if (Properties.Species == "Penguin")
@@ -453,7 +451,6 @@ namespace WhaleSimulator
                 Speed -= FISH_SPEED_DECLINE;
 
                 Rotations.Z += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                //Rotations.Y += FISH_ROTATION_TURN * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
                 float CosZ = (float)Math.Cos(Rotations.Z);
                 float CosY = (float)Math.Cos(Rotations.Y);
