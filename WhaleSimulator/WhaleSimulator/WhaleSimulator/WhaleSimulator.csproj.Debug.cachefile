@@ -13,6 +13,7 @@ Content\Images\Blackscreen.xnb
 Content\Images\PauseBackground.xnb
 Content\Images\ResumeButton.xnb
 Content\Effects\oversea.xnb
+Content\Images\DeathScreen.xnb
 Content\Effects\OceanSurface.xnb
 Content\Effects\Skybox.xnb
 Content\Terrain\Ground.xnb
@@ -71,7 +72,10 @@ Content\Creatures\FBX\Toothfish_B.xnb
 Content\Creatures\FBX\OceanFloor.xnb
 Content\sounds\Bloop.xnb
 Content\sounds\BreathingIn.xnb
+Content\sounds\Chomp.xnb
 Content\sounds\ChompAndGulp.xnb
+Content\sounds\DeathSong.xnb
+Content\sounds\DeathSound.xnb
 Content\sounds\FadeIntoGame.xnb
 Content\sounds\Heartbeat1.xnb
 Content\sounds\Heartbeat2.xnb
@@ -134,10 +138,9 @@ Content\sourceimages\seagullstand1_mat_0.xnb
 Content\sourceimages\toothfish_0.xnb
 Content\sourceimages\rock2_0.xnb
 Content\sand_0.xnb
-Content\Images\DeathScreen.xnb
-Content\sounds\Chomp.xnb
-Content\sounds\DeathSong.xnb
-Content\sounds\DeathSound.xnb
+Content\Creatures\FBX\AnimatedOrca.xnb
+Content\Creatures\sourceimages\orcawhaleR_0.xnb
+Content\Creatures\sourceimages\orcawhale_tail_0.xnb
 Data\Sounds.xml
 Data\Models.xml
 Data\MapData\OrcaLevel.xml

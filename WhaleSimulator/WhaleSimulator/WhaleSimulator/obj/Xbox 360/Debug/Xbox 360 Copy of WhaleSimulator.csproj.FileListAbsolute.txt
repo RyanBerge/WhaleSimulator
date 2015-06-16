@@ -304,3 +304,10 @@ C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Chomp.xnb
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\DeathSong.xnb
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\DeathSound.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\DeathScreen.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\Chomp.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\DeathSong.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\sounds\DeathSound.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\AnimatedOrca.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhaleR_0.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhale_tail_0.xnb
