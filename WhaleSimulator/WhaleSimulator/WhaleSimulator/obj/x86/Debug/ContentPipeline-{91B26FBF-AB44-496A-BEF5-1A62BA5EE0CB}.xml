@@ -2282,6 +2282,15 @@
       <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\sourceimages\orcawhale_tail_0.xnb</Output>
       <Time>2015-05-28T13:27:42-07:00</Time>
     </Item>
+    <Item>
+      <Source>Images\SealButton.png</Source>
+      <Name>Images\SealButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\SealButton.xnb</Output>
+      <Time>2015-06-18T03:12:18.8642637-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{91B26FBF-AB44-496A-BEF5-1A62BA5EE0CB}</ContentProjectGUID>

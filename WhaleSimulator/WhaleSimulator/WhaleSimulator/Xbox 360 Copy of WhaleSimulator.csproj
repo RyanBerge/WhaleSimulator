@@ -87,8 +87,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\MapData\OrcaLevel_Backup.xml">
-      <SubType>Designer</SubType>
+    <None Include="Data\MapData\SealLevel.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Content Include="Data\Models.xml">

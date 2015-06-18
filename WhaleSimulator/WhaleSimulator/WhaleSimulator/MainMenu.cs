@@ -47,6 +47,7 @@ namespace WhaleSimulator
         private float opacity = 0;
         private Rectangle blackscreenRect;
         private float blackDelayTimer = 0;
+        private string selectedLevel = "";
 
         public MainMenu()
         {
@@ -75,6 +76,7 @@ namespace WhaleSimulator
             MenuButton quit = new MenuButton();
 
             MenuButton orca = new MenuButton();
+            MenuButton seal = new MenuButton();
             MenuButton back = new MenuButton();
 
             Animation2D[] tempArray = new Animation2D[2];
@@ -97,6 +99,11 @@ namespace WhaleSimulator
             orcaAnimations[0] = new Animation2D("Default", new Vector2(0, 0), new Vector2(428, 339), 1, 0);
             orcaAnimations[1] = new Animation2D("Select", new Vector2(0, 340), new Vector2(428, 339), 1, 0);
             orca.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/OrcaButton"), orcaAnimations, 0, new Vector2(39, 42));
+
+            Animation2D[] sealAnimations = new Animation2D[2];
+            sealAnimations[0] = new Animation2D("Default", new Vector2(0, 0), new Vector2(428, 339), 1, 0);
+            sealAnimations[1] = new Animation2D("Select", new Vector2(0, 340), new Vector2(428, 339), 1, 0);
+            seal.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/SealButton"), sealAnimations, 0, new Vector2(500, 42));
 
             Animation2D[] backAnimations = new Animation2D[2];
             backAnimations[0] = new Animation2D("Default", new Vector2(0, 0), new Vector2(297, 100), 1, 0);
@@ -121,12 +128,22 @@ namespace WhaleSimulator
 
             orca.Click = OrcaClick;
             orca.name = "Orca";
+            orca.up = back;
             orca.down = back;
-            orca.right = back;
+            orca.right = seal;
+            orca.left = seal;
+
+            seal.Click = SealClick;
+            seal.name = "Seal";
+            seal.up = back;
+            seal.down = back;
+            seal.right = orca;
+            seal.left = orca;
 
             back.Click = BackClick;
             back.name = "Back";
-            back.up = orca;
+            back.up = seal;
+            back.down = seal;
             back.left = orca;
             
 
@@ -136,6 +153,7 @@ namespace WhaleSimulator
             selectedButton = play;
 
             LevelButtonList.Add(orca);
+            LevelButtonList.Add(seal);
             LevelButtonList.Add(back);
 
             Vector2 coords = new Vector2(backgroundRight.Coordinates.X, backgroundRight.Coordinates.Y);
@@ -145,6 +163,10 @@ namespace WhaleSimulator
             coords = new Vector2(orca.Graphic.Coordinates.X, orca.Graphic.Coordinates.Y);
             coords.X += MasterGame.Graphics.PreferredBackBufferWidth;
             orca.Graphic.Coordinates = coords;
+
+            coords = new Vector2(seal.Graphic.Coordinates.X, seal.Graphic.Coordinates.Y);
+            coords.X += MasterGame.Graphics.PreferredBackBufferWidth;
+            seal.Graphic.Coordinates = coords;
 
             coords = new Vector2(back.Graphic.Coordinates.X, back.Graphic.Coordinates.Y);
             coords.X += MasterGame.Graphics.PreferredBackBufferWidth;
@@ -181,6 +203,21 @@ namespace WhaleSimulator
             slideMax = MasterGame.Graphics.PreferredBackBufferHeight;
             selectedButton.Graphic.CurrentAnimationIndex = 0;
 
+            selectedLevel = "Orca";
+
+            //if (mapChooseEvent != null)
+            //    mapChooseEvent("OrcaLevel");
+        }
+
+        private void SealClick()
+        {
+            sliding = true;
+            slidingDown = true;
+            slideMax = MasterGame.Graphics.PreferredBackBufferHeight;
+            selectedButton.Graphic.CurrentAnimationIndex = 0;
+
+            selectedLevel = "Seal";
+
             //if (mapChooseEvent != null)
             //    mapChooseEvent("OrcaLevel");
         }
@@ -204,7 +241,7 @@ namespace WhaleSimulator
                 if (opacity >= 1 && blackDelayTimer >= BLACK_DELAY*2)
                 {
                     if (mapChooseEvent != null)
-                        mapChooseEvent("OrcaLevel");
+                        mapChooseEvent(selectedLevel + "Level");
                 }
                 if (titleMusicInstance.Volume >= 0.007f && !titleMusicInstance.IsDisposed)
                     titleMusicInstance.Volume -= 0.007f;
@@ -213,7 +250,11 @@ namespace WhaleSimulator
             }
 
             if (!sliding)
+            {
+                if (inputStates.WasButtonPressed(Microsoft.Xna.Framework.Input.Buttons.B))
+                    BackClick();
                 base.Update(gameTime, inputStates);
+            }
             else
             {
                 if (slideTotal < (slideMax / 2) + 2)
@@ -306,7 +347,7 @@ namespace WhaleSimulator
                         button.Graphic.Coordinates = coords;
                     }
                 }
-                
+
             }
         }
 

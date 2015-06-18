@@ -141,7 +141,8 @@ Content\sand_0.xnb
 Content\Creatures\FBX\AnimatedOrca.xnb
 Content\Creatures\sourceimages\orcawhaleR_0.xnb
 Content\Creatures\sourceimages\orcawhale_tail_0.xnb
+Content\Images\SealButton.xnb
 Data\Sounds.xml
 Data\Models.xml
 Data\MapData\OrcaLevel.xml
-Data\MapData\OrcaLevel_Backup.xml
+Data\MapData\SealLevel.xml

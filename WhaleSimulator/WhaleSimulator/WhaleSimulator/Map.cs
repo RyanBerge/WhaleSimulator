@@ -28,12 +28,14 @@ namespace WhaleSimulator
         private Texture2D blackscreen;
 
         private Sound music;
+        private Sound death;
         private Sound wavesUnder;
         private Sound wavesAbove;
         private Sound seagullsUnder;
         private Sound seagullsAbove;
 
         bool aboveWaterPlaying = false;
+        bool deathPlaying = false;
 
         private ContentManager mapContent;
 
@@ -60,6 +62,7 @@ namespace WhaleSimulator
             blackRect = new Rectangle(0, 0, MasterGame.Graphics.PreferredBackBufferWidth, MasterGame.Graphics.PreferredBackBufferHeight);
             Map.soundEngine.Play("FadeIntoGame", false, false);
             music = soundEngine.GetSound("WhaleGamePlaySong");
+            death = soundEngine.GetSound("DeathSong");
             seagullsAbove = soundEngine.GetSound("SeagullsAbovewater");
             seagullsUnder = soundEngine.GetSound("SeagullsUnderwater");
             wavesAbove = soundEngine.GetSound("WavesAbovewater");
@@ -123,6 +126,14 @@ namespace WhaleSimulator
             Camera.Update(gameTime, inputStates, player);
             // stuff added
             oceanSurface.Update(gameTime.ElapsedGameTime.Milliseconds);
+
+            if (!player.Properties.IsAlive && !deathPlaying)
+            {
+                music.Stop();
+                death.Play(true, false);
+                soundEngine.Play("DeathSound", false, false);
+                deathPlaying = true;
+            }
 
             if (Camera.IsUnderwater)
             {

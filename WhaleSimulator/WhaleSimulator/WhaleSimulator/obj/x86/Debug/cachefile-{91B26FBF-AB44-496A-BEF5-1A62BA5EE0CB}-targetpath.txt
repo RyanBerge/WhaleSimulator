@@ -141,3 +141,4 @@ Content\sand_0.xnb
 Content\Creatures\FBX\AnimatedOrca.xnb
 Content\Creatures\sourceimages\orcawhaleR_0.xnb
 Content\Creatures\sourceimages\orcawhale_tail_0.xnb
+Content\Images\SealButton.xnb

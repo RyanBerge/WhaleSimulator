@@ -176,7 +176,6 @@ D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\b
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\toothfish_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sourceimages\rock2_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Data\Models.xml
-D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Data\MapData\OrcaLevel_Backup.xml
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\OceanFloor.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\sand_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\PauseBackground.xnb
@@ -469,3 +468,5 @@ D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\b
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\FBX\AnimatedOrca.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\sourceimages\orcawhaleR_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Creatures\sourceimages\orcawhale_tail_0.xnb
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Data\MapData\SealLevel.xml
+D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\x86\Debug\Content\Images\SealButton.xnb
