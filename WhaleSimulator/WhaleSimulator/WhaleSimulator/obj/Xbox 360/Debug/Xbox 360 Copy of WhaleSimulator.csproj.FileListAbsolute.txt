@@ -124,7 +124,6 @@ D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\b
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\WhaleSimulator.exe
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\obj\Xbox 360\Debug\WhaleSimulator.pdb
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\Models.xml
-C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\MapData\OrcaLevel_Backup.xml
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\MapData\OrcaLevel.xml
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\cube.xnb
 C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Effects\ocean.xnb
@@ -311,3 +310,8 @@ D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\b
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\AnimatedOrca.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhaleR_0.xnb
 D:\RyanBerge\Users\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhale_tail_0.xnb
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Data\MapData\SealLevel.xml
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Images\SealButton.xnb
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\FBX\AnimatedOrca.xnb
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhaleR_0.xnb
+C:\Users\04\Desktop\WhaleSimulator\WhaleSimulator\WhaleSimulator\WhaleSimulator\bin\Xbox 360\Debug\Content\Creatures\sourceimages\orcawhale_tail_0.xnb

@@ -26,11 +26,11 @@ namespace WhaleSimulator
         private const float MAX_SPEED = 60f; //44
 
         //Expressed in Units Per Second
-        private const float ACCELERATION = 10f;
+        private const float ACCELERATION = 12f;
         private const float MANUAL_DECELERATION = 6f;
         private const float BASE_DECELERATION = 0.6f;
-        private const float AIR_LOSS = 2f;
-        private const float ENERGY_LOSS = 2f;
+        private const float AIR_LOSS = 1f;
+        private const float ENERGY_LOSS = 1f;
         private const float AIR_GAIN = 15f;
         private const float DEAD_FLOATING_SPEED = 20f;
 

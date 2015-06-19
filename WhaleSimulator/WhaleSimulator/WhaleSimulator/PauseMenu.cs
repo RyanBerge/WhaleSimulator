@@ -35,7 +35,7 @@ namespace WhaleSimulator
         public void LoadMenu()
         {
             MenuButton resume = new MenuButton();
-            MenuButton options = new MenuButton();
+            //MenuButton options = new MenuButton();
             MenuButton quit = new MenuButton();
 
             Animation2D[] tempArray = new Animation2D[2];
@@ -43,8 +43,8 @@ namespace WhaleSimulator
             tempArray[1] = new Animation2D("Select", new Vector2(0, 101), new Vector2(400, 100), 1, 0);
 
             resume.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/ResumeButton"), tempArray, 0, new Vector2(400, 200));
-            options.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/OptionsButton"), tempArray, 0, new Vector2(400, 400));
-            quit.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/QuitButton"), tempArray, 0, new Vector2(400, 600));
+            //options.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/OptionsButton"), tempArray, 0, new Vector2(400, 400));
+            quit.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/QuitButton"), tempArray, 0, new Vector2(400, 500));
 
             tempArray = new Animation2D[1];
             tempArray[0] = new Animation2D("", new Vector2(0, 0), new Vector2(1280, 800), 1, 0);
@@ -53,20 +53,20 @@ namespace WhaleSimulator
             resume.Click = ResumeClick;
             resume.name = "Play";
             resume.up = quit;
-            resume.down = options;
+            resume.down = quit;
 
-            options.Click = OptionsClick;
-            options.name = "Options";
-            options.up = resume;
-            options.down = quit;
+            //options.Click = OptionsClick;
+            //options.name = "Options";
+            //options.up = resume;
+            //options.down = quit;
 
             quit.Click = ExitClick;
             quit.name = "Exit";
-            quit.up = options;
+            quit.up = resume;
             quit.down = resume;
 
             buttons.Add(resume);
-            buttons.Add(options);
+            //buttons.Add(options);
             buttons.Add(quit);
 
             Reset();

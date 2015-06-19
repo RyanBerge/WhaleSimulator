@@ -72,7 +72,7 @@ namespace WhaleSimulator
             menuBoopInstanceBackup = menuBoop.CreateInstance();
             
             MenuButton play = new MenuButton();
-            MenuButton options = new MenuButton();
+            //MenuButton options = new MenuButton();
             MenuButton quit = new MenuButton();
 
             MenuButton orca = new MenuButton();
@@ -84,7 +84,7 @@ namespace WhaleSimulator
             tempArray[1] = new Animation2D("Select", new Vector2(0,101), new Vector2(400, 100), 1, 0);
 
             play.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/PlayButton"), tempArray, 0, new Vector2(400, 200));
-            options.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/OptionsButton"), tempArray, 0, new Vector2(400, 400));
+            //options.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/OptionsButton"), tempArray, 0, new Vector2(400, 400));
             quit.Graphic = new Graphic2D(Content.Load<Texture2D>("Images/QuitButton"), tempArray, 0, new Vector2(400, 600));
 
             tempArray = new Animation2D[1];
@@ -114,16 +114,16 @@ namespace WhaleSimulator
             play.Click = PlayClick;
             play.name = "Play";
             play.up = quit;
-            play.down = options;
+            play.down = quit;
 
-            options.Click = OptionsClick;
-            options.name = "Options";
-            options.up = play;
-            options.down = quit;
+            //options.Click = OptionsClick;
+            //options.name = "Options";
+            //options.up = play;
+            //options.down = quit;
 
             quit.Click = ExitClick;
             quit.name = "Exit";
-            quit.up = options;
+            quit.up = play;
             quit.down = play;
 
             orca.Click = OrcaClick;
@@ -148,7 +148,7 @@ namespace WhaleSimulator
             
 
             MainButtonList.Add(play);
-            MainButtonList.Add(options);
+            //MainButtonList.Add(options);
             MainButtonList.Add(quit);
             selectedButton = play;
 
